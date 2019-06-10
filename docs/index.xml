@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://blog.rudylee.com/blog/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Aug 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.rudylee.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Run Code Snippet in Heroku Rails Console</title>
+      <link>https://blog.rudylee.com/blog/2018/08/18/how-to-run-code-snippet-in-heroku-rails-console/</link>
+      <pubDate>Sat, 18 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2018/08/18/how-to-run-code-snippet-in-heroku-rails-console/</guid>
+      <description>Often in my day to day work, I need to run a snippet in rails console to fix or investigate issues. Since our application is hosted on Heroku, I can do this by running heroku rails console --app app-name and in a matter of seconds I am connected to the rails console on production.
+In some cases, I need to run a really long code snippet especially if the fix needs to touch a lot of data.</description>
+    </item>
+    
+    <item>
+      <title>Download CSV Test in Go</title>
+      <link>https://blog.rudylee.com/blog/2018/06/23/download-csv-test-in-go/</link>
+      <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2018/06/23/download-csv-test-in-go/</guid>
+      <description>In the project I am working on, I have to write a test for a function that download CSV from external website and store it locally. I am pretty new in Go so please let me know if I am doing it wrong.
+The function is pretty simple, it uses the Go net/http package to send a GET request and os package to write the HTTP response to a local file.</description>
+    </item>
+    
+    <item>
+      <title>Google Spreadsheet as JSON API</title>
+      <link>https://blog.rudylee.com/blog/2017/12/25/google-spreadsheet-as-json-api/</link>
+      <pubDate>Mon, 25 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2017/12/25/google-spreadsheet-as-json-api/</guid>
+      <description>Data store is an important piece in most of the modern applications. The implementation can range from a simple text file to a complicated database systems. In this blog post, I will show you how to use Google Spreadsheet as a data store for your application.
+Google Spreadsheet provides a convenient way to store, edit, share and retrieve data. This makes Google Spreadsheet appealing if you want to quickly prototype an app and don&amp;rsquo;t want to spend time building a CRUD interface to manage your data.</description>
+    </item>
+    
+    <item>
+      <title>Trello Card Repeater</title>
+      <link>https://blog.rudylee.com/blog/2017/12/17/trello-card-repeater/</link>
+      <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2017/12/17/trello-card-repeater/</guid>
+      <description>I&amp;rsquo;ve been using Trello as my primary task managers for the past couple of years. Recently, I found a very useful feature in Trello that helps me automating the creation of repetitive tasks.
+This feature allows you to tell Trello to create a card on specified time such as daily, weekly, monthly or annually.
+At the moment, I am using this feature to create a few daily tasks that I want to do first in the morning such as meditation, coding exercise and learning chinese.</description>
+    </item>
+    
+    <item>
+      <title>Run Sidekiq Jobs Without Starting Worker Process</title>
+      <link>https://blog.rudylee.com/blog/2017/08/06/run-sidekiq-jobs-without-starting-worker-process/</link>
+      <pubDate>Sun, 06 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2017/08/06/run-sidekiq-jobs-without-starting-worker-process/</guid>
+      <description>You can add the code snippet below to config/initializers/sidekiq.rb if you don&amp;rsquo;t want to start a separate sidekiq workers.
+The configuration below will make sure that the sidekiq jobs will be executed without worker process.
+This is handy if you don&amp;rsquo;t want to open an extra terminal tab or tmux window for worker process.
+1 2 3 4 5  # config/initializers/sidekiq.rb if Rails.env.development? require &amp;#39;sidekiq/testing&amp;#39; Sidekiq::Testing.inline! end   See the official Sidekiq wiki for more information: https://github.</description>
+    </item>
+    
+    <item>
+      <title>Regular Expression For A String Containing One Word But Not Another</title>
+      <link>https://blog.rudylee.com/blog/2017/07/28/regular-expression-for-a-string-containing-one-word-but-not-another/</link>
+      <pubDate>Fri, 28 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2017/07/28/regular-expression-for-a-string-containing-one-word-but-not-another/</guid>
+      <description>Last weekend, one our apps that is hosted on Heroku were reporting a lot of R14 errors.
+R14 is an error that thrown by Heroku if the machine is running out of memory.
+I quickly jumped into (logentries)[https://logentries.com/] to download the log file and opened it in Sublime Text.
+However, I was having problem finding the request that is causing the problem because we also have our background job workers reporting R14 errors.</description>
+    </item>
+    
+    <item>
+      <title>Monitor Background Jobs with New Relic Query Language</title>
+      <link>https://blog.rudylee.com/blog/2017/07/01/monitor-background-jobs-with-new-relic-query-language/</link>
+      <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2017/07/01/monitor-background-jobs-with-new-relic-query-language/</guid>
+      <description>Background In this blog post, I&amp;rsquo;ll show you how to set up an alert to monitor your sidekiq jobs using New Relic Query Language and New Relic Alert.
+I was given a task to find a solution to monitor our sidekiq jobs. In the past, I used New Relic Sidekiq Plugin ( https://newrelic.com/plugins/secondimpression/131 ) to do this.
+The plugin is a Ruby app that connects to your Redis instance, retrieves all of the sidekiq metrics such as jobs, queues and send it to New Relic using the agent library.</description>
+    </item>
+    
+    <item>
+      <title>Setting Up Elasticsearch Watcher to Check For Cluster Status on Elastic Cloud</title>
+      <link>https://blog.rudylee.com/blog/2017/01/30/setting-up-elasticsearch-watcher-to-check-for-cluster-status-on-elastic-cloud/</link>
+      <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2017/01/30/setting-up-elasticsearch-watcher-to-check-for-cluster-status-on-elastic-cloud/</guid>
+      <description>Last week, I was busy migrating our staging and production Elasticsearch clusters from AWS Elasticsearch to Elastic Cloud. The reason behind this migration is because we need dynamic scripting feature in our application and Elastic Cloud is the only managed Elasticsearch hosting that currently supports dynamic scripting.
+In terms of pricing, Elastic Cloud is slightly more expensive than AWS Elasticsearch. I think this is because they are using AWS EC2 under the hood.</description>
+    </item>
+    
+    <item>
+      <title>Setting Up L2TP VPN to Bypass Great Firewall Of China</title>
+      <link>https://blog.rudylee.com/blog/2017/01/11/setting-up-l2tp-vpn-to-bypass-great-firewall-of-china/</link>
+      <pubDate>Wed, 11 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2017/01/11/setting-up-l2tp-vpn-to-bypass-great-firewall-of-china/</guid>
+      <description>Last month, I traveled to China for the second time. Unlike my first trip, this time I am more prepared to bypass the great firewall of China.
+During my first trip in China, I was mainly relying on simple SSH tunnel to get access to Gmail and all other blocked services. This solution is unrealiable because I couldn&amp;rsquo;t use it on my Android phone. Aside from that, I also kept having constant dropouts which explained in this blog post http://blog.</description>
+    </item>
+    
+    <item>
+      <title>HAProxy as a reverse proxy for cloudinary images</title>
+      <link>https://blog.rudylee.com/blog/2016/12/05/haproxy-as-a-reverse-proxy-for-cloudinary-images/</link>
+      <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2016/12/05/haproxy-as-a-reverse-proxy-for-cloudinary-images/</guid>
+      <description>We are using in one of our applications Cloudinary to host and resize images on the fly. We are also using Cloudflare for our CDN and DNS management.
+I was given a task to setup a CNAME subdomain in CloudFlare to forward the request to Cloudinary. This way we can still have the benefit of serving static images from CDN as well as reducing the Cloudinary bandwidth usage.
+My solution is to set HAProxy as a reverse proxy which responsible to fetch images from Cloudinary server.</description>
+    </item>
+    
+    <item>
+      <title>HAProxy and A/B Testing</title>
+      <link>https://blog.rudylee.com/blog/2016/04/13/haproxy-and-a/b-testing/</link>
+      <pubDate>Wed, 13 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2016/04/13/haproxy-and-a/b-testing/</guid>
+      <description>Few weeks ago, I was given a task to create an A/B test using HAProxy. I need to make HAProxy to split traffic between two different applications ( Rails and NodeJS )
+In this blog post, I&amp;rsquo;ll explain how to achieve this.
+Create ACL for the page you want to A/B test The first step you have to do is to create an ACL for the URL you want to A/B test.</description>
+    </item>
+    
+    <item>
+      <title>Create new user on Amazon AMI and give it root access</title>
+      <link>https://blog.rudylee.com/blog/2016/03/09/create-new-user-on-amazon-ami-and-give-it-root-access/</link>
+      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2016/03/09/create-new-user-on-amazon-ami-and-give-it-root-access/</guid>
+      <description>Setup your new EC2 instance on AWS and choose Amazon AMI.
+SSH to your instance using your private key
+ssh -i &amp;lt;path-to-your-pem-file&amp;gt; ec2-user@&amp;lt;ec2-endpoint-or-ip&amp;gt;  Change to root
+sudo su  Create new group for your user ( in this case my group name is &amp;lsquo;dev&amp;rsquo; )
+groupadd dev  Create new user and assign it to your recently created group
+useradd -g dev dev  Give the username root access</description>
+    </item>
+    
+    <item>
+      <title>Import JSON to Elasticsearch using jq</title>
+      <link>https://blog.rudylee.com/blog/2016/02/16/import-json-to-elasticsearch-using-jq/</link>
+      <pubDate>Tue, 16 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2016/02/16/import-json-to-elasticsearch-using-jq/</guid>
+      <description>This is based on http://kevinmarsh.com/2014/10/23/using-jq-to-import-json-into-elasticsearch.html
+Install jq first on Mac
+brew install jq  Import the JSON file to Elasticsearch index
+cat file.json | jq -c &#39;.[] | {&amp;quot;index&amp;quot;: {&amp;quot;_index&amp;quot;: &amp;quot;bookmarks&amp;quot;, &amp;quot;_type&amp;quot;: &amp;quot;bookmark&amp;quot;, &amp;quot;_id&amp;quot;: .id}}, .&#39; | curl -XPOST localhost:9200/_bulk --data-binary @-  Check for the list of indexes http://localhost:9200/_cat/indices?v
+See the list of records http:/localhost:9200//bookmarks/_search</description>
+    </item>
+    
+    <item>
+      <title>Reopen Last Commit in Git</title>
+      <link>https://blog.rudylee.com/blog/2016/01/20/reopen-last-commit-in-git/</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2016/01/20/reopen-last-commit-in-git/</guid>
+      <description>Run the command below if you want to reopen the last commit in your git
+1  git reset --soft HEAD~   This is useful if you miss something in your last commit. Instead of creating new commit and squashing it, you can open last commit and fix it there.</description>
+    </item>
+    
+    <item>
+      <title>Copying Files Between Two S3 Buckets</title>
+      <link>https://blog.rudylee.com/blog/2015/10/16/copying-files-between-two-s3-buckets/</link>
+      <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2015/10/16/copying-files-between-two-s3-buckets/</guid>
+      <description>Today, I have to copy files from one S3 bucket to another S3 bucket which sitting in separate AWS account.
+Initially, I was thinking to use S3 clients ( Tranmit or Cyberduck ) to download the files first and manually upload the files again to the other S3 Bucket. However, this approach will consume a lot of bandwidth and really slow if you have a lot of files in your S3 bucket.</description>
+    </item>
+    
+    <item>
+      <title>Create SSH Tunnel To Backup PostgreSQL Database</title>
+      <link>https://blog.rudylee.com/blog/2015/08/31/create-ssh-tunnel-to-backup-postgresql-database/</link>
+      <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2015/08/31/create-ssh-tunnel-to-backup-postgresql-database/</guid>
+      <description>Today, I was trying to create a backup of production database. The problem is we have two different version of PostgreSQL running on production and these databases can only be accessed from front end(FE) server. We have older version of PostgreSQL client installed in all FE server which means I can&amp;rsquo;t use it to run pg_dump.
+SSH Tunnel to the rescue One solution to this problem is to create a SSH tunnel.</description>
+    </item>
+    
+    <item>
+      <title>Rails Engines and Vim</title>
+      <link>https://blog.rudylee.com/blog/2015/05/03/rails-engines-and-vim/</link>
+      <pubDate>Sun, 03 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2015/05/03/rails-engines-and-vim/</guid>
+      <description>At the moment, I am working on a Ruby on Rails projects using Rails Engines ( you can read more about Rails Engines here: http://guides.rubyonrails.org/engines.html ). In this post, I&amp;rsquo;ll share my tips and trick on how to configure your vim to work with Rails Engines.
+NERDTree Bookmark I am using NERDTree Bookmark to quickly jump between different engines. If you are using NERDTree, you can create a bookmark by putting your cursor on one of the Rails Engines directory and use the command below:</description>
+    </item>
+    
+    <item>
+      <title>Symbolic Links With Vagrant Windows</title>
+      <link>https://blog.rudylee.com/blog/2014/10/27/symbolic-links-with-vagrant-windows/</link>
+      <pubDate>Mon, 27 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2014/10/27/symbolic-links-with-vagrant-windows/</guid>
+      <description>There are few known limitations when using Vagrant on Windows machine. One of these limitations is the lack of symbolic links support on synced folder.
+Symbolic links are used heavily by NPM to create shortcut for the libraries. I posted more details about this here: http://blog.rudylee.com/2013/10/24/fix-npm-symlink-problem-in-vagrant/
+Most of the time, you can get away with &amp;lsquo;npm &amp;ndash;no-bin-link&amp;rsquo; solution. However, you need more robust solution if you are using complex tools such as Grunt or Yeoman.</description>
+    </item>
+    
+    <item>
+      <title>Enable HTTP authentication on certain domain</title>
+      <link>https://blog.rudylee.com/blog/2014/09/18/enable-http-authentication-on-certain-domain/</link>
+      <pubDate>Thu, 18 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2014/09/18/enable-http-authentication-on-certain-domain/</guid>
+      <description>Basic HTTP authentication is one simple way to limit public access to your website prior to launch.
+The first thing you need is .htaccess file which contains all the configurations. The second one is .htpasswd containing username and password. You can use this website to generate .htpasswd file for you http://www.htaccesstools.com/htpasswd-generator/
+In the sample below, I am trying to enable HTTP authentication only on certain domain. On the first line, I set enviroment variable if the domain name is equal to &amp;ldquo;www.</description>
+    </item>
+    
+    <item>
+      <title>AngularJS Free Course by Code School</title>
+      <link>https://blog.rudylee.com/blog/2014/05/26/angularjs-free-course-by-code-school/</link>
+      <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2014/05/26/angularjs-free-course-by-code-school/</guid>
+      <description>I spent some time last weekend to run through the new AngularJS course by Code School. This course is sponsored by Google which means you don&amp;rsquo;t need to pay for the Code School membership to play this course. AngularJS is one of the popular Javascript frameworks to build single page app application. You might be familiar with other frameworks such as Ember.js, Backbone.js and Knockout.js.
+I really enjoyed the course and definitely learned something new from it.</description>
+    </item>
+    
+    <item>
+      <title>Configuring Elastic Beanstalk Environment with .ebextensions</title>
+      <link>https://blog.rudylee.com/blog/2014/05/22/configuring-elastic-beanstalk-environment-with-.ebextensions/</link>
+      <pubDate>Thu, 22 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2014/05/22/configuring-elastic-beanstalk-environment-with-.ebextensions/</guid>
+      <description>At Captiv8, we are using Amazon AWS to host most of our PHP projects. We are heavily rely on Elastic Beanstalk to help us set up PHP environment, database and load balancer. On top of that, we are also managing our own server image based on Amazon AMI. In this image, we installed additional software and packages that we need for our application. However, this approach has a drawback as it is difficult to maintain the image and track changes.</description>
+    </item>
+    
+    <item>
+      <title>Audio Books</title>
+      <link>https://blog.rudylee.com/blog/2014/03/27/audio-books/</link>
+      <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2014/03/27/audio-books/</guid>
+      <description>Around October 2013, I decided to move from city to Gladesville which located 9 kilometres north-west of Sydney CBD. It wasn&amp;rsquo;t easy decision because I need to spend about 2 hours on commuting every day.
+For the first couple months, I was fine with the long commuting time. I can distract myself with my phone or sleeping on the bus. However, I started to feel unproductive and I can feel it affected my concentration throughout the day.</description>
+    </item>
+    
+    <item>
+      <title>Add &#39;current&#39; class to website menu in Rails</title>
+      <link>https://blog.rudylee.com/blog/2014/01/15/add-current-class-to-website-menu-in-rails/</link>
+      <pubDate>Wed, 15 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2014/01/15/add-current-class-to-website-menu-in-rails/</guid>
+      <description>It is common to have &amp;lsquo;active&amp;rsquo; state or &amp;lsquo;current&amp;rsquo; state on website navigation. This will help visitors to know which page they have selected.
+This solution is based on Stackoverflow&amp;rsquo;s question which I couldn&amp;rsquo;t find. First, I&amp;rsquo;ll create a method inside Rails application_helper.rb file. I&amp;rsquo;ll call this method cp(). Here are the syntax:
+1 2 3 4 5 6  module ApplicationHelper def cp(path) current_route = Rails.application.routes.recognize_path(path) &amp;#34;current&amp;#34; if current_page?(path) or params[:controller] == current_route[:controller] end end   The method uses current_page and Rails.</description>
+    </item>
+    
+    <item>
+      <title>Install the latest tmux on Ubuntu 12.04</title>
+      <link>https://blog.rudylee.com/blog/2013/12/06/install-the-latest-tmux-on-ubuntu-12.04/</link>
+      <pubDate>Fri, 06 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/12/06/install-the-latest-tmux-on-ubuntu-12.04/</guid>
+      <description>In this post, I will show you how to install the latest tmux on Ubuntu 12.04. First, we need to install &amp;lsquo;add-apt-repository&amp;rsquo; command on our machine. This can be done by running these commands:
+1 2 3  sudo apt-get install software-properties-common sudo apt-get install python-software-properties   After that you can add third party repository ( Ubuntu official repository does not have latest tmux at the moment )
+1 2 3 4 5  sudo add-apt-repository ppa:pi-rho/dev sudo apt-get update sudo apt-get install tmux   I will suggest you to install the latest tmux if you want to use Tmuxinator.</description>
+    </item>
+    
+    <item>
+      <title>Rails 4 CORS</title>
+      <link>https://blog.rudylee.com/blog/2013/10/29/rails-4-cors/</link>
+      <pubDate>Tue, 29 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/10/29/rails-4-cors/</guid>
+      <description>McFlyyy pointed out another solution to solve this problem. I haven&amp;rsquo;t tested it myself so follow it at your own risk Click Here I was trying to use Rails to build REST API for my AngularJS app and came across CORS error on my Chrome developer tools.
+According to Alexey Vasiliev, Cross-origin resource sharing (CORS) is a web browser technology specification which defines ways for a web server to allow its resources to be accessed by a web page from a different domain.</description>
+    </item>
+    
+    <item>
+      <title>Fix npm symlink problem in Vagrant</title>
+      <link>https://blog.rudylee.com/blog/2013/10/24/fix-npm-symlink-problem-in-vagrant/</link>
+      <pubDate>Thu, 24 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/10/24/fix-npm-symlink-problem-in-vagrant/</guid>
+      <description>Today I encountered weird symlink error when trying to install npm modules on my Vagrant Ubuntu Box. The error says &amp;ldquo;pm ERR! Error: UNKNOWN, symlink &amp;lsquo;../which/bin/which&amp;rsquo;&amp;ldquo;.
+After quick Google, it turns out the problem is caused by npm trying to create symlink which is not supported on Windows ( I am using Windows 8 as my host machine ).
+Here is quick solution which allow you to install npm modules without creating any symlinks :</description>
+    </item>
+    
+    <item>
+      <title>Trailing Characters ^M</title>
+      <link>https://blog.rudylee.com/blog/2013/09/18/trailing-characters-m/</link>
+      <pubDate>Wed, 18 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/09/18/trailing-characters-m/</guid>
+      <description>This morning I ran into weird errors in one of my Vagrant machine. These errors come up when I was trying to run tmux and vim:
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27  Error detected while processing /home/vagrant/.vimrc: line 1: E488: Trailing characters: nocompatible^M line 2: E488: Trailing characters: nu^M line 3: E488: Trailing characters: nobackup^M line 4: E488: Trailing characters: nowritebackup^M line 5: E488: Trailing characters: noswapfile^M line 6: E488: Trailing characters: hlsearch^M line 7: E488: Trailing characters: ruler^M line 8: E474: Invalid argument: laststatus=2^M line 9: E474: Invalid argument: tabstop=2^M line 10: E474: Invalid argument: shiftwidth=2^M line 11: E488: Trailing characters: expandtab^M Vim: Error reading input, exiting.</description>
+    </item>
+    
+    <item>
+      <title>Zeus inside Vagrant</title>
+      <link>https://blog.rudylee.com/blog/2013/09/13/zeus-inside-vagrant/</link>
+      <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/09/13/zeus-inside-vagrant/</guid>
+      <description>I have been using Vagrant as my development environment for the last couple weeks. It has been very helpful as I prefer to use Linux as my development environment and I can only use Windows at my workplace. With Vagrant, I can easily set up new Linux machine, install Vim plus all the plugins and completely separate development machine for each project.
+Today, I was trying to use Zeus to speed up my Rspec test inside one of the Rails projects.</description>
+    </item>
+    
+    <item>
+      <title>Refocus</title>
+      <link>https://blog.rudylee.com/blog/2013/08/04/refocus/</link>
+      <pubDate>Sun, 04 Aug 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/08/04/refocus/</guid>
+      <description>For the past few weeks, it seems that I am gradually moving into different life style. When I was still doing my course, it is almost impossible to spend time on the weekend to catch up with friends, walking around city and trying new stuff. Everytime my friend invited me to hang out with them I always said that I need to finish my assignments.
+I remember one of my friend just asked me this question &amp;ldquo;So, what you usually do during the weekend ?</description>
+    </item>
+    
+    <item>
+      <title>Sending email from Amazon EC2 using postfix and Amazon SES</title>
+      <link>https://blog.rudylee.com/blog/2013/07/26/sending-email-from-amazon-ec2-using-postfix-and-amazon-ses/</link>
+      <pubDate>Fri, 26 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/07/26/sending-email-from-amazon-ec2-using-postfix-and-amazon-ses/</guid>
+      <description>Sending email is a basic functionality that most of the applications need to support. In my company latest project, we have to send invitation emails to users through an Amazon EC2 instance. It is relatively easy task because I can use built in email library from Code Igniter and point it to Amazon SES. It works perfectly until my colleague realize that there is a slightly delay when the application sends the email.</description>
+    </item>
+    
+    <item>
+      <title>Migrate to Octopress</title>
+      <link>https://blog.rudylee.com/blog/2013/07/25/migrate-to-octopress/</link>
+      <pubDate>Thu, 25 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/07/25/migrate-to-octopress/</guid>
+      <description>Today, I decided to upload my new blog using Octopress into live. I have spent the last two weeks migrating my blog posts into Octopress. The process was not as smooth as I thought. I had to check every single blog post and re-apply all the code snippet tags, fix typo and add missing post.
+After all, I am quite happy with the end result. I can easily add new blog post through terminal and edit the post using my current favourite text editor Vim.</description>
+    </item>
+    
+    <item>
+      <title>Playing with Google Map API</title>
+      <link>https://blog.rudylee.com/blog/2013/05/27/playing-with-google-map-api/</link>
+      <pubDate>Mon, 27 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/05/27/playing-with-google-map-api/</guid>
+      <description>The main purpose of this post is only to write about Google Map API for future reference. Here are the code snippets :
+Get the latitude and longitude based on address : http://maps.googleapis.com/maps/api/geocode/json?address=435A%20Kent%20St&amp;amp;sensor=true
+The code below set up the Google Map, put the marker and also make it grayscale
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  function initialize() { var map; var location = new google.</description>
+    </item>
+    
+    <item>
+      <title>Override module config in Zend Framework 2</title>
+      <link>https://blog.rudylee.com/blog/2013/05/16/override-module-config-in-zend-framework-2/</link>
+      <pubDate>Thu, 16 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/05/16/override-module-config-in-zend-framework-2/</guid>
+      <description>There is a time when you want to override module config in your Zend Framework 2 application. In my case, I have different configuration for SMS gateway in staging and live server. You can do this by overwriting the module.config.php file inside the module config&amp;rsquo;s folder. However, there are heaps of configuration inside module.config.php file. This approach will lead to maintenance nightmare when you need to change one or more configuration inside the file.</description>
+    </item>
+    
+    <item>
+      <title>&#39;Zend Framework 2 : The proper way to set application path in Javascript Object&#39;</title>
+      <link>https://blog.rudylee.com/blog/2013/05/06/zend-framework-2-the-proper-way-to-set-application-path-in-javascript-object/</link>
+      <pubDate>Mon, 06 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/05/06/zend-framework-2-the-proper-way-to-set-application-path-in-javascript-object/</guid>
+      <description>Storing application path inside Javascript object is a way to avoid &amp;ldquo;hard coded&amp;rdquo; URL inside your Javascript file. It is pretty common to have like this in your Javascript file :
+1 2 3 4 5  $.ajax({ type: POST, url: &amp;#39;http://localhost/my-website/register&amp;#39;, data: dataJSON })    That approach is completely fine. However, when you need to deploy your application, you need to manually change all the URL to match with your server.</description>
+    </item>
+    
+    <item>
+      <title>My review after two months using VIM</title>
+      <link>https://blog.rudylee.com/blog/2013/03/30/my-review-after-two-months-using-vim/</link>
+      <pubDate>Sat, 30 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/03/30/my-review-after-two-months-using-vim/</guid>
+      <description>On January ( Two months ago ) , I decided to learn Vim after watching screencast from Destroy All Software. In one of the screencast, the guy shows how fast you can program when using Vim and use plugin to make it even better.
+I have known Vim for 4 years now but never actually keen to learn all the shortcuts. I remember I been to one of the PHP meetup in my city and one guy was presenting some of his code using Vim.</description>
+    </item>
+    
+    <item>
+      <title>&#39;Zend Framework 2 : get server URL in controller without using serverUrl()&#39;</title>
+      <link>https://blog.rudylee.com/blog/2013/02/15/zend-framework-2-get-server-url-in-controller-without-using-serverurl/</link>
+      <pubDate>Fri, 15 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/02/15/zend-framework-2-get-server-url-in-controller-without-using-serverurl/</guid>
+      <description>Sometimes you need to be able to get current server URL inside controller in your Zend Framework 2 application. As you might know, you won&amp;rsquo;t be able to use $this-&amp;gt;serverUrl() method in the controller as it&amp;rsquo;s a part of helper.
+So, here is the code that I am using to get server URL in controller :
+1  $server_url = $this-&amp;gt;getRequest()-&amp;gt;getUri()-&amp;gt;getScheme() . &amp;#39;://&amp;#39; . $this-&amp;gt;getRequest()-&amp;gt;getUri()-&amp;gt;getHost();   Probably it&amp;rsquo;s not the best solution but it works for now.</description>
+    </item>
+    
+    <item>
+      <title>Bootstrap Typeahead CakePHP 2.0</title>
+      <link>https://blog.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2.0/</link>
+      <pubDate>Sat, 02 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2.0/</guid>
+      <description>Demo : http://cbunny2.rudylee.com/users/typeahead Source : https://github.com/rudylee/cbunny
+In this post, I&amp;rsquo;ll explain how to integrate Twitter Bootstrap Typeahead with your CakePHP 2.0 application. We will avoid using helpers or plugins and stick with plain Javascript + jQuery. Make sure you have include jQuery, Bootstrap CSS and Bootstrap Javascript files in your CakePHP application. You can simply do it inside your default.ctp file ( the files are bootstrap.min.js and bootstrap.min.css ).
+After that we will create controller, action and view to put our input box.</description>
+    </item>
+    
+    <item>
+      <title>Select2 AJAX Auto Complete with CakePHP 2.0</title>
+      <link>https://blog.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2.0/</link>
+      <pubDate>Sat, 02 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2.0/</guid>
+      <description>Demo : http://cbunny2.rudylee.com/users/select2 Source : https://github.com/rudylee/cbunny
+In this post, I&amp;rsquo;ll explain how to use Select2 inside CakePHP. We will avoid using any helpers and rely on jQuery + Javascript. Before we start, I presume you have downloaded Select2 and included the Javascript and CSS files inside your layout. Thus, I won&amp;rsquo;t explain how to import Select2 library into your CakePHP app ( you can download my cbunny app from Github if you are lost ).</description>
+    </item>
+    
+    <item>
+      <title>Science of Productivity</title>
+      <link>https://blog.rudylee.com/blog/2013/01/15/science-of-productivity/</link>
+      <pubDate>Tue, 15 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/01/15/science-of-productivity/</guid>
+      <description>Continuing from my previous post about productivity, I just found a video that you guys might wanna check out. It covers some of the techniques from my previous post such as make your todo list doable and set up the morning dash.
+{% youtube lHfjvYzr-3g %}</description>
+    </item>
+    
+    <item>
+      <title>My journey to productivity</title>
+      <link>https://blog.rudylee.com/blog/2013/01/14/my-journey-to-productivity/</link>
+      <pubDate>Mon, 14 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/01/14/my-journey-to-productivity/</guid>
+      <description>Today marks two weeks of my journey trying new method to boost my productivity. For several years, I am an avid fan of procrastination which I am still now. This has bring me a lot of troubles such as projects are off-schedule, self development postponed, and working on assignments at the last minute. I have tried several productivity techniques and sadly say, none of them show significant effect. One of the popular technique that I used is Pomodoro technique.</description>
+    </item>
+    
+    <item>
+      <title>No prefix support for mapResources in CakePHP 2.x</title>
+      <link>https://blog.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2.x/</link>
+      <pubDate>Wed, 28 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2.x/</guid>
+      <description>REST API is relatively easy to implement if you are using web framework to build your application. In Rails, you just need to add single &amp;lsquo;resources&amp;rsquo; entry in your routing file. In CakePHP, it has similar solution as you can read in the Cookbook. However, currently there is no prefix support in CakePHP 2.x and this is confirmed in these links :
+ http://cakephp.lighthouseapp.com/projects/42648/tickets/968-rest-routes-with-prefix
+ https://github.com/cakephp/cakephp/pull/763
+  This is a drawback because you are most likely will use prefix to build REST API.</description>
+    </item>
+    
+    <item>
+      <title>Precise Pangolin</title>
+      <link>https://blog.rudylee.com/blog/2012/07/31/precise-pangolin/</link>
+      <pubDate>Tue, 31 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2012/07/31/precise-pangolin/</guid>
+      <description>After spending whole day moving all my data from Ubuntu partition, I am officially running Ubuntu 12.04 64 bit. Prior to this, I was using Ubuntu 12.04 32 bit which I continuously upgrade from Ubuntu 10.04 ( it&amp;rsquo;s been 2 years since I decided to use Ubuntu as my main operating system, time flew so fast ). It was running really slow as I have a lot of applications installed ( Rails, Django, Android SDK, Eclipse, Netbeans, etc ).</description>
+    </item>
+    
+    <item>
+      <title>Curry Noodle</title>
+      <link>https://blog.rudylee.com/blog/2012/07/08/curry-noodle/</link>
+      <pubDate>Sun, 08 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2012/07/08/curry-noodle/</guid>
+      <description>Last week I found video tutorial to cook curry noodle in YouTube and decided to give it a try. Before, I cooked different type of curry (red and green curry ) and always made my own curry paste. The taste wasn&amp;rsquo;t bad but obviously something missing and I don&amp;rsquo;t know what it is.
+This weekend I am gonna do something different by using pre-made curry paste. After researching a little bit, I found people recommend to use Mae Ploy Curry Paste which they say is used in some of Thai restaurants in Australia.</description>
+    </item>
+    
+    <item>
+      <title>Assembla</title>
+      <link>https://blog.rudylee.com/blog/2012/04/10/assembla/</link>
+      <pubDate>Tue, 10 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2012/04/10/assembla/</guid>
+      <description>Recently, I just canceled my Github micro plan and moved all my private projects to Assembla. Similar to Github, Assembla also offers Git hosting and you can host private projects for free. There are several paid plans that you can choose which basically add more features such as ticketing system, wiki, FTP build, supports, etc. So if you are like me ( only need Git/SVN private hosting for your projects ), I suggest you to try Assembla.</description>
+    </item>
+    
+    <item>
+      <title>Cake Bunny website now using twitter bootstrap!</title>
+      <link>https://blog.rudylee.com/blog/2012/03/20/cake-bunny-website-now-using-twitter-bootstrap/</link>
+      <pubDate>Tue, 20 Mar 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2012/03/20/cake-bunny-website-now-using-twitter-bootstrap/</guid>
+      <description>Today, I spent couple hours to update my Cake Bunny 1.0 and Cake Bunny 2.0 websites. Cake Bunny is CakePHP website that I built to provide live demo for CakePHP tutorials in mt blog. At the moment, it has only two sample demos ( jQuery UI AutoComplete and jQuery UI AutoComplete Redirect).
+I decided to make over the design using Twitter Bootstrap instead of CakePHP default template. For you guys that haven&amp;rsquo;t try twitter bootstrap yet, I suggest you give it a try.</description>
+    </item>
+    
+    <item>
+      <title>Rails set up namespace and redirect from namespace</title>
+      <link>https://blog.rudylee.com/blog/2012/02/12/rails-set-up-namespace-and-redirect-from-namespace/</link>
+      <pubDate>Sun, 12 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2012/02/12/rails-set-up-namespace-and-redirect-from-namespace/</guid>
+      <description>In order to differentiate between admin actions and users actions, you can set up what called &amp;ldquo;namespace&amp;rdquo; in your rails apps. The basic idea of this feature is you will have different controller and view files for each role in your application.
+This concept is similar with prefixes in CakePHP. However, CakePHP allows you to put different action in one controller file, while in rails you have to create different controller and view file for the new namespace.</description>
+    </item>
+    
+    <item>
+      <title>Execute JWPlayer shortcode in Wordpress custom template</title>
+      <link>https://blog.rudylee.com/blog/2012/01/08/execute-jwplayer-shortcode-in-wordpress-custom-template/</link>
+      <pubDate>Sun, 08 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2012/01/08/execute-jwplayer-shortcode-in-wordpress-custom-template/</guid>
+      <description>JWPlayer has become my favorite video player for clients website especially after they release their official Wordpress plugin. The plugin almost done all the basic things ( shortcode, custom player, etc ). It&amp;rsquo;s also integrated seamlessly with the Wordpress Media library which makes your life so much easier because you can easily add the player to a post straightly from media library. However, aside from all that simple integration and setup, it lacks of documentation could cause a headache especially if you are trying to do something out of the lane.</description>
+    </item>
+    
+    <item>
+      <title>&#39;Auto redirect in CakePHP jQuery AutoComplete &#39;</title>
+      <link>https://blog.rudylee.com/blog/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/</link>
+      <pubDate>Mon, 12 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/</guid>
+      <description>Demo : http://cbunny.rudylee.com/autocomplete_redirect Demo source code :https://github.com/rudylee/cbunny
+ In my previous post ( http://blog.rudylee.com/2011/07/25/jquery-ui-autocomplete-in-cakephp/ ) we have successfully integrated the jQuery AutoComplete with CakePHP with a little bit hacky way. Now we gonna add another feature that can redirect user to our desired place when they click the result value in the AutoComplete ( try the demo for more details ).
+So let&amp;rsquo;s start the coding ( I assume you have integrated the jQuery UI AutoComplete in your apps, if you haven&amp;rsquo;t, just read my previous post ), so basically what we need to do are divided into 4 steps:</description>
+    </item>
+    
+    <item>
+      <title>Holiday has arrived</title>
+      <link>https://blog.rudylee.com/blog/2011/11/23/holiday-has-arrived/</link>
+      <pubDate>Wed, 23 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/11/23/holiday-has-arrived/</guid>
+      <description>Today is the last day of my exams and I will have holiday for 3 months. It&amp;rsquo;s quite long considering that you spent the same amount of time for study as well. That means in one semester you will have 3 months study and another 3 months for holiday. From my perspective, it&amp;rsquo;s not efficient, wasting time and of course wasting money :D. But who am I to judge the system, the system is there for a reason which I don&amp;rsquo;t care much.</description>
+    </item>
+    
+    <item>
+      <title>Short conversation with my mom</title>
+      <link>https://blog.rudylee.com/blog/2011/10/23/short-conversation-with-my-mom/</link>
+      <pubDate>Sun, 23 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/10/23/short-conversation-with-my-mom/</guid>
+      <description>Sepenggal perbincangan di telepon dengan nyokap&amp;hellip;
+Gwa: Jadi kapan koko ted bakal married ? ( koko ted adalah panggilan gwa buat koko gwa :P )
+Nyokap: Belom tau, rumah aja blom selesai dibangun.
+Gwa: Oh gitu&amp;hellip;
+Nyokap: Jadi setelah si Teddy married, giliran lu lagi la ?
+Gwa: Enggak donk&amp;hellip; kan beda umur gwa ama koko 5 tahun&amp;hellip; jadi gwa married masih 5 tahun lagi&amp;hellip;
+Nyokap: Emang orang tuanya Riani bolehin ?</description>
+    </item>
+    
+    <item>
+      <title>Reasons why I hate long weekend</title>
+      <link>https://blog.rudylee.com/blog/2011/09/30/reasons-why-i-hate-long-weekend/</link>
+      <pubDate>Fri, 30 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/09/30/reasons-why-i-hate-long-weekend/</guid>
+      <description> Too much sleep 
+Less productive 
+Tasks waiting after holiday 
+and Far away from your girlfriend  </description>
+    </item>
+    
+    <item>
+      <title>Gource</title>
+      <link>https://blog.rudylee.com/blog/2011/08/28/gource/</link>
+      <pubDate>Sun, 28 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/08/28/gource/</guid>
+      <description>Gource is a software version control visualization tool. It was built using C/C++ ( not sure ). Several version controls that supported by Gource are Git, SVN, Mercurial and Bazaar.
+ Basically Gource is a command line tool that you can use to visualize your project&amp;rsquo;s progress that using software version control. Here is the example of my project :
+Cool isn&amp;rsquo;t it ? In my video, there is only one person because I am working for this project alone.</description>
+    </item>
+    
+    <item>
+      <title>jQuery UI AutoComplete in CakePHP</title>
+      <link>https://blog.rudylee.com/blog/2011/07/25/jquery-ui-autocomplete-in-cakephp/</link>
+      <pubDate>Mon, 25 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/07/25/jquery-ui-autocomplete-in-cakephp/</guid>
+      <description>Demo : http://cbunny.rudylee.com/autocomplete Demo source code :https://github.com/rudylee/cbunny The post to add auto redirect feature into the AutoComplete : http://blog.rudylee.com/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/ You can copy the modified Ajax and Javascript helpers from here https://github.com/rudylee/topping
+Last week I was trying to use jQuery UI Autocomplete in my CakePHP apps. However, CakePHP Ajax and Javascript helpers don&amp;rsquo;t support jQuery by default. After googling a little bit, I found that this guy ( http://www.cakephp.bee.pl/ ) already made Ajax and Javascript helpers for jQuery.</description>
+    </item>
+    
+    <item>
+      <title>Change wordpress default email and name</title>
+      <link>https://blog.rudylee.com/blog/2011/06/20/change-wordpress-default-email-and-name/</link>
+      <pubDate>Mon, 20 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/06/20/change-wordpress-default-email-and-name/</guid>
+      <description>Actually you can find this solution easily in Google. However, I&amp;rsquo;ll put it in my blog just because I am lazy to find it again.
+So wordpress has default email address and name which are &amp;ldquo;Wordpress&amp;rdquo; as the name, wordpress@yourdomain.com as the email. To change it you can use plugin or put these wordpress action to your functions.php file in themes folder :
+1 2 3 4 5 6 7 8 9 10  add_filter(&amp;#39;wp_mail_from&amp;#39;, &amp;#39;new_mail_from&amp;#39;); add_filter(&amp;#39;wp_mail_from_name&amp;#39;, &amp;#39;new_mail_from_name&amp;#39;); function new_mail_from($old) { return &amp;#39;no-reply@rudylee.</description>
+    </item>
+    
+    <item>
+      <title>Fixing rake command error in rails 3.0.7</title>
+      <link>https://blog.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3.0.7/</link>
+      <pubDate>Sun, 29 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3.0.7/</guid>
+      <description>Today I was trying to add rails project to Netbeans 6.9,but suddenly there is a pop up window that said &amp;ldquo;Rake task fecthing failed&amp;rdquo; with bunch of other errors. After that, I tried go to my application folder and try to run the rake command
+1  rake -D   However I got this error
+1 2 3 4 5  rudy@rudy-laptop:~/www/depot$ rake -D rake aborted! undefined method `task&amp;#39; for #&amp;lt;depot::application:0x91fa9c4&amp;gt; (See full trace by running task with --trace)   After a little bit research, I found that I have to uninstall my rake 0.</description>
+    </item>
+    
+    <item>
+      <title>Make wordpress using the latest jQuery</title>
+      <link>https://blog.rudylee.com/blog/2011/05/24/make-wordpress-using-the-latest-jquery/</link>
+      <pubDate>Tue, 24 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/05/24/make-wordpress-using-the-latest-jquery/</guid>
+      <description>I just copied this from another website, put it here just in case that I forgot.
+1 2 3 4 5  if( !is_admin()){ wp_deregister_script(&amp;#39;jquery&amp;#39;); wp_register_script(&amp;#39;jquery&amp;#39;, (&amp;#34;http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&amp;#34;), false, &amp;#39;&amp;#39;); wp_enqueue_script(&amp;#39;jquery&amp;#39;); }   Put this snippet to functions.php file in your theme folder ( eg : wp-content/theme/whatever/functions.php )</description>
+    </item>
+    
+    <item>
+      <title>Apache GeoIP</title>
+      <link>https://blog.rudylee.com/blog/2011/04/13/apache-geoip/</link>
+      <pubDate>Wed, 13 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/04/13/apache-geoip/</guid>
+      <description>Apache GeoIP is an apache module for detecting your visitor&amp;rsquo;s IP and block/redirect them to another website. Installing and configuring GeoIP is very easy in Ubuntu. Here are the steps :
+1.Install the Apache GeoIP module and restart apache webserver
+1 2  sudo apt-get install libapache2-geoip sudo /etc/init.d/apache2 restart   2.Create the .htaccess file and put in your webroot folder / website folder
+1 2 3 4 5 6  GeoIPEnable On # Redirect one country RewriteEngine on RewriteCond %{ENV:GEOIP_COUNTRY_CODE} ^AU$ RewriteRule ^(.</description>
+    </item>
+    
+    <item>
+      <title>Photo Box</title>
+      <link>https://blog.rudylee.com/blog/2011/03/16/photo-box/</link>
+      <pubDate>Wed, 16 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/03/16/photo-box/</guid>
+      <description>Photo Box / Photo Booth is a booth( usually ) that is used to take photo. This PB ( Photo Box ) is very popular in Indonesia especially for teenagers and couples. One of the factors that make it so popular is because people can find it in almost all shopping malls. In Indonesia, shopping malls have become a major part for urban people. Some research found that shopping malls are well-known as the center of entertainments, shopping, and place to socialize among people in Indonesia.</description>
+    </item>
+    
+    <item>
+      <title>Good, and you ? yourself ?</title>
+      <link>https://blog.rudylee.com/blog/2011/02/12/good-and-you-yourself/</link>
+      <pubDate>Sat, 12 Feb 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/02/12/good-and-you-yourself/</guid>
+      <description>One day at office : My Boss : Hey Rudy, how is your weekend ? Me : Good ! My Boss : ( silence&amp;hellip; ). My Boss : ( after 5 secs ) Good, so how is bla2&amp;hellip;
+Another day when answering phone call from my boss : My Boss : Hi Rudy, how are you ? Me : Good ! My Boss and me : ( silence&amp;hellip; ). My Boss : ( after 5 secs ) Good, I want you to bla2&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Hello World !</title>
+      <link>https://blog.rudylee.com/blog/2011/01/30/hello-world/</link>
+      <pubDate>Sun, 30 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/01/30/hello-world/</guid>
+      <description>It&amp;rsquo;s already the end of January and I haven&amp;rsquo;t posted anything yet this month. Thus I have to write something today after postponing it for days. For the last few weeks I was trying to adapt with new atmosphere. The feel is almost the same when I was moving to Jakarta from Pekanbaru, because basically moving to another place mean that you have to leave your comfort zone to another war zone.</description>
+    </item>
+    
+    <item>
+      <title>Pak Aking</title>
+      <link>https://blog.rudylee.com/blog/2010/12/22/pak-aking/</link>
+      <pubDate>Wed, 22 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/12/22/pak-aking/</guid>
+      <description>Pak Aking adalah seorang supir mobil pickup tahun 1984 yang hari ini membantu saya mengantarkan barang-barang ke ekspedisi di kapuk kamal raya. Lahir di jakarta sekitar tahun 1960an, berperawakan kurus, murah senyum dan suka ngobrol.
+Perkenalan kami bermula ketika teman saya, Hamdi memberikan nomor hp Pak Aking kepada saya. Bukan karena saya suka daun tua, pecinta sesama atau sedang haus akan belaian dan istilah-istilah lainnya tapi murni karena saya membutuhkan jasa Pak Aking.</description>
+    </item>
+    
+    <item>
+      <title>Fixed static image path in Javascript using CakePHP</title>
+      <link>https://blog.rudylee.com/blog/2010/11/10/fixed-static-image-path-in-javascript-using-cakephp/</link>
+      <pubDate>Wed, 10 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/11/10/fixed-static-image-path-in-javascript-using-cakephp/</guid>
+      <description>Today I was encountered a problem within the static path for images in my Javascript file. So this was a design that given by my friend Budi, and he using a Jquery slider plugin in his design. Here are the original Javascript file that he gave me :
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143  // set up horizontal scroll var setupFeaturedBoxes = function () { var buttons = { previous: { enabled: &amp;#39;/img/arrow1-left.</description>
+    </item>
+    
+    <item>
+      <title>Pengangguran</title>
+      <link>https://blog.rudylee.com/blog/2010/10/31/pengangguran/</link>
+      <pubDate>Sun, 31 Oct 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/10/31/pengangguran/</guid>
+      <description>It was my first job and it was the best. Satu kalimat itulah yang dapat gwa katakan setelah gwa resmi menjadi pengangguran.
+Tepat satu setengah tahun gwa bekerja di IT Directorate Binus University sebagai Network Controller ( yah walaupun skill networknya level teri tapi tetep labelnya Network Controller ) dan hari jumat kemarin ( tanggal 29 Oktober 2010 ) adalah hari terakhir gwa bekerja di sana.
+Hari terakhir di kantor diwarnai dengan isak tangis orang-orang yang seakan-akan tidak percaya bahwa gwa akan pergi meninggalkan mereka.</description>
+    </item>
+    
+    <item>
+      <title>Redcar : Textmate alike editor</title>
+      <link>https://blog.rudylee.com/blog/2010/09/30/redcar-textmate-alike-editor/</link>
+      <pubDate>Thu, 30 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/09/30/redcar-textmate-alike-editor/</guid>
+      <description>It&amp;rsquo;s been a long time since the last time I am using e-texteditor as my primary text editor ( e-texteditor is a textmate alike editor for Windows ). And because I decided to use Linux, I have to find another editor and now I ended up using Eclipse. In Linux, obviously, there are several text editor but the features doesn&amp;rsquo;t fit my needs.
+But now there is a new text editor that written in Ruby and runs on JRuby and it&amp;rsquo;s features are inspired by Textmate : Redcar.</description>
+    </item>
+    
+    <item>
+      <title>Add bridge and assign unique IP for each container in OpenVZ</title>
+      <link>https://blog.rudylee.com/blog/2010/08/30/add-bridge-and-assign-unique-ip-for-each-container-in-openvz/</link>
+      <pubDate>Mon, 30 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/08/30/add-bridge-and-assign-unique-ip-for-each-container-in-openvz/</guid>
+      <description>I am writing this tutorial to refresh my mind ( I am not configuring the machine right now ), so forgive me if the explanations are not clear and structured.
+After successfully installed the OpenVZ, you need to configure the IP for the containers. If you are using the built in &amp;ldquo;Venet&amp;rdquo; you will end up making the host as the gateway. In the other words if you traceroute to your container IP, it will going through your host then to your container.</description>
+    </item>
+    
+    <item>
+      <title>Sydney PHP Group</title>
+      <link>https://blog.rudylee.com/blog/2010/08/12/sydney-php-group/</link>
+      <pubDate>Thu, 12 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/08/12/sydney-php-group/</guid>
+      <description>Sydney PHP Group or sydphp is a PHP community in Sydney, Australia. I found the website when I was reading an article in Graham Weldon&amp;rsquo;s blog. Graham is one of the CakePHP core team and also the organisers of Sydney PHP Group.
+From what I read, it&amp;rsquo;s said that they run regular meetings in the city. But when I clicked it, it didn&amp;rsquo;t show any histories or upcoming events ( maybe they not runs it regularly as they said ).</description>
+    </item>
+    
+    <item>
+      <title>First post in August 2010</title>
+      <link>https://blog.rudylee.com/blog/2010/08/11/first-post-in-august-2010/</link>
+      <pubDate>Wed, 11 Aug 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/08/11/first-post-in-august-2010/</guid>
+      <description>Hmm it&amp;rsquo;s August already and that&amp;rsquo;s mean my time in Binus is just two months left. Yeah, my contract will be ended on 31st October ( I hope so :P ). There are so much experiences that I got while working in Binus, not mentioning the technical experiences but more about the life experiences.
+The last 3 weeks I was busy taking my IELTS preparation course, it&amp;rsquo;s teach you to get accustomed to the IELTS test.</description>
+    </item>
+    
+    <item>
+      <title>Bookmark with Delicious</title>
+      <link>https://blog.rudylee.com/blog/2010/07/25/bookmark-with-delicious/</link>
+      <pubDate>Sun, 25 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/07/25/bookmark-with-delicious/</guid>
+      <description>Have you ever heard about delicious ? no no, it&amp;rsquo;s not foods that are delicious but this Delicious.
+Delicious is a web application that allows to do the online bookmarking. If you say online that&amp;rsquo;s mean it&amp;rsquo;s not saved in your computer / laptop / server maybe. So if sometime you need to access your bookmark, you don&amp;rsquo;t have to open your computer or digging your old harddisk, just grab your friend&amp;rsquo;s computer, login to your Delicious and open the bookmark.</description>
+    </item>
+    
+    <item>
+      <title>Installing OpenVZ and WebVZ in Centos 5.5</title>
+      <link>https://blog.rudylee.com/blog/2010/07/20/installing-openvz-and-webvz-in-centos-5.5/</link>
+      <pubDate>Tue, 20 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/07/20/installing-openvz-and-webvz-in-centos-5.5/</guid>
+      <description>OpenVZ is an operating system-level virtualization technology based on the Linux kernel and operating system. OpenVZ allows a physical server to run multiple isolated operating system instances, known as containers, Virtual Private Servers (VPSs), or Virtual Environments (VEs).
+ Now we&amp;rsquo;ll try to install OpenVZ in Centos. OpenVS is an operating system-level VPS so you need to install Host Operating System ( if you are using hardware virtualization like Xen or VMware then you don&amp;rsquo;t have to install an Operating System ).</description>
+    </item>
+    
+    <item>
+      <title>Eclipse Democamps 2010</title>
+      <link>https://blog.rudylee.com/blog/2010/07/11/eclipse-democamps-2010/</link>
+      <pubDate>Sun, 11 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/07/11/eclipse-democamps-2010/</guid>
+      <description>Kemarin tanggal 10 Juli 2010 gwa baru saja ikut Eclipse Democamps 2010. Yah sebenarnya gwa ga tau ini termasuk seminar, meet up atau promosi eclipse tapi berhubung gwa adalah pengguna Eclipse semenjak beberapa bulan lalu maka gwa iseng-iseng datang ke acara ini.
+Perjalanan dimulai dari kosan gwa dengan ditemani sang kekasih yaitu adinda Riani yang imut dan bulat seperti bola ping pong ( nyungsep dolo sebelum kena granat ). Sebenarnya kami rada telat berangkatnya ( kira-kira jam 9:30 ) sementara acaranya jam 10:00 dan ditambah lagi gwa dan riani ga tau jalan sekali kesana.</description>
+    </item>
+    
+    <item>
+      <title>Updating ports in FreeBSD 8.0</title>
+      <link>https://blog.rudylee.com/blog/2010/06/28/updating-ports-in-freebsd-8.0/</link>
+      <pubDate>Mon, 28 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/06/28/updating-ports-in-freebsd-8.0/</guid>
+      <description>Ports is the applications repository in FreeBSD. Unlike Ubuntu that provides you with command &amp;ldquo;apt-get&amp;rdquo;, in FreeBSD you must manually go to the application folder in &amp;ldquo;/usr/ports&amp;rdquo; ( the folder where Ports remain ) and search for the application that you want to install. But what&amp;rsquo;s the differences between you compile it yourself and using ports. The answer is &amp;ldquo;dependencies&amp;rdquo;.
+Enough with the introduction, let&amp;rsquo;s go the main topic. So we are going to update the Ports using cvsup.</description>
+    </item>
+    
+    <item>
+      <title>Copying files between 2 unix servers</title>
+      <link>https://blog.rudylee.com/blog/2010/06/08/copying-files-between-2-unix-servers/</link>
+      <pubDate>Tue, 08 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/06/08/copying-files-between-2-unix-servers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Setting up NFS di Ubuntu</title>
+      <link>https://blog.rudylee.com/blog/2010/06/07/setting-up-nfs-di-ubuntu/</link>
+      <pubDate>Mon, 07 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/06/07/setting-up-nfs-di-ubuntu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Upload file in CakePHP using Media Plugin</title>
+      <link>https://blog.rudylee.com/blog/2010/06/03/upload-file-in-cakephp-using-media-plugin/</link>
+      <pubDate>Thu, 03 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/06/03/upload-file-in-cakephp-using-media-plugin/</guid>
+      <description>There are many solutions to handle file upload in PHP, one of the common solutions is to create a custom action that will check the type of the file, size, validate whether the file name already exists or not, and the last thing is moving the file using move_uploaded_file(). However, it doesn&amp;rsquo;t end when the files are in your server, after that you still need to write a function to delete the files, manipulate it if needed and so on.</description>
+    </item>
+    
+    <item>
+      <title>Maaf karena saya unfollow kamu</title>
+      <link>https://blog.rudylee.com/blog/2010/06/02/maaf-karena-saya-unfollow-kamu/</link>
+      <pubDate>Wed, 02 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/06/02/maaf-karena-saya-unfollow-kamu/</guid>
+      <description>Bulan Juni telah tiba dan tak terasa tahun 2010 sudah berjalan 6 bulan ( bener2 ga terasa sama sekali ). Karena berhubung ini bulan baru maka kembalilah ke rutinitas update blog lagi ( 1 bulan sekali ).
+Hari ini gwa melakukan sebuah dosa besar yaitu UNFOLLOW seorang temen gwa di twitter, mungkin terdengar sedikit lebay dan beraroma alay. Sebelum gwa melakukan dosa tersebut gwa sempat termenung 10 menit sambil ngeliatin tombol unfollow dan berharap tombol itu berubah jadi tombol Mute without Unfollow.</description>
+    </item>
+    
+    <item>
+      <title>Berkenalan</title>
+      <link>https://blog.rudylee.com/blog/2010/05/10/berkenalan/</link>
+      <pubDate>Mon, 10 May 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/05/10/berkenalan/</guid>
+      <description>Sebenarnya gwa sudah sering sih nyamperin orang trus ajak ngomong dan sekedar bertukar cerita, salah satunya yang sering gwa lakukan adalah berbicara dengan supir taksi,supir angkot dan tukang ojek. Banyak cara yang biasanya gwa lakukan untuk memulai pembicaraan, mulai dari tanya ini mobil taksi baru apa kaga, tanya udah berapa lama jadi supir taksi, mengkomentari nama supir taksinya, tanya-tanya soal kerja jadi supir taksi dan banyak hal-hal lainnya.
+Tapi walaupun gwa sudah fasih / sering berkenalan dan ajak ngobrol orang-orang ada satu hal yang masih gwa takuti sampai sekarang yaitu ngajak ngobrol cewe yang kira-kira seumuran.</description>
+    </item>
+    
+    <item>
+      <title>Ngalor ngidul di malam hari</title>
+      <link>https://blog.rudylee.com/blog/2010/04/18/ngalor-ngidul-di-malam-hari/</link>
+      <pubDate>Sun, 18 Apr 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/04/18/ngalor-ngidul-di-malam-hari/</guid>
+      <description>Mengumpulkan mood untuk menulis blog itu tidaklah mudah, dan hal itu sangat terbukti di postingan gwa kali ini. Gwa udah ga bisa hitung berapa kali gwa menekan tombol logout di kanan atas karena tiba-tiba blank alias ga tau musti nulis apa, dan gwa juga ga bisa ngitung berapa banyak draft post yang gwa delete karena gwa tiba2 kata-kata yang seliweran di kepala hilang seperti kentut yang menguap.
+Entah sejak kapan gwa sebegitu memperhatikan setiap kata yang gwa tulis di blog ( padahal yang baca aja kaga ada ), mungkin ini efek karena gwa kebanyakan baca blog orang-orang melan kali ya&amp;hellip; gwa begitu tercengang dengan bagaimana caranya mengemas setiap kata-kata, setiap paragraf menjadi sesuatu yang bermakna sehingga bisa membuat gwa yang antara sedang ngantuk + sedikit melan jadi ikut2an pengen nulis sesuatu yang &amp;ldquo;menggetarkan&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Capo buatan sendiri atau emergency capo</title>
+      <link>https://blog.rudylee.com/blog/2010/03/20/capo-buatan-sendiri-atau-emergency-capo/</link>
+      <pubDate>Sat, 20 Mar 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/03/20/capo-buatan-sendiri-atau-emergency-capo/</guid>
+      <description>Beberapa hari ini bawaannya ngantuk terus neh, udah minum kopi tapi efeknya cuma sebentar aja. Keknya gara2 efek gwa tidur pagi trus neh dan ga olah raga 1 minggu ini. Tapi sekarang lagi seger abis meneguk kopi nescafe classic yang kata temen kerja gwa rasanya kek coklat ( sapa suruh masukin 1 sendok makan, 1 sendok teh aja dah asem ).
+Kali ini gwa akan cerita tentang Capo. Pada blom tau Capo ?</description>
+    </item>
+    
+    <item>
+      <title>Git free revision control</title>
+      <link>https://blog.rudylee.com/blog/2010/02/28/git-free-revision-control/</link>
+      <pubDate>Sun, 28 Feb 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/02/28/git-free-revision-control/</guid>
+      <description>Sambil nungguin compile e-texteditor yang entah kelar kapan gwa mo cerita-cerita dikit tentang mainan baru gwa, yaitu Git. Mengutip sedikit tentang Git dari wikipedia :
+ Git is a free distributed revision control, or software source code management project with an emphasis on being fast. Git was initially designed and developed by Linus Torvalds for Linux kernel development.
+ Yah jadi intinya Git adalah sebuah revision control yang biasa digunakan project-project open source untuk mendeteksi perubahan-perubahan yang dilakukan pada project mereka.</description>
+    </item>
+    
+    <item>
+      <title>Install PHP-FPM di FreeBSD dengan web server Nginx</title>
+      <link>https://blog.rudylee.com/blog/2010/01/27/install-php-fpm-di-freebsd-dengan-web-server-nginx/</link>
+      <pubDate>Wed, 27 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/01/27/install-php-fpm-di-freebsd-dengan-web-server-nginx/</guid>
+      <description>Setelah mengalami beberapa problem dengan web server Binus Access yang menggunakan Nginx, akhirnya gwa memutuskan untuk mengganti php-cgi menjadi php-fpm.
+Untuk mengubah php-cgi menjadi php-fpm ternyata tidak lah sulit, apalagi dengan adanya fitur ports dari FreeBSD. Pertama-tama cukup download file ports php-fpm dari websitenya php-fpm .
+Untuk versi nya sendiri bisa disesuaikan dengan versi php anda, kalau gwa sih menggunakan versi php 5.2.10. Jadi hal pertama yang gwa lakukan adalah mendownload php-fpm versi 5.</description>
+    </item>
+    
+    <item>
+      <title>Logs Rotate Nginx di FreeBSD</title>
+      <link>https://blog.rudylee.com/blog/2010/01/13/logs-rotate-nginx-di-freebsd/</link>
+      <pubDate>Wed, 13 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/01/13/logs-rotate-nginx-di-freebsd/</guid>
+      <description>File logs sering kali menjadi sebuah masalah ketika ukurannya menjadi semakin besar dan memakan sebagian besar hard disk server kita, tetapi di sisi lain file logs juga berguna untuk mencari masalah yang terjadi di server kita.
+Gwa juga sempat mengalami beberapa masalah dengan file logs nginx di server FreeBSD. Permasalahan bermula dikarenakan gwa salah mengeset ukuran dari folder &amp;lsquo;/var/logs&amp;rsquo; yang hanya berukuran 2 Gb saja ( padahal file logs ukurannya bisa sampai 10 Gb keatas ).</description>
+    </item>
+    
+    <item>
+      <title>&#39;Lithium atau Li3 : PHP 5.3&#43;&#43; Framework&#39;</title>
+      <link>https://blog.rudylee.com/blog/2009/12/27/lithium-atau-li3-php-5.3-framework/</link>
+      <pubDate>Sun, 27 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/12/27/lithium-atau-li3-php-5.3-framework/</guid>
+      <description>Setelah 3 hari dicekcoki dengan lagu Boyce Avenue yang diputar berulang-ulang di foobar akhirnya gwa jadi ada semangat buat update blog. Sebenarnya pengen nulis tentang Ruby on Rails dan e-TextEditor tapi keknya lebih pengen tulis tentang Lithium dulu deh.
+Jadi apakah Lithium itu ? merk baterai ? merk baju ? merk mobil ? merk parfum ? atau merk deterjen ? jelas saja bukan. Lithium yang saya gwa maksud disini adalah salah satu framework PHP yang tersohor sekali seantero jagad raya, sampe presiden SBY aja kalo pidato dicoding dolo pake neh framework.</description>
+    </item>
+    
+    <item>
+      <title>Ruby on Rails in Kubuntu 9.04</title>
+      <link>https://blog.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-9.04/</link>
+      <pubDate>Mon, 23 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-9.04/</guid>
+      <description>Beberapa hari ini gwa disibukkan mencoba menginstall Ruby on Rails ( RoR ). Sebenarnya sudah cukup lama pengen coba-coba Ruby on Rails, tapi sekarang baru ada semangat sama ada waktu buat nyoba-nyoba.
+Menginstall Ruby on Rails ini dapat dibilang cukup memakan banyak waktu dikarenakan gwa menghabiskan 1 harian HANYA untuk install Kubuntu doank ( gara2 cd rom yang ga jelas ).
+Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan dalam waktu 1 hari ) gwa mulai menginstall Ruby on Rails.</description>
+    </item>
+    
+    <item>
+      <title>Group select box di CakePHP</title>
+      <link>https://blog.rudylee.com/blog/2009/11/02/group-select-box-di-cakephp/</link>
+      <pubDate>Mon, 02 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/11/02/group-select-box-di-cakephp/</guid>
+      <description>Grouping di dalam select box adalah hal yang gampang ketika kita menggunakan codingan php biasa, tetapi kalau sudah masuk ke dalam codingan CakePHP kita harus banyak membaca documentation untuk teknik2nya, tickets jika ada yang pernah menanyakan hal yang sama dan tentu saja API agar kita tahu fungsi dari method yang akan kita pakai.
+Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam gambar di bawah ini : [caption id=&amp;ldquo;&amp;rdquo; align=&amp;ldquo;alignnone&amp;rdquo; width=&amp;ldquo;217&amp;rdquo; caption=&amp;ldquo;CakePHP Group Select&amp;rdquo;][/caption]</description>
+    </item>
+    
+    <item>
+      <title>Membuat image sebagai link di CakePHP</title>
+      <link>https://blog.rudylee.com/blog/2009/11/02/membuat-image-sebagai-link-di-cakephp/</link>
+      <pubDate>Mon, 02 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/11/02/membuat-image-sebagai-link-di-cakephp/</guid>
+      <description>Mungkin kita pernah membuat sebuah gambar menjadi sebuah link seperti untuk banner registrasi atau banner untuk iklan dan sebagainya.
+Jika cara biasanya atau konvesional maka kita tinggal membuat seperti ini :
+&amp;lt;a href=&amp;quot;http://xxx&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;path/images&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;  Sementara dalam CakePHP ada cara yang lebih gampang atau mungkin bagi beberapa orang lebih susah, yaitu :
+link($html-&amp;gt;image(&#39;/images/btn-register.png&#39;), array(&#39;controller&#39; =&amp;gt; &#39;users&#39;,&#39;action&#39; =&amp;gt; &#39;add&#39;),array(&#39;escape&#39; =&amp;gt; false)) ?&amp;gt; atau kira-kira susunannya seperti ini link($html-&amp;gt;image(&#39;path-ke-image), array(&#39;controller&#39; =&amp;gt; &#39;nama-controller&#39;,&#39;action&#39; =&amp;gt; &#39;nama-action&#39;),array(&#39;escape&#39; =&amp;gt; false)) ?</description>
+    </item>
+    
+    <item>
+      <title>Passing parameters di paging CakePHP</title>
+      <link>https://blog.rudylee.com/blog/2009/10/20/passing-parameters-di-paging-cakephp/</link>
+      <pubDate>Tue, 20 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/10/20/passing-parameters-di-paging-cakephp/</guid>
+      <description>Sekian lama gwa ga sentuh2 CakePHP lagi ternyata sekarang ada kesempatan lagi buat megang CakePHP, ternyata setelah lama ga grepe2 CakePHP banyak codingan dan syntax2 yang gwa lupa dan salah satunya ada passing parameter ketika melakukan paging dan juga melimit jumlah row setiap halamannya.
+jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. Ceritanya gwa punya method dalam controller seperti ini.
+1 2 3 4 5 6 7 8 9  function index($id = null) { if(!</description>
+    </item>
+    
+    <item>
+      <title>Hotlinking protection di web server Apache</title>
+      <link>https://blog.rudylee.com/blog/2009/10/19/hotlinking-protection-di-web-server-apache/</link>
+      <pubDate>Mon, 19 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/10/19/hotlinking-protection-di-web-server-apache/</guid>
+      <description>Hari ini gwa disibukkan dengan berbagai banyak kerjaan, entah kenapa kalau masuk kantor itu kerjaan tiba-tiba aja datang bertubi-tubi. Tapi kerjaan utama yang gwa lakukan hari ada memproteksi server Bee Watch.
+Yah, seperti yang kita ketahui bersama bahwa Bee Watch sangat menjadi incaran untuk di-embed ke web-web marketing kelas teri. Dimana siaran Bee Watch ( TV Online) digunakan sebagai penarik traffic ke website mereka dan di website mereka diletakkan bermacam-macam iklan entah darimana datangnya.</description>
+    </item>
+    
+    <item>
+      <title>Lagi pengen update blog !</title>
+      <link>https://blog.rudylee.com/blog/2009/10/07/lagi-pengen-update-blog/</link>
+      <pubDate>Wed, 07 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/10/07/lagi-pengen-update-blog/</guid>
+      <description>Yap, setelah sekian lama ga update blog akhirnya hari ini, malam ini, jam ini, menit ini dan detik ini gwa memutuskan untuk update blog. Setelah melewati satu hari yang lumayan sibuk dan kerjaan yang rasanya ga abis2nya akhirnya gwa bisa meluangkan waktu untuk update blog ( sebelum memulai pekerjaan lagi tentunya ).
+Dengan ditemani oleh biskuit Good Time yang udah nangkring di sebelah keyboard gwa ( yang entah sudah dari kapan dibeli tapi ga pernah dimakan ) mulailah gwa bercerita tidak jelas ( biar kesannya ga kosong aja dan ga up to date ini blog ).</description>
+    </item>
+    
+    <item>
+      <title>Memories...</title>
+      <link>https://blog.rudylee.com/blog/2009/10/07/memories.../</link>
+      <pubDate>Wed, 07 Oct 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/10/07/memories.../</guid>
+      <description>Tanpa tersengaja tiba2 foobar di komputer gwa memainkan lagu maroon 5 dengan judul she will be loved, dan entah kenapa setiap gwa mendengar lagu itu gwa selalu teringat akan saat2 gwa berada di dalam mobil saudara gwa dan dalam perjalan pulang ke rumah mereka ketika gwa baru 1 minggu di Jakarta. Yah gwa baru 1 minggu di Jakarta, masih culunnya, masih cupunya, masih manjanya, masib bodohnya, dan masih2 yang lainnya.</description>
+    </item>
+    
+    <item>
+      <title>Install Flash Media Server 3 di Ubuntu 9.04</title>
+      <link>https://blog.rudylee.com/blog/2009/09/01/install-flash-media-server-3-di-ubuntu-9.04/</link>
+      <pubDate>Tue, 01 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/09/01/install-flash-media-server-3-di-ubuntu-9.04/</guid>
+      <description>Hari ini gwa mencoba menginstall ulang Flash Media Server 3 untuk TV Streaming ( Bee Watch ) pada Ubuntu 9.04. Jadi proses install dimulai dari install Ubuntu 9.04 yang memakan waktu 1 hari dikarenakan hard disk yang rusak ( untung udah ganti dengan yang baru ).
+Nah jadi setelah setting-setting sana sini mulailah install FMS ( Flash Media Server ), dimulai dari copy installer FMS 3 ke server trus mulai deh extract dengan menggunakan perintah</description>
+    </item>
+    
+    <item>
+      <title>Melihat pemakaian hard disk di Linux/Unix</title>
+      <link>https://blog.rudylee.com/blog/2009/08/31/melihat-pemakaian-hard-disk-di-linux/unix/</link>
+      <pubDate>Mon, 31 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/08/31/melihat-pemakaian-hard-disk-di-linux/unix/</guid>
+      <description>Jika kita menggunakan operating system Windows pasti dapat dengan mudahnya mencek pemakaian hard disk komputer kita melalui My Computer. Tapi bagaimana jika kita harus mengecek pemakaian hard disk ketika kita diharuskan memakai Linux Server atau Unix Server.
+Untuk mengecek pemakaian hard disk di Linux/Unix kita dapat menggunakan beberapa perintah yaitu : ( gwa mengetesnya di server Sun Solaris )
+1  df   jika kita menggunakan perintah df maka akan keluar tampilan kira-kira seperti ini :</description>
+    </item>
+    
+    <item>
+      <title>My blog top search terms - CakePHP</title>
+      <link>https://blog.rudylee.com/blog/2009/08/16/my-blog-top-search-terms-cakephp/</link>
+      <pubDate>Sun, 16 Aug 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/08/16/my-blog-top-search-terms-cakephp/</guid>
+      <description>Setelah sekian lama ga update ama buka blog gwa sendiri akhirnya gwa punya waktu buat update blog lagi. Seperti biasa hal yang gwa lakukan adalah mengecek StatPress gwa untuk melihat berapa banyak kunjungan yang ada ke blog gwa dan hasilnya ternyata sangat mengecewakan ( hiks pengunjung semakin berkurang ). Yah mungkin gara-gara gwa jarang update blog lagi sih.
+Tapi kalau gwa telusuri dari StatPress, ternyata ada satu hal yang menarik yaitu top search terms ( kata kunci yang dicari di search engine ) di blog gwa adalah CakePHP ( entah cari tutorial, entah cari arti CakePHP ).</description>
+    </item>
+    
+    <item>
+      <title>Koneksi ke Microsoft SQL Server dengan PHP di FreeBSD</title>
+      <link>https://blog.rudylee.com/blog/2009/07/23/koneksi-ke-microsoft-sql-server-dengan-php-di-freebsd/</link>
+      <pubDate>Thu, 23 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/07/23/koneksi-ke-microsoft-sql-server-dengan-php-di-freebsd/</guid>
+      <description>Beberapa hari yang lalu gwa melakukan perpindahan server Binus Access ke server baru yang menggunakan FreeBSD ( sebelumnya menggunaka Ubuntu Server 8.04 ). Setelah melakukan konfigurasi-konfigurasi dan beberapa persiapan yaitu :
+ Backup database dan file website Binus Access
+ Konfigurasi Nginx ( web servernya ganti Nginx ) agar bisa membaca mod_rewrite
+ Setting NFS dari server asterix ke server Binus Access
+ Setting IP
+ Beberapa settingan kecil lainnya</description>
+    </item>
+    
+    <item>
+      <title>Setting mod_rewrite atau SEF Joomla di Nginx</title>
+      <link>https://blog.rudylee.com/blog/2009/07/18/setting-mod_rewrite-atau-sef-joomla-di-nginx/</link>
+      <pubDate>Sat, 18 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/07/18/setting-mod_rewrite-atau-sef-joomla-di-nginx/</guid>
+      <description>Yap sambil menunggu server World of Warcraft yang tak kunjung up-up gwa buat tutorial sedikit tentang setting mod_rewrite Joomla di Nginx. Sudah pada tau Nginx ? kalau belum tau gwa kasih tau dah. Nginx itu adalah salah satu web server seperti Apache, Lighttpd, Apache Tomcat, Jetty, IIS, Zeus dan lainnya. Nginx ini ( dibacanya Engine X ) kabarnya sih lebih cepat dan stabil dibandingkan Apache yang sudah tersohor sebagai server PHP.</description>
+    </item>
+    
+    <item>
+      <title>Hal yang paling menyenangkan dalam membuat sebuah aplikasi</title>
+      <link>https://blog.rudylee.com/blog/2009/07/09/hal-yang-paling-menyenangkan-dalam-membuat-sebuah-aplikasi/</link>
+      <pubDate>Thu, 09 Jul 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/07/09/hal-yang-paling-menyenangkan-dalam-membuat-sebuah-aplikasi/</guid>
+      <description>Satu hal yang paling menyenangkan dalam membuat sebuah aplikasi adalah melihat aplikasi yang kita buat digunakan dan ternyata sangat berguna bagi orang banyak. Ketika orang yang menggunakan aplikasi kita mengatakan bagaimana begitu terbantunya mereka dengan aplikasi yang telah kita buat, begitu senangnya mereka menggunakan layanan yang kita berikan, begitu sukanya mereka dengan design website yang kita buat, itu adalah hal-hal yang rasanya tidak ternilaikan. Hal tersebut lebih menyenangkan daripada melihat uang hasil dari pengerjaan website masuk ke rekening kita.</description>
+    </item>
+    
+    <item>
+      <title>I love Jakarta.... at Night</title>
+      <link>https://blog.rudylee.com/blog/2009/06/30/i-love-jakarta....-at-night/</link>
+      <pubDate>Tue, 30 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/06/30/i-love-jakarta....-at-night/</guid>
+      <description>Gila&amp;hellip;. entah kenapa gwa suka banget kalo jalan2 di Jakarta pas malam hari, entah itu naik busway, naik bus, naik angkot, tetep aja gwa suka banget&amp;hellip; rasanya kalau jalan-jalan pas di malam hari itu beda aja, seakan-akan kita melihat Jakarta dari sisi yang berbeda. Satu hal yang membuat gwa suka adalah &amp;ldquo;SEPI&amp;rdquo; gila enak banget duduk di angkot sendirian sambil memperhatikan gemerlap lampu malam di Jakarta. Gwa rasa kalau gwa duduk di dalam angkot begitu sambil nulis blog bisa jadi 1 novel kali ya ( lebay )&amp;hellip; rasanya gimana gitu kalau duduk di angkot, sudah lah sepi, sendiri, dingin, tenang, lampu remang-remang ( kan lampu angkot + lampu jalanan warna kuning gitu ), beh suasananya benar-benar membuat larut dah dalam lamunan&amp;hellip; Mungkin gwa termasuk manusia malam kali ya, rasanya kalau dah malam hari rasanya lebih semangat, lebih punya banyak ide dan lebih positif thinking&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Mas, nasinya 1/4 aja</title>
+      <link>https://blog.rudylee.com/blog/2009/06/22/mas-nasinya-1/4-aja/</link>
+      <pubDate>Mon, 22 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/06/22/mas-nasinya-1/4-aja/</guid>
+      <description>Sudah 2 kali gwa makan di warteg dekat kosan gwa, dan sudah 2 kali juga gwa dilayanin oleh mas-mas yang sama. Biasanya sih kalau makan pada saat malam hari yang ngeladenin itu mbak-mbak.
+Nah, sudah 2 kali gwa makan di pagi hari dan dilayani oleh mas-mas ini, sebut saja mas bunga. Biasanya kalau pagi hari itu kan rasanya perut itu kenyang ( keiisi setengah ama angin kali ). Jadi pertama kali gwa bilang ke mas bunga ini supaya nasinya dikasih setengah aja dan mas bunga ini bilang &amp;ldquo;Iya&amp;hellip;&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Single Sign On, CAS, Josso, Crowd, OpenID, dan OAuth</title>
+      <link>https://blog.rudylee.com/blog/2009/06/04/single-sign-on-cas-josso-crowd-openid-dan-oauth/</link>
+      <pubDate>Thu, 04 Jun 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/06/04/single-sign-on-cas-josso-crowd-openid-dan-oauth/</guid>
+      <description>Karena banyak yang minta dikirimin skripsi, sekarang udah gwa upload skripsi gwa. Silakan di download Klik Disini
+Lagi pengen update blog, tapi bingung musti ngisi apa&amp;hellip; pengen curhat tapi nanti pada tanya2 lagi&amp;hellip; ya sudah lah daripada cerita-cerita ga jelas bagusan bahas tentang single sign on atau SSO&amp;hellip;
+Single sign on ini merupakan topik skripsi gwa tahun lalu&amp;hellip; yah bisa dibilang semester kemarin secara gwa sedang menunggu wisuda hari sabtu ini&amp;hellip; ( sambil menunggu bak cang juga dari pekanbaru&amp;hellip; ea ).</description>
+    </item>
+    
+    <item>
+      <title>Blank page pada CakePHP</title>
+      <link>https://blog.rudylee.com/blog/2009/05/18/blank-page-pada-cakephp/</link>
+      <pubDate>Mon, 18 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/05/18/blank-page-pada-cakephp/</guid>
+      <description>Hari ini gwa mencoba memindahkan sebuah project yang dibuat dengan menggunakan CakePHP ke komputer lain. Persiapan standard seperti mencopy folder project dan nge-dump file database sudah dilakukan. Trus file-file tersebut dimasukkan ke dalam flash disk untuk dipindahkan.
+Tetapi ternyata semua tidak berjalan mulus seperti yang gwa kira. Setelah selesai mengcopy file tersebut ke dalam komputer yang lain, ketika ingin membuka halaman cakephp ternyata hanya halaman kosong saja yang terbuka.
+Pertama kali kecurigaan dimulai dari webserver dan settingan PHP.</description>
+    </item>
+    
+    <item>
+      <title>Forrest Gump</title>
+      <link>https://blog.rudylee.com/blog/2009/05/09/forrest-gump/</link>
+      <pubDate>Sat, 09 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/05/09/forrest-gump/</guid>
+      <description>Forrest gump adalah film tahun 1994 dan gwa baru itu setelah selesai menontonnya. Sebuah film yang bagus, menyentuh, well composed, entertaining, pokoknya bagus deh. Yah mungkin semua pada bakal bilang &amp;ldquo;gila, kemane aje loe&amp;hellip; baru nonton sekarang !&amp;rdquo;. Jujur gwa juga ga niat nonton pada awalnya&amp;hellip; Jadi ceritanya gwa lagi nyari-nyari film buat didownload kemarin malam ( di indowebster ) nah ketemu lah ini Forrest Gump. Pertama lihat gwa kira ini film komedi soalnya ada tulisan Tom Hanks dan ada tulisan &amp;lsquo;Forrest&amp;rsquo; nya ( kirain film-film perang yang lucu-lucu gitu ), jadi tanpa pikir panjang di download la ini film.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 9.04 Jaunty Jackalope</title>
+      <link>https://blog.rudylee.com/blog/2009/04/27/ubuntu-9.04-jaunty-jackalope/</link>
+      <pubDate>Mon, 27 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/04/27/ubuntu-9.04-jaunty-jackalope/</guid>
+      <description>Hmmm sebenarnya hari ini lagi malas nulis-nulis sesuatu&amp;hellip; Badan ini rasanya malas banget, pikiran lagi ruwet banget&amp;hellip; seperti ada yang muter-muter di dalam kepala, mungkin gwa lagi ngidam kali ya ( halah ! )
+Yah intinya hari ini rasanya madesu (masa depan suram) sekali&amp;hellip; mungkin kata populernya lagi melan mungkin ya&amp;hellip; Pokoknya hari ini bawaannya malas banget dan merasa gimana gitu&amp;hellip; yah mungkin besok lebih baik lagi deh rasanya&amp;hellip;
+Nah makanya untuk menghilangkan rasa madesu ini, iseng-iseng pengen review sedikit tentang linux versi terbaru ( tadi sih sempat mikir lebih baik main dota daripada review ubuntu 9.</description>
+    </item>
+    
+    <item>
+      <title>Review CakePHP</title>
+      <link>https://blog.rudylee.com/blog/2009/04/18/review-cakephp/</link>
+      <pubDate>Sat, 18 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/04/18/review-cakephp/</guid>
+      <description>Setelah sekian lama ga update blog, akhirnya update blog lagi deh&amp;hellip; Untuk kali ini ga bakalan cerita-cerita yang aneh-aneh ataupun yang lucu-lucu&amp;hellip; soalnya emang lagi ga ada kejadian yang benar-benar &amp;ldquo;klik&amp;rdquo; yang bisa diceritakan ( beberapa hari ini semua terasa semu hix ).
+Jadi kali ini gwa akan melakukan review terhadap framework PHP yang sudah gwa pelajari kurang lebih 5 bulan lamanya yaitu CakePHP. Selama 5 bulan ini gwa lewati dengan mempelajari CakePHP, dari baca ebook, nonton video tutorial sampai tanya-tanya sama orang-orang di channel #cakephp di irc.</description>
+    </item>
+    
+    <item>
+      <title>Ibu-ibu dan yang lainnya</title>
+      <link>https://blog.rudylee.com/blog/2009/03/30/ibu-ibu-dan-yang-lainnya/</link>
+      <pubDate>Mon, 30 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/03/30/ibu-ibu-dan-yang-lainnya/</guid>
+      <description>Hari ini untuk kesekian kalinya jalan-jalan ke kalideres&amp;hellip; sebenarnya ga jalan-jalan juga sih&amp;hellip; yah lebih tepatnya pergi melapor ke kalideres&amp;hellip;
+Dan seperti yang terjadi pada setiap kalinya gwa pergi kesana&amp;hellip; Dalam perjalanan pasti gwa mengalami hal-hal yang menarik.
+Seperti contohnya beberapa minggu yang lalu ketika gwa sedang dalam perjalanan ke kalideres&amp;hellip; pas sampai di terminal grogol, nah gwa lagi pengen naik tangga neh ke busway grogol&amp;hellip; Pada saat gwa lagi naik tangga gwa ngelihat seorang ibu lagi kesusahan menaiki tangga jembatan penyebrangan ( FYI jembatan penyebrangan grogol memang terkenal dengan curamnya )&amp;hellip; Nah jadi dengan inisiatif yang tinggi gwa pun menawarkan bantuan kepada ibu tersebut ( bukan gendong ya, enak aja )&amp;hellip; yah jadi gwa menawarkan kepada ibu tersebut untuk membawakan tasnya ( soalnya kelihatan berat banget bawa tasnya, padahal pas gwa angkat ringan )&amp;hellip; Yah mungkin karena ibu tersebut melihat wajah gwa yang alim dan baik, maka dengan senang hati dia memberikan tas tersebut kepada gwa&amp;hellip; Dan akhirnya gwa sukses membawakan tas ibu itu sampai ke atas jembatan penyebrangan&amp;hellip; Tapi sayang sekali kami harus berpisah di depan tangga menuju busway ( karena gwa mo naik busway, sementara sang ibu pengen ke seberang )&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>the &#39;Bokap&#39; dan Kopi Susu</title>
+      <link>https://blog.rudylee.com/blog/2009/03/22/the-bokap-dan-kopi-susu/</link>
+      <pubDate>Sun, 22 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/03/22/the-bokap-dan-kopi-susu/</guid>
+      <description>Hari ini untuk kesekian kali nya gwa dapat seminar gratis / ceramah gratis / arahan gratis / masukan gratis / nasehat gratis atau entah apalah namanya.
+Hari ini juga, untuk kesekian kalinya gwa datang ke rumah the &amp;lsquo;Bokap&amp;rsquo; ( panggilan sayang buat seseorang wakakaka ). Yah bagi yang ga tau berarti itu deritamu, soalnya gwa juga ga mau bahasa siapa the &amp;lsquo;Bokap&amp;rsquo; tapi lebih ke ceramah gratis yang diberikan oleh beliau ( jiah pake2 beliau ).</description>
+    </item>
+    
+    <item>
+      <title>Gwa menyerah... udah cukup... ga tahan lagi...</title>
+      <link>https://blog.rudylee.com/blog/2009/03/20/gwa-menyerah...-udah-cukup...-ga-tahan-lagi.../</link>
+      <pubDate>Fri, 20 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/03/20/gwa-menyerah...-udah-cukup...-ga-tahan-lagi.../</guid>
+      <description>gwa menyerah&amp;hellip; sudah cukup selama ini gwa dipermainkan&amp;hellip; dibohongi&amp;hellip; dianggap remeh&amp;hellip;
+emang apa salah gwa ? apa salah gwa ? apa ?
+udah gwa ikutin semua perintah loe&amp;hellip; tapi tetep aja&amp;hellip; gwa tetep aja salah&amp;hellip; kenapa ?
+kenapa ?
+ya sudah la ga penting gwa salah apa&amp;hellip;
+ya penting sekarang gwa udah ketemu solusinya&amp;hellip;
+yap akhirnya gwa menyerah pakai cool captcha buat shoutbox gwa&amp;hellip; lebih baik gwa pakai validasi angka yang dirandom dengan function php&amp;hellip; daripada gwa keburu botak&amp;hellip; gara2 dibohongi dan dipermainkan&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Jangan &#39;ngambek&#39; berkepanjangan terhadap org yg kamu kasihi</title>
+      <link>https://blog.rudylee.com/blog/2009/03/10/jangan-ngambek-berkepanjangan-terhadap-org-yg-kamu-kasihi/</link>
+      <pubDate>Tue, 10 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/03/10/jangan-ngambek-berkepanjangan-terhadap-org-yg-kamu-kasihi/</guid>
+      <description>Bagi yg sudah pernah baca,luangkan waktu untuk baca sekali lagi Ini adalah cerita sebenarnya ( diceritakan oleh Lu Di dan di edit oleh Lian Shu Xiang )
+Sebuah salah pengertian yg mengakibatkan kehancuran sebuah rumah tangga.Tatkala nilai akhir sebuah kehidupan sudah terbuka,tetapi segalanya sudah terlambat. Membawa nenek utk tinggal bersama menghabiskan masa tuanya bersama kami,malah telah menghianati ikrar cinta yg telah kami buat selama ini,setelah 2 tahun menikah,saya dan suami setuju menjemput nenek di kampung utk tinggal bersama</description>
+    </item>
+    
+    <item>
+      <title>Cowok menang milih,cewek menang nolak</title>
+      <link>https://blog.rudylee.com/blog/2009/03/09/cowok-menang-milihcewek-menang-nolak/</link>
+      <pubDate>Mon, 09 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/03/09/cowok-menang-milihcewek-menang-nolak/</guid>
+      <description>Wah ini ketemu artikel pas lagi iseng-iseng baca blog orang&amp;hellip; Ternyata tuhan memang baik, selalu memberikan jawabannya ketika aku membutuhkannya :D daripada susah-susah bookmark jadi copy paste aja deh disini&amp;hellip;
+PERSEMBAHANKU UNTUK WANITA
+Pagi ini aku menerima sms dari seorang teman baikku. Seorang wanita. SMS tersebut menyebutkan bahwa dia menyukai seorang pria yang wajahnya cukup di kenal di televisi belakangan ini. Kebetulan aku cukup kenal kenal dengan presenter muda berbakat itu dan kami sesekali SMS-an saling menanyakan kabar masing-masing.</description>
+    </item>
+    
+    <item>
+      <title>Turun dari bus itu kaki kiri duluan !</title>
+      <link>https://blog.rudylee.com/blog/2009/03/05/turun-dari-bus-itu-kaki-kiri-duluan/</link>
+      <pubDate>Thu, 05 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/03/05/turun-dari-bus-itu-kaki-kiri-duluan/</guid>
+      <description>Ah akhirnya setelah melewati hari-hari melelahkan bisa nulis-nulis di blog lagi deh. Akhirnya juga bisa posting sesuatu yang tidak berbau teknis dan lebih &amp;lsquo;personal&amp;rsquo; ( soalnya sudah ada yang menunggu-nunggu gwa posting yang beginian, katanya pengen tau apa sih yang gwa pikirin di kepala gwa&amp;hellip; ya ga ri ? wakakaka ).
+Sebenarnya gwa paling males nulis-nulis sesuatu yang &amp;lsquo;personal&amp;rsquo; atau kejadian sehari-hari. Soalnya kalau nulis sesuatu yang personal itu butuh pengaturan bahasa yang lebih berat daripada tulis sesuatu yang teknis ( maklum saya orangnya kurang bisa mengungkapkan isi hati ).</description>
+    </item>
+    
+    <item>
+      <title>Dracoola Multimedia</title>
+      <link>https://blog.rudylee.com/blog/2009/02/22/dracoola-multimedia/</link>
+      <pubDate>Sun, 22 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/02/22/dracoola-multimedia/</guid>
+      <description>Yah selagi ga ada bahan buat direview terpaksa review tentang tempat hosting dolo&amp;hellip; Bagi yang blom tao jadi website gwa ini dihosting di Dracoola Multimedia
+Jad setelah beberapa hari berusaha mencari tempat hosting yang harganya murah + terjamin kualitasnya akhirnya ketemu juga. Sebelumnya pengen hosting di imediabiz tapi terbentur karena harganya mahal ( gila masih pengangguran gini masa keluarin duit 500 ribu ) tapi memang sih kualitas imediabiz sudah terjamin.</description>
+    </item>
+    
+    <item>
+      <title>&#39;CakePHP : Mengakses sebuah model pada controller yang berbeda&#39;</title>
+      <link>https://blog.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-berbeda/</link>
+      <pubDate>Sun, 15 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-berbeda/</guid>
+      <description>Dalam CakePHP biasanya sebuah model - view - controller pasti saling berhubungan dan mempunyai nama yang mirip.
+Contohnya sebuah tabel users mempunyai model yang bernama user, controller bernama _userscontroller, dan folder view yang bernama_ user_.
+Tapi permasalahannya adalah terkadang kita harus mengakses model lain tetapi controller tersebut tidak mempunyai relasi sama sekali dengan model / tabel ini.
+Sebagai contoh lagi misalnya kita ingin pada_ userscontroller dapat melakukan query pada tabel items, padahal tabel users sama sekali tidak punya relasi dengan tabel items.</description>
+    </item>
+    
+    <item>
+      <title>CakePHP, tidak ada kata terlambat untuk belajar...</title>
+      <link>https://blog.rudylee.com/blog/2009/02/11/cakephp-tidak-ada-kata-terlambat-untuk-belajar.../</link>
+      <pubDate>Wed, 11 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/02/11/cakephp-tidak-ada-kata-terlambat-untuk-belajar.../</guid>
+      <description>Tidak terasa sudah lebih dari 1 tahun saya mempelajari bahasa pemprograman PHP. Dimulai dari setahun yang lalu, dimulai dengan melihat orang lain, membaca-baca ebook, Tanya-tanya ke orang, cari-cari info di internet, dan banyak cara lainnya. Sampai saat ini masih banyak yang harus dipelajari tentang bahasa pemprograman PHP, tetapi saat ini saya ingin mengambil sebuah langkah untuk maju ke depan yang mungkin bagi sebagian orang masih menjadi sebuah pertentangan dalam diri mereka.</description>
+    </item>
+    
+  </channel>
+</rss>

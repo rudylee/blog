@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS on </title>
+    <link>https://blog.rudylee.com/blog/categories/aws/</link>
+    <description>Recent content in AWS on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.rudylee.com/blog/categories/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create new user on Amazon AMI and give it root access</title>
+      <link>https://blog.rudylee.com/blog/2016/03/09/create-new-user-on-amazon-ami-and-give-it-root-access/</link>
+      <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2016/03/09/create-new-user-on-amazon-ami-and-give-it-root-access/</guid>
+      <description>Setup your new EC2 instance on AWS and choose Amazon AMI.
+SSH to your instance using your private key
+ssh -i &amp;lt;path-to-your-pem-file&amp;gt; ec2-user@&amp;lt;ec2-endpoint-or-ip&amp;gt;  Change to root
+sudo su  Create new group for your user ( in this case my group name is &amp;lsquo;dev&amp;rsquo; )
+groupadd dev  Create new user and assign it to your recently created group
+useradd -g dev dev  Give the username root access</description>
+    </item>
+    
+    <item>
+      <title>Copying Files Between Two S3 Buckets</title>
+      <link>https://blog.rudylee.com/blog/2015/10/16/copying-files-between-two-s3-buckets/</link>
+      <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2015/10/16/copying-files-between-two-s3-buckets/</guid>
+      <description>Today, I have to copy files from one S3 bucket to another S3 bucket which sitting in separate AWS account.
+Initially, I was thinking to use S3 clients ( Tranmit or Cyberduck ) to download the files first and manually upload the files again to the other S3 Bucket. However, this approach will consume a lot of bandwidth and really slow if you have a lot of files in your S3 bucket.</description>
+    </item>
+    
+  </channel>
+</rss>

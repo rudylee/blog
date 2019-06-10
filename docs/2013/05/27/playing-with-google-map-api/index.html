@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.55.6" />
+
+    
+    
+    
+
+<title>Playing with Google Map API • </title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Playing with Google Map API"/>
+<meta name="twitter:description" content="The main purpose of this post is only to write about Google Map API for future reference. Here are the code snippets :
+Get the latitude and longitude based on address : http://maps.googleapis.com/maps/api/geocode/json?address=435A%20Kent%20St&amp;sensor=true
+The code below set up the Google Map, put the marker and also make it grayscale
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  function initialize() { var map; var location = new google."/>
+
+<meta property="og:title" content="Playing with Google Map API" />
+<meta property="og:description" content="The main purpose of this post is only to write about Google Map API for future reference. Here are the code snippets :
+Get the latitude and longitude based on address : http://maps.googleapis.com/maps/api/geocode/json?address=435A%20Kent%20St&amp;sensor=true
+The code below set up the Google Map, put the marker and also make it grayscale
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  function initialize() { var map; var location = new google." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.rudylee.com/blog/2013/05/27/playing-with-google-map-api/" />
+<meta property="article:published_time" content="2013-05-27T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2013-05-27T00:00:00&#43;00:00"/>
+
+
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="/blog/scss/hyde-hyde.2380269c92e7e39c11a852d74ebe3634002b1b3f46142353bdd7b4d4fe088725.css" integrity="sha256-I4AmnJLn45wRqFLXTr42NAArGz9GFCNTvde01P4IhyU=">
+
+
+<link rel="stylesheet" href="/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://blog.rudylee.com/blog"></a>
+      </span>
+      
+      
+        <div class="author-image">
+          <img src="https://www.gravatar.com/avatar/580b17799c8ed239b913eef56769170d?s=240&d=mp" class="img--circle img--headshot element--center" alt="gravatar">
+        </div>
+      
+      <p class="site__description">
+         Hi! I&#39;m Rudy Lee. Here are some thoughts of mine. 
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle"></label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/blog/">
+						<span>Home</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/blog/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/blog/categories/">
+						<span>Categories</span>
+					</a>
+				</li>
+			 
+		
+		</li>
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/rudylee88" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://github.com/rudylee" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/rudy-lee-12952b20" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2019 Rudy Lee
+  
+</div>
+
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Playing with Google Map API</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> May 27, 2013
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/blog/categories/research">RESEARCH</a>
+              
+          
+      
+    
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 1 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <p>The main purpose of this post is only to write about Google Map API for future reference. Here are the code snippets :</p>
+
+<p>Get the latitude and longitude based on address : <a href="http://maps.googleapis.com/maps/api/geocode/json?address=435A%20Kent%20St&amp;sensor=true">http://maps.googleapis.com/maps/api/geocode/json?address=435A%20Kent%20St&amp;sensor=true</a></p>
+
+<p>The code below set up the Google Map, put the marker and also make it grayscale</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">initialize</span>() {
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">map</span>;
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">location</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">maps</span>.<span style="color:#a6e22e">LatLng</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">33.87190930</span>, <span style="color:#ae81ff">151.20480740</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">styles</span> <span style="color:#f92672">=</span> [
+        {
+            <span style="color:#a6e22e">featureType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;all&#34;</span>,
+            <span style="color:#a6e22e">elementType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;all&#34;</span>,
+            <span style="color:#a6e22e">stylers</span><span style="color:#f92672">:</span> [
+                { <span style="color:#a6e22e">saturation</span><span style="color:#f92672">:</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">100</span> }
+            ]
+        }
+    ];
+
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">mapOptions</span> <span style="color:#f92672">=</span> {
+        <span style="color:#a6e22e">center</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">location</span>,
+        <span style="color:#a6e22e">zoom</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">17</span>,
+        <span style="color:#a6e22e">mapTypeControlOptions</span><span style="color:#f92672">:</span> {
+            <span style="color:#a6e22e">mapTypeId</span><span style="color:#f92672">:</span> [<span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">maps</span>.<span style="color:#a6e22e">MapTypeId</span>.<span style="color:#a6e22e">ROADMAP</span>, <span style="color:#e6db74">&#39;theGray&#39;</span>]
+        }
+    };
+
+    <span style="color:#a6e22e">map</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">maps</span>.<span style="color:#a6e22e">Map</span>(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;map-canvas&#34;</span>), <span style="color:#a6e22e">mapOptions</span>);
+    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">mapType</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">maps</span>.<span style="color:#a6e22e">StyledMapType</span>(<span style="color:#a6e22e">styles</span>, { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;GrayScale&#34;</span> });    
+    <span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">mapTypes</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;theGray&#39;</span>, <span style="color:#a6e22e">mapType</span>);
+    <span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">setMapTypeId</span>(<span style="color:#e6db74">&#39;theGray&#39;</span>);
+
+    <span style="color:#a6e22e">marker</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">maps</span>.<span style="color:#a6e22e">Marker</span>({
+        <span style="color:#a6e22e">position</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">location</span>,
+        <span style="color:#a6e22e">map</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">map</span>
+    });
+}
+<span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">maps</span>.<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">addDomListener</span>(window, <span style="color:#e6db74">&#39;load&#39;</span>, <span style="color:#a6e22e">initialize</span>);
+</code></pre></td></tr></table>
+</div>
+</div>
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/blog/2013/05/16/override-module-config-in-zend-framework-2/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Override module config in Zend Framework 2</span>
+    </a>
+    
+    
+    <a href="/blog/2013/07/25/migrate-to-octopress/" class="navigation-next">
+      <span class="navigation-tittle">Migrate to Octopress</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+  
+    
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+
+    (function () {
+    if (location.hostname === "localhost" ||
+      location.hostname === "127.0.0.1" ||
+      location.hostname === "") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    var disqus_shortname = 'blogrudylee';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || 
+      document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+<noscript>
+  Please enable JavaScript to view the
+  <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by
+  <span class="logo-disqus">Disqus</span>
+</a>
+
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+    
+    
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+    
+
+
+
+    </body>
+</html>

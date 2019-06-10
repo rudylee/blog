@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reviews on </title>
+    <link>https://blog.rudylee.com/blog/categories/reviews/</link>
+    <description>Recent content in Reviews on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Jul 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.rudylee.com/blog/categories/reviews/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bookmark with Delicious</title>
+      <link>https://blog.rudylee.com/blog/2010/07/25/bookmark-with-delicious/</link>
+      <pubDate>Sun, 25 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2010/07/25/bookmark-with-delicious/</guid>
+      <description>Have you ever heard about delicious ? no no, it&amp;rsquo;s not foods that are delicious but this Delicious.
+Delicious is a web application that allows to do the online bookmarking. If you say online that&amp;rsquo;s mean it&amp;rsquo;s not saved in your computer / laptop / server maybe. So if sometime you need to access your bookmark, you don&amp;rsquo;t have to open your computer or digging your old harddisk, just grab your friend&amp;rsquo;s computer, login to your Delicious and open the bookmark.</description>
+    </item>
+    
+    <item>
+      <title>&#39;Lithium atau Li3 : PHP 5.3&#43;&#43; Framework&#39;</title>
+      <link>https://blog.rudylee.com/blog/2009/12/27/lithium-atau-li3-php-5.3-framework/</link>
+      <pubDate>Sun, 27 Dec 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/12/27/lithium-atau-li3-php-5.3-framework/</guid>
+      <description>Setelah 3 hari dicekcoki dengan lagu Boyce Avenue yang diputar berulang-ulang di foobar akhirnya gwa jadi ada semangat buat update blog. Sebenarnya pengen nulis tentang Ruby on Rails dan e-TextEditor tapi keknya lebih pengen tulis tentang Lithium dulu deh.
+Jadi apakah Lithium itu ? merk baterai ? merk baju ? merk mobil ? merk parfum ? atau merk deterjen ? jelas saja bukan. Lithium yang saya gwa maksud disini adalah salah satu framework PHP yang tersohor sekali seantero jagad raya, sampe presiden SBY aja kalo pidato dicoding dolo pake neh framework.</description>
+    </item>
+    
+    <item>
+      <title>Forrest Gump</title>
+      <link>https://blog.rudylee.com/blog/2009/05/09/forrest-gump/</link>
+      <pubDate>Sat, 09 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/05/09/forrest-gump/</guid>
+      <description>Forrest gump adalah film tahun 1994 dan gwa baru itu setelah selesai menontonnya. Sebuah film yang bagus, menyentuh, well composed, entertaining, pokoknya bagus deh. Yah mungkin semua pada bakal bilang &amp;ldquo;gila, kemane aje loe&amp;hellip; baru nonton sekarang !&amp;rdquo;. Jujur gwa juga ga niat nonton pada awalnya&amp;hellip; Jadi ceritanya gwa lagi nyari-nyari film buat didownload kemarin malam ( di indowebster ) nah ketemu lah ini Forrest Gump. Pertama lihat gwa kira ini film komedi soalnya ada tulisan Tom Hanks dan ada tulisan &amp;lsquo;Forrest&amp;rsquo; nya ( kirain film-film perang yang lucu-lucu gitu ), jadi tanpa pikir panjang di download la ini film.</description>
+    </item>
+    
+    <item>
+      <title>Ubuntu 9.04 Jaunty Jackalope</title>
+      <link>https://blog.rudylee.com/blog/2009/04/27/ubuntu-9.04-jaunty-jackalope/</link>
+      <pubDate>Mon, 27 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/04/27/ubuntu-9.04-jaunty-jackalope/</guid>
+      <description>Hmmm sebenarnya hari ini lagi malas nulis-nulis sesuatu&amp;hellip; Badan ini rasanya malas banget, pikiran lagi ruwet banget&amp;hellip; seperti ada yang muter-muter di dalam kepala, mungkin gwa lagi ngidam kali ya ( halah ! )
+Yah intinya hari ini rasanya madesu (masa depan suram) sekali&amp;hellip; mungkin kata populernya lagi melan mungkin ya&amp;hellip; Pokoknya hari ini bawaannya malas banget dan merasa gimana gitu&amp;hellip; yah mungkin besok lebih baik lagi deh rasanya&amp;hellip;
+Nah makanya untuk menghilangkan rasa madesu ini, iseng-iseng pengen review sedikit tentang linux versi terbaru ( tadi sih sempat mikir lebih baik main dota daripada review ubuntu 9.</description>
+    </item>
+    
+    <item>
+      <title>Review CakePHP</title>
+      <link>https://blog.rudylee.com/blog/2009/04/18/review-cakephp/</link>
+      <pubDate>Sat, 18 Apr 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/04/18/review-cakephp/</guid>
+      <description>Setelah sekian lama ga update blog, akhirnya update blog lagi deh&amp;hellip; Untuk kali ini ga bakalan cerita-cerita yang aneh-aneh ataupun yang lucu-lucu&amp;hellip; soalnya emang lagi ga ada kejadian yang benar-benar &amp;ldquo;klik&amp;rdquo; yang bisa diceritakan ( beberapa hari ini semua terasa semu hix ).
+Jadi kali ini gwa akan melakukan review terhadap framework PHP yang sudah gwa pelajari kurang lebih 5 bulan lamanya yaitu CakePHP. Selama 5 bulan ini gwa lewati dengan mempelajari CakePHP, dari baca ebook, nonton video tutorial sampai tanya-tanya sama orang-orang di channel #cakephp di irc.</description>
+    </item>
+    
+    <item>
+      <title>Dracoola Multimedia</title>
+      <link>https://blog.rudylee.com/blog/2009/02/22/dracoola-multimedia/</link>
+      <pubDate>Sun, 22 Feb 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/02/22/dracoola-multimedia/</guid>
+      <description>Yah selagi ga ada bahan buat direview terpaksa review tentang tempat hosting dolo&amp;hellip; Bagi yang blom tao jadi website gwa ini dihosting di Dracoola Multimedia
+Jad setelah beberapa hari berusaha mencari tempat hosting yang harganya murah + terjamin kualitasnya akhirnya ketemu juga. Sebelumnya pengen hosting di imediabiz tapi terbentur karena harganya mahal ( gila masih pengangguran gini masa keluarin duit 500 ribu ) tapi memang sih kualitas imediabiz sudah terjamin.</description>
+    </item>
+    
+  </channel>
+</rss>

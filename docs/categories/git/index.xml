@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on </title>
+    <link>https://blog.rudylee.com/blog/categories/git/</link>
+    <description>Recent content in Git on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Jan 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.rudylee.com/blog/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reopen Last Commit in Git</title>
+      <link>https://blog.rudylee.com/blog/2016/01/20/reopen-last-commit-in-git/</link>
+      <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2016/01/20/reopen-last-commit-in-git/</guid>
+      <description>Run the command below if you want to reopen the last commit in your git
+1  git reset --soft HEAD~   This is useful if you miss something in your last commit. Instead of creating new commit and squashing it, you can open last commit and fix it there.</description>
+    </item>
+    
+  </channel>
+</rss>

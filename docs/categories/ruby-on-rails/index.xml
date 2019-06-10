@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby on Rails on </title>
+    <link>https://blog.rudylee.com/blog/categories/ruby-on-rails/</link>
+    <description>Recent content in Ruby on Rails on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 18 Aug 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.rudylee.com/blog/categories/ruby-on-rails/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to Run Code Snippet in Heroku Rails Console</title>
+      <link>https://blog.rudylee.com/blog/2018/08/18/how-to-run-code-snippet-in-heroku-rails-console/</link>
+      <pubDate>Sat, 18 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2018/08/18/how-to-run-code-snippet-in-heroku-rails-console/</guid>
+      <description>Often in my day to day work, I need to run a snippet in rails console to fix or investigate issues. Since our application is hosted on Heroku, I can do this by running heroku rails console --app app-name and in a matter of seconds I am connected to the rails console on production.
+In some cases, I need to run a really long code snippet especially if the fix needs to touch a lot of data.</description>
+    </item>
+    
+    <item>
+      <title>Run Sidekiq Jobs Without Starting Worker Process</title>
+      <link>https://blog.rudylee.com/blog/2017/08/06/run-sidekiq-jobs-without-starting-worker-process/</link>
+      <pubDate>Sun, 06 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2017/08/06/run-sidekiq-jobs-without-starting-worker-process/</guid>
+      <description>You can add the code snippet below to config/initializers/sidekiq.rb if you don&amp;rsquo;t want to start a separate sidekiq workers.
+The configuration below will make sure that the sidekiq jobs will be executed without worker process.
+This is handy if you don&amp;rsquo;t want to open an extra terminal tab or tmux window for worker process.
+1 2 3 4 5  # config/initializers/sidekiq.rb if Rails.env.development? require &amp;#39;sidekiq/testing&amp;#39; Sidekiq::Testing.inline! end   See the official Sidekiq wiki for more information: https://github.</description>
+    </item>
+    
+    <item>
+      <title>Rails Engines and Vim</title>
+      <link>https://blog.rudylee.com/blog/2015/05/03/rails-engines-and-vim/</link>
+      <pubDate>Sun, 03 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2015/05/03/rails-engines-and-vim/</guid>
+      <description>At the moment, I am working on a Ruby on Rails projects using Rails Engines ( you can read more about Rails Engines here: http://guides.rubyonrails.org/engines.html ). In this post, I&amp;rsquo;ll share my tips and trick on how to configure your vim to work with Rails Engines.
+NERDTree Bookmark I am using NERDTree Bookmark to quickly jump between different engines. If you are using NERDTree, you can create a bookmark by putting your cursor on one of the Rails Engines directory and use the command below:</description>
+    </item>
+    
+    <item>
+      <title>Add &#39;current&#39; class to website menu in Rails</title>
+      <link>https://blog.rudylee.com/blog/2014/01/15/add-current-class-to-website-menu-in-rails/</link>
+      <pubDate>Wed, 15 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2014/01/15/add-current-class-to-website-menu-in-rails/</guid>
+      <description>It is common to have &amp;lsquo;active&amp;rsquo; state or &amp;lsquo;current&amp;rsquo; state on website navigation. This will help visitors to know which page they have selected.
+This solution is based on Stackoverflow&amp;rsquo;s question which I couldn&amp;rsquo;t find. First, I&amp;rsquo;ll create a method inside Rails application_helper.rb file. I&amp;rsquo;ll call this method cp(). Here are the syntax:
+1 2 3 4 5 6  module ApplicationHelper def cp(path) current_route = Rails.application.routes.recognize_path(path) &amp;#34;current&amp;#34; if current_page?(path) or params[:controller] == current_route[:controller] end end   The method uses current_page and Rails.</description>
+    </item>
+    
+    <item>
+      <title>Rails 4 CORS</title>
+      <link>https://blog.rudylee.com/blog/2013/10/29/rails-4-cors/</link>
+      <pubDate>Tue, 29 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/10/29/rails-4-cors/</guid>
+      <description>McFlyyy pointed out another solution to solve this problem. I haven&amp;rsquo;t tested it myself so follow it at your own risk Click Here I was trying to use Rails to build REST API for my AngularJS app and came across CORS error on my Chrome developer tools.
+According to Alexey Vasiliev, Cross-origin resource sharing (CORS) is a web browser technology specification which defines ways for a web server to allow its resources to be accessed by a web page from a different domain.</description>
+    </item>
+    
+    <item>
+      <title>Zeus inside Vagrant</title>
+      <link>https://blog.rudylee.com/blog/2013/09/13/zeus-inside-vagrant/</link>
+      <pubDate>Fri, 13 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/09/13/zeus-inside-vagrant/</guid>
+      <description>I have been using Vagrant as my development environment for the last couple weeks. It has been very helpful as I prefer to use Linux as my development environment and I can only use Windows at my workplace. With Vagrant, I can easily set up new Linux machine, install Vim plus all the plugins and completely separate development machine for each project.
+Today, I was trying to use Zeus to speed up my Rspec test inside one of the Rails projects.</description>
+    </item>
+    
+    <item>
+      <title>Rails set up namespace and redirect from namespace</title>
+      <link>https://blog.rudylee.com/blog/2012/02/12/rails-set-up-namespace-and-redirect-from-namespace/</link>
+      <pubDate>Sun, 12 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2012/02/12/rails-set-up-namespace-and-redirect-from-namespace/</guid>
+      <description>In order to differentiate between admin actions and users actions, you can set up what called &amp;ldquo;namespace&amp;rdquo; in your rails apps. The basic idea of this feature is you will have different controller and view files for each role in your application.
+This concept is similar with prefixes in CakePHP. However, CakePHP allows you to put different action in one controller file, while in rails you have to create different controller and view file for the new namespace.</description>
+    </item>
+    
+    <item>
+      <title>Fixing rake command error in rails 3.0.7</title>
+      <link>https://blog.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3.0.7/</link>
+      <pubDate>Sun, 29 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3.0.7/</guid>
+      <description>Today I was trying to add rails project to Netbeans 6.9,but suddenly there is a pop up window that said &amp;ldquo;Rake task fecthing failed&amp;rdquo; with bunch of other errors. After that, I tried go to my application folder and try to run the rake command
+1  rake -D   However I got this error
+1 2 3 4 5  rudy@rudy-laptop:~/www/depot$ rake -D rake aborted! undefined method `task&amp;#39; for #&amp;lt;depot::application:0x91fa9c4&amp;gt; (See full trace by running task with --trace)   After a little bit research, I found that I have to uninstall my rake 0.</description>
+    </item>
+    
+    <item>
+      <title>Ruby on Rails in Kubuntu 9.04</title>
+      <link>https://blog.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-9.04/</link>
+      <pubDate>Mon, 23 Nov 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-9.04/</guid>
+      <description>Beberapa hari ini gwa disibukkan mencoba menginstall Ruby on Rails ( RoR ). Sebenarnya sudah cukup lama pengen coba-coba Ruby on Rails, tapi sekarang baru ada semangat sama ada waktu buat nyoba-nyoba.
+Menginstall Ruby on Rails ini dapat dibilang cukup memakan banyak waktu dikarenakan gwa menghabiskan 1 harian HANYA untuk install Kubuntu doank ( gara2 cd rom yang ga jelas ).
+Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan dalam waktu 1 hari ) gwa mulai menginstall Ruby on Rails.</description>
+    </item>
+    
+  </channel>
+</rss>

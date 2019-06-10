@@ -1,0 +1,38 @@
+baseURL = "https://blog.rudylee.com/blog"
+languageCode = "en-us"
+theme = "hyde"
+disqusShortname = "blogrudylee"
+pygmentsOptions = "linenos=table"
+pygmentsCodefences = true
+publishDir = "docs"
+
+[params]
+  author = "Rudy Lee"
+  description = "Hi! I'm Rudy Lee. Here are some thoughts of mine."
+  copyright = "Rudy Lee"
+
+[params.social]
+	twitter = "rudylee88"
+	github = "rudylee"
+	linkedin = "rudy-lee-12952b20"
+  gravatar = "rudylee1988@gmail.com"
+
+[permalinks]
+  posts = "/:year/:month/:day/:title/"
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 100
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 200
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 300

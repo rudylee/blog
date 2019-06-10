@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zend Framework 2 on </title>
+    <link>https://blog.rudylee.com/blog/categories/zend-framework-2/</link>
+    <description>Recent content in Zend Framework 2 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 16 May 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://blog.rudylee.com/blog/categories/zend-framework-2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Override module config in Zend Framework 2</title>
+      <link>https://blog.rudylee.com/blog/2013/05/16/override-module-config-in-zend-framework-2/</link>
+      <pubDate>Thu, 16 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/05/16/override-module-config-in-zend-framework-2/</guid>
+      <description>There is a time when you want to override module config in your Zend Framework 2 application. In my case, I have different configuration for SMS gateway in staging and live server. You can do this by overwriting the module.config.php file inside the module config&amp;rsquo;s folder. However, there are heaps of configuration inside module.config.php file. This approach will lead to maintenance nightmare when you need to change one or more configuration inside the file.</description>
+    </item>
+    
+    <item>
+      <title>&#39;Zend Framework 2 : The proper way to set application path in Javascript Object&#39;</title>
+      <link>https://blog.rudylee.com/blog/2013/05/06/zend-framework-2-the-proper-way-to-set-application-path-in-javascript-object/</link>
+      <pubDate>Mon, 06 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/05/06/zend-framework-2-the-proper-way-to-set-application-path-in-javascript-object/</guid>
+      <description>Storing application path inside Javascript object is a way to avoid &amp;ldquo;hard coded&amp;rdquo; URL inside your Javascript file. It is pretty common to have like this in your Javascript file :
+1 2 3 4 5  $.ajax({ type: POST, url: &amp;#39;http://localhost/my-website/register&amp;#39;, data: dataJSON })    That approach is completely fine. However, when you need to deploy your application, you need to manually change all the URL to match with your server.</description>
+    </item>
+    
+    <item>
+      <title>&#39;Zend Framework 2 : get server URL in controller without using serverUrl()&#39;</title>
+      <link>https://blog.rudylee.com/blog/2013/02/15/zend-framework-2-get-server-url-in-controller-without-using-serverurl/</link>
+      <pubDate>Fri, 15 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.rudylee.com/blog/2013/02/15/zend-framework-2-get-server-url-in-controller-without-using-serverurl/</guid>
+      <description>Sometimes you need to be able to get current server URL inside controller in your Zend Framework 2 application. As you might know, you won&amp;rsquo;t be able to use $this-&amp;gt;serverUrl() method in the controller as it&amp;rsquo;s a part of helper.
+So, here is the code that I am using to get server URL in controller :
+1  $server_url = $this-&amp;gt;getRequest()-&amp;gt;getUri()-&amp;gt;getScheme() . &amp;#39;://&amp;#39; . $this-&amp;gt;getRequest()-&amp;gt;getUri()-&amp;gt;getHost();   Probably it&amp;rsquo;s not the best solution but it works for now.</description>
+    </item>
+    
+  </channel>
+</rss>
