@@ -5,6 +5,7 @@ disqusShortname = "blogrudylee"
 pygmentsOptions = "linenos=table"
 pygmentsCodefences = true
 publishDir = "docs"
+googleAnalytics = "UA-10301272-1"
 
 [params]
   author = "Rudy Lee"
