@@ -2,273 +2,273 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on </title>
-    <link>https://blog.rudylee.com/blog/categories/</link>
+    <link>https://www.rudylee.com/blog/categories/</link>
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Aug 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.rudylee.com/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rudylee.com/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Heroku</title>
-      <link>https://blog.rudylee.com/blog/categories/heroku/</link>
+      <link>https://www.rudylee.com/blog/categories/heroku/</link>
       <pubDate>Sat, 18 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/heroku/</guid>
+      <guid>https://www.rudylee.com/blog/categories/heroku/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ruby on Rails</title>
-      <link>https://blog.rudylee.com/blog/categories/ruby-on-rails/</link>
+      <link>https://www.rudylee.com/blog/categories/ruby-on-rails/</link>
       <pubDate>Sat, 18 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/ruby-on-rails/</guid>
+      <guid>https://www.rudylee.com/blog/categories/ruby-on-rails/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>https://blog.rudylee.com/blog/categories/go/</link>
+      <link>https://www.rudylee.com/blog/categories/go/</link>
       <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/go/</guid>
+      <guid>https://www.rudylee.com/blog/categories/go/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Google Spreadsheet</title>
-      <link>https://blog.rudylee.com/blog/categories/google-spreadsheet/</link>
+      <link>https://www.rudylee.com/blog/categories/google-spreadsheet/</link>
       <pubDate>Mon, 25 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/google-spreadsheet/</guid>
+      <guid>https://www.rudylee.com/blog/categories/google-spreadsheet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Productivity</title>
-      <link>https://blog.rudylee.com/blog/categories/productivity/</link>
+      <link>https://www.rudylee.com/blog/categories/productivity/</link>
       <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/productivity/</guid>
+      <guid>https://www.rudylee.com/blog/categories/productivity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Trello</title>
-      <link>https://blog.rudylee.com/blog/categories/trello/</link>
+      <link>https://www.rudylee.com/blog/categories/trello/</link>
       <pubDate>Sun, 17 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/trello/</guid>
+      <guid>https://www.rudylee.com/blog/categories/trello/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Regex</title>
-      <link>https://blog.rudylee.com/blog/categories/regex/</link>
+      <link>https://www.rudylee.com/blog/categories/regex/</link>
       <pubDate>Fri, 28 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/regex/</guid>
+      <guid>https://www.rudylee.com/blog/categories/regex/</guid>
       <description></description>
     </item>
     
     <item>
       <title>New Relic</title>
-      <link>https://blog.rudylee.com/blog/categories/new-relic/</link>
+      <link>https://www.rudylee.com/blog/categories/new-relic/</link>
       <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/new-relic/</guid>
+      <guid>https://www.rudylee.com/blog/categories/new-relic/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elastic Cloud</title>
-      <link>https://blog.rudylee.com/blog/categories/elastic-cloud/</link>
+      <link>https://www.rudylee.com/blog/categories/elastic-cloud/</link>
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/elastic-cloud/</guid>
+      <guid>https://www.rudylee.com/blog/categories/elastic-cloud/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elasticsearch</title>
-      <link>https://blog.rudylee.com/blog/categories/elasticsearch/</link>
+      <link>https://www.rudylee.com/blog/categories/elasticsearch/</link>
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/elasticsearch/</guid>
+      <guid>https://www.rudylee.com/blog/categories/elasticsearch/</guid>
       <description></description>
     </item>
     
     <item>
       <title>L2TP</title>
-      <link>https://blog.rudylee.com/blog/categories/l2tp/</link>
+      <link>https://www.rudylee.com/blog/categories/l2tp/</link>
       <pubDate>Wed, 11 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/l2tp/</guid>
+      <guid>https://www.rudylee.com/blog/categories/l2tp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Unix and Linux</title>
-      <link>https://blog.rudylee.com/blog/categories/unix-and-linux/</link>
+      <link>https://www.rudylee.com/blog/categories/unix-and-linux/</link>
       <pubDate>Wed, 11 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/unix-and-linux/</guid>
+      <guid>https://www.rudylee.com/blog/categories/unix-and-linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>HAProxy</title>
-      <link>https://blog.rudylee.com/blog/categories/haproxy/</link>
+      <link>https://www.rudylee.com/blog/categories/haproxy/</link>
       <pubDate>Mon, 05 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/haproxy/</guid>
+      <guid>https://www.rudylee.com/blog/categories/haproxy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AWS</title>
-      <link>https://blog.rudylee.com/blog/categories/aws/</link>
+      <link>https://www.rudylee.com/blog/categories/aws/</link>
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/aws/</guid>
+      <guid>https://www.rudylee.com/blog/categories/aws/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://blog.rudylee.com/blog/categories/linux/</link>
+      <link>https://www.rudylee.com/blog/categories/linux/</link>
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/linux/</guid>
+      <guid>https://www.rudylee.com/blog/categories/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://blog.rudylee.com/blog/categories/git/</link>
+      <link>https://www.rudylee.com/blog/categories/git/</link>
       <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/git/</guid>
+      <guid>https://www.rudylee.com/blog/categories/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PostgreSQL</title>
-      <link>https://blog.rudylee.com/blog/categories/postgresql/</link>
+      <link>https://www.rudylee.com/blog/categories/postgresql/</link>
       <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/postgresql/</guid>
+      <guid>https://www.rudylee.com/blog/categories/postgresql/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vim</title>
-      <link>https://blog.rudylee.com/blog/categories/vim/</link>
+      <link>https://www.rudylee.com/blog/categories/vim/</link>
       <pubDate>Sun, 03 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/vim/</guid>
+      <guid>https://www.rudylee.com/blog/categories/vim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vagrant</title>
-      <link>https://blog.rudylee.com/blog/categories/vagrant/</link>
+      <link>https://www.rudylee.com/blog/categories/vagrant/</link>
       <pubDate>Mon, 27 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/vagrant/</guid>
+      <guid>https://www.rudylee.com/blog/categories/vagrant/</guid>
       <description></description>
     </item>
     
     <item>
       <title>AngularJS</title>
-      <link>https://blog.rudylee.com/blog/categories/angularjs/</link>
+      <link>https://www.rudylee.com/blog/categories/angularjs/</link>
       <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/angularjs/</guid>
+      <guid>https://www.rudylee.com/blog/categories/angularjs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>https://blog.rudylee.com/blog/categories/javascript/</link>
+      <link>https://www.rudylee.com/blog/categories/javascript/</link>
       <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/javascript/</guid>
+      <guid>https://www.rudylee.com/blog/categories/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>My Stories</title>
-      <link>https://blog.rudylee.com/blog/categories/my-stories/</link>
+      <link>https://www.rudylee.com/blog/categories/my-stories/</link>
       <pubDate>Thu, 27 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/my-stories/</guid>
+      <guid>https://www.rudylee.com/blog/categories/my-stories/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Research</title>
-      <link>https://blog.rudylee.com/blog/categories/research/</link>
+      <link>https://www.rudylee.com/blog/categories/research/</link>
       <pubDate>Mon, 27 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/research/</guid>
+      <guid>https://www.rudylee.com/blog/categories/research/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Zend Framework 2</title>
-      <link>https://blog.rudylee.com/blog/categories/zend-framework-2/</link>
+      <link>https://www.rudylee.com/blog/categories/zend-framework-2/</link>
       <pubDate>Thu, 16 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/zend-framework-2/</guid>
+      <guid>https://www.rudylee.com/blog/categories/zend-framework-2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CakePHP</title>
-      <link>https://blog.rudylee.com/blog/categories/cakephp/</link>
+      <link>https://www.rudylee.com/blog/categories/cakephp/</link>
       <pubDate>Sat, 02 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/cakephp/</guid>
+      <guid>https://www.rudylee.com/blog/categories/cakephp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cooking</title>
-      <link>https://blog.rudylee.com/blog/categories/cooking/</link>
+      <link>https://www.rudylee.com/blog/categories/cooking/</link>
       <pubDate>Sun, 08 Jul 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/cooking/</guid>
+      <guid>https://www.rudylee.com/blog/categories/cooking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wordpress</title>
-      <link>https://blog.rudylee.com/blog/categories/wordpress/</link>
+      <link>https://www.rudylee.com/blog/categories/wordpress/</link>
       <pubDate>Sun, 08 Jan 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/wordpress/</guid>
+      <guid>https://www.rudylee.com/blog/categories/wordpress/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Reviews</title>
-      <link>https://blog.rudylee.com/blog/categories/reviews/</link>
+      <link>https://www.rudylee.com/blog/categories/reviews/</link>
       <pubDate>Sun, 25 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/reviews/</guid>
+      <guid>https://www.rudylee.com/blog/categories/reviews/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Others</title>
-      <link>https://blog.rudylee.com/blog/categories/others/</link>
+      <link>https://www.rudylee.com/blog/categories/others/</link>
       <pubDate>Tue, 10 Mar 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/categories/others/</guid>
+      <guid>https://www.rudylee.com/blog/categories/others/</guid>
       <description></description>
     </item>
     

@@ -3,2597 +3,2597 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://blog.rudylee.com/blog/</loc>
+    <loc>https://www.rudylee.com/blog/</loc>
     <lastmod>2018-08-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/</loc>
+    <loc>https://www.rudylee.com/blog/categories/</loc>
     <lastmod>2018-08-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/heroku/</loc>
+    <loc>https://www.rudylee.com/blog/categories/heroku/</loc>
     <lastmod>2018-08-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2018/08/18/how-to-run-code-snippet-in-heroku-rails-console/</loc>
+    <loc>https://www.rudylee.com/blog/2018/08/18/how-to-run-code-snippet-in-heroku-rails-console/</loc>
     <lastmod>2018-08-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/posts/</loc>
-    <lastmod>2018-08-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/categories/ruby-on-rails/</loc>
+    <loc>https://www.rudylee.com/blog/posts/</loc>
     <lastmod>2018-08-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2018/06/23/download-csv-test-in-go/</loc>
+    <loc>https://www.rudylee.com/blog/categories/ruby-on-rails/</loc>
+    <lastmod>2018-08-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2018/06/23/download-csv-test-in-go/</loc>
     <lastmod>2018-06-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/go/</loc>
+    <loc>https://www.rudylee.com/blog/categories/go/</loc>
     <lastmod>2018-06-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/google-spreadsheet/</loc>
+    <loc>https://www.rudylee.com/blog/categories/google-spreadsheet/</loc>
     <lastmod>2017-12-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2017/12/25/google-spreadsheet-as-json-api/</loc>
+    <loc>https://www.rudylee.com/blog/2017/12/25/google-spreadsheet-as-json-api/</loc>
     <lastmod>2017-12-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/productivity/</loc>
+    <loc>https://www.rudylee.com/blog/categories/productivity/</loc>
     <lastmod>2017-12-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/trello/</loc>
+    <loc>https://www.rudylee.com/blog/categories/trello/</loc>
     <lastmod>2017-12-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2017/12/17/trello-card-repeater/</loc>
+    <loc>https://www.rudylee.com/blog/2017/12/17/trello-card-repeater/</loc>
     <lastmod>2017-12-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2017/08/06/run-sidekiq-jobs-without-starting-worker-process/</loc>
+    <loc>https://www.rudylee.com/blog/2017/08/06/run-sidekiq-jobs-without-starting-worker-process/</loc>
     <lastmod>2017-08-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/regex/</loc>
+    <loc>https://www.rudylee.com/blog/categories/regex/</loc>
     <lastmod>2017-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2017/07/28/regular-expression-for-a-string-containing-one-word-but-not-another/</loc>
+    <loc>https://www.rudylee.com/blog/2017/07/28/regular-expression-for-a-string-containing-one-word-but-not-another/</loc>
     <lastmod>2017-07-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2017/07/01/monitor-background-jobs-with-new-relic-query-language/</loc>
+    <loc>https://www.rudylee.com/blog/2017/07/01/monitor-background-jobs-with-new-relic-query-language/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/new-relic/</loc>
+    <loc>https://www.rudylee.com/blog/categories/new-relic/</loc>
     <lastmod>2017-07-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/elastic-cloud/</loc>
+    <loc>https://www.rudylee.com/blog/categories/elastic-cloud/</loc>
     <lastmod>2017-01-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/elasticsearch/</loc>
+    <loc>https://www.rudylee.com/blog/categories/elasticsearch/</loc>
     <lastmod>2017-01-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2017/01/30/setting-up-elasticsearch-watcher-to-check-for-cluster-status-on-elastic-cloud/</loc>
+    <loc>https://www.rudylee.com/blog/2017/01/30/setting-up-elasticsearch-watcher-to-check-for-cluster-status-on-elastic-cloud/</loc>
     <lastmod>2017-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/l2tp/</loc>
+    <loc>https://www.rudylee.com/blog/categories/l2tp/</loc>
     <lastmod>2017-01-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2017/01/11/setting-up-l2tp-vpn-to-bypass-great-firewall-of-china/</loc>
+    <loc>https://www.rudylee.com/blog/2017/01/11/setting-up-l2tp-vpn-to-bypass-great-firewall-of-china/</loc>
     <lastmod>2017-01-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/unix-and-linux/</loc>
+    <loc>https://www.rudylee.com/blog/categories/unix-and-linux/</loc>
     <lastmod>2017-01-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/haproxy/</loc>
+    <loc>https://www.rudylee.com/blog/categories/haproxy/</loc>
     <lastmod>2016-12-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2016/12/05/haproxy-as-a-reverse-proxy-for-cloudinary-images/</loc>
+    <loc>https://www.rudylee.com/blog/2016/12/05/haproxy-as-a-reverse-proxy-for-cloudinary-images/</loc>
     <lastmod>2016-12-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2016/04/13/haproxy-and-a/b-testing/</loc>
+    <loc>https://www.rudylee.com/blog/2016/04/13/haproxy-and-a/b-testing/</loc>
     <lastmod>2016-04-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/aws/</loc>
+    <loc>https://www.rudylee.com/blog/categories/aws/</loc>
     <lastmod>2016-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2016/03/09/create-new-user-on-amazon-ami-and-give-it-root-access/</loc>
+    <loc>https://www.rudylee.com/blog/2016/03/09/create-new-user-on-amazon-ami-and-give-it-root-access/</loc>
     <lastmod>2016-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/linux/</loc>
+    <loc>https://www.rudylee.com/blog/categories/linux/</loc>
     <lastmod>2016-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2016/02/16/import-json-to-elasticsearch-using-jq/</loc>
+    <loc>https://www.rudylee.com/blog/2016/02/16/import-json-to-elasticsearch-using-jq/</loc>
     <lastmod>2016-02-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/git/</loc>
+    <loc>https://www.rudylee.com/blog/categories/git/</loc>
     <lastmod>2016-01-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2016/01/20/reopen-last-commit-in-git/</loc>
+    <loc>https://www.rudylee.com/blog/2016/01/20/reopen-last-commit-in-git/</loc>
     <lastmod>2016-01-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/</loc>
-    <lastmod>2016-01-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/git/</loc>
+    <loc>https://www.rudylee.com/blog/tags/</loc>
     <lastmod>2016-01-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2015/10/16/copying-files-between-two-s3-buckets/</loc>
+    <loc>https://www.rudylee.com/blog/tags/git/</loc>
+    <lastmod>2016-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2015/10/16/copying-files-between-two-s3-buckets/</loc>
     <lastmod>2015-10-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2015/08/31/create-ssh-tunnel-to-backup-postgresql-database/</loc>
+    <loc>https://www.rudylee.com/blog/2015/08/31/create-ssh-tunnel-to-backup-postgresql-database/</loc>
     <lastmod>2015-08-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/postgresql/</loc>
+    <loc>https://www.rudylee.com/blog/categories/postgresql/</loc>
     <lastmod>2015-08-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2015/05/03/rails-engines-and-vim/</loc>
+    <loc>https://www.rudylee.com/blog/2015/05/03/rails-engines-and-vim/</loc>
     <lastmod>2015-05-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/vim/</loc>
+    <loc>https://www.rudylee.com/blog/categories/vim/</loc>
     <lastmod>2015-05-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2014/10/27/symbolic-links-with-vagrant-windows/</loc>
+    <loc>https://www.rudylee.com/blog/2014/10/27/symbolic-links-with-vagrant-windows/</loc>
     <lastmod>2014-10-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/vagrant/</loc>
+    <loc>https://www.rudylee.com/blog/categories/vagrant/</loc>
     <lastmod>2014-10-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2014/09/18/enable-http-authentication-on-certain-domain/</loc>
+    <loc>https://www.rudylee.com/blog/2014/09/18/enable-http-authentication-on-certain-domain/</loc>
     <lastmod>2014-09-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/angularjs/</loc>
+    <loc>https://www.rudylee.com/blog/categories/angularjs/</loc>
     <lastmod>2014-05-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2014/05/26/angularjs-free-course-by-code-school/</loc>
+    <loc>https://www.rudylee.com/blog/2014/05/26/angularjs-free-course-by-code-school/</loc>
     <lastmod>2014-05-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/javascript/</loc>
+    <loc>https://www.rudylee.com/blog/categories/javascript/</loc>
     <lastmod>2014-05-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2014/05/22/configuring-elastic-beanstalk-environment-with-.ebextensions/</loc>
+    <loc>https://www.rudylee.com/blog/2014/05/22/configuring-elastic-beanstalk-environment-with-.ebextensions/</loc>
     <lastmod>2014-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2014/03/27/audio-books/</loc>
+    <loc>https://www.rudylee.com/blog/2014/03/27/audio-books/</loc>
     <lastmod>2014-03-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/my-stories/</loc>
+    <loc>https://www.rudylee.com/blog/categories/my-stories/</loc>
     <lastmod>2014-03-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2014/01/15/add-current-class-to-website-menu-in-rails/</loc>
+    <loc>https://www.rudylee.com/blog/2014/01/15/add-current-class-to-website-menu-in-rails/</loc>
     <lastmod>2014-01-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/12/06/install-the-latest-tmux-on-ubuntu-12.04/</loc>
+    <loc>https://www.rudylee.com/blog/2013/12/06/install-the-latest-tmux-on-ubuntu-12.04/</loc>
     <lastmod>2013-12-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/10/29/rails-4-cors/</loc>
+    <loc>https://www.rudylee.com/blog/2013/10/29/rails-4-cors/</loc>
     <lastmod>2013-10-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/10/24/fix-npm-symlink-problem-in-vagrant/</loc>
+    <loc>https://www.rudylee.com/blog/2013/10/24/fix-npm-symlink-problem-in-vagrant/</loc>
     <lastmod>2013-10-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/09/18/trailing-characters-m/</loc>
+    <loc>https://www.rudylee.com/blog/2013/09/18/trailing-characters-m/</loc>
     <lastmod>2013-09-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/09/13/zeus-inside-vagrant/</loc>
+    <loc>https://www.rudylee.com/blog/2013/09/13/zeus-inside-vagrant/</loc>
     <lastmod>2013-09-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/08/04/refocus/</loc>
+    <loc>https://www.rudylee.com/blog/2013/08/04/refocus/</loc>
     <lastmod>2013-08-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/07/26/sending-email-from-amazon-ec2-using-postfix-and-amazon-ses/</loc>
+    <loc>https://www.rudylee.com/blog/2013/07/26/sending-email-from-amazon-ec2-using-postfix-and-amazon-ses/</loc>
     <lastmod>2013-07-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/07/25/migrate-to-octopress/</loc>
+    <loc>https://www.rudylee.com/blog/2013/07/25/migrate-to-octopress/</loc>
     <lastmod>2013-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/05/27/playing-with-google-map-api/</loc>
+    <loc>https://www.rudylee.com/blog/2013/05/27/playing-with-google-map-api/</loc>
     <lastmod>2013-05-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/research/</loc>
+    <loc>https://www.rudylee.com/blog/categories/research/</loc>
     <lastmod>2013-05-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/05/16/override-module-config-in-zend-framework-2/</loc>
+    <loc>https://www.rudylee.com/blog/2013/05/16/override-module-config-in-zend-framework-2/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/zend-framework-2/</loc>
-    <lastmod>2013-05-16T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/access-password/</loc>
+    <loc>https://www.rudylee.com/blog/categories/zend-framework-2/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/alphanumeric/</loc>
+    <loc>https://www.rudylee.com/blog/tags/access-password/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/api-access/</loc>
+    <loc>https://www.rudylee.com/blog/tags/alphanumeric/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/array/</loc>
+    <loc>https://www.rudylee.com/blog/tags/api-access/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/config/</loc>
+    <loc>https://www.rudylee.com/blog/tags/array/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/deployment/</loc>
+    <loc>https://www.rudylee.com/blog/tags/config/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/heaps/</loc>
+    <loc>https://www.rudylee.com/blog/tags/deployment/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/maintenance-nightmare/</loc>
+    <loc>https://www.rudylee.com/blog/tags/heaps/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/numerical-characters/</loc>
+    <loc>https://www.rudylee.com/blog/tags/maintenance-nightmare/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/rudy/</loc>
+    <loc>https://www.rudylee.com/blog/tags/numerical-characters/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/staging/</loc>
+    <loc>https://www.rudylee.com/blog/tags/rudy/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/zend-framework/</loc>
+    <loc>https://www.rudylee.com/blog/tags/staging/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/05/06/zend-framework-2-the-proper-way-to-set-application-path-in-javascript-object/</loc>
+    <loc>https://www.rudylee.com/blog/tags/zend-framework/</loc>
+    <lastmod>2013-05-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2013/05/06/zend-framework-2-the-proper-way-to-set-application-path-in-javascript-object/</loc>
     <lastmod>2013-05-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/cakephp/</loc>
-    <lastmod>2013-05-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/ajax/</loc>
+    <loc>https://www.rudylee.com/blog/tags/cakephp/</loc>
     <lastmod>2013-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/application-path/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ajax/</loc>
     <lastmod>2013-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/basepath/</loc>
+    <loc>https://www.rudylee.com/blog/tags/application-path/</loc>
     <lastmod>2013-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/cdata/</loc>
+    <loc>https://www.rudylee.com/blog/tags/basepath/</loc>
     <lastmod>2013-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/long-time/</loc>
+    <loc>https://www.rudylee.com/blog/tags/cdata/</loc>
     <lastmod>2013-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/lt/</loc>
+    <loc>https://www.rudylee.com/blog/tags/long-time/</loc>
     <lastmod>2013-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/script-type/</loc>
+    <loc>https://www.rudylee.com/blog/tags/lt/</loc>
     <lastmod>2013-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/text-javascript/</loc>
+    <loc>https://www.rudylee.com/blog/tags/script-type/</loc>
     <lastmod>2013-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/website-register/</loc>
+    <loc>https://www.rudylee.com/blog/tags/text-javascript/</loc>
     <lastmod>2013-05-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/03/30/my-review-after-two-months-using-vim/</loc>
+    <loc>https://www.rudylee.com/blog/tags/website-register/</loc>
+    <lastmod>2013-05-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2013/03/30/my-review-after-two-months-using-vim/</loc>
     <lastmod>2013-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/02/15/zend-framework-2-get-server-url-in-controller-without-using-serverurl/</loc>
+    <loc>https://www.rudylee.com/blog/2013/02/15/zend-framework-2-get-server-url-in-controller-without-using-serverurl/</loc>
     <lastmod>2013-02-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2.0/</loc>
+    <loc>https://www.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2.0/</loc>
     <lastmod>2013-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/cakephp/</loc>
+    <loc>https://www.rudylee.com/blog/categories/cakephp/</loc>
     <lastmod>2013-02-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2.0/</loc>
+    <loc>https://www.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2.0/</loc>
     <lastmod>2013-02-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/01/15/science-of-productivity/</loc>
+    <loc>https://www.rudylee.com/blog/2013/01/15/science-of-productivity/</loc>
     <lastmod>2013-01-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2013/01/14/my-journey-to-productivity/</loc>
+    <loc>https://www.rudylee.com/blog/2013/01/14/my-journey-to-productivity/</loc>
     <lastmod>2013-01-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2.x/</loc>
+    <loc>https://www.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2.x/</loc>
     <lastmod>2012-11-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2012/07/31/precise-pangolin/</loc>
+    <loc>https://www.rudylee.com/blog/2012/07/31/precise-pangolin/</loc>
     <lastmod>2012-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/cooking/</loc>
+    <loc>https://www.rudylee.com/blog/categories/cooking/</loc>
     <lastmod>2012-07-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2012/07/08/curry-noodle/</loc>
+    <loc>https://www.rudylee.com/blog/2012/07/08/curry-noodle/</loc>
     <lastmod>2012-07-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2012/04/10/assembla/</loc>
+    <loc>https://www.rudylee.com/blog/2012/04/10/assembla/</loc>
     <lastmod>2012-04-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2012/03/20/cake-bunny-website-now-using-twitter-bootstrap/</loc>
+    <loc>https://www.rudylee.com/blog/2012/03/20/cake-bunny-website-now-using-twitter-bootstrap/</loc>
     <lastmod>2012-03-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2012/02/12/rails-set-up-namespace-and-redirect-from-namespace/</loc>
+    <loc>https://www.rudylee.com/blog/2012/02/12/rails-set-up-namespace-and-redirect-from-namespace/</loc>
     <lastmod>2012-02-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/admin-users/</loc>
-    <lastmod>2012-02-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/class-admin/</loc>
+    <loc>https://www.rudylee.com/blog/tags/admin-users/</loc>
     <lastmod>2012-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/controller-name/</loc>
+    <loc>https://www.rudylee.com/blog/tags/class-admin/</loc>
     <lastmod>2012-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/directory-browser/</loc>
+    <loc>https://www.rudylee.com/blog/tags/controller-name/</loc>
     <lastmod>2012-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/folders/</loc>
+    <loc>https://www.rudylee.com/blog/tags/directory-browser/</loc>
     <lastmod>2012-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/left-hand-side/</loc>
+    <loc>https://www.rudylee.com/blog/tags/folders/</loc>
     <lastmod>2012-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/new-folder/</loc>
+    <loc>https://www.rudylee.com/blog/tags/left-hand-side/</loc>
     <lastmod>2012-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/prefixes/</loc>
+    <loc>https://www.rudylee.com/blog/tags/new-folder/</loc>
     <lastmod>2012-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/products-resources/</loc>
+    <loc>https://www.rudylee.com/blog/tags/prefixes/</loc>
     <lastmod>2012-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/screenshot/</loc>
+    <loc>https://www.rudylee.com/blog/tags/products-resources/</loc>
     <lastmod>2012-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/sessions/</loc>
+    <loc>https://www.rudylee.com/blog/tags/screenshot/</loc>
     <lastmod>2012-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/users-actions/</loc>
+    <loc>https://www.rudylee.com/blog/tags/sessions/</loc>
     <lastmod>2012-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2012/01/08/execute-jwplayer-shortcode-in-wordpress-custom-template/</loc>
+    <loc>https://www.rudylee.com/blog/tags/users-actions/</loc>
+    <lastmod>2012-02-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2012/01/08/execute-jwplayer-shortcode-in-wordpress-custom-template/</loc>
     <lastmod>2012-01-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/wordpress/</loc>
+    <loc>https://www.rudylee.com/blog/categories/wordpress/</loc>
     <lastmod>2012-01-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/</loc>
+    <loc>https://www.rudylee.com/blog/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/ajax-autocomplete/</loc>
-    <lastmod>2011-12-12T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/apps/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ajax-autocomplete/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/array-controller/</loc>
+    <loc>https://www.rudylee.com/blog/tags/apps/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/demo/</loc>
+    <loc>https://www.rudylee.com/blog/tags/array-controller/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/guest-id/</loc>
+    <loc>https://www.rudylee.com/blog/tags/demo/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/guest-search/</loc>
+    <loc>https://www.rudylee.com/blog/tags/guest-id/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/jquery/</loc>
+    <loc>https://www.rudylee.com/blog/tags/guest-search/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/line-1/</loc>
+    <loc>https://www.rudylee.com/blog/tags/jquery/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/line-3/</loc>
+    <loc>https://www.rudylee.com/blog/tags/line-1/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/little-bit/</loc>
+    <loc>https://www.rudylee.com/blog/tags/line-3/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/result-line/</loc>
+    <loc>https://www.rudylee.com/blog/tags/little-bit/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/search-field/</loc>
+    <loc>https://www.rudylee.com/blog/tags/result-line/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/select-option/</loc>
+    <loc>https://www.rudylee.com/blog/tags/search-field/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/time-user/</loc>
+    <loc>https://www.rudylee.com/blog/tags/select-option/</loc>
     <lastmod>2011-12-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/200k/</loc>
+    <loc>https://www.rudylee.com/blog/tags/time-user/</loc>
+    <lastmod>2011-12-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/tags/200k/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/30-minutes/</loc>
+    <loc>https://www.rudylee.com/blog/tags/30-minutes/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2011/11/23/holiday-has-arrived/</loc>
+    <loc>https://www.rudylee.com/blog/2011/11/23/holiday-has-arrived/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/amount-of-time/</loc>
-    <lastmod>2011-11-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/current-place/</loc>
+    <loc>https://www.rudylee.com/blog/tags/amount-of-time/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/girlfriend/</loc>
+    <loc>https://www.rudylee.com/blog/tags/current-place/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/holidays/</loc>
+    <loc>https://www.rudylee.com/blog/tags/girlfriend/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/indonesia/</loc>
+    <loc>https://www.rudylee.com/blog/tags/holidays/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/indonesian-rupiah/</loc>
+    <loc>https://www.rudylee.com/blog/tags/indonesia/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/new-language/</loc>
+    <loc>https://www.rudylee.com/blog/tags/indonesian-rupiah/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/passport/</loc>
+    <loc>https://www.rudylee.com/blog/tags/new-language/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/point-of-view/</loc>
+    <loc>https://www.rudylee.com/blog/tags/passport/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/wasting-money/</loc>
+    <loc>https://www.rudylee.com/blog/tags/point-of-view/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/wasting-time/</loc>
+    <loc>https://www.rudylee.com/blog/tags/wasting-money/</loc>
     <lastmod>2011-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2011/10/23/short-conversation-with-my-mom/</loc>
+    <loc>https://www.rudylee.com/blog/tags/wasting-time/</loc>
+    <lastmod>2011-11-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2011/10/23/short-conversation-with-my-mom/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/aja/</loc>
+    <loc>https://www.rudylee.com/blog/tags/aja/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/ama/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ama/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/belom/</loc>
+    <loc>https://www.rudylee.com/blog/tags/belom/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/blom/</loc>
+    <loc>https://www.rudylee.com/blog/tags/blom/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/donk/</loc>
+    <loc>https://www.rudylee.com/blog/tags/donk/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/gitu/</loc>
+    <loc>https://www.rudylee.com/blog/tags/gitu/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/gwa/</loc>
+    <loc>https://www.rudylee.com/blog/tags/gwa/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/kapan/</loc>
+    <loc>https://www.rudylee.com/blog/tags/kapan/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/ketar/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ketar/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/koko/</loc>
+    <loc>https://www.rudylee.com/blog/tags/koko/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/lu/</loc>
+    <loc>https://www.rudylee.com/blog/tags/lu/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/mom/</loc>
+    <loc>https://www.rudylee.com/blog/tags/mom/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/pun/</loc>
+    <loc>https://www.rudylee.com/blog/tags/pun/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/rumah/</loc>
+    <loc>https://www.rudylee.com/blog/tags/rumah/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/tau/</loc>
+    <loc>https://www.rudylee.com/blog/tags/tau/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/ted/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ted/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/telepon/</loc>
+    <loc>https://www.rudylee.com/blog/tags/telepon/</loc>
     <lastmod>2011-10-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2011/09/30/reasons-why-i-hate-long-weekend/</loc>
+    <loc>https://www.rudylee.com/blog/2011/09/30/reasons-why-i-hate-long-weekend/</loc>
     <lastmod>2011-09-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/productive-tasks/</loc>
-    <lastmod>2011-09-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/sleep/</loc>
+    <loc>https://www.rudylee.com/blog/tags/productive-tasks/</loc>
     <lastmod>2011-09-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2011/08/28/gource/</loc>
-    <lastmod>2011-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/bazaar/</loc>
-    <lastmod>2011-08-28T00:00:00+00:00</lastmod>
+    <loc>https://www.rudylee.com/blog/tags/sleep/</loc>
+    <lastmod>2011-09-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/command-line-tool/</loc>
+    <loc>https://www.rudylee.com/blog/2011/08/28/gource/</loc>
     <lastmod>2011-08-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/linux/</loc>
+    <loc>https://www.rudylee.com/blog/tags/bazaar/</loc>
     <lastmod>2011-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/linux-kernel-project/</loc>
+    <loc>https://www.rudylee.com/blog/tags/command-line-tool/</loc>
     <lastmod>2011-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/software-version-control/</loc>
+    <loc>https://www.rudylee.com/blog/tags/linux/</loc>
     <lastmod>2011-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/using-software/</loc>
+    <loc>https://www.rudylee.com/blog/tags/linux-kernel-project/</loc>
     <lastmod>2011-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/visualization-tool/</loc>
+    <loc>https://www.rudylee.com/blog/tags/software-version-control/</loc>
     <lastmod>2011-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/autocomplete/</loc>
+    <loc>https://www.rudylee.com/blog/tags/using-software/</loc>
+    <lastmod>2011-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/tags/visualization-tool/</loc>
+    <lastmod>2011-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/tags/autocomplete/</loc>
     <lastmod>2011-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/callback/</loc>
+    <loc>https://www.rudylee.com/blog/tags/callback/</loc>
     <lastmod>2011-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/field-options/</loc>
+    <loc>https://www.rudylee.com/blog/tags/field-options/</loc>
     <lastmod>2011-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2011/07/25/jquery-ui-autocomplete-in-cakephp/</loc>
+    <loc>https://www.rudylee.com/blog/2011/07/25/jquery-ui-autocomplete-in-cakephp/</loc>
     <lastmod>2011-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/pl/</loc>
-    <lastmod>2011-07-25T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/return-string/</loc>
+    <loc>https://www.rudylee.com/blog/tags/pl/</loc>
     <lastmod>2011-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/script-check/</loc>
+    <loc>https://www.rudylee.com/blog/tags/return-string/</loc>
     <lastmod>2011-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/source-options/</loc>
+    <loc>https://www.rudylee.com/blog/tags/script-check/</loc>
     <lastmod>2011-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/string-field/</loc>
+    <loc>https://www.rudylee.com/blog/tags/source-options/</loc>
     <lastmod>2011-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/unset/</loc>
+    <loc>https://www.rudylee.com/blog/tags/string-field/</loc>
     <lastmod>2011-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/url-options/</loc>
+    <loc>https://www.rudylee.com/blog/tags/unset/</loc>
     <lastmod>2011-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2011/06/20/change-wordpress-default-email-and-name/</loc>
+    <loc>https://www.rudylee.com/blog/tags/url-options/</loc>
+    <lastmod>2011-07-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2011/06/20/change-wordpress-default-email-and-name/</loc>
     <lastmod>2011-06-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3.0.7/</loc>
+    <loc>https://www.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3.0.7/</loc>
     <lastmod>2011-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/application-folder/</loc>
-    <lastmod>2011-05-29T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/laptop/</loc>
+    <loc>https://www.rudylee.com/blog/tags/application-folder/</loc>
     <lastmod>2011-05-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/pop-up-window/</loc>
+    <loc>https://www.rudylee.com/blog/tags/laptop/</loc>
     <lastmod>2011-05-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/rails/</loc>
+    <loc>https://www.rudylee.com/blog/tags/pop-up-window/</loc>
     <lastmod>2011-05-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/rake/</loc>
+    <loc>https://www.rudylee.com/blog/tags/rails/</loc>
     <lastmod>2011-05-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2011/05/24/make-wordpress-using-the-latest-jquery/</loc>
-    <lastmod>2011-05-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/content-theme/</loc>
-    <lastmod>2011-05-24T00:00:00+00:00</lastmod>
+    <loc>https://www.rudylee.com/blog/tags/rake/</loc>
+    <lastmod>2011-05-29T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/libs/</loc>
+    <loc>https://www.rudylee.com/blog/2011/05/24/make-wordpress-using-the-latest-jquery/</loc>
     <lastmod>2011-05-24T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/snippet/</loc>
+    <loc>https://www.rudylee.com/blog/tags/content-theme/</loc>
     <lastmod>2011-05-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/theme-folder/</loc>
+    <loc>https://www.rudylee.com/blog/tags/libs/</loc>
     <lastmod>2011-05-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/wp/</loc>
+    <loc>https://www.rudylee.com/blog/tags/snippet/</loc>
     <lastmod>2011-05-24T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2011/04/13/apache-geoip/</loc>
+    <loc>https://www.rudylee.com/blog/tags/theme-folder/</loc>
+    <lastmod>2011-05-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/tags/wp/</loc>
+    <lastmod>2011-05-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2011/04/13/apache-geoip/</loc>
     <lastmod>2011-04-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/apache-module/</loc>
+    <loc>https://www.rudylee.com/blog/tags/apache-module/</loc>
     <lastmod>2011-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/australia/</loc>
+    <loc>https://www.rudylee.com/blog/tags/australia/</loc>
     <lastmod>2011-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/country-code/</loc>
+    <loc>https://www.rudylee.com/blog/tags/country-code/</loc>
     <lastmod>2011-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/geoip/</loc>
+    <loc>https://www.rudylee.com/blog/tags/geoip/</loc>
     <lastmod>2011-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/htaccess-file/</loc>
+    <loc>https://www.rudylee.com/blog/tags/htaccess-file/</loc>
     <lastmod>2011-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/ip/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ip/</loc>
     <lastmod>2011-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/restart-apache/</loc>
+    <loc>https://www.rudylee.com/blog/tags/restart-apache/</loc>
     <lastmod>2011-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/rewriterule/</loc>
+    <loc>https://www.rudylee.com/blog/tags/rewriterule/</loc>
     <lastmod>2011-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/www-canada/</loc>
+    <loc>https://www.rudylee.com/blog/tags/www-canada/</loc>
     <lastmod>2011-04-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2011/03/16/photo-box/</loc>
+    <loc>https://www.rudylee.com/blog/2011/03/16/photo-box/</loc>
     <lastmod>2011-03-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2011/02/12/good-and-you-yourself/</loc>
+    <loc>https://www.rudylee.com/blog/2011/02/12/good-and-you-yourself/</loc>
     <lastmod>2011-02-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/australian/</loc>
+    <loc>https://www.rudylee.com/blog/tags/australian/</loc>
     <lastmod>2011-02-12T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2011/01/30/hello-world/</loc>
+    <loc>https://www.rudylee.com/blog/2011/01/30/hello-world/</loc>
     <lastmod>2011-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/sydney/</loc>
+    <loc>https://www.rudylee.com/blog/tags/sydney/</loc>
     <lastmod>2011-01-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/12/22/pak-aking/</loc>
+    <loc>https://www.rudylee.com/blog/2010/12/22/pak-aking/</loc>
     <lastmod>2010-12-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/11/10/fixed-static-image-path-in-javascript-using-cakephp/</loc>
+    <loc>https://www.rudylee.com/blog/2010/11/10/fixed-static-image-path-in-javascript-using-cakephp/</loc>
     <lastmod>2010-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/javascript/</loc>
-    <lastmod>2010-11-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/router/</loc>
+    <loc>https://www.rudylee.com/blog/tags/javascript/</loc>
     <lastmod>2010-11-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/10/31/pengangguran/</loc>
+    <loc>https://www.rudylee.com/blog/tags/router/</loc>
+    <lastmod>2010-11-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2010/10/31/pengangguran/</loc>
     <lastmod>2010-10-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/kerja/</loc>
+    <loc>https://www.rudylee.com/blog/tags/kerja/</loc>
     <lastmod>2010-10-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/09/30/redcar-textmate-alike-editor/</loc>
+    <loc>https://www.rudylee.com/blog/2010/09/30/redcar-textmate-alike-editor/</loc>
     <lastmod>2010-09-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/editor/</loc>
-    <lastmod>2010-09-30T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/textmate/</loc>
+    <loc>https://www.rudylee.com/blog/tags/editor/</loc>
     <lastmod>2010-09-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/08/30/add-bridge-and-assign-unique-ip-for-each-container-in-openvz/</loc>
+    <loc>https://www.rudylee.com/blog/tags/textmate/</loc>
+    <lastmod>2010-09-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2010/08/30/add-bridge-and-assign-unique-ip-for-each-container-in-openvz/</loc>
     <lastmod>2010-08-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/bridge/</loc>
+    <loc>https://www.rudylee.com/blog/tags/bridge/</loc>
     <lastmod>2010-08-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/openvz/</loc>
+    <loc>https://www.rudylee.com/blog/tags/openvz/</loc>
     <lastmod>2010-08-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/venet/</loc>
+    <loc>https://www.rudylee.com/blog/tags/venet/</loc>
     <lastmod>2010-08-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/veth/</loc>
+    <loc>https://www.rudylee.com/blog/tags/veth/</loc>
     <lastmod>2010-08-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/08/12/sydney-php-group/</loc>
+    <loc>https://www.rudylee.com/blog/2010/08/12/sydney-php-group/</loc>
     <lastmod>2010-08-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/08/11/first-post-in-august-2010/</loc>
+    <loc>https://www.rudylee.com/blog/2010/08/11/first-post-in-august-2010/</loc>
     <lastmod>2010-08-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/07/25/bookmark-with-delicious/</loc>
+    <loc>https://www.rudylee.com/blog/2010/07/25/bookmark-with-delicious/</loc>
     <lastmod>2010-07-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/reviews/</loc>
+    <loc>https://www.rudylee.com/blog/categories/reviews/</loc>
     <lastmod>2010-07-25T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/07/20/installing-openvz-and-webvz-in-centos-5.5/</loc>
+    <loc>https://www.rudylee.com/blog/2010/07/20/installing-openvz-and-webvz-in-centos-5.5/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/ruby-on-rails/</loc>
-    <lastmod>2010-07-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/centos/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ruby-on-rails/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/containers/</loc>
+    <loc>https://www.rudylee.com/blog/tags/centos/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/grub/</loc>
+    <loc>https://www.rudylee.com/blog/tags/containers/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/instances/</loc>
+    <loc>https://www.rudylee.com/blog/tags/grub/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/kernels/</loc>
+    <loc>https://www.rudylee.com/blog/tags/instances/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/linux-kernel/</loc>
+    <loc>https://www.rudylee.com/blog/tags/kernels/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/management-gui/</loc>
+    <loc>https://www.rudylee.com/blog/tags/linux-kernel/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/operating-system/</loc>
+    <loc>https://www.rudylee.com/blog/tags/management-gui/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/physical-server/</loc>
+    <loc>https://www.rudylee.com/blog/tags/operating-system/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/repo/</loc>
+    <loc>https://www.rudylee.com/blog/tags/physical-server/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/repos/</loc>
+    <loc>https://www.rudylee.com/blog/tags/repo/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/repository/</loc>
+    <loc>https://www.rudylee.com/blog/tags/repos/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/virtual-environments/</loc>
+    <loc>https://www.rudylee.com/blog/tags/repository/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/virtual-private-servers/</loc>
+    <loc>https://www.rudylee.com/blog/tags/virtual-environments/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/web-application/</loc>
+    <loc>https://www.rudylee.com/blog/tags/virtual-private-servers/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/wiki/</loc>
+    <loc>https://www.rudylee.com/blog/tags/web-application/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/xen/</loc>
+    <loc>https://www.rudylee.com/blog/tags/wiki/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/yum/</loc>
+    <loc>https://www.rudylee.com/blog/tags/xen/</loc>
     <lastmod>2010-07-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/07/11/eclipse-democamps-2010/</loc>
+    <loc>https://www.rudylee.com/blog/tags/yum/</loc>
+    <lastmod>2010-07-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2010/07/11/eclipse-democamps-2010/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/php/</loc>
+    <loc>https://www.rudylee.com/blog/tags/php/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/acara/</loc>
+    <loc>https://www.rudylee.com/blog/tags/acara/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/arigatou/</loc>
+    <loc>https://www.rudylee.com/blog/tags/arigatou/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/bapak/</loc>
+    <loc>https://www.rudylee.com/blog/tags/bapak/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/bincang/</loc>
+    <loc>https://www.rudylee.com/blog/tags/bincang/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/bulat/</loc>
+    <loc>https://www.rudylee.com/blog/tags/bulat/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/datang-ke/</loc>
+    <loc>https://www.rudylee.com/blog/tags/datang-ke/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/eclipse/</loc>
+    <loc>https://www.rudylee.com/blog/tags/eclipse/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/jalan-jalan/</loc>
+    <loc>https://www.rudylee.com/blog/tags/jalan-jalan/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/java/</loc>
+    <loc>https://www.rudylee.com/blog/tags/java/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/karyawan/</loc>
+    <loc>https://www.rudylee.com/blog/tags/karyawan/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/kesal/</loc>
+    <loc>https://www.rudylee.com/blog/tags/kesal/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/kira-kira/</loc>
+    <loc>https://www.rudylee.com/blog/tags/kira-kira/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/kosan/</loc>
+    <loc>https://www.rudylee.com/blog/tags/kosan/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/lanjut/</loc>
+    <loc>https://www.rudylee.com/blog/tags/lanjut/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/maaf/</loc>
+    <loc>https://www.rudylee.com/blog/tags/maaf/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/nekat/</loc>
+    <loc>https://www.rudylee.com/blog/tags/nekat/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/parkir/</loc>
+    <loc>https://www.rudylee.com/blog/tags/parkir/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/persis/</loc>
+    <loc>https://www.rudylee.com/blog/tags/persis/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/ping-pong/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ping-pong/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/posisi/</loc>
+    <loc>https://www.rudylee.com/blog/tags/posisi/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/riani/</loc>
+    <loc>https://www.rudylee.com/blog/tags/riani/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/ribet/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ribet/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/senang/</loc>
+    <loc>https://www.rudylee.com/blog/tags/senang/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/sudirman/</loc>
+    <loc>https://www.rudylee.com/blog/tags/sudirman/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/yah/</loc>
+    <loc>https://www.rudylee.com/blog/tags/yah/</loc>
     <lastmod>2010-07-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/ubuntu/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ubuntu/</loc>
     <lastmod>2010-06-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/06/28/updating-ports-in-freebsd-8.0/</loc>
+    <loc>https://www.rudylee.com/blog/2010/06/28/updating-ports-in-freebsd-8.0/</loc>
     <lastmod>2010-06-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/freebsd/</loc>
-    <lastmod>2010-06-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/mirror/</loc>
+    <loc>https://www.rudylee.com/blog/tags/freebsd/</loc>
     <lastmod>2010-06-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/ports/</loc>
+    <loc>https://www.rudylee.com/blog/tags/mirror/</loc>
     <lastmod>2010-06-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/several-ways/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ports/</loc>
     <lastmod>2010-06-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/share-examples/</loc>
+    <loc>https://www.rudylee.com/blog/tags/several-ways/</loc>
     <lastmod>2010-06-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/06/08/copying-files-between-2-unix-servers/</loc>
+    <loc>https://www.rudylee.com/blog/tags/share-examples/</loc>
+    <lastmod>2010-06-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2010/06/08/copying-files-between-2-unix-servers/</loc>
     <lastmod>2010-06-08T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/ftp/</loc>
-    <lastmod>2010-06-08T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/ksh/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ftp/</loc>
     <lastmod>2010-06-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/unix/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ksh/</loc>
     <lastmod>2010-06-08T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/06/07/setting-up-nfs-di-ubuntu/</loc>
+    <loc>https://www.rudylee.com/blog/tags/unix/</loc>
+    <lastmod>2010-06-08T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2010/06/07/setting-up-nfs-di-ubuntu/</loc>
     <lastmod>2010-06-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/control/</loc>
-    <lastmod>2010-06-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/nfs/</loc>
+    <loc>https://www.rudylee.com/blog/tags/control/</loc>
     <lastmod>2010-06-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/06/03/upload-file-in-cakephp-using-media-plugin/</loc>
+    <loc>https://www.rudylee.com/blog/tags/nfs/</loc>
+    <lastmod>2010-06-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2010/06/03/upload-file-in-cakephp-using-media-plugin/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/auto-increment/</loc>
+    <loc>https://www.rudylee.com/blog/tags/auto-increment/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/basename/</loc>
+    <loc>https://www.rudylee.com/blog/tags/basename/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/cake/</loc>
+    <loc>https://www.rudylee.com/blog/tags/cake/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/checksum/</loc>
+    <loc>https://www.rudylee.com/blog/tags/checksum/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/component-one/</loc>
+    <loc>https://www.rudylee.com/blog/tags/component-one/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/coupler/</loc>
+    <loc>https://www.rudylee.com/blog/tags/coupler/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/file-upload/</loc>
+    <loc>https://www.rudylee.com/blog/tags/file-upload/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/implementation/</loc>
+    <loc>https://www.rudylee.com/blog/tags/implementation/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/inspiration/</loc>
+    <loc>https://www.rudylee.com/blog/tags/inspiration/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/many-things/</loc>
+    <loc>https://www.rudylee.com/blog/tags/many-things/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/media/</loc>
+    <loc>https://www.rudylee.com/blog/tags/media/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/meta-generator/</loc>
+    <loc>https://www.rudylee.com/blog/tags/meta-generator/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/move-uploaded-file/</loc>
+    <loc>https://www.rudylee.com/blog/tags/move-uploaded-file/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/photos/</loc>
+    <loc>https://www.rudylee.com/blog/tags/photos/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/plugin/</loc>
+    <loc>https://www.rudylee.com/blog/tags/plugin/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/private-action/</loc>
+    <loc>https://www.rudylee.com/blog/tags/private-action/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/upload/</loc>
+    <loc>https://www.rudylee.com/blog/tags/upload/</loc>
     <lastmod>2010-06-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/06/02/maaf-karena-saya-unfollow-kamu/</loc>
+    <loc>https://www.rudylee.com/blog/2010/06/02/maaf-karena-saya-unfollow-kamu/</loc>
     <lastmod>2010-06-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/tech/</loc>
-    <lastmod>2010-06-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/twitter/</loc>
-    <lastmod>2010-06-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/unfollow/</loc>
+    <loc>https://www.rudylee.com/blog/tags/tech/</loc>
     <lastmod>2010-06-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/05/10/berkenalan/</loc>
+    <loc>https://www.rudylee.com/blog/tags/twitter/</loc>
+    <lastmod>2010-06-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/tags/unfollow/</loc>
+    <lastmod>2010-06-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2010/05/10/berkenalan/</loc>
     <lastmod>2010-05-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/bus/</loc>
+    <loc>https://www.rudylee.com/blog/tags/bus/</loc>
     <lastmod>2010-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/cewe/</loc>
+    <loc>https://www.rudylee.com/blog/tags/cewe/</loc>
     <lastmod>2010-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/cowo/</loc>
+    <loc>https://www.rudylee.com/blog/tags/cowo/</loc>
     <lastmod>2010-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/bandung/</loc>
+    <loc>https://www.rudylee.com/blog/tags/bandung/</loc>
     <lastmod>2010-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/coding/</loc>
+    <loc>https://www.rudylee.com/blog/tags/coding/</loc>
     <lastmod>2010-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/dikti/</loc>
+    <loc>https://www.rudylee.com/blog/tags/dikti/</loc>
     <lastmod>2010-05-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/atl/</loc>
+    <loc>https://www.rudylee.com/blog/tags/atl/</loc>
     <lastmod>2010-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/04/18/ngalor-ngidul-di-malam-hari/</loc>
+    <loc>https://www.rudylee.com/blog/2010/04/18/ngalor-ngidul-di-malam-hari/</loc>
     <lastmod>2010-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/binus/</loc>
-    <lastmod>2010-04-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/blank/</loc>
+    <loc>https://www.rudylee.com/blog/tags/binus/</loc>
     <lastmod>2010-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/03/20/capo-buatan-sendiri-atau-emergency-capo/</loc>
+    <loc>https://www.rudylee.com/blog/tags/blank/</loc>
+    <lastmod>2010-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2010/03/20/capo-buatan-sendiri-atau-emergency-capo/</loc>
     <lastmod>2010-03-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/capo/</loc>
+    <loc>https://www.rudylee.com/blog/tags/capo/</loc>
     <lastmod>2010-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/gitar/</loc>
+    <loc>https://www.rudylee.com/blog/tags/gitar/</loc>
     <lastmod>2010-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/guitar/</loc>
+    <loc>https://www.rudylee.com/blog/tags/guitar/</loc>
     <lastmod>2010-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/karet/</loc>
+    <loc>https://www.rudylee.com/blog/tags/karet/</loc>
     <lastmod>2010-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/pena/</loc>
+    <loc>https://www.rudylee.com/blog/tags/pena/</loc>
     <lastmod>2010-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/02/28/git-free-revision-control/</loc>
+    <loc>https://www.rudylee.com/blog/2010/02/28/git-free-revision-control/</loc>
     <lastmod>2010-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/free/</loc>
-    <lastmod>2010-02-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/github/</loc>
-    <lastmod>2010-02-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/revision/</loc>
+    <loc>https://www.rudylee.com/blog/tags/free/</loc>
     <lastmod>2010-02-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/01/27/install-php-fpm-di-freebsd-dengan-web-server-nginx/</loc>
+    <loc>https://www.rudylee.com/blog/tags/github/</loc>
+    <lastmod>2010-02-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/tags/revision/</loc>
+    <lastmod>2010-02-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2010/01/27/install-php-fpm-di-freebsd-dengan-web-server-nginx/</loc>
     <lastmod>2010-01-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2010/01/13/logs-rotate-nginx-di-freebsd/</loc>
+    <loc>https://www.rudylee.com/blog/2010/01/13/logs-rotate-nginx-di-freebsd/</loc>
     <lastmod>2010-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/log-rotate/</loc>
-    <lastmod>2010-01-13T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/logs/</loc>
+    <loc>https://www.rudylee.com/blog/tags/log-rotate/</loc>
     <lastmod>2010-01-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/nginx/</loc>
+    <loc>https://www.rudylee.com/blog/tags/logs/</loc>
     <lastmod>2010-01-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/rotate-logs/</loc>
+    <loc>https://www.rudylee.com/blog/tags/nginx/</loc>
     <lastmod>2010-01-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/12/27/lithium-atau-li3-php-5.3-framework/</loc>
+    <loc>https://www.rudylee.com/blog/tags/rotate-logs/</loc>
+    <lastmod>2010-01-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2009/12/27/lithium-atau-li3-php-5.3-framework/</loc>
     <lastmod>2009-12-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/pengalaman/</loc>
+    <loc>https://www.rudylee.com/blog/tags/pengalaman/</loc>
     <lastmod>2009-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/cake-coding/</loc>
+    <loc>https://www.rudylee.com/blog/tags/cake-coding/</loc>
     <lastmod>2009-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/code-convention/</loc>
+    <loc>https://www.rudylee.com/blog/tags/code-convention/</loc>
     <lastmod>2009-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/li3/</loc>
+    <loc>https://www.rudylee.com/blog/tags/li3/</loc>
     <lastmod>2009-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/lithium/</loc>
+    <loc>https://www.rudylee.com/blog/tags/lithium/</loc>
     <lastmod>2009-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/pacar/</loc>
+    <loc>https://www.rudylee.com/blog/tags/pacar/</loc>
     <lastmod>2009-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/php-framework/</loc>
+    <loc>https://www.rudylee.com/blog/tags/php-framework/</loc>
     <lastmod>2009-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/php5/</loc>
+    <loc>https://www.rudylee.com/blog/tags/php5/</loc>
     <lastmod>2009-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/ruby/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ruby/</loc>
     <lastmod>2009-12-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/mvc/</loc>
+    <loc>https://www.rudylee.com/blog/tags/mvc/</loc>
     <lastmod>2009-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-9.04/</loc>
+    <loc>https://www.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-9.04/</loc>
     <lastmod>2009-11-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/kubuntu/</loc>
+    <loc>https://www.rudylee.com/blog/tags/kubuntu/</loc>
     <lastmod>2009-11-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/11/02/group-select-box-di-cakephp/</loc>
+    <loc>https://www.rudylee.com/blog/2009/11/02/group-select-box-di-cakephp/</loc>
     <lastmod>2009-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/11/02/membuat-image-sebagai-link-di-cakephp/</loc>
+    <loc>https://www.rudylee.com/blog/2009/11/02/membuat-image-sebagai-link-di-cakephp/</loc>
     <lastmod>2009-11-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/cake-select-box/</loc>
-    <lastmod>2009-11-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/helper/</loc>
+    <loc>https://www.rudylee.com/blog/tags/cake-select-box/</loc>
     <lastmod>2009-11-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/image/</loc>
+    <loc>https://www.rudylee.com/blog/tags/helper/</loc>
     <lastmod>2009-11-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/setcombine/</loc>
+    <loc>https://www.rudylee.com/blog/tags/image/</loc>
     <lastmod>2009-11-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/10/20/passing-parameters-di-paging-cakephp/</loc>
+    <loc>https://www.rudylee.com/blog/tags/setcombine/</loc>
+    <lastmod>2009-11-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2009/10/20/passing-parameters-di-paging-cakephp/</loc>
     <lastmod>2009-10-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/limit/</loc>
-    <lastmod>2009-10-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/pagination/</loc>
+    <loc>https://www.rudylee.com/blog/tags/limit/</loc>
     <lastmod>2009-10-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/paging/</loc>
+    <loc>https://www.rudylee.com/blog/tags/pagination/</loc>
     <lastmod>2009-10-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/add-new-tag/</loc>
+    <loc>https://www.rudylee.com/blog/tags/paging/</loc>
+    <lastmod>2009-10-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/tags/add-new-tag/</loc>
     <lastmod>2009-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/apache/</loc>
+    <loc>https://www.rudylee.com/blog/tags/apache/</loc>
     <lastmod>2009-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/bee-watch/</loc>
+    <loc>https://www.rudylee.com/blog/tags/bee-watch/</loc>
     <lastmod>2009-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/binus-access/</loc>
+    <loc>https://www.rudylee.com/blog/tags/binus-access/</loc>
     <lastmod>2009-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/hotlinking/</loc>
+    <loc>https://www.rudylee.com/blog/tags/hotlinking/</loc>
     <lastmod>2009-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/10/19/hotlinking-protection-di-web-server-apache/</loc>
+    <loc>https://www.rudylee.com/blog/2009/10/19/hotlinking-protection-di-web-server-apache/</loc>
     <lastmod>2009-10-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/marketing/</loc>
-    <lastmod>2009-10-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/tv-online/</loc>
+    <loc>https://www.rudylee.com/blog/tags/marketing/</loc>
     <lastmod>2009-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/unix-and-linux/</loc>
+    <loc>https://www.rudylee.com/blog/tags/tv-online/</loc>
     <lastmod>2009-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/binus-access.com/</loc>
+    <loc>https://www.rudylee.com/blog/tags/unix-and-linux/</loc>
     <lastmod>2009-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/fms/</loc>
+    <loc>https://www.rudylee.com/blog/tags/binus-access.com/</loc>
     <lastmod>2009-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/hotlink-protection/</loc>
+    <loc>https://www.rudylee.com/blog/tags/fms/</loc>
     <lastmod>2009-10-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/10/07/lagi-pengen-update-blog/</loc>
+    <loc>https://www.rudylee.com/blog/tags/hotlink-protection/</loc>
+    <lastmod>2009-10-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2009/10/07/lagi-pengen-update-blog/</loc>
     <lastmod>2009-10-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/10/07/memories.../</loc>
+    <loc>https://www.rudylee.com/blog/2009/10/07/memories.../</loc>
     <lastmod>2009-10-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/happy/</loc>
-    <lastmod>2009-10-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/marah/</loc>
-    <lastmod>2009-10-07T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/maroon5/</loc>
+    <loc>https://www.rudylee.com/blog/tags/happy/</loc>
     <lastmod>2009-10-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/memories/</loc>
+    <loc>https://www.rudylee.com/blog/tags/marah/</loc>
     <lastmod>2009-10-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/pekanbaru/</loc>
+    <loc>https://www.rudylee.com/blog/tags/maroon5/</loc>
     <lastmod>2009-10-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/09/01/install-flash-media-server-3-di-ubuntu-9.04/</loc>
+    <loc>https://www.rudylee.com/blog/tags/memories/</loc>
+    <lastmod>2009-10-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/tags/pekanbaru/</loc>
+    <lastmod>2009-10-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2009/09/01/install-flash-media-server-3-di-ubuntu-9.04/</loc>
     <lastmod>2009-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/flash-media-server/</loc>
+    <loc>https://www.rudylee.com/blog/tags/flash-media-server/</loc>
     <lastmod>2009-09-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/08/31/melihat-pemakaian-hard-disk-di-linux/unix/</loc>
+    <loc>https://www.rudylee.com/blog/2009/08/31/melihat-pemakaian-hard-disk-di-linux/unix/</loc>
     <lastmod>2009-08-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/df/</loc>
-    <lastmod>2009-08-31T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/du/</loc>
+    <loc>https://www.rudylee.com/blog/tags/df/</loc>
     <lastmod>2009-08-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/hard-disk/</loc>
+    <loc>https://www.rudylee.com/blog/tags/du/</loc>
     <lastmod>2009-08-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/sun/</loc>
+    <loc>https://www.rudylee.com/blog/tags/hard-disk/</loc>
     <lastmod>2009-08-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/sun-solaris/</loc>
+    <loc>https://www.rudylee.com/blog/tags/sun/</loc>
     <lastmod>2009-08-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/08/16/my-blog-top-search-terms-cakephp/</loc>
+    <loc>https://www.rudylee.com/blog/tags/sun-solaris/</loc>
+    <lastmod>2009-08-31T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2009/08/16/my-blog-top-search-terms-cakephp/</loc>
     <lastmod>2009-08-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/07/23/koneksi-ke-microsoft-sql-server-dengan-php-di-freebsd/</loc>
+    <loc>https://www.rudylee.com/blog/2009/07/23/koneksi-ke-microsoft-sql-server-dengan-php-di-freebsd/</loc>
     <lastmod>2009-07-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/freetds/</loc>
-    <lastmod>2009-07-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/microsoft/</loc>
+    <loc>https://www.rudylee.com/blog/tags/freetds/</loc>
     <lastmod>2009-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/mssql/</loc>
+    <loc>https://www.rudylee.com/blog/tags/microsoft/</loc>
     <lastmod>2009-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/sql-server/</loc>
+    <loc>https://www.rudylee.com/blog/tags/mssql/</loc>
     <lastmod>2009-07-23T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/07/18/setting-mod_rewrite-atau-sef-joomla-di-nginx/</loc>
+    <loc>https://www.rudylee.com/blog/tags/sql-server/</loc>
+    <lastmod>2009-07-23T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2009/07/18/setting-mod_rewrite-atau-sef-joomla-di-nginx/</loc>
     <lastmod>2009-07-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/mod_rewrite/</loc>
+    <loc>https://www.rudylee.com/blog/tags/mod_rewrite/</loc>
     <lastmod>2009-07-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/07/09/hal-yang-paling-menyenangkan-dalam-membuat-sebuah-aplikasi/</loc>
+    <loc>https://www.rudylee.com/blog/2009/07/09/hal-yang-paling-menyenangkan-dalam-membuat-sebuah-aplikasi/</loc>
     <lastmod>2009-07-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/menyenangkan/</loc>
-    <lastmod>2009-07-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/passion/</loc>
+    <loc>https://www.rudylee.com/blog/tags/menyenangkan/</loc>
     <lastmod>2009-07-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/06/30/i-love-jakarta....-at-night/</loc>
+    <loc>https://www.rudylee.com/blog/tags/passion/</loc>
+    <lastmod>2009-07-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2009/06/30/i-love-jakarta....-at-night/</loc>
     <lastmod>2009-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/06/22/mas-nasinya-1/4-aja/</loc>
+    <loc>https://www.rudylee.com/blog/2009/06/22/mas-nasinya-1/4-aja/</loc>
     <lastmod>2009-06-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/mas/</loc>
-    <lastmod>2009-06-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/mbak/</loc>
+    <loc>https://www.rudylee.com/blog/tags/mas/</loc>
     <lastmod>2009-06-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/nasi/</loc>
+    <loc>https://www.rudylee.com/blog/tags/mbak/</loc>
     <lastmod>2009-06-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/seperempat/</loc>
+    <loc>https://www.rudylee.com/blog/tags/nasi/</loc>
     <lastmod>2009-06-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/setengah/</loc>
+    <loc>https://www.rudylee.com/blog/tags/seperempat/</loc>
     <lastmod>2009-06-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/warteg/</loc>
+    <loc>https://www.rudylee.com/blog/tags/setengah/</loc>
     <lastmod>2009-06-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/cas/</loc>
+    <loc>https://www.rudylee.com/blog/tags/warteg/</loc>
+    <lastmod>2009-06-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/tags/cas/</loc>
     <lastmod>2009-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/oauth/</loc>
+    <loc>https://www.rudylee.com/blog/tags/oauth/</loc>
     <lastmod>2009-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/openid/</loc>
+    <loc>https://www.rudylee.com/blog/tags/openid/</loc>
     <lastmod>2009-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/soap/</loc>
+    <loc>https://www.rudylee.com/blog/tags/soap/</loc>
     <lastmod>2009-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/sso/</loc>
+    <loc>https://www.rudylee.com/blog/tags/sso/</loc>
     <lastmod>2009-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/single-sign-on/</loc>
+    <loc>https://www.rudylee.com/blog/tags/single-sign-on/</loc>
     <lastmod>2009-06-04T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/06/04/single-sign-on-cas-josso-crowd-openid-dan-oauth/</loc>
+    <loc>https://www.rudylee.com/blog/2009/06/04/single-sign-on-cas-josso-crowd-openid-dan-oauth/</loc>
     <lastmod>2009-06-04T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/05/18/blank-page-pada-cakephp/</loc>
+    <loc>https://www.rudylee.com/blog/2009/05/18/blank-page-pada-cakephp/</loc>
     <lastmod>2009-05-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/05/09/forrest-gump/</loc>
+    <loc>https://www.rudylee.com/blog/2009/05/09/forrest-gump/</loc>
     <lastmod>2009-05-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/drama/</loc>
-    <lastmod>2009-05-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/film/</loc>
+    <loc>https://www.rudylee.com/blog/tags/drama/</loc>
     <lastmod>2009-05-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/forrest/</loc>
+    <loc>https://www.rudylee.com/blog/tags/film/</loc>
     <lastmod>2009-05-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/gump/</loc>
+    <loc>https://www.rudylee.com/blog/tags/forrest/</loc>
     <lastmod>2009-05-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/menyentuh/</loc>
+    <loc>https://www.rudylee.com/blog/tags/gump/</loc>
     <lastmod>2009-05-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/tom-hanks/</loc>
+    <loc>https://www.rudylee.com/blog/tags/menyentuh/</loc>
     <lastmod>2009-05-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/9.04/</loc>
+    <loc>https://www.rudylee.com/blog/tags/tom-hanks/</loc>
+    <lastmod>2009-05-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/tags/9.04/</loc>
     <lastmod>2009-04-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/jaunty-jackalope/</loc>
+    <loc>https://www.rudylee.com/blog/tags/jaunty-jackalope/</loc>
     <lastmod>2009-04-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/04/27/ubuntu-9.04-jaunty-jackalope/</loc>
+    <loc>https://www.rudylee.com/blog/2009/04/27/ubuntu-9.04-jaunty-jackalope/</loc>
     <lastmod>2009-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/04/18/review-cakephp/</loc>
+    <loc>https://www.rudylee.com/blog/2009/04/18/review-cakephp/</loc>
     <lastmod>2009-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/element/</loc>
+    <loc>https://www.rudylee.com/blog/tags/element/</loc>
     <lastmod>2009-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/03/30/ibu-ibu-dan-yang-lainnya/</loc>
+    <loc>https://www.rudylee.com/blog/2009/03/30/ibu-ibu-dan-yang-lainnya/</loc>
     <lastmod>2009-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/kopi-susu/</loc>
+    <loc>https://www.rudylee.com/blog/tags/kopi-susu/</loc>
     <lastmod>2009-03-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/nasihat/</loc>
+    <loc>https://www.rudylee.com/blog/tags/nasihat/</loc>
     <lastmod>2009-03-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/teknis/</loc>
+    <loc>https://www.rudylee.com/blog/tags/teknis/</loc>
     <lastmod>2009-03-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/03/22/the-bokap-dan-kopi-susu/</loc>
+    <loc>https://www.rudylee.com/blog/2009/03/22/the-bokap-dan-kopi-susu/</loc>
     <lastmod>2009-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/03/20/gwa-menyerah...-udah-cukup...-ga-tahan-lagi.../</loc>
+    <loc>https://www.rudylee.com/blog/2009/03/20/gwa-menyerah...-udah-cukup...-ga-tahan-lagi.../</loc>
     <lastmod>2009-03-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/captcha/</loc>
-    <lastmod>2009-03-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/joomla/</loc>
+    <loc>https://www.rudylee.com/blog/tags/captcha/</loc>
     <lastmod>2009-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/shoutbox/</loc>
+    <loc>https://www.rudylee.com/blog/tags/joomla/</loc>
     <lastmod>2009-03-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/03/10/jangan-ngambek-berkepanjangan-terhadap-org-yg-kamu-kasihi/</loc>
+    <loc>https://www.rudylee.com/blog/tags/shoutbox/</loc>
+    <lastmod>2009-03-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2009/03/10/jangan-ngambek-berkepanjangan-terhadap-org-yg-kamu-kasihi/</loc>
     <lastmod>2009-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/ngambek/</loc>
+    <loc>https://www.rudylee.com/blog/tags/ngambek/</loc>
     <lastmod>2009-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/categories/others/</loc>
+    <loc>https://www.rudylee.com/blog/categories/others/</loc>
     <lastmod>2009-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/kasihi/</loc>
+    <loc>https://www.rudylee.com/blog/tags/kasihi/</loc>
     <lastmod>2009-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/kesel/</loc>
+    <loc>https://www.rudylee.com/blog/tags/kesel/</loc>
     <lastmod>2009-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/03/09/cowok-menang-milihcewek-menang-nolak/</loc>
+    <loc>https://www.rudylee.com/blog/2009/03/09/cowok-menang-milihcewek-menang-nolak/</loc>
     <lastmod>2009-03-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/mencintai/</loc>
-    <lastmod>2009-03-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.rudylee.com/blog/tags/menghargai/</loc>
+    <loc>https://www.rudylee.com/blog/tags/mencintai/</loc>
     <lastmod>2009-03-09T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/kenet/</loc>
+    <loc>https://www.rudylee.com/blog/tags/menghargai/</loc>
+    <lastmod>2009-03-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/tags/kenet/</loc>
     <lastmod>2009-03-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/stories/</loc>
+    <loc>https://www.rudylee.com/blog/tags/stories/</loc>
     <lastmod>2009-03-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/03/05/turun-dari-bus-itu-kaki-kiri-duluan/</loc>
+    <loc>https://www.rudylee.com/blog/2009/03/05/turun-dari-bus-itu-kaki-kiri-duluan/</loc>
     <lastmod>2009-03-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/02/22/dracoola-multimedia/</loc>
+    <loc>https://www.rudylee.com/blog/2009/02/22/dracoola-multimedia/</loc>
     <lastmod>2009-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-berbeda/</loc>
+    <loc>https://www.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-berbeda/</loc>
     <lastmod>2009-02-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/tags/programming/</loc>
+    <loc>https://www.rudylee.com/blog/tags/programming/</loc>
     <lastmod>2009-02-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.rudylee.com/blog/2009/02/11/cakephp-tidak-ada-kata-terlambat-untuk-belajar.../</loc>
+    <loc>https://www.rudylee.com/blog/2009/02/11/cakephp-tidak-ada-kata-terlambat-untuk-belajar.../</loc>
     <lastmod>2009-02-11T00:00:00+00:00</lastmod>
   </url>
   

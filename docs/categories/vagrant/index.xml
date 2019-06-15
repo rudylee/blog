@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vagrant on </title>
-    <link>https://blog.rudylee.com/blog/categories/vagrant/</link>
+    <link>https://www.rudylee.com/blog/categories/vagrant/</link>
     <description>Recent content in Vagrant on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Oct 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.rudylee.com/blog/categories/vagrant/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rudylee.com/blog/categories/vagrant/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Symbolic Links With Vagrant Windows</title>
-      <link>https://blog.rudylee.com/blog/2014/10/27/symbolic-links-with-vagrant-windows/</link>
+      <link>https://www.rudylee.com/blog/2014/10/27/symbolic-links-with-vagrant-windows/</link>
       <pubDate>Mon, 27 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2014/10/27/symbolic-links-with-vagrant-windows/</guid>
+      <guid>https://www.rudylee.com/blog/2014/10/27/symbolic-links-with-vagrant-windows/</guid>
       <description>There are few known limitations when using Vagrant on Windows machine. One of these limitations is the lack of symbolic links support on synced folder.
 Symbolic links are used heavily by NPM to create shortcut for the libraries. I posted more details about this here: http://blog.rudylee.com/2013/10/24/fix-npm-symlink-problem-in-vagrant/
 Most of the time, you can get away with &amp;lsquo;npm &amp;ndash;no-bin-link&amp;rsquo; solution. However, you need more robust solution if you are using complex tools such as Grunt or Yeoman.</description>

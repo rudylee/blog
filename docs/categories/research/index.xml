@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research on </title>
-    <link>https://blog.rudylee.com/blog/categories/research/</link>
+    <link>https://www.rudylee.com/blog/categories/research/</link>
     <description>Recent content in Research on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 May 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.rudylee.com/blog/categories/research/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rudylee.com/blog/categories/research/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Playing with Google Map API</title>
-      <link>https://blog.rudylee.com/blog/2013/05/27/playing-with-google-map-api/</link>
+      <link>https://www.rudylee.com/blog/2013/05/27/playing-with-google-map-api/</link>
       <pubDate>Mon, 27 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2013/05/27/playing-with-google-map-api/</guid>
+      <guid>https://www.rudylee.com/blog/2013/05/27/playing-with-google-map-api/</guid>
       <description>The main purpose of this post is only to write about Google Map API for future reference. Here are the code snippets :
 Get the latitude and longitude based on address : http://maps.googleapis.com/maps/api/geocode/json?address=435A%20Kent%20St&amp;amp;sensor=true
 The code below set up the Google Map, put the marker and also make it grayscale
@@ -25,20 +25,20 @@ The code below set up the Google Map, put the marker and also make it grayscale
     
     <item>
       <title>Hotlinking protection di web server Apache</title>
-      <link>https://blog.rudylee.com/blog/2009/10/19/hotlinking-protection-di-web-server-apache/</link>
+      <link>https://www.rudylee.com/blog/2009/10/19/hotlinking-protection-di-web-server-apache/</link>
       <pubDate>Mon, 19 Oct 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2009/10/19/hotlinking-protection-di-web-server-apache/</guid>
+      <guid>https://www.rudylee.com/blog/2009/10/19/hotlinking-protection-di-web-server-apache/</guid>
       <description>Hari ini gwa disibukkan dengan berbagai banyak kerjaan, entah kenapa kalau masuk kantor itu kerjaan tiba-tiba aja datang bertubi-tubi. Tapi kerjaan utama yang gwa lakukan hari ada memproteksi server Bee Watch.
 Yah, seperti yang kita ketahui bersama bahwa Bee Watch sangat menjadi incaran untuk di-embed ke web-web marketing kelas teri. Dimana siaran Bee Watch ( TV Online) digunakan sebagai penarik traffic ke website mereka dan di website mereka diletakkan bermacam-macam iklan entah darimana datangnya.</description>
     </item>
     
     <item>
       <title>Single Sign On, CAS, Josso, Crowd, OpenID, dan OAuth</title>
-      <link>https://blog.rudylee.com/blog/2009/06/04/single-sign-on-cas-josso-crowd-openid-dan-oauth/</link>
+      <link>https://www.rudylee.com/blog/2009/06/04/single-sign-on-cas-josso-crowd-openid-dan-oauth/</link>
       <pubDate>Thu, 04 Jun 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2009/06/04/single-sign-on-cas-josso-crowd-openid-dan-oauth/</guid>
+      <guid>https://www.rudylee.com/blog/2009/06/04/single-sign-on-cas-josso-crowd-openid-dan-oauth/</guid>
       <description>Karena banyak yang minta dikirimin skripsi, sekarang udah gwa upload skripsi gwa. Silakan di download Klik Disini
 Lagi pengen update blog, tapi bingung musti ngisi apa&amp;hellip; pengen curhat tapi nanti pada tanya2 lagi&amp;hellip; ya sudah lah daripada cerita-cerita ga jelas bagusan bahas tentang single sign on atau SSO&amp;hellip;
 Single sign on ini merupakan topik skripsi gwa tahun lalu&amp;hellip; yah bisa dibilang semester kemarin secara gwa sedang menunggu wisuda hari sabtu ini&amp;hellip; ( sambil menunggu bak cang juga dari pekanbaru&amp;hellip; ea ).</description>

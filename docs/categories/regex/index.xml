@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Regex on </title>
-    <link>https://blog.rudylee.com/blog/categories/regex/</link>
+    <link>https://www.rudylee.com/blog/categories/regex/</link>
     <description>Recent content in Regex on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.rudylee.com/blog/categories/regex/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rudylee.com/blog/categories/regex/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Regular Expression For A String Containing One Word But Not Another</title>
-      <link>https://blog.rudylee.com/blog/2017/07/28/regular-expression-for-a-string-containing-one-word-but-not-another/</link>
+      <link>https://www.rudylee.com/blog/2017/07/28/regular-expression-for-a-string-containing-one-word-but-not-another/</link>
       <pubDate>Fri, 28 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2017/07/28/regular-expression-for-a-string-containing-one-word-but-not-another/</guid>
+      <guid>https://www.rudylee.com/blog/2017/07/28/regular-expression-for-a-string-containing-one-word-but-not-another/</guid>
       <description>Last weekend, one our apps that is hosted on Heroku were reporting a lot of R14 errors.
 R14 is an error that thrown by Heroku if the machine is running out of memory.
 I quickly jumped into (logentries)[https://logentries.com/] to download the log file and opened it in Sublime Text.

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PostgreSQL on </title>
-    <link>https://blog.rudylee.com/blog/categories/postgresql/</link>
+    <link>https://www.rudylee.com/blog/categories/postgresql/</link>
     <description>Recent content in PostgreSQL on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 31 Aug 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.rudylee.com/blog/categories/postgresql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rudylee.com/blog/categories/postgresql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Create SSH Tunnel To Backup PostgreSQL Database</title>
-      <link>https://blog.rudylee.com/blog/2015/08/31/create-ssh-tunnel-to-backup-postgresql-database/</link>
+      <link>https://www.rudylee.com/blog/2015/08/31/create-ssh-tunnel-to-backup-postgresql-database/</link>
       <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2015/08/31/create-ssh-tunnel-to-backup-postgresql-database/</guid>
+      <guid>https://www.rudylee.com/blog/2015/08/31/create-ssh-tunnel-to-backup-postgresql-database/</guid>
       <description>Today, I was trying to create a backup of production database. The problem is we have two different version of PostgreSQL running on production and these databases can only be accessed from front end(FE) server. We have older version of PostgreSQL client installed in all FE server which means I can&amp;rsquo;t use it to run pg_dump.
 SSH Tunnel to the rescue One solution to this problem is to create a SSH tunnel.</description>
     </item>

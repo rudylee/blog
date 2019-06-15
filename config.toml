@@ -1,4 +1,4 @@
-baseURL = "https://blog.rudylee.com/blog"
+baseURL = "https://www.rudylee.com/blog"
 languageCode = "en-us"
 theme = "hyde"
 disqusShortname = "blogrudylee"
@@ -6,6 +6,7 @@ pygmentsOptions = "linenos=table"
 pygmentsCodefences = true
 publishDir = "docs"
 googleAnalytics = "UA-10301272-1"
+canonifyURLs = true
 
 [params]
   author = "Rudy Lee"

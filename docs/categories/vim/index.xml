@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vim on </title>
-    <link>https://blog.rudylee.com/blog/categories/vim/</link>
+    <link>https://www.rudylee.com/blog/categories/vim/</link>
     <description>Recent content in Vim on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 May 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.rudylee.com/blog/categories/vim/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rudylee.com/blog/categories/vim/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Rails Engines and Vim</title>
-      <link>https://blog.rudylee.com/blog/2015/05/03/rails-engines-and-vim/</link>
+      <link>https://www.rudylee.com/blog/2015/05/03/rails-engines-and-vim/</link>
       <pubDate>Sun, 03 May 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2015/05/03/rails-engines-and-vim/</guid>
+      <guid>https://www.rudylee.com/blog/2015/05/03/rails-engines-and-vim/</guid>
       <description>At the moment, I am working on a Ruby on Rails projects using Rails Engines ( you can read more about Rails Engines here: http://guides.rubyonrails.org/engines.html ). In this post, I&amp;rsquo;ll share my tips and trick on how to configure your vim to work with Rails Engines.
 NERDTree Bookmark I am using NERDTree Bookmark to quickly jump between different engines. If you are using NERDTree, you can create a bookmark by putting your cursor on one of the Rails Engines directory and use the command below:</description>
     </item>

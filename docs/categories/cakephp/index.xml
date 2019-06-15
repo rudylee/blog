@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CakePHP on </title>
-    <link>https://blog.rudylee.com/blog/categories/cakephp/</link>
+    <link>https://www.rudylee.com/blog/categories/cakephp/</link>
     <description>Recent content in CakePHP on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 02 Feb 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.rudylee.com/blog/categories/cakephp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rudylee.com/blog/categories/cakephp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bootstrap Typeahead CakePHP 2.0</title>
-      <link>https://blog.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2.0/</link>
+      <link>https://www.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2.0/</link>
       <pubDate>Sat, 02 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2.0/</guid>
+      <guid>https://www.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2.0/</guid>
       <description>Demo : http://cbunny2.rudylee.com/users/typeahead Source : https://github.com/rudylee/cbunny
 In this post, I&amp;rsquo;ll explain how to integrate Twitter Bootstrap Typeahead with your CakePHP 2.0 application. We will avoid using helpers or plugins and stick with plain Javascript + jQuery. Make sure you have include jQuery, Bootstrap CSS and Bootstrap Javascript files in your CakePHP application. You can simply do it inside your default.ctp file ( the files are bootstrap.min.js and bootstrap.min.css ).
 After that we will create controller, action and view to put our input box.</description>
@@ -24,20 +24,20 @@ After that we will create controller, action and view to put our input box.</des
     
     <item>
       <title>Select2 AJAX Auto Complete with CakePHP 2.0</title>
-      <link>https://blog.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2.0/</link>
+      <link>https://www.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2.0/</link>
       <pubDate>Sat, 02 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2.0/</guid>
+      <guid>https://www.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2.0/</guid>
       <description>Demo : http://cbunny2.rudylee.com/users/select2 Source : https://github.com/rudylee/cbunny
 In this post, I&amp;rsquo;ll explain how to use Select2 inside CakePHP. We will avoid using any helpers and rely on jQuery + Javascript. Before we start, I presume you have downloaded Select2 and included the Javascript and CSS files inside your layout. Thus, I won&amp;rsquo;t explain how to import Select2 library into your CakePHP app ( you can download my cbunny app from Github if you are lost ).</description>
     </item>
     
     <item>
       <title>No prefix support for mapResources in CakePHP 2.x</title>
-      <link>https://blog.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2.x/</link>
+      <link>https://www.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2.x/</link>
       <pubDate>Wed, 28 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2.x/</guid>
+      <guid>https://www.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2.x/</guid>
       <description>REST API is relatively easy to implement if you are using web framework to build your application. In Rails, you just need to add single &amp;lsquo;resources&amp;rsquo; entry in your routing file. In CakePHP, it has similar solution as you can read in the Cookbook. However, currently there is no prefix support in CakePHP 2.x and this is confirmed in these links :
  http://cakephp.lighthouseapp.com/projects/42648/tickets/968-rest-routes-with-prefix
  https://github.com/cakephp/cakephp/pull/763
@@ -46,20 +46,20 @@ In this post, I&amp;rsquo;ll explain how to use Select2 inside CakePHP. We will 
     
     <item>
       <title>Cake Bunny website now using twitter bootstrap!</title>
-      <link>https://blog.rudylee.com/blog/2012/03/20/cake-bunny-website-now-using-twitter-bootstrap/</link>
+      <link>https://www.rudylee.com/blog/2012/03/20/cake-bunny-website-now-using-twitter-bootstrap/</link>
       <pubDate>Tue, 20 Mar 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2012/03/20/cake-bunny-website-now-using-twitter-bootstrap/</guid>
+      <guid>https://www.rudylee.com/blog/2012/03/20/cake-bunny-website-now-using-twitter-bootstrap/</guid>
       <description>Today, I spent couple hours to update my Cake Bunny 1.0 and Cake Bunny 2.0 websites. Cake Bunny is CakePHP website that I built to provide live demo for CakePHP tutorials in mt blog. At the moment, it has only two sample demos ( jQuery UI AutoComplete and jQuery UI AutoComplete Redirect).
 I decided to make over the design using Twitter Bootstrap instead of CakePHP default template. For you guys that haven&amp;rsquo;t try twitter bootstrap yet, I suggest you give it a try.</description>
     </item>
     
     <item>
       <title>&#39;Auto redirect in CakePHP jQuery AutoComplete &#39;</title>
-      <link>https://blog.rudylee.com/blog/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/</link>
+      <link>https://www.rudylee.com/blog/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/</link>
       <pubDate>Mon, 12 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/</guid>
+      <guid>https://www.rudylee.com/blog/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/</guid>
       <description>Demo : http://cbunny.rudylee.com/autocomplete_redirect Demo source code :https://github.com/rudylee/cbunny
  In my previous post ( http://blog.rudylee.com/2011/07/25/jquery-ui-autocomplete-in-cakephp/ ) we have successfully integrated the jQuery AutoComplete with CakePHP with a little bit hacky way. Now we gonna add another feature that can redirect user to our desired place when they click the result value in the AutoComplete ( try the demo for more details ).
 So let&amp;rsquo;s start the coding ( I assume you have integrated the jQuery UI AutoComplete in your apps, if you haven&amp;rsquo;t, just read my previous post ), so basically what we need to do are divided into 4 steps:</description>
@@ -67,49 +67,49 @@ So let&amp;rsquo;s start the coding ( I assume you have integrated the jQuery UI
     
     <item>
       <title>jQuery UI AutoComplete in CakePHP</title>
-      <link>https://blog.rudylee.com/blog/2011/07/25/jquery-ui-autocomplete-in-cakephp/</link>
+      <link>https://www.rudylee.com/blog/2011/07/25/jquery-ui-autocomplete-in-cakephp/</link>
       <pubDate>Mon, 25 Jul 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2011/07/25/jquery-ui-autocomplete-in-cakephp/</guid>
+      <guid>https://www.rudylee.com/blog/2011/07/25/jquery-ui-autocomplete-in-cakephp/</guid>
       <description>Demo : http://cbunny.rudylee.com/autocomplete Demo source code :https://github.com/rudylee/cbunny The post to add auto redirect feature into the AutoComplete : http://blog.rudylee.com/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/ You can copy the modified Ajax and Javascript helpers from here https://github.com/rudylee/topping
 Last week I was trying to use jQuery UI Autocomplete in my CakePHP apps. However, CakePHP Ajax and Javascript helpers don&amp;rsquo;t support jQuery by default. After googling a little bit, I found that this guy ( http://www.cakephp.bee.pl/ ) already made Ajax and Javascript helpers for jQuery.</description>
     </item>
     
     <item>
       <title>Fixed static image path in Javascript using CakePHP</title>
-      <link>https://blog.rudylee.com/blog/2010/11/10/fixed-static-image-path-in-javascript-using-cakephp/</link>
+      <link>https://www.rudylee.com/blog/2010/11/10/fixed-static-image-path-in-javascript-using-cakephp/</link>
       <pubDate>Wed, 10 Nov 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2010/11/10/fixed-static-image-path-in-javascript-using-cakephp/</guid>
+      <guid>https://www.rudylee.com/blog/2010/11/10/fixed-static-image-path-in-javascript-using-cakephp/</guid>
       <description>Today I was encountered a problem within the static path for images in my Javascript file. So this was a design that given by my friend Budi, and he using a Jquery slider plugin in his design. Here are the original Javascript file that he gave me :
 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143  // set up horizontal scroll var setupFeaturedBoxes = function () { var buttons = { previous: { enabled: &amp;#39;/img/arrow1-left.</description>
     </item>
     
     <item>
       <title>Upload file in CakePHP using Media Plugin</title>
-      <link>https://blog.rudylee.com/blog/2010/06/03/upload-file-in-cakephp-using-media-plugin/</link>
+      <link>https://www.rudylee.com/blog/2010/06/03/upload-file-in-cakephp-using-media-plugin/</link>
       <pubDate>Thu, 03 Jun 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2010/06/03/upload-file-in-cakephp-using-media-plugin/</guid>
+      <guid>https://www.rudylee.com/blog/2010/06/03/upload-file-in-cakephp-using-media-plugin/</guid>
       <description>There are many solutions to handle file upload in PHP, one of the common solutions is to create a custom action that will check the type of the file, size, validate whether the file name already exists or not, and the last thing is moving the file using move_uploaded_file(). However, it doesn&amp;rsquo;t end when the files are in your server, after that you still need to write a function to delete the files, manipulate it if needed and so on.</description>
     </item>
     
     <item>
       <title>Group select box di CakePHP</title>
-      <link>https://blog.rudylee.com/blog/2009/11/02/group-select-box-di-cakephp/</link>
+      <link>https://www.rudylee.com/blog/2009/11/02/group-select-box-di-cakephp/</link>
       <pubDate>Mon, 02 Nov 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2009/11/02/group-select-box-di-cakephp/</guid>
+      <guid>https://www.rudylee.com/blog/2009/11/02/group-select-box-di-cakephp/</guid>
       <description>Grouping di dalam select box adalah hal yang gampang ketika kita menggunakan codingan php biasa, tetapi kalau sudah masuk ke dalam codingan CakePHP kita harus banyak membaca documentation untuk teknik2nya, tickets jika ada yang pernah menanyakan hal yang sama dan tentu saja API agar kita tahu fungsi dari method yang akan kita pakai.
 Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam gambar di bawah ini : [caption id=&amp;ldquo;&amp;rdquo; align=&amp;ldquo;alignnone&amp;rdquo; width=&amp;ldquo;217&amp;rdquo; caption=&amp;ldquo;CakePHP Group Select&amp;rdquo;][/caption]</description>
     </item>
     
     <item>
       <title>Membuat image sebagai link di CakePHP</title>
-      <link>https://blog.rudylee.com/blog/2009/11/02/membuat-image-sebagai-link-di-cakephp/</link>
+      <link>https://www.rudylee.com/blog/2009/11/02/membuat-image-sebagai-link-di-cakephp/</link>
       <pubDate>Mon, 02 Nov 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2009/11/02/membuat-image-sebagai-link-di-cakephp/</guid>
+      <guid>https://www.rudylee.com/blog/2009/11/02/membuat-image-sebagai-link-di-cakephp/</guid>
       <description>Mungkin kita pernah membuat sebuah gambar menjadi sebuah link seperti untuk banner registrasi atau banner untuk iklan dan sebagainya.
 Jika cara biasanya atau konvesional maka kita tinggal membuat seperti ini :
 &amp;lt;a href=&amp;quot;http://xxx&amp;quot;&amp;gt;&amp;lt;img src=&amp;quot;path/images&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;  Sementara dalam CakePHP ada cara yang lebih gampang atau mungkin bagi beberapa orang lebih susah, yaitu :
@@ -118,10 +118,10 @@ link($html-&amp;gt;image(&#39;/images/btn-register.png&#39;), array(&#39;control
     
     <item>
       <title>Passing parameters di paging CakePHP</title>
-      <link>https://blog.rudylee.com/blog/2009/10/20/passing-parameters-di-paging-cakephp/</link>
+      <link>https://www.rudylee.com/blog/2009/10/20/passing-parameters-di-paging-cakephp/</link>
       <pubDate>Tue, 20 Oct 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2009/10/20/passing-parameters-di-paging-cakephp/</guid>
+      <guid>https://www.rudylee.com/blog/2009/10/20/passing-parameters-di-paging-cakephp/</guid>
       <description>Sekian lama gwa ga sentuh2 CakePHP lagi ternyata sekarang ada kesempatan lagi buat megang CakePHP, ternyata setelah lama ga grepe2 CakePHP banyak codingan dan syntax2 yang gwa lupa dan salah satunya ada passing parameter ketika melakukan paging dan juga melimit jumlah row setiap halamannya.
 jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. Ceritanya gwa punya method dalam controller seperti ini.
 1 2 3 4 5 6 7 8 9  function index($id = null) { if(!</description>
@@ -129,20 +129,20 @@ jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. 
     
     <item>
       <title>My blog top search terms - CakePHP</title>
-      <link>https://blog.rudylee.com/blog/2009/08/16/my-blog-top-search-terms-cakephp/</link>
+      <link>https://www.rudylee.com/blog/2009/08/16/my-blog-top-search-terms-cakephp/</link>
       <pubDate>Sun, 16 Aug 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2009/08/16/my-blog-top-search-terms-cakephp/</guid>
+      <guid>https://www.rudylee.com/blog/2009/08/16/my-blog-top-search-terms-cakephp/</guid>
       <description>Setelah sekian lama ga update ama buka blog gwa sendiri akhirnya gwa punya waktu buat update blog lagi. Seperti biasa hal yang gwa lakukan adalah mengecek StatPress gwa untuk melihat berapa banyak kunjungan yang ada ke blog gwa dan hasilnya ternyata sangat mengecewakan ( hiks pengunjung semakin berkurang ). Yah mungkin gara-gara gwa jarang update blog lagi sih.
 Tapi kalau gwa telusuri dari StatPress, ternyata ada satu hal yang menarik yaitu top search terms ( kata kunci yang dicari di search engine ) di blog gwa adalah CakePHP ( entah cari tutorial, entah cari arti CakePHP ).</description>
     </item>
     
     <item>
       <title>Blank page pada CakePHP</title>
-      <link>https://blog.rudylee.com/blog/2009/05/18/blank-page-pada-cakephp/</link>
+      <link>https://www.rudylee.com/blog/2009/05/18/blank-page-pada-cakephp/</link>
       <pubDate>Mon, 18 May 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2009/05/18/blank-page-pada-cakephp/</guid>
+      <guid>https://www.rudylee.com/blog/2009/05/18/blank-page-pada-cakephp/</guid>
       <description>Hari ini gwa mencoba memindahkan sebuah project yang dibuat dengan menggunakan CakePHP ke komputer lain. Persiapan standard seperti mencopy folder project dan nge-dump file database sudah dilakukan. Trus file-file tersebut dimasukkan ke dalam flash disk untuk dipindahkan.
 Tetapi ternyata semua tidak berjalan mulus seperti yang gwa kira. Setelah selesai mengcopy file tersebut ke dalam komputer yang lain, ketika ingin membuka halaman cakephp ternyata hanya halaman kosong saja yang terbuka.
 Pertama kali kecurigaan dimulai dari webserver dan settingan PHP.</description>
@@ -150,20 +150,20 @@ Pertama kali kecurigaan dimulai dari webserver dan settingan PHP.</description>
     
     <item>
       <title>Review CakePHP</title>
-      <link>https://blog.rudylee.com/blog/2009/04/18/review-cakephp/</link>
+      <link>https://www.rudylee.com/blog/2009/04/18/review-cakephp/</link>
       <pubDate>Sat, 18 Apr 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2009/04/18/review-cakephp/</guid>
+      <guid>https://www.rudylee.com/blog/2009/04/18/review-cakephp/</guid>
       <description>Setelah sekian lama ga update blog, akhirnya update blog lagi deh&amp;hellip; Untuk kali ini ga bakalan cerita-cerita yang aneh-aneh ataupun yang lucu-lucu&amp;hellip; soalnya emang lagi ga ada kejadian yang benar-benar &amp;ldquo;klik&amp;rdquo; yang bisa diceritakan ( beberapa hari ini semua terasa semu hix ).
 Jadi kali ini gwa akan melakukan review terhadap framework PHP yang sudah gwa pelajari kurang lebih 5 bulan lamanya yaitu CakePHP. Selama 5 bulan ini gwa lewati dengan mempelajari CakePHP, dari baca ebook, nonton video tutorial sampai tanya-tanya sama orang-orang di channel #cakephp di irc.</description>
     </item>
     
     <item>
       <title>&#39;CakePHP : Mengakses sebuah model pada controller yang berbeda&#39;</title>
-      <link>https://blog.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-berbeda/</link>
+      <link>https://www.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-berbeda/</link>
       <pubDate>Sun, 15 Feb 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-berbeda/</guid>
+      <guid>https://www.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-berbeda/</guid>
       <description>Dalam CakePHP biasanya sebuah model - view - controller pasti saling berhubungan dan mempunyai nama yang mirip.
 Contohnya sebuah tabel users mempunyai model yang bernama user, controller bernama _userscontroller, dan folder view yang bernama_ user_.
 Tapi permasalahannya adalah terkadang kita harus mengakses model lain tetapi controller tersebut tidak mempunyai relasi sama sekali dengan model / tabel ini.

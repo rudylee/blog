@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>L2TP on </title>
-    <link>https://blog.rudylee.com/blog/categories/l2tp/</link>
+    <link>https://www.rudylee.com/blog/categories/l2tp/</link>
     <description>Recent content in L2TP on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Jan 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.rudylee.com/blog/categories/l2tp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rudylee.com/blog/categories/l2tp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Setting Up L2TP VPN to Bypass Great Firewall Of China</title>
-      <link>https://blog.rudylee.com/blog/2017/01/11/setting-up-l2tp-vpn-to-bypass-great-firewall-of-china/</link>
+      <link>https://www.rudylee.com/blog/2017/01/11/setting-up-l2tp-vpn-to-bypass-great-firewall-of-china/</link>
       <pubDate>Wed, 11 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2017/01/11/setting-up-l2tp-vpn-to-bypass-great-firewall-of-china/</guid>
+      <guid>https://www.rudylee.com/blog/2017/01/11/setting-up-l2tp-vpn-to-bypass-great-firewall-of-china/</guid>
       <description>Last month, I traveled to China for the second time. Unlike my first trip, this time I am more prepared to bypass the great firewall of China.
 During my first trip in China, I was mainly relying on simple SSH tunnel to get access to Gmail and all other blocked services. This solution is unrealiable because I couldn&amp;rsquo;t use it on my Android phone. Aside from that, I also kept having constant dropouts which explained in this blog post http://blog.</description>
     </item>

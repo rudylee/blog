@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on </title>
-    <link>https://blog.rudylee.com/blog/categories/linux/</link>
+    <link>https://www.rudylee.com/blog/categories/linux/</link>
     <description>Recent content in Linux on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Mar 2016 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.rudylee.com/blog/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rudylee.com/blog/categories/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Create new user on Amazon AMI and give it root access</title>
-      <link>https://blog.rudylee.com/blog/2016/03/09/create-new-user-on-amazon-ami-and-give-it-root-access/</link>
+      <link>https://www.rudylee.com/blog/2016/03/09/create-new-user-on-amazon-ami-and-give-it-root-access/</link>
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2016/03/09/create-new-user-on-amazon-ami-and-give-it-root-access/</guid>
+      <guid>https://www.rudylee.com/blog/2016/03/09/create-new-user-on-amazon-ami-and-give-it-root-access/</guid>
       <description>Setup your new EC2 instance on AWS and choose Amazon AMI.
 SSH to your instance using your private key
 ssh -i &amp;lt;path-to-your-pem-file&amp;gt; ec2-user@&amp;lt;ec2-endpoint-or-ip&amp;gt;  Change to root
@@ -27,10 +27,10 @@ useradd -g dev dev  Give the username root access</description>
     
     <item>
       <title>Sending email from Amazon EC2 using postfix and Amazon SES</title>
-      <link>https://blog.rudylee.com/blog/2013/07/26/sending-email-from-amazon-ec2-using-postfix-and-amazon-ses/</link>
+      <link>https://www.rudylee.com/blog/2013/07/26/sending-email-from-amazon-ec2-using-postfix-and-amazon-ses/</link>
       <pubDate>Fri, 26 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2013/07/26/sending-email-from-amazon-ec2-using-postfix-and-amazon-ses/</guid>
+      <guid>https://www.rudylee.com/blog/2013/07/26/sending-email-from-amazon-ec2-using-postfix-and-amazon-ses/</guid>
       <description>Sending email is a basic functionality that most of the applications need to support. In my company latest project, we have to send invitation emails to users through an Amazon EC2 instance. It is relatively easy task because I can use built in email library from Code Igniter and point it to Amazon SES. It works perfectly until my colleague realize that there is a slightly delay when the application sends the email.</description>
     </item>
     

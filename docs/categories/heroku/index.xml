@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Heroku on </title>
-    <link>https://blog.rudylee.com/blog/categories/heroku/</link>
+    <link>https://www.rudylee.com/blog/categories/heroku/</link>
     <description>Recent content in Heroku on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 18 Aug 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.rudylee.com/blog/categories/heroku/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rudylee.com/blog/categories/heroku/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to Run Code Snippet in Heroku Rails Console</title>
-      <link>https://blog.rudylee.com/blog/2018/08/18/how-to-run-code-snippet-in-heroku-rails-console/</link>
+      <link>https://www.rudylee.com/blog/2018/08/18/how-to-run-code-snippet-in-heroku-rails-console/</link>
       <pubDate>Sat, 18 Aug 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2018/08/18/how-to-run-code-snippet-in-heroku-rails-console/</guid>
+      <guid>https://www.rudylee.com/blog/2018/08/18/how-to-run-code-snippet-in-heroku-rails-console/</guid>
       <description>Often in my day to day work, I need to run a snippet in rails console to fix or investigate issues. Since our application is hosted on Heroku, I can do this by running heroku rails console --app app-name and in a matter of seconds I am connected to the rails console on production.
 In some cases, I need to run a really long code snippet especially if the fix needs to touch a lot of data.</description>
     </item>

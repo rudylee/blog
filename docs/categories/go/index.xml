@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on </title>
-    <link>https://blog.rudylee.com/blog/categories/go/</link>
+    <link>https://www.rudylee.com/blog/categories/go/</link>
     <description>Recent content in Go on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 23 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.rudylee.com/blog/categories/go/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rudylee.com/blog/categories/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Download CSV Test in Go</title>
-      <link>https://blog.rudylee.com/blog/2018/06/23/download-csv-test-in-go/</link>
+      <link>https://www.rudylee.com/blog/2018/06/23/download-csv-test-in-go/</link>
       <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2018/06/23/download-csv-test-in-go/</guid>
+      <guid>https://www.rudylee.com/blog/2018/06/23/download-csv-test-in-go/</guid>
       <description>In the project I am working on, I have to write a test for a function that download CSV from external website and store it locally. I am pretty new in Go so please let me know if I am doing it wrong.
 The function is pretty simple, it uses the Go net/http package to send a GET request and os package to write the HTTP response to a local file.</description>
     </item>

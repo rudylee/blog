@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>New Relic on </title>
-    <link>https://blog.rudylee.com/blog/categories/new-relic/</link>
+    <link>https://www.rudylee.com/blog/categories/new-relic/</link>
     <description>Recent content in New Relic on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://blog.rudylee.com/blog/categories/new-relic/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.rudylee.com/blog/categories/new-relic/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Monitor Background Jobs with New Relic Query Language</title>
-      <link>https://blog.rudylee.com/blog/2017/07/01/monitor-background-jobs-with-new-relic-query-language/</link>
+      <link>https://www.rudylee.com/blog/2017/07/01/monitor-background-jobs-with-new-relic-query-language/</link>
       <pubDate>Sat, 01 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.rudylee.com/blog/2017/07/01/monitor-background-jobs-with-new-relic-query-language/</guid>
+      <guid>https://www.rudylee.com/blog/2017/07/01/monitor-background-jobs-with-new-relic-query-language/</guid>
       <description>Background In this blog post, I&amp;rsquo;ll show you how to set up an alert to monitor your sidekiq jobs using New Relic Query Language and New Relic Alert.
 I was given a task to find a solution to monitor our sidekiq jobs. In the past, I used New Relic Sidekiq Plugin ( https://newrelic.com/plugins/secondimpression/131 ) to do this.
 The plugin is a Ruby app that connects to your Redis instance, retrieves all of the sidekiq metrics such as jobs, queues and send it to New Relic using the agent library.</description>
