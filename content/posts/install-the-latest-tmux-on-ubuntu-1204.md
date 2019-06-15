@@ -1,7 +1,7 @@
 +++
 title = "Install the latest tmux on Ubuntu 12.04"
 date = "2013-12-06"
-slug = "2013/12/06/install-the-latest-tmux-on-ubuntu-12-dot-04"
+slug = "2013/12/06/install-the-latest-tmux-on-ubuntu-12.04"
 Categories = ["Unix and Linux"]
 +++
 
