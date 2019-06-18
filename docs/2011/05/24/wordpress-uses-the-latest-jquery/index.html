@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.55.6" />
+
+    
+    
+    
+
+<title>Make wordpress using the latest jQuery • </title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Make wordpress using the latest jQuery"/>
+<meta name="twitter:description" content="I just copied this from another website, put it here just in case that I forgot.
+1 2 3 4 5  if( !is_admin()){ wp_deregister_script(&#39;jquery&#39;); wp_register_script(&#39;jquery&#39;, (&#34;http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&#34;), false, &#39;&#39;); wp_enqueue_script(&#39;jquery&#39;); }   Put this snippet to functions.php file in your theme folder ( eg : wp-content/theme/whatever/functions.php )"/>
+
+<meta property="og:title" content="Make wordpress using the latest jQuery" />
+<meta property="og:description" content="I just copied this from another website, put it here just in case that I forgot.
+1 2 3 4 5  if( !is_admin()){ wp_deregister_script(&#39;jquery&#39;); wp_register_script(&#39;jquery&#39;, (&#34;http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&#34;), false, &#39;&#39;); wp_enqueue_script(&#39;jquery&#39;); }   Put this snippet to functions.php file in your theme folder ( eg : wp-content/theme/whatever/functions.php )" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.rudylee.com/blog/2011/05/24/wordpress-uses-the-latest-jquery/" />
+<meta property="article:published_time" content="2011-05-24T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2011-05-24T00:00:00&#43;00:00"/>
+
+
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+
+
+<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.rudylee.com/blog/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="https://www.rudylee.com/blog/favicon.png">
+    
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://www.rudylee.com/blog"></a>
+      </span>
+      
+      
+        <div class="author-image">
+          <img src="https://www.gravatar.com/avatar/580b17799c8ed239b913eef56769170d?s=240&d=mp" class="img--circle img--headshot element--center" alt="gravatar">
+        </div>
+      
+      <p class="site__description">
+         Hi! I&#39;m Rudy Lee. Here are some thoughts of mine. 
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle"></label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="https://www.rudylee.com/blog/">
+						<span>Home</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="https://www.rudylee.com/blog/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="https://www.rudylee.com/blog/categories/">
+						<span>Categories</span>
+					</a>
+				</li>
+			 
+		
+		</li>
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/rudylee88" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://github.com/rudylee" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/rudy-lee-12952b20" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2019 Rudy Lee
+  
+</div>
+
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Make wordpress using the latest jQuery</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> May 24, 2011
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="https://www.rudylee.com/blog/categories/wordpress">WORDPRESS</a>
+              
+          
+      
+    
+    
+    
+      
+      
+          <br/>
+           <i class="fas fa-tags"></i>
+          
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/ajax">ajax</a>
+           
+      
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/content-theme">content theme</a>
+           
+      
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/jquery">jquery</a>
+           
+      
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/libs">libs</a>
+           
+      
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/snippet">snippet</a>
+           
+      
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/theme-folder">theme folder</a>
+           
+      
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/wp">wp</a>
+          
+      
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 1 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <p>I just copied this from another website, put it here just in case that I forgot.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">if( !is_admin()){
+    wp_deregister_script(&#39;jquery&#39;);
+    wp_register_script(&#39;jquery&#39;, (&#34;http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&#34;), false, &#39;&#39;);
+    wp_enqueue_script(&#39;jquery&#39;);
+}</code></pre></td></tr></table>
+</div>
+</div>
+<p>Put this snippet to functions.php file in your theme folder ( eg : wp-content/theme/whatever/functions.php )</p>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="https://www.rudylee.com/blog/2011/04/13/apache-geoip/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Apache GeoIP</span>
+    </a>
+    
+    
+    <a href="https://www.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3-0/" class="navigation-next">
+      <span class="navigation-tittle">Fixing rake command error in rails 3.0.7</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+  
+    
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+
+    (function () {
+    if (location.hostname === "localhost" ||
+      location.hostname === "127.0.0.1" ||
+      location.hostname === "") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    var disqus_shortname = 'blogrudylee';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || 
+      document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+<noscript>
+  Please enable JavaScript to view the
+  <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by
+  <span class="logo-disqus">Disqus</span>
+</a>
+
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-10301272-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+    
+    
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+    
+
+
+
+    </body>
+</html>

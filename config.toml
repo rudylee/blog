@@ -20,7 +20,7 @@ canonifyURLs = true
   gravatar = "rudylee1988@gmail.com"
 
 [permalinks]
-  posts = "/:year/:month/:day/:title/"
+  posts = "/:slug/"
 
 [menu]
   [[menu.main]]

@@ -86,10 +86,10 @@ This concept is similar with prefixes in CakePHP. However, CakePHP allows you to
     
     <item>
       <title>Fixing rake command error in rails 3.0.7</title>
-      <link>https://www.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3.0.7/</link>
+      <link>https://www.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3-0/</link>
       <pubDate>Sun, 29 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3.0.7/</guid>
+      <guid>https://www.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3-0/</guid>
       <description>Today I was trying to add rails project to Netbeans 6.9,but suddenly there is a pop up window that said &amp;ldquo;Rake task fecthing failed&amp;rdquo; with bunch of other errors. After that, I tried go to my application folder and try to run the rake command
 1  rake -D   However I got this error
 1 2 3 4 5  rudy@rudy-laptop:~/www/depot$ rake -D rake aborted! undefined method `task&amp;#39; for #&amp;lt;depot::application:0x91fa9c4&amp;gt; (See full trace by running task with --trace)   After a little bit research, I found that I have to uninstall my rake 0.</description>
@@ -97,10 +97,10 @@ This concept is similar with prefixes in CakePHP. However, CakePHP allows you to
     
     <item>
       <title>Ruby on Rails in Kubuntu 9.04</title>
-      <link>https://www.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-9.04/</link>
+      <link>https://www.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-904/</link>
       <pubDate>Mon, 23 Nov 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-9.04/</guid>
+      <guid>https://www.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-904/</guid>
       <description>Beberapa hari ini gwa disibukkan mencoba menginstall Ruby on Rails ( RoR ). Sebenarnya sudah cukup lama pengen coba-coba Ruby on Rails, tapi sekarang baru ada semangat sama ada waktu buat nyoba-nyoba.
 Menginstall Ruby on Rails ini dapat dibilang cukup memakan banyak waktu dikarenakan gwa menghabiskan 1 harian HANYA untuk install Kubuntu doank ( gara2 cd rom yang ga jelas ).
 Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan dalam waktu 1 hari ) gwa mulai menginstall Ruby on Rails.</description>

@@ -33,10 +33,10 @@ So wordpress has default email address and name which are &amp;ldquo;Wordpress&a
     
     <item>
       <title>Make wordpress using the latest jQuery</title>
-      <link>https://www.rudylee.com/blog/2011/05/24/make-wordpress-using-the-latest-jquery/</link>
+      <link>https://www.rudylee.com/blog/2011/05/24/wordpress-uses-the-latest-jquery/</link>
       <pubDate>Tue, 24 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2011/05/24/make-wordpress-using-the-latest-jquery/</guid>
+      <guid>https://www.rudylee.com/blog/2011/05/24/wordpress-uses-the-latest-jquery/</guid>
       <description>I just copied this from another website, put it here just in case that I forgot.
 1 2 3 4 5  if( !is_admin()){ wp_deregister_script(&amp;#39;jquery&amp;#39;); wp_register_script(&amp;#39;jquery&amp;#39;, (&amp;#34;http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&amp;#34;), false, &amp;#39;&amp;#39;); wp_enqueue_script(&amp;#39;jquery&amp;#39;); }   Put this snippet to functions.php file in your theme folder ( eg : wp-content/theme/whatever/functions.php )</description>
     </item>

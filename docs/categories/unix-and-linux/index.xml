@@ -34,10 +34,10 @@ My solution is to set HAProxy as a reverse proxy which responsible to fetch imag
     
     <item>
       <title>HAProxy and A/B Testing</title>
-      <link>https://www.rudylee.com/blog/2016/04/13/haproxy-and-a/b-testing/</link>
+      <link>https://www.rudylee.com/blog/2016/04/13/haproxy-and-a-slash-b-testing/</link>
       <pubDate>Wed, 13 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2016/04/13/haproxy-and-a/b-testing/</guid>
+      <guid>https://www.rudylee.com/blog/2016/04/13/haproxy-and-a-slash-b-testing/</guid>
       <description>Few weeks ago, I was given a task to create an A/B test using HAProxy. I need to make HAProxy to split traffic between two different applications ( Rails and NodeJS )
 In this blog post, I&amp;rsquo;ll explain how to achieve this.
 Create ACL for the page you want to A/B test The first step you have to do is to create an ACL for the URL you want to A/B test.</description>
@@ -77,10 +77,10 @@ In the sample below, I am trying to enable HTTP authentication only on certain d
     
     <item>
       <title>Configuring Elastic Beanstalk Environment with .ebextensions</title>
-      <link>https://www.rudylee.com/blog/2014/05/22/configuring-elastic-beanstalk-environment-with-.ebextensions/</link>
+      <link>https://www.rudylee.com/blog/2014/05/22/configuring-elastic-beanstalk-environment-with-ebextensions/</link>
       <pubDate>Thu, 22 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2014/05/22/configuring-elastic-beanstalk-environment-with-.ebextensions/</guid>
+      <guid>https://www.rudylee.com/blog/2014/05/22/configuring-elastic-beanstalk-environment-with-ebextensions/</guid>
       <description>At Captiv8, we are using Amazon AWS to host most of our PHP projects. We are heavily rely on Elastic Beanstalk to help us set up PHP environment, database and load balancer. On top of that, we are also managing our own server image based on Amazon AMI. In this image, we installed additional software and packages that we need for our application. However, this approach has a drawback as it is difficult to maintain the image and track changes.</description>
     </item>
     
@@ -179,30 +179,30 @@ But now there is a new text editor that written in Ruby and runs on JRuby and it
     
     <item>
       <title>Add bridge and assign unique IP for each container in OpenVZ</title>
-      <link>https://www.rudylee.com/blog/2010/08/30/add-bridge-and-assign-unique-ip-for-each-container-in-openvz/</link>
+      <link>https://www.rudylee.com/blog/2010/08/30/add-bridge-assign-unique-ip-for-each-container-in-openvz/</link>
       <pubDate>Mon, 30 Aug 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2010/08/30/add-bridge-and-assign-unique-ip-for-each-container-in-openvz/</guid>
+      <guid>https://www.rudylee.com/blog/2010/08/30/add-bridge-assign-unique-ip-for-each-container-in-openvz/</guid>
       <description>I am writing this tutorial to refresh my mind ( I am not configuring the machine right now ), so forgive me if the explanations are not clear and structured.
 After successfully installed the OpenVZ, you need to configure the IP for the containers. If you are using the built in &amp;ldquo;Venet&amp;rdquo; you will end up making the host as the gateway. In the other words if you traceroute to your container IP, it will going through your host then to your container.</description>
     </item>
     
     <item>
       <title>Installing OpenVZ and WebVZ in Centos 5.5</title>
-      <link>https://www.rudylee.com/blog/2010/07/20/installing-openvz-and-webvz-in-centos-5.5/</link>
+      <link>https://www.rudylee.com/blog/2010/07/20/installing-openvz-and-webvz-in-centos-5-5/</link>
       <pubDate>Tue, 20 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2010/07/20/installing-openvz-and-webvz-in-centos-5.5/</guid>
+      <guid>https://www.rudylee.com/blog/2010/07/20/installing-openvz-and-webvz-in-centos-5-5/</guid>
       <description>OpenVZ is an operating system-level virtualization technology based on the Linux kernel and operating system. OpenVZ allows a physical server to run multiple isolated operating system instances, known as containers, Virtual Private Servers (VPSs), or Virtual Environments (VEs).
  Now we&amp;rsquo;ll try to install OpenVZ in Centos. OpenVS is an operating system-level VPS so you need to install Host Operating System ( if you are using hardware virtualization like Xen or VMware then you don&amp;rsquo;t have to install an Operating System ).</description>
     </item>
     
     <item>
       <title>Updating ports in FreeBSD 8.0</title>
-      <link>https://www.rudylee.com/blog/2010/06/28/updating-ports-in-freebsd-8.0/</link>
+      <link>https://www.rudylee.com/blog/2010/06/28/updating-ports-in-freebsd-8-0/</link>
       <pubDate>Mon, 28 Jun 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2010/06/28/updating-ports-in-freebsd-8.0/</guid>
+      <guid>https://www.rudylee.com/blog/2010/06/28/updating-ports-in-freebsd-8-0/</guid>
       <description>Ports is the applications repository in FreeBSD. Unlike Ubuntu that provides you with command &amp;ldquo;apt-get&amp;rdquo;, in FreeBSD you must manually go to the application folder in &amp;ldquo;/usr/ports&amp;rdquo; ( the folder where Ports remain ) and search for the application that you want to install. But what&amp;rsquo;s the differences between you compile it yourself and using ports. The answer is &amp;ldquo;dependencies&amp;rdquo;.
 Enough with the introduction, let&amp;rsquo;s go the main topic. So we are going to update the Ports using cvsup.</description>
     </item>
@@ -269,20 +269,20 @@ Yah, seperti yang kita ketahui bersama bahwa Bee Watch sangat menjadi incaran un
     
     <item>
       <title>Install Flash Media Server 3 di Ubuntu 9.04</title>
-      <link>https://www.rudylee.com/blog/2009/09/01/install-flash-media-server-3-di-ubuntu-9.04/</link>
+      <link>https://www.rudylee.com/blog/2009/09/01/install-flash-media-server-3-di-ubuntu-904/</link>
       <pubDate>Tue, 01 Sep 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/09/01/install-flash-media-server-3-di-ubuntu-9.04/</guid>
+      <guid>https://www.rudylee.com/blog/2009/09/01/install-flash-media-server-3-di-ubuntu-904/</guid>
       <description>Hari ini gwa mencoba menginstall ulang Flash Media Server 3 untuk TV Streaming ( Bee Watch ) pada Ubuntu 9.04. Jadi proses install dimulai dari install Ubuntu 9.04 yang memakan waktu 1 hari dikarenakan hard disk yang rusak ( untung udah ganti dengan yang baru ).
 Nah jadi setelah setting-setting sana sini mulailah install FMS ( Flash Media Server ), dimulai dari copy installer FMS 3 ke server trus mulai deh extract dengan menggunakan perintah</description>
     </item>
     
     <item>
       <title>Melihat pemakaian hard disk di Linux/Unix</title>
-      <link>https://www.rudylee.com/blog/2009/08/31/melihat-pemakaian-hard-disk-di-linux/unix/</link>
+      <link>https://www.rudylee.com/blog/2009/08/31/melihat-pemakaian-hard-disk-di-linuxunix/</link>
       <pubDate>Mon, 31 Aug 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/08/31/melihat-pemakaian-hard-disk-di-linux/unix/</guid>
+      <guid>https://www.rudylee.com/blog/2009/08/31/melihat-pemakaian-hard-disk-di-linuxunix/</guid>
       <description>Jika kita menggunakan operating system Windows pasti dapat dengan mudahnya mencek pemakaian hard disk komputer kita melalui My Computer. Tapi bagaimana jika kita harus mengecek pemakaian hard disk ketika kita diharuskan memakai Linux Server atau Unix Server.
 Untuk mengecek pemakaian hard disk di Linux/Unix kita dapat menggunakan beberapa perintah yaitu : ( gwa mengetesnya di server Sun Solaris )
 1  df   jika kita menggunakan perintah df maka akan keluar tampilan kira-kira seperti ini :</description>
@@ -313,10 +313,10 @@ Untuk mengecek pemakaian hard disk di Linux/Unix kita dapat menggunakan beberapa
     
     <item>
       <title>Ubuntu 9.04 Jaunty Jackalope</title>
-      <link>https://www.rudylee.com/blog/2009/04/27/ubuntu-9.04-jaunty-jackalope/</link>
+      <link>https://www.rudylee.com/blog/2009/04/27/ubuntu-904-jaunty-jackalope/</link>
       <pubDate>Mon, 27 Apr 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/04/27/ubuntu-9.04-jaunty-jackalope/</guid>
+      <guid>https://www.rudylee.com/blog/2009/04/27/ubuntu-904-jaunty-jackalope/</guid>
       <description>Hmmm sebenarnya hari ini lagi malas nulis-nulis sesuatu&amp;hellip; Badan ini rasanya malas banget, pikiran lagi ruwet banget&amp;hellip; seperti ada yang muter-muter di dalam kepala, mungkin gwa lagi ngidam kali ya ( halah ! )
 Yah intinya hari ini rasanya madesu (masa depan suram) sekali&amp;hellip; mungkin kata populernya lagi melan mungkin ya&amp;hellip; Pokoknya hari ini bawaannya malas banget dan merasa gimana gitu&amp;hellip; yah mungkin besok lebih baik lagi deh rasanya&amp;hellip;
 Nah makanya untuk menghilangkan rasa madesu ini, iseng-iseng pengen review sedikit tentang linux versi terbaru ( tadi sih sempat mikir lebih baik main dota daripada review ubuntu 9.</description>

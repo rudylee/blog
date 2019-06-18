@@ -120,10 +120,10 @@ My solution is to set HAProxy as a reverse proxy which responsible to fetch imag
     
     <item>
       <title>HAProxy and A/B Testing</title>
-      <link>https://www.rudylee.com/blog/2016/04/13/haproxy-and-a/b-testing/</link>
+      <link>https://www.rudylee.com/blog/2016/04/13/haproxy-and-a-slash-b-testing/</link>
       <pubDate>Wed, 13 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2016/04/13/haproxy-and-a/b-testing/</guid>
+      <guid>https://www.rudylee.com/blog/2016/04/13/haproxy-and-a-slash-b-testing/</guid>
       <description>Few weeks ago, I was given a task to create an A/B test using HAProxy. I need to make HAProxy to split traffic between two different applications ( Rails and NodeJS )
 In this blog post, I&amp;rsquo;ll explain how to achieve this.
 Create ACL for the page you want to A/B test The first step you have to do is to create an ACL for the URL you want to A/B test.</description>
@@ -230,10 +230,10 @@ I really enjoyed the course and definitely learned something new from it.</descr
     
     <item>
       <title>Configuring Elastic Beanstalk Environment with .ebextensions</title>
-      <link>https://www.rudylee.com/blog/2014/05/22/configuring-elastic-beanstalk-environment-with-.ebextensions/</link>
+      <link>https://www.rudylee.com/blog/2014/05/22/configuring-elastic-beanstalk-environment-with-ebextensions/</link>
       <pubDate>Thu, 22 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2014/05/22/configuring-elastic-beanstalk-environment-with-.ebextensions/</guid>
+      <guid>https://www.rudylee.com/blog/2014/05/22/configuring-elastic-beanstalk-environment-with-ebextensions/</guid>
       <description>At Captiv8, we are using Amazon AWS to host most of our PHP projects. We are heavily rely on Elastic Beanstalk to help us set up PHP environment, database and load balancer. On top of that, we are also managing our own server image based on Amazon AMI. In this image, we installed additional software and packages that we need for our application. However, this approach has a drawback as it is difficult to maintain the image and track changes.</description>
     </item>
     
@@ -393,10 +393,10 @@ So, here is the code that I am using to get server URL in controller :
     
     <item>
       <title>Bootstrap Typeahead CakePHP 2.0</title>
-      <link>https://www.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2.0/</link>
+      <link>https://www.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2-0/</link>
       <pubDate>Sat, 02 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2.0/</guid>
+      <guid>https://www.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2-0/</guid>
       <description>Demo : http://cbunny2.rudylee.com/users/typeahead Source : https://github.com/rudylee/cbunny
 In this post, I&amp;rsquo;ll explain how to integrate Twitter Bootstrap Typeahead with your CakePHP 2.0 application. We will avoid using helpers or plugins and stick with plain Javascript + jQuery. Make sure you have include jQuery, Bootstrap CSS and Bootstrap Javascript files in your CakePHP application. You can simply do it inside your default.ctp file ( the files are bootstrap.min.js and bootstrap.min.css ).
 After that we will create controller, action and view to put our input box.</description>
@@ -404,10 +404,10 @@ After that we will create controller, action and view to put our input box.</des
     
     <item>
       <title>Select2 AJAX Auto Complete with CakePHP 2.0</title>
-      <link>https://www.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2.0/</link>
+      <link>https://www.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2-0/</link>
       <pubDate>Sat, 02 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2.0/</guid>
+      <guid>https://www.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2-0/</guid>
       <description>Demo : http://cbunny2.rudylee.com/users/select2 Source : https://github.com/rudylee/cbunny
 In this post, I&amp;rsquo;ll explain how to use Select2 inside CakePHP. We will avoid using any helpers and rely on jQuery + Javascript. Before we start, I presume you have downloaded Select2 and included the Javascript and CSS files inside your layout. Thus, I won&amp;rsquo;t explain how to import Select2 library into your CakePHP app ( you can download my cbunny app from Github if you are lost ).</description>
     </item>
@@ -433,10 +433,10 @@ In this post, I&amp;rsquo;ll explain how to use Select2 inside CakePHP. We will 
     
     <item>
       <title>No prefix support for mapResources in CakePHP 2.x</title>
-      <link>https://www.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2.x/</link>
+      <link>https://www.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2-x/</link>
       <pubDate>Wed, 28 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2.x/</guid>
+      <guid>https://www.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2-x/</guid>
       <description>REST API is relatively easy to implement if you are using web framework to build your application. In Rails, you just need to add single &amp;lsquo;resources&amp;rsquo; entry in your routing file. In CakePHP, it has similar solution as you can read in the Cookbook. However, currently there is no prefix support in CakePHP 2.x and this is confirmed in these links :
  http://cakephp.lighthouseapp.com/projects/42648/tickets/968-rest-routes-with-prefix
  https://github.com/cakephp/cakephp/pull/763
@@ -581,10 +581,10 @@ So wordpress has default email address and name which are &amp;ldquo;Wordpress&a
     
     <item>
       <title>Fixing rake command error in rails 3.0.7</title>
-      <link>https://www.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3.0.7/</link>
+      <link>https://www.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3-0/</link>
       <pubDate>Sun, 29 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3.0.7/</guid>
+      <guid>https://www.rudylee.com/blog/2011/05/29/fixing-rake-command-error-in-rails-3-0/</guid>
       <description>Today I was trying to add rails project to Netbeans 6.9,but suddenly there is a pop up window that said &amp;ldquo;Rake task fecthing failed&amp;rdquo; with bunch of other errors. After that, I tried go to my application folder and try to run the rake command
 1  rake -D   However I got this error
 1 2 3 4 5  rudy@rudy-laptop:~/www/depot$ rake -D rake aborted! undefined method `task&amp;#39; for #&amp;lt;depot::application:0x91fa9c4&amp;gt; (See full trace by running task with --trace)   After a little bit research, I found that I have to uninstall my rake 0.</description>
@@ -592,10 +592,10 @@ So wordpress has default email address and name which are &amp;ldquo;Wordpress&a
     
     <item>
       <title>Make wordpress using the latest jQuery</title>
-      <link>https://www.rudylee.com/blog/2011/05/24/make-wordpress-using-the-latest-jquery/</link>
+      <link>https://www.rudylee.com/blog/2011/05/24/wordpress-uses-the-latest-jquery/</link>
       <pubDate>Tue, 24 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2011/05/24/make-wordpress-using-the-latest-jquery/</guid>
+      <guid>https://www.rudylee.com/blog/2011/05/24/wordpress-uses-the-latest-jquery/</guid>
       <description>I just copied this from another website, put it here just in case that I forgot.
 1 2 3 4 5  if( !is_admin()){ wp_deregister_script(&amp;#39;jquery&amp;#39;); wp_register_script(&amp;#39;jquery&amp;#39;, (&amp;#34;http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js&amp;#34;), false, &amp;#39;&amp;#39;); wp_enqueue_script(&amp;#39;jquery&amp;#39;); }   Put this snippet to functions.php file in your theme folder ( eg : wp-content/theme/whatever/functions.php )</description>
     </item>
@@ -683,10 +683,10 @@ But now there is a new text editor that written in Ruby and runs on JRuby and it
     
     <item>
       <title>Add bridge and assign unique IP for each container in OpenVZ</title>
-      <link>https://www.rudylee.com/blog/2010/08/30/add-bridge-and-assign-unique-ip-for-each-container-in-openvz/</link>
+      <link>https://www.rudylee.com/blog/2010/08/30/add-bridge-assign-unique-ip-for-each-container-in-openvz/</link>
       <pubDate>Mon, 30 Aug 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2010/08/30/add-bridge-and-assign-unique-ip-for-each-container-in-openvz/</guid>
+      <guid>https://www.rudylee.com/blog/2010/08/30/add-bridge-assign-unique-ip-for-each-container-in-openvz/</guid>
       <description>I am writing this tutorial to refresh my mind ( I am not configuring the machine right now ), so forgive me if the explanations are not clear and structured.
 After successfully installed the OpenVZ, you need to configure the IP for the containers. If you are using the built in &amp;ldquo;Venet&amp;rdquo; you will end up making the host as the gateway. In the other words if you traceroute to your container IP, it will going through your host then to your container.</description>
     </item>
@@ -723,30 +723,30 @@ Delicious is a web application that allows to do the online bookmarking. If you 
     
     <item>
       <title>Installing OpenVZ and WebVZ in Centos 5.5</title>
-      <link>https://www.rudylee.com/blog/2010/07/20/installing-openvz-and-webvz-in-centos-5.5/</link>
+      <link>https://www.rudylee.com/blog/2010/07/20/installing-openvz-and-webvz-in-centos-5-5/</link>
       <pubDate>Tue, 20 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2010/07/20/installing-openvz-and-webvz-in-centos-5.5/</guid>
+      <guid>https://www.rudylee.com/blog/2010/07/20/installing-openvz-and-webvz-in-centos-5-5/</guid>
       <description>OpenVZ is an operating system-level virtualization technology based on the Linux kernel and operating system. OpenVZ allows a physical server to run multiple isolated operating system instances, known as containers, Virtual Private Servers (VPSs), or Virtual Environments (VEs).
  Now we&amp;rsquo;ll try to install OpenVZ in Centos. OpenVS is an operating system-level VPS so you need to install Host Operating System ( if you are using hardware virtualization like Xen or VMware then you don&amp;rsquo;t have to install an Operating System ).</description>
     </item>
     
     <item>
       <title>Eclipse Democamps 2010</title>
-      <link>https://www.rudylee.com/blog/2010/07/11/eclipse-democamps-2010/</link>
+      <link>https://www.rudylee.com/blog/2010/07/11/eclipse-democamps-2010-2/</link>
       <pubDate>Sun, 11 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2010/07/11/eclipse-democamps-2010/</guid>
+      <guid>https://www.rudylee.com/blog/2010/07/11/eclipse-democamps-2010-2/</guid>
       <description>Kemarin tanggal 10 Juli 2010 gwa baru saja ikut Eclipse Democamps 2010. Yah sebenarnya gwa ga tau ini termasuk seminar, meet up atau promosi eclipse tapi berhubung gwa adalah pengguna Eclipse semenjak beberapa bulan lalu maka gwa iseng-iseng datang ke acara ini.
 Perjalanan dimulai dari kosan gwa dengan ditemani sang kekasih yaitu adinda Riani yang imut dan bulat seperti bola ping pong ( nyungsep dolo sebelum kena granat ). Sebenarnya kami rada telat berangkatnya ( kira-kira jam 9:30 ) sementara acaranya jam 10:00 dan ditambah lagi gwa dan riani ga tau jalan sekali kesana.</description>
     </item>
     
     <item>
       <title>Updating ports in FreeBSD 8.0</title>
-      <link>https://www.rudylee.com/blog/2010/06/28/updating-ports-in-freebsd-8.0/</link>
+      <link>https://www.rudylee.com/blog/2010/06/28/updating-ports-in-freebsd-8-0/</link>
       <pubDate>Mon, 28 Jun 2010 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2010/06/28/updating-ports-in-freebsd-8.0/</guid>
+      <guid>https://www.rudylee.com/blog/2010/06/28/updating-ports-in-freebsd-8-0/</guid>
       <description>Ports is the applications repository in FreeBSD. Unlike Ubuntu that provides you with command &amp;ldquo;apt-get&amp;rdquo;, in FreeBSD you must manually go to the application folder in &amp;ldquo;/usr/ports&amp;rdquo; ( the folder where Ports remain ) and search for the application that you want to install. But what&amp;rsquo;s the differences between you compile it yourself and using ports. The answer is &amp;ldquo;dependencies&amp;rdquo;.
 Enough with the introduction, let&amp;rsquo;s go the main topic. So we are going to update the Ports using cvsup.</description>
     </item>
@@ -852,20 +852,20 @@ Gwa juga sempat mengalami beberapa masalah dengan file logs nginx di server Free
     
     <item>
       <title>&#39;Lithium atau Li3 : PHP 5.3&#43;&#43; Framework&#39;</title>
-      <link>https://www.rudylee.com/blog/2009/12/27/lithium-atau-li3-php-5.3-framework/</link>
+      <link>https://www.rudylee.com/blog/2009/12/27/lithium-atau-li3-php-53-framework/</link>
       <pubDate>Sun, 27 Dec 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/12/27/lithium-atau-li3-php-5.3-framework/</guid>
+      <guid>https://www.rudylee.com/blog/2009/12/27/lithium-atau-li3-php-53-framework/</guid>
       <description>Setelah 3 hari dicekcoki dengan lagu Boyce Avenue yang diputar berulang-ulang di foobar akhirnya gwa jadi ada semangat buat update blog. Sebenarnya pengen nulis tentang Ruby on Rails dan e-TextEditor tapi keknya lebih pengen tulis tentang Lithium dulu deh.
 Jadi apakah Lithium itu ? merk baterai ? merk baju ? merk mobil ? merk parfum ? atau merk deterjen ? jelas saja bukan. Lithium yang saya gwa maksud disini adalah salah satu framework PHP yang tersohor sekali seantero jagad raya, sampe presiden SBY aja kalo pidato dicoding dolo pake neh framework.</description>
     </item>
     
     <item>
       <title>Ruby on Rails in Kubuntu 9.04</title>
-      <link>https://www.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-9.04/</link>
+      <link>https://www.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-904/</link>
       <pubDate>Mon, 23 Nov 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-9.04/</guid>
+      <guid>https://www.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-904/</guid>
       <description>Beberapa hari ini gwa disibukkan mencoba menginstall Ruby on Rails ( RoR ). Sebenarnya sudah cukup lama pengen coba-coba Ruby on Rails, tapi sekarang baru ada semangat sama ada waktu buat nyoba-nyoba.
 Menginstall Ruby on Rails ini dapat dibilang cukup memakan banyak waktu dikarenakan gwa menghabiskan 1 harian HANYA untuk install Kubuntu doank ( gara2 cd rom yang ga jelas ).
 Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan dalam waktu 1 hari ) gwa mulai menginstall Ruby on Rails.</description>
@@ -926,29 +926,29 @@ Dengan ditemani oleh biskuit Good Time yang udah nangkring di sebelah keyboard g
     
     <item>
       <title>Memories...</title>
-      <link>https://www.rudylee.com/blog/2009/10/07/memories.../</link>
+      <link>https://www.rudylee.com/blog/2009/10/07/memories/</link>
       <pubDate>Wed, 07 Oct 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/10/07/memories.../</guid>
+      <guid>https://www.rudylee.com/blog/2009/10/07/memories/</guid>
       <description>Tanpa tersengaja tiba2 foobar di komputer gwa memainkan lagu maroon 5 dengan judul she will be loved, dan entah kenapa setiap gwa mendengar lagu itu gwa selalu teringat akan saat2 gwa berada di dalam mobil saudara gwa dan dalam perjalan pulang ke rumah mereka ketika gwa baru 1 minggu di Jakarta. Yah gwa baru 1 minggu di Jakarta, masih culunnya, masih cupunya, masih manjanya, masib bodohnya, dan masih2 yang lainnya.</description>
     </item>
     
     <item>
       <title>Install Flash Media Server 3 di Ubuntu 9.04</title>
-      <link>https://www.rudylee.com/blog/2009/09/01/install-flash-media-server-3-di-ubuntu-9.04/</link>
+      <link>https://www.rudylee.com/blog/2009/09/01/install-flash-media-server-3-di-ubuntu-904/</link>
       <pubDate>Tue, 01 Sep 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/09/01/install-flash-media-server-3-di-ubuntu-9.04/</guid>
+      <guid>https://www.rudylee.com/blog/2009/09/01/install-flash-media-server-3-di-ubuntu-904/</guid>
       <description>Hari ini gwa mencoba menginstall ulang Flash Media Server 3 untuk TV Streaming ( Bee Watch ) pada Ubuntu 9.04. Jadi proses install dimulai dari install Ubuntu 9.04 yang memakan waktu 1 hari dikarenakan hard disk yang rusak ( untung udah ganti dengan yang baru ).
 Nah jadi setelah setting-setting sana sini mulailah install FMS ( Flash Media Server ), dimulai dari copy installer FMS 3 ke server trus mulai deh extract dengan menggunakan perintah</description>
     </item>
     
     <item>
       <title>Melihat pemakaian hard disk di Linux/Unix</title>
-      <link>https://www.rudylee.com/blog/2009/08/31/melihat-pemakaian-hard-disk-di-linux/unix/</link>
+      <link>https://www.rudylee.com/blog/2009/08/31/melihat-pemakaian-hard-disk-di-linuxunix/</link>
       <pubDate>Mon, 31 Aug 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/08/31/melihat-pemakaian-hard-disk-di-linux/unix/</guid>
+      <guid>https://www.rudylee.com/blog/2009/08/31/melihat-pemakaian-hard-disk-di-linuxunix/</guid>
       <description>Jika kita menggunakan operating system Windows pasti dapat dengan mudahnya mencek pemakaian hard disk komputer kita melalui My Computer. Tapi bagaimana jika kita harus mengecek pemakaian hard disk ketika kita diharuskan memakai Linux Server atau Unix Server.
 Untuk mengecek pemakaian hard disk di Linux/Unix kita dapat menggunakan beberapa perintah yaitu : ( gwa mengetesnya di server Sun Solaris )
 1  df   jika kita menggunakan perintah df maka akan keluar tampilan kira-kira seperti ini :</description>
@@ -998,19 +998,19 @@ Tapi kalau gwa telusuri dari StatPress, ternyata ada satu hal yang menarik yaitu
     
     <item>
       <title>I love Jakarta.... at Night</title>
-      <link>https://www.rudylee.com/blog/2009/06/30/i-love-jakarta....-at-night/</link>
+      <link>https://www.rudylee.com/blog/2009/06/30/i-love-jakarta-at-night/</link>
       <pubDate>Tue, 30 Jun 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/06/30/i-love-jakarta....-at-night/</guid>
+      <guid>https://www.rudylee.com/blog/2009/06/30/i-love-jakarta-at-night/</guid>
       <description>Gila&amp;hellip;. entah kenapa gwa suka banget kalo jalan2 di Jakarta pas malam hari, entah itu naik busway, naik bus, naik angkot, tetep aja gwa suka banget&amp;hellip; rasanya kalau jalan-jalan pas di malam hari itu beda aja, seakan-akan kita melihat Jakarta dari sisi yang berbeda. Satu hal yang membuat gwa suka adalah &amp;ldquo;SEPI&amp;rdquo; gila enak banget duduk di angkot sendirian sambil memperhatikan gemerlap lampu malam di Jakarta. Gwa rasa kalau gwa duduk di dalam angkot begitu sambil nulis blog bisa jadi 1 novel kali ya ( lebay )&amp;hellip; rasanya gimana gitu kalau duduk di angkot, sudah lah sepi, sendiri, dingin, tenang, lampu remang-remang ( kan lampu angkot + lampu jalanan warna kuning gitu ), beh suasananya benar-benar membuat larut dah dalam lamunan&amp;hellip; Mungkin gwa termasuk manusia malam kali ya, rasanya kalau dah malam hari rasanya lebih semangat, lebih punya banyak ide dan lebih positif thinking&amp;hellip;</description>
     </item>
     
     <item>
       <title>Mas, nasinya 1/4 aja</title>
-      <link>https://www.rudylee.com/blog/2009/06/22/mas-nasinya-1/4-aja/</link>
+      <link>https://www.rudylee.com/blog/2009/06/22/mas-nasinya-14-aja/</link>
       <pubDate>Mon, 22 Jun 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/06/22/mas-nasinya-1/4-aja/</guid>
+      <guid>https://www.rudylee.com/blog/2009/06/22/mas-nasinya-14-aja/</guid>
       <description>Sudah 2 kali gwa makan di warteg dekat kosan gwa, dan sudah 2 kali juga gwa dilayanin oleh mas-mas yang sama. Biasanya sih kalau makan pada saat malam hari yang ngeladenin itu mbak-mbak.
 Nah, sudah 2 kali gwa makan di pagi hari dan dilayani oleh mas-mas ini, sebut saja mas bunga. Biasanya kalau pagi hari itu kan rasanya perut itu kenyang ( keiisi setengah ama angin kali ). Jadi pertama kali gwa bilang ke mas bunga ini supaya nasinya dikasih setengah aja dan mas bunga ini bilang &amp;ldquo;Iya&amp;hellip;&amp;rdquo;.</description>
     </item>
@@ -1048,10 +1048,10 @@ Pertama kali kecurigaan dimulai dari webserver dan settingan PHP.</description>
     
     <item>
       <title>Ubuntu 9.04 Jaunty Jackalope</title>
-      <link>https://www.rudylee.com/blog/2009/04/27/ubuntu-9.04-jaunty-jackalope/</link>
+      <link>https://www.rudylee.com/blog/2009/04/27/ubuntu-904-jaunty-jackalope/</link>
       <pubDate>Mon, 27 Apr 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/04/27/ubuntu-9.04-jaunty-jackalope/</guid>
+      <guid>https://www.rudylee.com/blog/2009/04/27/ubuntu-904-jaunty-jackalope/</guid>
       <description>Hmmm sebenarnya hari ini lagi malas nulis-nulis sesuatu&amp;hellip; Badan ini rasanya malas banget, pikiran lagi ruwet banget&amp;hellip; seperti ada yang muter-muter di dalam kepala, mungkin gwa lagi ngidam kali ya ( halah ! )
 Yah intinya hari ini rasanya madesu (masa depan suram) sekali&amp;hellip; mungkin kata populernya lagi melan mungkin ya&amp;hellip; Pokoknya hari ini bawaannya malas banget dan merasa gimana gitu&amp;hellip; yah mungkin besok lebih baik lagi deh rasanya&amp;hellip;
 Nah makanya untuk menghilangkan rasa madesu ini, iseng-iseng pengen review sedikit tentang linux versi terbaru ( tadi sih sempat mikir lebih baik main dota daripada review ubuntu 9.</description>
@@ -1069,10 +1069,10 @@ Jadi kali ini gwa akan melakukan review terhadap framework PHP yang sudah gwa pe
     
     <item>
       <title>Ibu-ibu dan yang lainnya</title>
-      <link>https://www.rudylee.com/blog/2009/03/30/ibu-ibu-dan-yang-lainnya/</link>
+      <link>https://www.rudylee.com/blog/2009/03/30/ibu-ibu-bapak-tua-mungkin-gay-dan-phobia/</link>
       <pubDate>Mon, 30 Mar 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/03/30/ibu-ibu-dan-yang-lainnya/</guid>
+      <guid>https://www.rudylee.com/blog/2009/03/30/ibu-ibu-bapak-tua-mungkin-gay-dan-phobia/</guid>
       <description>Hari ini untuk kesekian kalinya jalan-jalan ke kalideres&amp;hellip; sebenarnya ga jalan-jalan juga sih&amp;hellip; yah lebih tepatnya pergi melapor ke kalideres&amp;hellip;
 Dan seperti yang terjadi pada setiap kalinya gwa pergi kesana&amp;hellip; Dalam perjalanan pasti gwa mengalami hal-hal yang menarik.
 Seperti contohnya beberapa minggu yang lalu ketika gwa sedang dalam perjalanan ke kalideres&amp;hellip; pas sampai di terminal grogol, nah gwa lagi pengen naik tangga neh ke busway grogol&amp;hellip; Pada saat gwa lagi naik tangga gwa ngelihat seorang ibu lagi kesusahan menaiki tangga jembatan penyebrangan ( FYI jembatan penyebrangan grogol memang terkenal dengan curamnya )&amp;hellip; Nah jadi dengan inisiatif yang tinggi gwa pun menawarkan bantuan kepada ibu tersebut ( bukan gendong ya, enak aja )&amp;hellip; yah jadi gwa menawarkan kepada ibu tersebut untuk membawakan tasnya ( soalnya kelihatan berat banget bawa tasnya, padahal pas gwa angkat ringan )&amp;hellip; Yah mungkin karena ibu tersebut melihat wajah gwa yang alim dan baik, maka dengan senang hati dia memberikan tas tersebut kepada gwa&amp;hellip; Dan akhirnya gwa sukses membawakan tas ibu itu sampai ke atas jembatan penyebrangan&amp;hellip; Tapi sayang sekali kami harus berpisah di depan tangga menuju busway ( karena gwa mo naik busway, sementara sang ibu pengen ke seberang )&amp;hellip;</description>
@@ -1090,10 +1090,10 @@ Hari ini juga, untuk kesekian kalinya gwa datang ke rumah the &amp;lsquo;Bokap&a
     
     <item>
       <title>Gwa menyerah... udah cukup... ga tahan lagi...</title>
-      <link>https://www.rudylee.com/blog/2009/03/20/gwa-menyerah...-udah-cukup...-ga-tahan-lagi.../</link>
+      <link>https://www.rudylee.com/blog/2009/03/20/gwa-menyerah-udah-cukup-ga-tahan-lagi/</link>
       <pubDate>Fri, 20 Mar 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/03/20/gwa-menyerah...-udah-cukup...-ga-tahan-lagi.../</guid>
+      <guid>https://www.rudylee.com/blog/2009/03/20/gwa-menyerah-udah-cukup-ga-tahan-lagi/</guid>
       <description>gwa menyerah&amp;hellip; sudah cukup selama ini gwa dipermainkan&amp;hellip; dibohongi&amp;hellip; dianggap remeh&amp;hellip;
 emang apa salah gwa ? apa salah gwa ? apa ?
 udah gwa ikutin semua perintah loe&amp;hellip; tapi tetep aja&amp;hellip; gwa tetep aja salah&amp;hellip; kenapa ?
@@ -1146,10 +1146,10 @@ Jad setelah beberapa hari berusaha mencari tempat hosting yang harganya murah + 
     
     <item>
       <title>&#39;CakePHP : Mengakses sebuah model pada controller yang berbeda&#39;</title>
-      <link>https://www.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-berbeda/</link>
+      <link>https://www.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-tidak-seharusnya/</link>
       <pubDate>Sun, 15 Feb 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-berbeda/</guid>
+      <guid>https://www.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-tidak-seharusnya/</guid>
       <description>Dalam CakePHP biasanya sebuah model - view - controller pasti saling berhubungan dan mempunyai nama yang mirip.
 Contohnya sebuah tabel users mempunyai model yang bernama user, controller bernama _userscontroller, dan folder view yang bernama_ user_.
 Tapi permasalahannya adalah terkadang kita harus mengakses model lain tetapi controller tersebut tidak mempunyai relasi sama sekali dengan model / tabel ini.
@@ -1158,10 +1158,10 @@ Sebagai contoh lagi misalnya kita ingin pada_ userscontroller dapat melakukan qu
     
     <item>
       <title>CakePHP, tidak ada kata terlambat untuk belajar...</title>
-      <link>https://www.rudylee.com/blog/2009/02/11/cakephp-tidak-ada-kata-terlambat-untuk-belajar.../</link>
+      <link>https://www.rudylee.com/blog/2009/02/11/cakephp-tidak-ada-kata-telat-untuk-belajar/</link>
       <pubDate>Wed, 11 Feb 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/02/11/cakephp-tidak-ada-kata-terlambat-untuk-belajar.../</guid>
+      <guid>https://www.rudylee.com/blog/2009/02/11/cakephp-tidak-ada-kata-telat-untuk-belajar/</guid>
       <description>Tidak terasa sudah lebih dari 1 tahun saya mempelajari bahasa pemprograman PHP. Dimulai dari setahun yang lalu, dimulai dengan melihat orang lain, membaca-baca ebook, Tanya-tanya ke orang, cari-cari info di internet, dan banyak cara lainnya. Sampai saat ini masih banyak yang harus dipelajari tentang bahasa pemprograman PHP, tetapi saat ini saya ingin mengambil sebuah langkah untuk maju ke depan yang mungkin bagi sebagian orang masih menjadi sebuah pertentangan dalam diri mereka.</description>
     </item>
     

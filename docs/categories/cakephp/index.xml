@@ -13,10 +13,10 @@
     
     <item>
       <title>Bootstrap Typeahead CakePHP 2.0</title>
-      <link>https://www.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2.0/</link>
+      <link>https://www.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2-0/</link>
       <pubDate>Sat, 02 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2.0/</guid>
+      <guid>https://www.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2-0/</guid>
       <description>Demo : http://cbunny2.rudylee.com/users/typeahead Source : https://github.com/rudylee/cbunny
 In this post, I&amp;rsquo;ll explain how to integrate Twitter Bootstrap Typeahead with your CakePHP 2.0 application. We will avoid using helpers or plugins and stick with plain Javascript + jQuery. Make sure you have include jQuery, Bootstrap CSS and Bootstrap Javascript files in your CakePHP application. You can simply do it inside your default.ctp file ( the files are bootstrap.min.js and bootstrap.min.css ).
 After that we will create controller, action and view to put our input box.</description>
@@ -24,20 +24,20 @@ After that we will create controller, action and view to put our input box.</des
     
     <item>
       <title>Select2 AJAX Auto Complete with CakePHP 2.0</title>
-      <link>https://www.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2.0/</link>
+      <link>https://www.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2-0/</link>
       <pubDate>Sat, 02 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2.0/</guid>
+      <guid>https://www.rudylee.com/blog/2013/02/02/select2-ajax-auto-complete-with-cakephp-2-0/</guid>
       <description>Demo : http://cbunny2.rudylee.com/users/select2 Source : https://github.com/rudylee/cbunny
 In this post, I&amp;rsquo;ll explain how to use Select2 inside CakePHP. We will avoid using any helpers and rely on jQuery + Javascript. Before we start, I presume you have downloaded Select2 and included the Javascript and CSS files inside your layout. Thus, I won&amp;rsquo;t explain how to import Select2 library into your CakePHP app ( you can download my cbunny app from Github if you are lost ).</description>
     </item>
     
     <item>
       <title>No prefix support for mapResources in CakePHP 2.x</title>
-      <link>https://www.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2.x/</link>
+      <link>https://www.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2-x/</link>
       <pubDate>Wed, 28 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2.x/</guid>
+      <guid>https://www.rudylee.com/blog/2012/11/28/no-prefix-support-for-mapresources-in-cakephp-2-x/</guid>
       <description>REST API is relatively easy to implement if you are using web framework to build your application. In Rails, you just need to add single &amp;lsquo;resources&amp;rsquo; entry in your routing file. In CakePHP, it has similar solution as you can read in the Cookbook. However, currently there is no prefix support in CakePHP 2.x and this is confirmed in these links :
  http://cakephp.lighthouseapp.com/projects/42648/tickets/968-rest-routes-with-prefix
  https://github.com/cakephp/cakephp/pull/763
@@ -160,10 +160,10 @@ Jadi kali ini gwa akan melakukan review terhadap framework PHP yang sudah gwa pe
     
     <item>
       <title>&#39;CakePHP : Mengakses sebuah model pada controller yang berbeda&#39;</title>
-      <link>https://www.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-berbeda/</link>
+      <link>https://www.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-tidak-seharusnya/</link>
       <pubDate>Sun, 15 Feb 2009 00:00:00 +0000</pubDate>
       
-      <guid>https://www.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-berbeda/</guid>
+      <guid>https://www.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-tidak-seharusnya/</guid>
       <description>Dalam CakePHP biasanya sebuah model - view - controller pasti saling berhubungan dan mempunyai nama yang mirip.
 Contohnya sebuah tabel users mempunyai model yang bernama user, controller bernama _userscontroller, dan folder view yang bernama_ user_.
 Tapi permasalahannya adalah terkadang kita harus mengakses model lain tetapi controller tersebut tidak mempunyai relasi sama sekali dengan model / tabel ini.
