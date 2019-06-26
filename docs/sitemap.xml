@@ -4,13 +4,36 @@
   
   <url>
     <loc>https://www.rudylee.com/blog/</loc>
-    <lastmod>2018-08-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-23T17:23:22+10:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.rudylee.com/blog/categories/</loc>
-    <lastmod>2018-08-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-23T17:23:22+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/categories/go/</loc>
+    <lastmod>2019-06-23T17:23:22+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/categories/hugo/</loc>
+    <lastmod>2019-06-23T17:23:22+10:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/2019/06/23/migrate-to-hugo-from-octopress/</loc>
+    <lastmod>2019-06-23T17:23:22+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.rudylee.com/blog/posts/</loc>
+    <lastmod>2019-06-23T17:23:22+10:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -26,12 +49,6 @@
   </url>
   
   <url>
-    <loc>https://www.rudylee.com/blog/posts/</loc>
-    <lastmod>2018-08-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.rudylee.com/blog/categories/ruby-on-rails/</loc>
     <lastmod>2018-08-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -40,12 +57,6 @@
   <url>
     <loc>https://www.rudylee.com/blog/2018/06/23/download-csv-test-in-go/</loc>
     <lastmod>2018-06-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.rudylee.com/blog/categories/go/</loc>
-    <lastmod>2018-06-23T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

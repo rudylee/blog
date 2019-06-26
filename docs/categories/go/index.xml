@@ -6,10 +6,19 @@
     <description>Recent content in Go on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 23 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 23 Jun 2019 17:23:22 +1000</lastBuildDate>
     
 	<atom:link href="https://www.rudylee.com/blog/categories/go/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Migrate to Hugo From Octopress</title>
+      <link>https://www.rudylee.com/blog/2019/06/23/migrate-to-hugo-from-octopress/</link>
+      <pubDate>Sun, 23 Jun 2019 17:23:22 +1000</pubDate>
+      
+      <guid>https://www.rudylee.com/blog/2019/06/23/migrate-to-hugo-from-octopress/</guid>
+      <description>Two weeks ago I decided to migrate my blog from Octopress to Hugo. I have been using Octopress as my blog engine since 2013 and I don&amp;rsquo;t have any problems with it. I can easily generate my blog as a static site with Octopress and host it on Github. It is a lot better setup than using Wordpress which requires database and PHP server. However, Octopress is not actively developed anymore and this is one of the reasons why I decided to migrate my blog to Hugo.</description>
+    </item>
     
     <item>
       <title>Download CSV Test in Go</title>

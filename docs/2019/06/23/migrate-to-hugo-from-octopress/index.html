@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Cache-Control" content="public" />
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.55.6" />
+
+    
+    
+    
+
+<title>Migrate to Hugo From Octopress • </title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Migrate to Hugo From Octopress"/>
+<meta name="twitter:description" content="Two weeks ago I decided to migrate my blog from Octopress to Hugo. I have been using Octopress as my blog engine since 2013 and I don&rsquo;t have any problems with it. I can easily generate my blog as a static site with Octopress and host it on Github. It is a lot better setup than using Wordpress which requires database and PHP server. However, Octopress is not actively developed anymore and this is one of the reasons why I decided to migrate my blog to Hugo."/>
+
+<meta property="og:title" content="Migrate to Hugo From Octopress" />
+<meta property="og:description" content="Two weeks ago I decided to migrate my blog from Octopress to Hugo. I have been using Octopress as my blog engine since 2013 and I don&rsquo;t have any problems with it. I can easily generate my blog as a static site with Octopress and host it on Github. It is a lot better setup than using Wordpress which requires database and PHP server. However, Octopress is not actively developed anymore and this is one of the reasons why I decided to migrate my blog to Hugo." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.rudylee.com/blog/2019/06/23/migrate-to-hugo-from-octopress/" />
+<meta property="article:published_time" content="2019-06-23T17:23:22&#43;10:00"/>
+<meta property="article:modified_time" content="2019-06-23T17:23:22&#43;10:00"/>
+
+
+    
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+
+
+<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://www.rudylee.com/blog/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="https://www.rudylee.com/blog/favicon.png">
+    
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="https://www.rudylee.com/blog"></a>
+      </span>
+      
+      
+        <div class="author-image">
+          <img src="https://www.gravatar.com/avatar/580b17799c8ed239b913eef56769170d?s=240&d=mp" class="img--circle img--headshot element--center" alt="gravatar">
+        </div>
+      
+      <p class="site__description">
+         Hi! I&#39;m Rudy Lee. Here are some thoughts of mine. 
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle"></label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="https://www.rudylee.com/blog/">
+						<span>Home</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="https://www.rudylee.com/blog/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="https://www.rudylee.com/blog/categories/">
+						<span>Categories</span>
+					</a>
+				</li>
+			 
+		
+		</li>
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/rudylee88" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://github.com/rudylee" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/rudy-lee-12952b20" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2019 Rudy Lee
+  
+</div>
+
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Migrate to Hugo From Octopress</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Jun 23, 2019
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="https://www.rudylee.com/blog/categories/go">GO</a>
+              •
+          
+              <a class="badge badge-category" href="https://www.rudylee.com/blog/categories/hugo">HUGO</a>
+              
+          
+      
+    
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 3 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    
+
+<p>Two weeks ago I decided to migrate my blog from Octopress to Hugo. I have been using Octopress as my blog engine since 2013 and I don&rsquo;t have any problems with it. I can easily generate my blog as a static site with Octopress and host it on Github. It is a lot better setup than using Wordpress which requires database and PHP server. However, Octopress is not actively developed anymore and this is one of the reasons why I decided to migrate my blog to Hugo.</p>
+
+<h3 id="the-theme">The theme</h3>
+
+<p>The first thing I did before migrating my blog to Hugo is choosing the theme. Hugo provides a website where you can easily browse all available themes: <a href="https://themes.gohugo.io/">https://themes.gohugo.io/</a>. I ended up with <a href="https://themes.gohugo.io/hyde-hyde/">hyde-hyde</a> theme which is a port from Hyde theme on Jekyll. I like the simplicity of the theme and I feel the theme is really suitable for a blog.</p>
+
+<h3 id="migrate-the-posts-using-octohug">Migrate the posts using Octohug</h3>
+
+<p>I was using <a href="https://github.com/rudylee/octohug">Octohug</a> to migrate all my blog posts from Octopress from Hugo. I had to change a few things in original script to support my Octopress posts. Aside from that, it is a pretty straight forward process. You just need to clone + build the project, run it in your Octopress folder and copy the generated files to your Hugo folder.</p>
+
+<h3 id="images">Images</h3>
+
+<p>I have a few images in my Octopress blog that I use in the posts. Moving these images are pretty easy. I just need to put the folders inside <code>static</code> folder in Hugo.</p>
+
+<h3 id="set-permalinks">Set permalinks</h3>
+
+<p>In my Octopress blog, I am using <code>https://blog.rudylee.com/:year/:month/:day/:title</code> as the permalink format. Hugo uses the same format except it will add <code>posts</code> between the domain name and <code>year</code>. The URL will end up something like this if I use the default setting <code>https://blog.rudylee.com/posts/:year/:month/:day/:title</code>.</p>
+
+<h3 id="change-the-blog-from-subdomain-to-subdirectory">Change the blog from subdomain to subdirectory</h3>
+
+<p>As part of the migration, I also changed my blog URL from <a href="https://blog.rudylee.com">https://blog.rudylee.com</a> to <a href="https://www.rudylee.com/blog">https://www.rudylee.com/blog</a>. This is an optimal way to set up a blog because search engine will treat your blog as part of your domain instead of a separate website.</p>
+
+<p>For this step, I set up a Cloudflare page rule that do 301 redirect from my subdomain to the subpage.</p>
+
+<h3 id="migrate-disqus">Migrate Disqus</h3>
+
+<p>I am using <a href="https://disqus.com/">Disqus</a> as my commenting system and I need to migrate Disqus because I changed my blog URL from subdomain to subpage. Fortunately, Disqus provides a few migration tools to help with this.</p>
+
+<p>I ended up using the CSV export and import tool to migrate all my comments.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Overall the migration process went well. The most time consuming part is probably choosing the theme and configure it. Please check my Github repository if you want to see my blog configuration <a href="https://github.com/rudylee/blog">https://github.com/rudylee/blog</a></p>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="https://www.rudylee.com/blog/2018/08/18/how-to-run-code-snippet-in-heroku-rails-console/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">How to Run Code Snippet in Heroku Rails Console</span>
+    </a>
+    
+    
+</div>
+
+
+  
+
+  
+    
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+
+    (function () {
+    if (location.hostname === "localhost" ||
+      location.hostname === "127.0.0.1" ||
+      location.hostname === "") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    var disqus_shortname = 'blogrudylee';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || 
+      document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+<noscript>
+  Please enable JavaScript to view the
+  <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by
+  <span class="logo-disqus">Disqus</span>
+</a>
+
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+  
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-10301272-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+
+
+    
+    
+    <script type="text/javascript">
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+
+    
+
+
+
+    </body>
+</html>
