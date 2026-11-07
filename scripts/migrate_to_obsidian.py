@@ -9,14 +9,16 @@ What it does for each post in content/posts/*.md:
     YAML properties: title, date, slug, categories, tags, publish
   * keeps `slug` exactly as-is -- it is the URL contract for the published site
   * copies every image the post references (/images/..., /wp-content/...,
-    http://blog.rudylee.com/wp-content/...) into attachments/<post-name>/ and
-    rewrites the links to relative paths (spaces in file names become "-")
+    http://blog.rudylee.com/wp-content/...) into attachments/<post-name>/ (or
+    --attachments-out/<post-name>/) and rewrites the links to relative paths
+    (spaces in file names become "-")
   * leaves the body otherwise untouched
 
 Requires Python 3.11+ (tomllib). No third-party packages.
 """
 import argparse
 import json
+import os
 import re
 import shutil
 import sys
@@ -103,7 +105,9 @@ def note_filename(props):
     return f"{day} {title}.md"
 
 
-def migrate(out_dir: Path, force: bool):
+def migrate(out_dir: Path, force: bool, attach_root: Path | None = None):
+    # Images go to <attach_root>/<post>/ ; default is <out_dir>/attachments/<post>/
+    attach_root = attach_root or out_dir / "attachments"
     if out_dir.exists() and any(out_dir.iterdir()) and not force:
         sys.exit(f"{out_dir} is not empty; refusing to overwrite (use --force)")
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -134,7 +138,8 @@ def migrate(out_dir: Path, force: bool):
         }
         props.update(meta)  # keep anything unexpected rather than drop it
 
-        attach_dir = out_dir / "attachments" / stem
+        attach_dir = attach_root / stem
+        link_dir = Path(os.path.relpath(attach_dir, out_dir)).as_posix()
         renamed = {}
 
         def replace(m):
@@ -150,7 +155,10 @@ def migrate(out_dir: Path, force: bool):
             renamed[name] = source
             attach_dir.mkdir(parents=True, exist_ok=True)
             shutil.copy2(source, attach_dir / name)
-            return f'{m.group("pre")}attachments/{stem}/{name}{m.group("post")}'
+            target = f"{link_dir}/{name}"
+            if " " in target and m.group("pre") == "](":
+                target = f"<{target}>"
+            return f'{m.group("pre")}{target}{m.group("post")}'
 
         new_body = ASSET_RE.sub(replace, body)
 
@@ -165,14 +173,16 @@ def migrate(out_dir: Path, force: bool):
     # Verification: every relative attachment link must resolve.
     for note in out_dir.glob("*.md"):
         text = note.read_text(encoding="utf-8")
-        for target in re.findall(r'(?:\]\(|src=")(attachments/[^)"]+)', text):
+        for target in re.findall(r'(?:\]\(|src=")<?([^)"<>]+)>?', text):
+            if re.match(r"^([a-z]+:|/|#)", target) or not re.search(r"\.\w+$", target):
+                continue
             if not (out_dir / target).is_file():
                 problems.append(f"{note.name}: broken link {target}")
         if ASSET_RE.search(text):
             problems.append(f"{note.name}: unconverted asset link left")
 
     print(f"Migrated {count} posts into {out_dir}")
-    print(f"Attachments: {sum(1 for p in (out_dir / 'attachments').rglob('*') if p.is_file())} files")
+    print(f"Attachments: {sum(1 for p in attach_root.rglob('*') if p.is_file())} files in {attach_root}")
     if problems:
         print("\nProblems:")
         print("\n".join(f"  - {p}" for p in problems))
@@ -185,7 +195,11 @@ if __name__ == "__main__":
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--out", required=True, type=Path,
                     help="target folder, e.g. ~/Vault/Blog")
+    ap.add_argument("--attachments-out", type=Path,
+                    help="put images in this folder (e.g. ~/Vault/Attachments/blog) "
+                         "instead of <out>/attachments")
     ap.add_argument("--force", action="store_true",
                     help="write into a non-empty folder")
     args = ap.parse_args()
-    migrate(args.out.expanduser().resolve(), args.force)
+    migrate(args.out.expanduser().resolve(), args.force,
+            args.attachments_out.expanduser().resolve() if args.attachments_out else None)
