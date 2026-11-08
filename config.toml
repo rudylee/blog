@@ -1,11 +1,7 @@
 baseURL = "https://www.rudylee.com/blog"
 languageCode = "en-us"
 theme = "hyde"
-disqusShortname = "blogrudylee"
-pygmentsOptions = "linenos=table"
-pygmentsCodefences = true
 publishDir = "docs"
-googleAnalytics = "UA-10301272-1"
 canonifyURLs = true
 
 [params]
@@ -38,3 +34,14 @@ canonifyURLs = true
     name = "Categories"
     url = "/categories/"
     weight = 300
+
+[services.disqus]
+  shortname = "blogrudylee"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true   # old posts contain raw HTML; Hugo < 0.60 rendered it
+  [markup.highlight]
+    codeFences = true
+    lineNos = true
+    lineNumbersInTable = true

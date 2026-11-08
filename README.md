@@ -61,3 +61,16 @@ Images can live in the blog folder or in the vault's normal attachment folder:
 the script reads that folder from `.obsidian/app.json`, so no Obsidian settings
 need to change. Only images that published posts embed are copied. Override
 with `--attachments DIR` (or `$BLOG_ATTACHMENTS_DIR`) if needed.
+
+# Theme
+
+The hyde-hyde theme is a git submodule pinned to the 2019 version
+(`git submodule update --init` after cloning). It is not edited directly;
+fixes live in this repo and override the theme's files:
+
+- `layouts/` — compatibility fixes for current Hugo (removed Google Analytics
+  and Disqus settings, homepage post list, stylesheet URLs, highlight check)
+- `assets/scss/hyde-hyde/` — the 2019 customisations (wider content column,
+  mobile menu icon paths)
+
+Tested with Hugo 0.142.
