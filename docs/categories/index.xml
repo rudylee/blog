@@ -6,8 +6,15 @@
     <description>Recent content in Categories on </description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Jun 2019 17:23:22 +1000</lastBuildDate>
+    <lastBuildDate>Sun, 22 Nov 2026 10:12:27 +1100</lastBuildDate>
     <atom:link href="https://www.rudylee.com/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[[Ai]]</title>
+      <link>https://www.rudylee.com/blog/categories/ai/</link>
+      <pubDate>Sun, 22 Nov 2026 10:12:27 +1100</pubDate>
+      <guid>https://www.rudylee.com/blog/categories/ai/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Go</title>
       <link>https://www.rudylee.com/blog/categories/go/</link>

@@ -3,10 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.rudylee.com/blog/</loc>
-    <lastmod>2019-06-23T17:23:22+10:00</lastmod>
+    <lastmod>2026-11-22T10:12:27+11:00</lastmod>
+  </url><url>
+    <loc>https://www.rudylee.com/blog/categories/ai/</loc>
+    <lastmod>2026-11-22T10:12:27+11:00</lastmod>
   </url><url>
     <loc>https://www.rudylee.com/blog/categories/</loc>
-    <lastmod>2019-06-23T17:23:22+10:00</lastmod>
+    <lastmod>2026-11-22T10:12:27+11:00</lastmod>
+  </url><url>
+    <loc>https://www.rudylee.com/blog/2026/11/22/orca/</loc>
+    <lastmod>2026-11-22T10:12:27+11:00</lastmod>
+  </url><url>
+    <loc>https://www.rudylee.com/blog/posts/</loc>
+    <lastmod>2026-11-22T10:12:27+11:00</lastmod>
   </url><url>
     <loc>https://www.rudylee.com/blog/categories/go/</loc>
     <lastmod>2019-06-23T17:23:22+10:00</lastmod>
@@ -15,9 +24,6 @@
     <lastmod>2019-06-23T17:23:22+10:00</lastmod>
   </url><url>
     <loc>https://www.rudylee.com/blog/2019/06/23/migrate-to-hugo-from-octopress/</loc>
-    <lastmod>2019-06-23T17:23:22+10:00</lastmod>
-  </url><url>
-    <loc>https://www.rudylee.com/blog/posts/</loc>
     <lastmod>2019-06-23T17:23:22+10:00</lastmod>
   </url><url>
     <loc>https://www.rudylee.com/blog/categories/heroku/</loc>

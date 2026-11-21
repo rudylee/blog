@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>[[Ai]] on </title>
+    <link>https://www.rudylee.com/blog/categories/ai/</link>
+    <description>Recent content in [[Ai]] on </description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 22 Nov 2026 10:12:27 +1100</lastBuildDate>
+    <atom:link href="https://www.rudylee.com/blog/categories/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Orca</title>
+      <link>https://www.rudylee.com/blog/2026/11/22/orca/</link>
+      <pubDate>Sun, 22 Nov 2026 10:12:27 +1100</pubDate>
+      <guid>https://www.rudylee.com/blog/2026/11/22/orca/</guid>
+      <description>&lt;p&gt;This weekend I finally set up &lt;a href=&#34;https://orca.dev/&#34;&gt;Orca&lt;/a&gt; properly. After two days with it, I like it a lot more than the tools I use at work. It also got me thinking about what the real bottleneck is when working with AI.&lt;/p&gt;&#xA;&lt;p&gt;I use something similar at work, an ADE (agentic development environment) that connects to Claude Code and Codex through ACP (the Agent Client Protocol). It works fine, but the UI is too busy and it has a lot of features I never touch.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
