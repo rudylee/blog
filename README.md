@@ -1,28 +1,51 @@
 # Blog
 
-My personal blog. Built with [Hugo](https://gohugo.io/) and [hyde-hyde](https://github.com/htr3n/hyde-hyde) template.
+My personal blog, https://www.rudylee.com/blog/. Built with
+[Hugo](https://gohugo.io/) and the [hyde-hyde](https://github.com/htr3n/hyde-hyde)
+theme, published from `docs/` on the `master` branch by GitHub Pages.
 
-# Add new blog post
+Posts are written in Obsidian, not in this repo. Hugo reads them straight from
+the vault's `blog/` folder (`~/Documents/Rudy/blog`, set in `config.toml` under
+`[module]`).
+
+# Write a post
+
+1. In Obsidian, add a note to `blog/` named `YYYY-MM-DD Title.md` with these properties:
+
+   ```yaml
+   ---
+   title: "My post title"
+   date: 2026-11-21
+   slug: "2026/11/21/my-post-title"
+   categories:
+     - "Programming"
+   tags:
+     - Hugo
+   draft: true
+   ---
+   ```
+
+   `slug` is the post's URL (`/blog/<slug>/`). Never change it on a published
+   post, or old links break.
+
+2. Paste images into `blog/attachments/<post-name>/` and link them as
+   `![](attachments/<post-name>/image.png)`. They show in Obsidian and on the site.
+
+3. When it's ready, set `draft: false` (or delete the line). Drafts only show in preview.
+
+# Preview and publish
 
 ```
-hugo new posts/blog-title.md
+scripts/publish.sh preview   # http://localhost:1313/blog/, drafts included, docs/ untouched
+scripts/publish.sh build     # build into docs/ only
+scripts/publish.sh           # build, commit docs/ and push master: goes live
 ```
 
-# Run the server
+Publishing only works on `master`. `docs/` is never wiped, because it still
+holds pre-2019 URLs that old links point at.
 
-```
-hugo server -D
-```
+# History
 
-# Migrate posts to Obsidian
-
-One-off script that copies every post into an Obsidian folder (YAML
-properties, images in `attachments/<post>/`, relative links). The `slug`
-property is kept as-is and is what decides the published URL.
-
-```
-python3 scripts/migrate_to_obsidian.py --out ~/path/to/Vault/Blog
-```
-
-Needs Python 3.11+. It refuses to write into a non-empty folder unless
-`--force` is given, and exits non-zero if any slug or image link is broken.
+`scripts/migrate_to_obsidian.py` was the one-off script that moved the old
+`content/posts/` into the vault in November 2026. The posts are in git history
+if ever needed.

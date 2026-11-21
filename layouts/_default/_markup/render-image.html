@@ -1,0 +1,6 @@
+{{- /* Obsidian notes link images as attachments/<post>/<file>, relative to the
+       note. On the site a post lives at /<slug>/, so point those at the
+       site-wide /attachments/ folder instead. */ -}}
+{{- $src := .Destination -}}
+{{- if hasPrefix $src "attachments/" -}}{{- $src = absURL $src -}}{{- end -}}
+<img src="{{ $src | safeURL }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }}>
