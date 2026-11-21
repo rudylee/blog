@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,18 +20,22 @@
 <title>Setting Up L2TP VPN to Bypass Great Firewall Of China • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Setting Up L2TP VPN to Bypass Great Firewall Of China"/>
-<meta name="twitter:description" content="Last month, I traveled to China for the second time. Unlike my first trip, this time I am more prepared to bypass the great firewall of China.
-During my first trip in China, I was mainly relying on simple SSH tunnel to get access to Gmail and all other blocked services. This solution is unrealiable because I couldn&rsquo;t use it on my Android phone. Aside from that, I also kept having constant dropouts which explained in this blog post http://blog."/>
 
-<meta property="og:title" content="Setting Up L2TP VPN to Bypass Great Firewall Of China" />
-<meta property="og:description" content="Last month, I traveled to China for the second time. Unlike my first trip, this time I am more prepared to bypass the great firewall of China.
-During my first trip in China, I was mainly relying on simple SSH tunnel to get access to Gmail and all other blocked services. This solution is unrealiable because I couldn&rsquo;t use it on my Android phone. Aside from that, I also kept having constant dropouts which explained in this blog post http://blog." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2017/01/11/setting-up-l2tp-vpn-to-bypass-great-firewall-of-china/" />
-<meta property="article:published_time" content="2017-01-11T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-01-11T00:00:00&#43;00:00"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Setting Up L2TP VPN to Bypass Great Firewall Of China">
+  <meta name="twitter:description" content="Last month, I traveled to China for the second time. Unlike my first trip, this time I am more prepared to bypass the great firewall of China.
+During my first trip in China, I was mainly relying on simple SSH tunnel to get access to Gmail and all other blocked services. This solution is unrealiable because I couldn’t use it on my Android phone. Aside from that, I also kept having constant dropouts which explained in this blog post http://blog.zorinaq.com/my-experience-with-the-great-firewall-of-china/">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2017/01/11/setting-up-l2tp-vpn-to-bypass-great-firewall-of-china/">
+  <meta property="og:title" content="Setting Up L2TP VPN to Bypass Great Firewall Of China">
+  <meta property="og:description" content="Last month, I traveled to China for the second time. Unlike my first trip, this time I am more prepared to bypass the great firewall of China.
+During my first trip in China, I was mainly relying on simple SSH tunnel to get access to Gmail and all other blocked services. This solution is unrealiable because I couldn’t use it on my Android phone. Aside from that, I also kept having constant dropouts which explained in this blog post http://blog.zorinaq.com/my-experience-with-the-great-firewall-of-china/">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2017-01-11T00:00:00+00:00">
+    <meta property="article:modified_time" content="2017-01-11T00:00:00+00:00">
 
 
     
@@ -41,10 +45,10 @@ During my first trip in China, I was mainly relying on simple SSH tunnel to get 
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -66,7 +70,7 @@ During my first trip in China, I was mainly relying on simple SSH tunnel to get 
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -143,7 +147,7 @@ During my first trip in China, I was mainly relying on simple SSH tunnel to get 
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -191,50 +195,25 @@ During my first trip in China, I was mainly relying on simple SSH tunnel to get 
   
   
   <div class="post">
-    
-
-<p>Last month, I traveled to China for the second time. Unlike my first trip, this time I am more prepared to bypass the great firewall of China.</p>
-
+    <p>Last month, I traveled to China for the second time. Unlike my first trip, this time I am more prepared to bypass the great firewall of China.</p>
 <p>During my first trip in China, I was mainly relying on simple SSH tunnel to get access to Gmail and all other blocked services. This solution is unrealiable because I couldn&rsquo;t use it on my Android phone. Aside from that, I also kept having constant dropouts which explained in this blog post <a href="http://blog.zorinaq.com/my-experience-with-the-great-firewall-of-china/">http://blog.zorinaq.com/my-experience-with-the-great-firewall-of-china/</a></p>
-
 <p>After an extensive research and also a recommendation from one of my friends, I decided to install an L2TP VPN server in Japan. I choose Japan because it&rsquo;s close to China and I can use Tokyo AWS Region.</p>
-
 <p>I ended up using this ansible playbook that I found when I was looking for tutorials <a href="https://github.com/jlund/streisand">https://github.com/jlund/streisand</a>. It&rsquo;s basically an Ansible Playbook which help you to install various software such as OpenVPN, L2TP, Tor, etc. You just need to run one shell script and it will install all of those software to your target host.</p>
-
 <h3 id="running-the-playbook">Running the playbook</h3>
-
 <p>Since I already have ansible installed, I just need to clone the project and run the setup script. If not a complete tutorial on how to get started you can check this installation guide here <a href="https://github.com/jlund/streisand#installation">https://github.com/jlund/streisand#installation</a>.</p>
-
 <p>Cloning the project</p>
-
-<pre><code>git clone https://github.com/jlund/streisand.git &amp;&amp; cd streisand
-</code></pre>
-
-<p>Running the setup script</p>
-
-<pre><code>./streisand
-</code></pre>
-
-<p>When you run the setup script, it will ask few questions such as where to host the server, AWS Access Keys, etc. I am using AWS because I can use the free tier to run the VPN server. On AWS, it will take around 45 minutes to finish the whole installation process.</p>
-
+<pre tabindex="0"><code>git clone https://github.com/jlund/streisand.git &amp;&amp; cd streisand
+</code></pre><p>Running the setup script</p>
+<pre tabindex="0"><code>./streisand
+</code></pre><p>When you run the setup script, it will ask few questions such as where to host the server, AWS Access Keys, etc. I am using AWS because I can use the free tier to run the VPN server. On AWS, it will take around 45 minutes to finish the whole installation process.</p>
 <h3 id="using-the-vpn">Using the VPN</h3>
-
 <p>When the whole installation finished, the playbook will create instructions files in the server. You need to SSH to the server in order to view the instruction.</p>
-
-<pre><code>ssh ubuntu@server-ip
-</code></pre>
-
-<p>Go to the NGINX folder to see file</p>
-
-<pre><code>cd /var/www/streisand/l2tp-ipsec
-</code></pre>
-
-<p>Read the instruction</p>
-
-<pre><code>cat index.md | more
-</code></pre>
-
-<p>In the file, you will find instructions on how to connect to the L2TP server from all different operating systems.</p>
+<pre tabindex="0"><code>ssh ubuntu@server-ip
+</code></pre><p>Go to the NGINX folder to see file</p>
+<pre tabindex="0"><code>cd /var/www/streisand/l2tp-ipsec
+</code></pre><p>Read the instruction</p>
+<pre tabindex="0"><code>cat index.md | more
+</code></pre><p>In the file, you will find instructions on how to connect to the L2TP server from all different operating systems.</p>
 
   </div>
   
@@ -296,21 +275,6 @@ During my first trip in China, I was mainly relying on simple SSH tunnel to get 
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

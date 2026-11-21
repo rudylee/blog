@@ -1,34 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on </title>
     <link>https://www.rudylee.com/blog/categories/go/</link>
     <description>Recent content in Go on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 23 Jun 2019 17:23:22 +1000</lastBuildDate>
-    
-	<atom:link href="https://www.rudylee.com/blog/categories/go/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://www.rudylee.com/blog/categories/go/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrate to Hugo From Octopress</title>
       <link>https://www.rudylee.com/blog/2019/06/23/migrate-to-hugo-from-octopress/</link>
       <pubDate>Sun, 23 Jun 2019 17:23:22 +1000</pubDate>
-      
       <guid>https://www.rudylee.com/blog/2019/06/23/migrate-to-hugo-from-octopress/</guid>
-      <description>Two weeks ago I decided to migrate my blog from Octopress to Hugo. I have been using Octopress as my blog engine since 2013 and I don&amp;rsquo;t have any problems with it. I can easily generate my blog as a static site with Octopress and host it on Github. It is a lot better setup than using Wordpress which requires database and PHP server. However, Octopress is not actively developed anymore and this is one of the reasons why I decided to migrate my blog to Hugo.</description>
+      <description>&lt;p&gt;Two weeks ago I decided to migrate my blog from Octopress to Hugo. I have been using Octopress as my blog engine since 2013 and I don&amp;rsquo;t have any problems with it. I can easily generate my blog as a static site with Octopress and host it on Github. It is a lot better setup than using Wordpress which requires database and PHP server. However, Octopress is not actively developed anymore and this is one of the reasons why I decided to migrate my blog to Hugo.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Download CSV Test in Go</title>
       <link>https://www.rudylee.com/blog/2018/06/23/download-csv-test-in-go/</link>
       <pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rudylee.com/blog/2018/06/23/download-csv-test-in-go/</guid>
-      <description>In the project I am working on, I have to write a test for a function that download CSV from external website and store it locally. I am pretty new in Go so please let me know if I am doing it wrong.
-The function is pretty simple, it uses the Go net/http package to send a GET request and os package to write the HTTP response to a local file.</description>
+      <description>&lt;p&gt;In the project I am working on, I have to write a test for a function that download CSV from external website and store it locally. I am pretty new in Go so please let me know if I am doing it wrong.&lt;/p&gt;&#xA;&lt;p&gt;The function is pretty simple, it uses the Go &lt;code&gt;net/http&lt;/code&gt; package to send a &lt;code&gt;GET&lt;/code&gt; request and &lt;code&gt;os&lt;/code&gt; package to write the HTTP response to a local file. See the full code below:&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

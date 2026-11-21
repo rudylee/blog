@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,18 +20,22 @@
 <title>Rails 4 CORS • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Rails 4 CORS"/>
-<meta name="twitter:description" content="McFlyyy pointed out another solution to solve this problem. I haven&rsquo;t tested it myself so follow it at your own risk Click Here I was trying to use Rails to build REST API for my AngularJS app and came across CORS error on my Chrome developer tools.
-According to Alexey Vasiliev, Cross-origin resource sharing (CORS) is a web browser technology specification which defines ways for a web server to allow its resources to be accessed by a web page from a different domain."/>
 
-<meta property="og:title" content="Rails 4 CORS" />
-<meta property="og:description" content="McFlyyy pointed out another solution to solve this problem. I haven&rsquo;t tested it myself so follow it at your own risk Click Here I was trying to use Rails to build REST API for my AngularJS app and came across CORS error on my Chrome developer tools.
-According to Alexey Vasiliev, Cross-origin resource sharing (CORS) is a web browser technology specification which defines ways for a web server to allow its resources to be accessed by a web page from a different domain." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2013/10/29/rails-4-cors/" />
-<meta property="article:published_time" content="2013-10-29T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2013-10-29T00:00:00&#43;00:00"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Rails 4 CORS">
+  <meta name="twitter:description" content="McFlyyy pointed out another solution to solve this problem. I haven’t tested it myself so follow it at your own risk Click Here I was trying to use Rails to build REST API for my AngularJS app and came across CORS error on my Chrome developer tools.
+According to Alexey Vasiliev, Cross-origin resource sharing (CORS) is a web browser technology specification which defines ways for a web server to allow its resources to be accessed by a web page from a different domain. Such access would otherwise be forbidden by the same origin policy. CORS defines a way in which the browser and the server can interact to determine whether or not to allow the cross-origin request. It is a compromise that allows greater flexibility, but is more secure than simply allowing all such requests. CORS is supported in the following browsers:">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2013/10/29/rails-4-cors/">
+  <meta property="og:title" content="Rails 4 CORS">
+  <meta property="og:description" content="McFlyyy pointed out another solution to solve this problem. I haven’t tested it myself so follow it at your own risk Click Here I was trying to use Rails to build REST API for my AngularJS app and came across CORS error on my Chrome developer tools.
+According to Alexey Vasiliev, Cross-origin resource sharing (CORS) is a web browser technology specification which defines ways for a web server to allow its resources to be accessed by a web page from a different domain. Such access would otherwise be forbidden by the same origin policy. CORS defines a way in which the browser and the server can interact to determine whether or not to allow the cross-origin request. It is a compromise that allows greater flexibility, but is more secure than simply allowing all such requests. CORS is supported in the following browsers:">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2013-10-29T00:00:00+00:00">
+    <meta property="article:modified_time" content="2013-10-29T00:00:00+00:00">
 
 
     
@@ -41,10 +45,10 @@ According to Alexey Vasiliev, Cross-origin resource sharing (CORS) is a web brow
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -66,7 +70,7 @@ According to Alexey Vasiliev, Cross-origin resource sharing (CORS) is a web brow
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -143,7 +147,7 @@ According to Alexey Vasiliev, Cross-origin resource sharing (CORS) is a web brow
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -188,134 +192,125 @@ According to Alexey Vasiliev, Cross-origin resource sharing (CORS) is a web brow
   
   
   <div class="post">
-    
-
-<h2 id="mcflyyy-pointed-out-another-solution-to-solve-this-problem-i-haven-t-tested-it-myself-so-follow-it-at-your-own-risk-click-here-https-stackoverflow-com-questions-18538549-cant-get-rack-cors-working-in-rails-application-20464939-20464939">McFlyyy pointed out another solution to solve this problem. I haven&rsquo;t tested it myself so follow it at your own risk <a href="https://stackoverflow.com/questions/18538549/cant-get-rack-cors-working-in-rails-application/20464939#20464939">Click Here</a></h2>
-
+    <h2 id="mcflyyy-pointed-out-another-solution-to-solve-this-problem-i-havent-tested-it-myself-so-follow-it-at-your-own-risk-click-herehttpsstackoverflowcomquestions18538549cant-get-rack-cors-working-in-rails-application2046493920464939">McFlyyy pointed out another solution to solve this problem. I haven&rsquo;t tested it myself so follow it at your own risk <a href="https://stackoverflow.com/questions/18538549/cant-get-rack-cors-working-in-rails-application/20464939#20464939">Click Here</a></h2>
 <p>I was trying to use Rails to build REST API for my AngularJS app and came across CORS error on my Chrome developer tools.</p>
-
 <p>According to <a href="http://leopard.in.ua/2012/07/08/using-cors-with-rails/">Alexey Vasiliev</a>, Cross-origin resource sharing (CORS) is a web browser technology specification which defines ways for a web server to allow its resources to be accessed by a web page from a different domain. Such access would otherwise be forbidden by the same origin policy. CORS defines a way in which the browser and the server can interact to determine whether or not to allow the cross-origin request. It is a compromise that allows greater flexibility, but is more secure than simply allowing all such requests. CORS is supported in the following browsers:</p>
-
 <p>After following couple of outdated tutorials, I found the quick solution for it. Here are the steps:</p>
-
 <h1 id="add-route-to-handle-options-method">Add route to handle OPTIONS method</h1>
-
 <p>AngularJS using OPTIONS method to check the CORS support on the API server. Thus, you need to add line in your route file to handle this. This can be done by adding code like this</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">match <span style="color:#e6db74">&#39;users&#39;</span>, <span style="color:#e6db74">to</span>: <span style="color:#e6db74">&#39;users#index&#39;</span>, <span style="color:#e6db74">via</span>: <span style="color:#f92672">[</span><span style="color:#e6db74">:options</span><span style="color:#f92672">]</span>
-resources <span style="color:#e6db74">:users</span></code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>match <span style="color:#e6db74">&#39;users&#39;</span>, <span style="color:#e6db74">to</span>: <span style="color:#e6db74">&#39;users#index&#39;</span>, <span style="color:#e6db74">via</span>: <span style="color:#f92672">[</span><span style="color:#e6db74">:options</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>resources <span style="color:#e6db74">:users</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>To check whether your configuration is correct you can run &lsquo;rake routes&rsquo;. It should print out something like this:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</div><p>To check whether your configuration is correct you can run &lsquo;rake routes&rsquo;. It should print out something like this:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">   Prefix Verb    URI Pattern               Controller#Action
-    users OPTIONS /users<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>          users#index
-          GET     /users<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>          users#index
-          POST    /users<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>          users#create
- new_user GET     /users/new<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>      users#new
-edit_user GET     /users/:id/edit<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span> users#edit
-     user GET     /users/:id<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>      users#show
-          PATCH   /users/:id<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>      users#update
-          PUT     /users/:id<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>      users#update
-          DELETE  /users/:id<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>      users#destroy
-     root GET     /                         users#index</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>   Prefix Verb    URI Pattern               Controller#Action
+</span></span><span style="display:flex;"><span>    users OPTIONS /users<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>          users#index
+</span></span><span style="display:flex;"><span>          GET     /users<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>          users#index
+</span></span><span style="display:flex;"><span>          POST    /users<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>          users#create
+</span></span><span style="display:flex;"><span> new_user GET     /users/new<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>      users#new
+</span></span><span style="display:flex;"><span>edit_user GET     /users/:id/edit<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span> users#edit
+</span></span><span style="display:flex;"><span>     user GET     /users/:id<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>      users#show
+</span></span><span style="display:flex;"><span>          PATCH   /users/:id<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>      users#update
+</span></span><span style="display:flex;"><span>          PUT     /users/:id<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>      users#update
+</span></span><span style="display:flex;"><span>          DELETE  /users/:id<span style="color:#f92672">(</span>.:format<span style="color:#f92672">)</span>      users#destroy
+</span></span><span style="display:flex;"><span>     root GET     /                         users#index
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>You can see on the second line, we handle OPTIONS verb and redirect to index action.</p>
-
-<h1 id="add-before-filter-and-after-filter-to-allow-cors">Add before_filter and after_filter to allow CORS</h1>
-
+</div><p>You can see on the second line, we handle OPTIONS verb and redirect to index action.</p>
+<h1 id="add-before_filter-and-after_filter-to-allow-cors">Add before_filter and after_filter to allow CORS</h1>
 <p>The next step is we need to return proper header to tell AngularJS that our server allow CORS. Here is the sample controller file:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#66d9ef">UsersController</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ApplicationController</span>
-
-  skip_before_filter <span style="color:#e6db74">:verify_authenticity_token</span>
-  before_filter <span style="color:#e6db74">:cors_preflight_check</span>
-  after_filter <span style="color:#e6db74">:cors_set_access_control_headers</span>
-  
-  <span style="color:#75715e"># For all responses in this controller, return the CORS access control headers.</span>
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cors_set_access_control_headers</span>
-    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Allow-Origin&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;*&#39;</span>
-    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Allow-Methods&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;POST, GET, OPTIONS&#39;</span>
-    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Max-Age&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1728000&#34;</span>
-  <span style="color:#66d9ef">end</span>
- 
-  <span style="color:#75715e"># If this is a preflight OPTIONS request, then short-circuit the</span>
-  <span style="color:#75715e"># request, return only the necessary headers and return an empty</span>
-  <span style="color:#75715e"># text/plain.</span>
-
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cors_preflight_check</span>
-    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Allow-Origin&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;*&#39;</span>
-    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Allow-Methods&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;POST, GET, OPTIONS&#39;</span>
-    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Allow-Headers&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;X-Requested-With, X-Prototype-Version&#39;</span>
-    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Max-Age&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;1728000&#39;</span>
-  <span style="color:#66d9ef">end</span>
-
-  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>
-    @users <span style="color:#f92672">=</span> <span style="color:#66d9ef">User</span><span style="color:#f92672">.</span>all
-
-    respond_to <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>format<span style="color:#f92672">|</span>
-      format<span style="color:#f92672">.</span>json { render <span style="color:#e6db74">:json</span> <span style="color:#f92672">=&gt;</span> @users }
-    <span style="color:#66d9ef">end</span>
-  <span style="color:#66d9ef">end</span>
-<span style="color:#66d9ef">end</span></code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">UsersController</span> <span style="color:#f92672">&lt;</span> <span style="color:#66d9ef">ApplicationController</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  skip_before_filter <span style="color:#e6db74">:verify_authenticity_token</span>
+</span></span><span style="display:flex;"><span>  before_filter <span style="color:#e6db74">:cors_preflight_check</span>
+</span></span><span style="display:flex;"><span>  after_filter <span style="color:#e6db74">:cors_set_access_control_headers</span>
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># For all responses in this controller, return the CORS access control headers.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cors_set_access_control_headers</span>
+</span></span><span style="display:flex;"><span>    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Allow-Origin&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;*&#39;</span>
+</span></span><span style="display:flex;"><span>    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Allow-Methods&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;POST, GET, OPTIONS&#39;</span>
+</span></span><span style="display:flex;"><span>    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Max-Age&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1728000&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># If this is a preflight OPTIONS request, then short-circuit the</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># request, return only the necessary headers and return an empty</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># text/plain.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">cors_preflight_check</span>
+</span></span><span style="display:flex;"><span>    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Allow-Origin&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;*&#39;</span>
+</span></span><span style="display:flex;"><span>    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Allow-Methods&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;POST, GET, OPTIONS&#39;</span>
+</span></span><span style="display:flex;"><span>    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Allow-Headers&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;X-Requested-With, X-Prototype-Version&#39;</span>
+</span></span><span style="display:flex;"><span>    headers<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;Access-Control-Max-Age&#39;</span><span style="color:#f92672">]</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;1728000&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">index</span>
+</span></span><span style="display:flex;"><span>    @users <span style="color:#f92672">=</span> <span style="color:#66d9ef">User</span><span style="color:#f92672">.</span>all
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    respond_to <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>format<span style="color:#f92672">|</span>
+</span></span><span style="display:flex;"><span>      format<span style="color:#f92672">.</span>json { render <span style="color:#e6db74">:json</span> <span style="color:#f92672">=&gt;</span> @users }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>We need to add skip_before_filter :verify_authenticity_token because Rails will return 422 status code and error message &lsquo;Can&rsquo;t verify CSRF token authenticity&rsquo;</p>
+</div><p>We need to add skip_before_filter :verify_authenticity_token because Rails will return 422 status code and error message &lsquo;Can&rsquo;t verify CSRF token authenticity&rsquo;</p>
 
   </div>
   
@@ -377,21 +372,6 @@ edit_user GET     /users/:id/edit<span style="color:#f92672">(</span>.:format<sp
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

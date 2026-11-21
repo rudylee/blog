@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,18 +20,22 @@
 <title>Google Spreadsheet as JSON API • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Google Spreadsheet as JSON API"/>
-<meta name="twitter:description" content="Data store is an important piece in most of the modern applications. The implementation can range from a simple text file to a complicated database systems. In this blog post, I will show you how to use Google Spreadsheet as a data store for your application.
-Google Spreadsheet provides a convenient way to store, edit, share and retrieve data. This makes Google Spreadsheet appealing if you want to quickly prototype an app and don&rsquo;t want to spend time building a CRUD interface to manage your data."/>
 
-<meta property="og:title" content="Google Spreadsheet as JSON API" />
-<meta property="og:description" content="Data store is an important piece in most of the modern applications. The implementation can range from a simple text file to a complicated database systems. In this blog post, I will show you how to use Google Spreadsheet as a data store for your application.
-Google Spreadsheet provides a convenient way to store, edit, share and retrieve data. This makes Google Spreadsheet appealing if you want to quickly prototype an app and don&rsquo;t want to spend time building a CRUD interface to manage your data." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2017/12/25/google-spreadsheet-as-json-api/" />
-<meta property="article:published_time" content="2017-12-25T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2017-12-25T00:00:00&#43;00:00"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Google Spreadsheet as JSON API">
+  <meta name="twitter:description" content="Data store is an important piece in most of the modern applications. The implementation can range from a simple text file to a complicated database systems. In this blog post, I will show you how to use Google Spreadsheet as a data store for your application.
+Google Spreadsheet provides a convenient way to store, edit, share and retrieve data. This makes Google Spreadsheet appealing if you want to quickly prototype an app and don’t want to spend time building a CRUD interface to manage your data. It is also allow you to output the spreadsheet data in JSON format. This means you use Google spreadsheet as your JSON API.">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2017/12/25/google-spreadsheet-as-json-api/">
+  <meta property="og:title" content="Google Spreadsheet as JSON API">
+  <meta property="og:description" content="Data store is an important piece in most of the modern applications. The implementation can range from a simple text file to a complicated database systems. In this blog post, I will show you how to use Google Spreadsheet as a data store for your application.
+Google Spreadsheet provides a convenient way to store, edit, share and retrieve data. This makes Google Spreadsheet appealing if you want to quickly prototype an app and don’t want to spend time building a CRUD interface to manage your data. It is also allow you to output the spreadsheet data in JSON format. This means you use Google spreadsheet as your JSON API.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2017-12-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2017-12-25T00:00:00+00:00">
 
 
     
@@ -41,10 +45,10 @@ Google Spreadsheet provides a convenient way to store, edit, share and retrieve 
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -66,7 +70,7 @@ Google Spreadsheet provides a convenient way to store, edit, share and retrieve 
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -143,7 +147,7 @@ Google Spreadsheet provides a convenient way to store, edit, share and retrieve 
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -188,58 +192,31 @@ Google Spreadsheet provides a convenient way to store, edit, share and retrieve 
   
   
   <div class="post">
-    
-
-<p>Data store is an important piece in most of the modern applications. The implementation can range from a simple text file to a complicated database systems. In this blog post, I will show you how to use Google Spreadsheet as a data store for your application.</p>
-
+    <p>Data store is an important piece in most of the modern applications. The implementation can range from a simple text file to a complicated database systems. In this blog post, I will show you how to use Google Spreadsheet as a data store for your application.</p>
 <p>Google Spreadsheet provides a convenient way to store, edit, share and retrieve data. This makes Google Spreadsheet appealing if you want to quickly prototype an app and don&rsquo;t want to spend time building a CRUD interface to manage your data. It is also allow you to output the spreadsheet data in JSON format. This means you use Google spreadsheet as your JSON API.</p>
-
 <h1 id="publish-the-spreadsheet-to-the-web">Publish the spreadsheet to the web</h1>
-
 <p>In order to enable this feature, first you need to publish the spreadsheet to the web. You can easily do this by going to the File menu and choose Publish to the web. This only works if you own or have admin access to the spreadsheet. See the screenshot below.</p>
-
-<p><a href="https://www.rudylee.com/blog/images/posts/google-spreadsheet-json-api/publish-to-the-web.png"><img src="https://www.rudylee.com/blog/images/posts/google-spreadsheet-json-api/publish-to-the-web.png" alt="" /></a></p>
-
+<p><a href="attachments/google-spreadsheet-as-json-api/publish-to-the-web.png"><img src="https://www.rudylee.com/blog/attachments/google-spreadsheet-as-json-api/publish-to-the-web.png" alt="">
+</a></p>
 <h1 id="get-the-id-of-the-spreadsheet">Get the ID of the spreadsheet</h1>
-
 <p>The next thing that you have to do is getting the spreadsheet ID from the URL.</p>
-
 <p>The URL of your spreadsheet should be something like this <code>https://docs.google.com/spreadsheets/d/17CAMo4mY7pdlk7jgV2385FLVzDV3L8cUDidhfge8U_J4/edit#gid=0</code></p>
-
 <p>The spreadsheet ID is the characters between the <code>d</code> and <code>edit</code>, which in the example above is <code>17CAMo4mY7pdlk7jgV2385FLVzDV3L8cUDidhfge8U_J4</code></p>
-
 <h1 id="copy-the-id-and-construct-the-json-api-endpoint">Copy the ID and construct the JSON API endpoint</h1>
-
 <p>After retrieving the ID, you can start constructing the JSON API endpoint. The URL format as follow:</p>
-
-<pre><code>https://spreadsheets.google.com/feeds/list/replace-this-with-your-spreadsheet-id/od6/public/values?alt=json
-</code></pre>
-
-<p>If we are using the spreadsheet URL in the previous section ( <a href="https://docs.google.com/spreadsheets/d/17CAMo4mY7pdlk7jgVRmgD5FLVzDV3L8cUDiHaT8U_J4/edit#gid=0">https://docs.google.com/spreadsheets/d/17CAMo4mY7pdlk7jgVRmgD5FLVzDV3L8cUDiHaT8U_J4/edit#gid=0</a> ), the JSON API URL will be:</p>
-
-<pre><code>https://spreadsheets.google.com/feeds/list/17CAMo4mY7pdlk7jgVRmgD5FLVzDV3L8cUDiHaT8U_J4/od6/public/values?alt=json
-</code></pre>
-
-<h1 id="the-spreadsheet-is-public-but-not-published-to-the-web">The spreadsheet is public but not published to the web</h1>
-
+<pre tabindex="0"><code>https://spreadsheets.google.com/feeds/list/replace-this-with-your-spreadsheet-id/od6/public/values?alt=json
+</code></pre><p>If we are using the spreadsheet URL in the previous section ( <a href="https://docs.google.com/spreadsheets/d/17CAMo4mY7pdlk7jgVRmgD5FLVzDV3L8cUDiHaT8U_J4/edit#gid=0">https://docs.google.com/spreadsheets/d/17CAMo4mY7pdlk7jgVRmgD5FLVzDV3L8cUDiHaT8U_J4/edit#gid=0</a> ), the JSON API URL will be:</p>
+<pre tabindex="0"><code>https://spreadsheets.google.com/feeds/list/17CAMo4mY7pdlk7jgVRmgD5FLVzDV3L8cUDiHaT8U_J4/od6/public/values?alt=json
+</code></pre><h1 id="the-spreadsheet-is-public-but-not-published-to-the-web">The spreadsheet is public but not published to the web</h1>
 <p>In some cases, you might want to use a public Google spreadsheet but it is not published to the web. I discovered from the official Google forum that you can use <code>importrange</code> formula to retrieve the data from another spreadsheet and import it into your spreadsheet.</p>
-
-<pre><code>=importrange(&quot;URL-TO-SPREADSHEET&quot;, &quot;SHEET NAME!CELL RANGE&quot;)
-</code></pre>
-
-<p>Take for example this public spreadsheet that I don&rsquo;t have admin access to: <code>https://docs.google.com/spreadsheets/d/1ql32s8kcUB-Q8AEwxrCzPYJzNgaQ2CknW4J0rlnJqfE/edit#gid=1671204426</code></p>
-
+<pre tabindex="0"><code>=importrange(&#34;URL-TO-SPREADSHEET&#34;, &#34;SHEET NAME!CELL RANGE&#34;)
+</code></pre><p>Take for example this public spreadsheet that I don&rsquo;t have admin access to: <code>https://docs.google.com/spreadsheets/d/1ql32s8kcUB-Q8AEwxrCzPYJzNgaQ2CknW4J0rlnJqfE/edit#gid=1671204426</code></p>
 <p>I will create another spreadsheet and use the <code>importrange</code> formula to import the data from that public spreadsheet into my spreadsheet</p>
-
-<pre><code>=importrange(&quot;https://docs.google.com/spreadsheets/d/1ql32s8kcUB-Q8AEwxrCzPYJzNgaQ2CknW4J0rlnJqfE&quot;,&quot;SBW Optimal Conversions!A1:I190&quot;)
-</code></pre>
-
-<p>It should look something like this:</p>
-
-<p><a href="https://www.rudylee.com/blog/images/posts/google-spreadsheet-json-api/import-range.png"><img src="https://www.rudylee.com/blog/images/posts/google-spreadsheet-json-api/import-range.png" alt="" /></a></p>
-
+<pre tabindex="0"><code>=importrange(&#34;https://docs.google.com/spreadsheets/d/1ql32s8kcUB-Q8AEwxrCzPYJzNgaQ2CknW4J0rlnJqfE&#34;,&#34;SBW Optimal Conversions!A1:I190&#34;)
+</code></pre><p>It should look something like this:</p>
+<p><a href="attachments/google-spreadsheet-as-json-api/import-range.png"><img src="https://www.rudylee.com/blog/attachments/google-spreadsheet-as-json-api/import-range.png" alt="">
+</a></p>
 <p>As you might think, this solution is prone to error because the formula will break if the owner of the original spreadsheet changes the sheet&rsquo;s name.</p>
-
 <p>It&rsquo;s something I can live with since it&rsquo;s so much easier to update the sheet&rsquo;s name rather than asking the owner to publish spreadsheet to the web.</p>
 
   </div>
@@ -302,21 +279,6 @@ Google Spreadsheet provides a convenient way to store, edit, share and retrieve 
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

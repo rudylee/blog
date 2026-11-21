@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,20 +20,30 @@
 <title>Ruby on Rails in Kubuntu 9.04 • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Ruby on Rails in Kubuntu 9.04"/>
-<meta name="twitter:description" content="Beberapa hari ini gwa disibukkan mencoba menginstall Ruby on Rails ( RoR ). Sebenarnya sudah cukup lama pengen coba-coba Ruby on Rails, tapi sekarang baru ada semangat sama ada waktu buat nyoba-nyoba.
-Menginstall Ruby on Rails ini dapat dibilang cukup memakan banyak waktu dikarenakan gwa menghabiskan 1 harian HANYA untuk install Kubuntu doank ( gara2 cd rom yang ga jelas ).
-Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan dalam waktu 1 hari ) gwa mulai menginstall Ruby on Rails."/>
 
-<meta property="og:title" content="Ruby on Rails in Kubuntu 9.04" />
-<meta property="og:description" content="Beberapa hari ini gwa disibukkan mencoba menginstall Ruby on Rails ( RoR ). Sebenarnya sudah cukup lama pengen coba-coba Ruby on Rails, tapi sekarang baru ada semangat sama ada waktu buat nyoba-nyoba.
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ruby on Rails in Kubuntu 9.04">
+  <meta name="twitter:description" content="Beberapa hari ini gwa disibukkan mencoba menginstall Ruby on Rails ( RoR ). Sebenarnya sudah cukup lama pengen coba-coba Ruby on Rails, tapi sekarang baru ada semangat sama ada waktu buat nyoba-nyoba.
 Menginstall Ruby on Rails ini dapat dibilang cukup memakan banyak waktu dikarenakan gwa menghabiskan 1 harian HANYA untuk install Kubuntu doank ( gara2 cd rom yang ga jelas ).
-Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan dalam waktu 1 hari ) gwa mulai menginstall Ruby on Rails." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-904/" />
-<meta property="article:published_time" content="2009-11-23T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2009-11-23T00:00:00&#43;00:00"/>
+Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan dalam waktu 1 hari ) gwa mulai menginstall Ruby on Rails. Mungkin masih pada bingung sebenarnya Ruby on Rails itu apaan. Ruby on Rails itu adalah sebuah framework untuk pembuatan website yang dibuat dengan menggunakan bahasa Ruby.">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2009/11/23/ruby-on-rails-in-kubuntu-904/">
+  <meta property="og:title" content="Ruby on Rails in Kubuntu 9.04">
+  <meta property="og:description" content="Beberapa hari ini gwa disibukkan mencoba menginstall Ruby on Rails ( RoR ). Sebenarnya sudah cukup lama pengen coba-coba Ruby on Rails, tapi sekarang baru ada semangat sama ada waktu buat nyoba-nyoba.
+Menginstall Ruby on Rails ini dapat dibilang cukup memakan banyak waktu dikarenakan gwa menghabiskan 1 harian HANYA untuk install Kubuntu doank ( gara2 cd rom yang ga jelas ).
+Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan dalam waktu 1 hari ) gwa mulai menginstall Ruby on Rails. Mungkin masih pada bingung sebenarnya Ruby on Rails itu apaan. Ruby on Rails itu adalah sebuah framework untuk pembuatan website yang dibuat dengan menggunakan bahasa Ruby.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2009-11-23T00:00:00+00:00">
+    <meta property="article:modified_time" content="2009-11-23T00:00:00+00:00">
+    <meta property="article:tag" content="CakePHP">
+    <meta property="article:tag" content="Coding">
+    <meta property="article:tag" content="Kubuntu">
+    <meta property="article:tag" content="MVC">
+    <meta property="article:tag" content="Pengalaman">
+    <meta property="article:tag" content="Ruby">
 
 
     
@@ -43,10 +53,10 @@ Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan d
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -68,7 +78,7 @@ Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan d
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -145,7 +155,7 @@ Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan d
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -204,7 +214,7 @@ Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan d
           <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/ruby">ruby</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/ruby-on-rails">ruby on rails</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/ruby-on-rails">ruby-on-rails</a>
           
       
     
@@ -219,297 +229,305 @@ Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan d
   
   <div class="post">
     <p>Beberapa hari ini gwa disibukkan mencoba menginstall Ruby on Rails ( RoR ). Sebenarnya sudah cukup lama pengen coba-coba Ruby on Rails, tapi sekarang baru ada semangat sama ada waktu buat nyoba-nyoba.</p>
-
 <p>Menginstall Ruby on Rails ini dapat dibilang cukup memakan banyak waktu dikarenakan gwa menghabiskan 1 harian HANYA untuk install Kubuntu doank ( gara2 cd rom yang ga jelas ).</p>
-
 <p>Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan dalam waktu 1 hari ) gwa mulai menginstall Ruby on Rails. Mungkin masih pada bingung sebenarnya Ruby on Rails itu apaan. Ruby on Rails itu adalah sebuah framework untuk pembuatan website yang dibuat dengan menggunakan bahasa Ruby.</p>
-
 <p>Apa istimewanya ? Kok semua sekarang pada ngomong Ruby on Rails mulu ? Kalau yang setau gwa Ruby on Rails adalah framework yang pertama kali menerapkan konsep MVC ( Model - View - Controller ) yang banyak diadopsi oleh framework-framework lain ( CakePHP, CI, Symfony, Spring, dll ). Selain itu Twitter juga menggunakan Ruby on Rails sebagai platform utamanya ( walaupun ada performance issue ).</p>
-
 <p>Yah jadi langsung aja kita mulai step-step menginstall Ruby on Rails. Langkah-langkahnya sebenarnya terbagi dalam beberapa bagian yaitu :</p>
-
 <ol>
-<li><p>Menginstall package yang dibutuhkan oleh Ruby on Rails</p></li>
-
-<li><p>Menginstall database server yang mau digunakan</p></li>
-
-<li><p>Menginstall Ruby, Rubygem, dan yang terakhir Rails</p></li>
+<li>
+<p>Menginstall package yang dibutuhkan oleh Ruby on Rails</p>
+</li>
+<li>
+<p>Menginstall database server yang mau digunakan</p>
+</li>
+<li>
+<p>Menginstall Ruby, Rubygem, dan yang terakhir Rails</p>
+</li>
 </ol>
-
 <p>Kelihatannya gampang menginstall Ruby on Rails, tetapi karena banyaknya dependency terhadap package membuat kita harus sering compile ulang Ruby ( mungkin yang pakai apt-get lebih gampang, tetapi sekarang kita akan mencoba install from source ).</p>
-
 <p>Berikut biodata dari Ruby yang akan kita install :</p>
-
 <ol>
-<li><p>ruby-1.8.7-p174</p></li>
-
-<li><p>rubygems-1.3.5</p></li>
-
-<li><p>rubygems-1.3.5</p></li>
+<li>
+<p>ruby-1.8.7-p174</p>
+</li>
+<li>
+<p>rubygems-1.3.5</p>
+</li>
+<li>
+<p>rubygems-1.3.5</p>
+</li>
 </ol>
-
 <p>Jadi sejauh pengalaman saya, beberapa package yang harus diinstall terlebih dahulu ( di Kubuntu ya, kalau distro lain ga ikutan ) adalah:</p>
-
 <ol>
-<li><p>Zlib</p></li>
-
-<li><p>Openssl</p></li>
-
-<li><p>Mysql dev ( jika ingin menggunakan mysql )</p></li>
+<li>
+<p>Zlib</p>
+</li>
+<li>
+<p>Openssl</p>
+</li>
+<li>
+<p>Mysql dev ( jika ingin menggunakan mysql )</p>
+</li>
 </ol>
-
 <p>Kalau mau install zlib di kubuntu tinggal ketik aja</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install zlib1g-dev</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install zlib1g-dev
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>sementara untuk openssl ketik</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</div><p>sementara untuk openssl ketik</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install libopenssl-ruby1.9
-sudo apt-get install libssl-dev</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install libopenssl-ruby1.9
+</span></span><span style="display:flex;"><span>sudo apt-get install libssl-dev
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>untuk library openssl bisa disesuaikan dengan versi rubynya ( dan kalau mau gampang search aja di Software Management kubuntunya ). Setelah itu kita akan menginstall mysql-server ( karena gwa pakainya mysql ). Kalau misalnya anda tidak ingin menggunakan mysql juga tidak apa-apa, karena defaultnya ruby itu menggunakan sqllite.</p>
-
+</div><p>untuk library openssl bisa disesuaikan dengan versi rubynya ( dan kalau mau gampang search aja di Software Management kubuntunya ). Setelah itu kita akan menginstall mysql-server ( karena gwa pakainya mysql ). Kalau misalnya anda tidak ingin menggunakan mysql juga tidak apa-apa, karena defaultnya ruby itu menggunakan sqllite.</p>
 <p>untuk mysql saya menggunakan command ini</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt-get install mysql-server</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo apt-get install mysql-server
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>sementara untuk library dev mysqlnya gwa menggunakan Software Management( jadi gwa ga gitu ingat packagenya yang mana ). Setelah selesai install mysqlnya kita tinggal download aja source Ruby dari website Ruby on Rails yaitu di <a href="http://www.rubyonrails.org">www.rubyonrails.org</a> dan pilih menu download. Disana bakal ada tulisan <strong>Source: Compile it yourself</strong>, nah tinggal klik aja tulisan source nya dan anda sudah dapat sourcenya Ruby.</p>
-
+</div><p>sementara untuk library dev mysqlnya gwa menggunakan Software Management( jadi gwa ga gitu ingat packagenya yang mana ). Setelah selesai install mysqlnya kita tinggal download aja source Ruby dari website Ruby on Rails yaitu di <a href="http://www.rubyonrails.org">www.rubyonrails.org</a> dan pilih menu download. Disana bakal ada tulisan <strong>Source: Compile it yourself</strong>, nah tinggal klik aja tulisan source nya dan anda sudah dapat sourcenya Ruby.</p>
 <p>Langkah-langkahnya kira-kira begini :</p>
-
 <ol>
-<li><p>Selesai download copy aja file source Rubynya ke mana aja ( ex : /usr/local )</p></li>
-
-<li><p>Extract file source tadi ( tar xzvf rubygems-1.3.5.tgz ).</p></li>
-
-<li><p>kemudian masuk ke dalam folder yang sudah diextract tadi.</p></li>
-
-<li><p>Jalankan langkah untuk compile ( <strong>./configure</strong>, <strong>make,</strong> dan terakhir adalah <strong>make install</strong> ).</p></li>
-
-<li><p>gwa sempat mencoba menggunakan ./configure &amp;&amp; make &amp;&amp; make install tapi hasilnya tidak berhasil ( jadi kalau ada yang mau coba silakan saja, gwa sih pakai cara manual, jalanin satu2 ).</p></li>
+<li>
+<p>Selesai download copy aja file source Rubynya ke mana aja ( ex : /usr/local )</p>
+</li>
+<li>
+<p>Extract file source tadi ( tar xzvf rubygems-1.3.5.tgz ).</p>
+</li>
+<li>
+<p>kemudian masuk ke dalam folder yang sudah diextract tadi.</p>
+</li>
+<li>
+<p>Jalankan langkah untuk compile ( <strong>./configure</strong>, <strong>make,</strong> dan terakhir adalah <strong>make install</strong> ).</p>
+</li>
+<li>
+<p>gwa sempat mencoba menggunakan ./configure &amp;&amp; make &amp;&amp; make install tapi hasilnya tidak berhasil ( jadi kalau ada yang mau coba silakan saja, gwa sih pakai cara manual, jalanin satu2 ).</p>
+</li>
 </ol>
-
 <p>Nah setelah itu harusnya Ruby kita sudah terinstall, coba jalankan perintah ini :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ruby -v atau ruby --version</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ruby -v atau ruby --version
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Jgn pernah jalanin ruby -version karena akan muncul error message ( harus &ndash; ). Kalau sudah terinstall harusnya muncul tulisan seperti ini :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</div><p>Jgn pernah jalanin ruby -version karena akan muncul error message ( harus &ndash; ). Kalau sudah terinstall harusnya muncul tulisan seperti ini :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">ruby <span style="color:#ae81ff">1</span><span style="color:#f92672">.</span><span style="color:#ae81ff">8</span><span style="color:#f92672">.</span><span style="color:#ae81ff">7</span> (<span style="color:#ae81ff">2009</span><span style="color:#f92672">-</span><span style="color:#ae81ff">06</span><span style="color:#f92672">-</span><span style="color:#ae81ff">12</span> patchlevel <span style="color:#ae81ff">174</span>) <span style="color:#f92672">[</span>i686<span style="color:#f92672">-</span>linux<span style="color:#f92672">]</span></code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>ruby <span style="color:#ae81ff">1</span><span style="color:#f92672">.</span><span style="color:#ae81ff">8</span><span style="color:#f92672">.</span><span style="color:#ae81ff">7</span> (<span style="color:#ae81ff">2009</span><span style="color:#f92672">-</span><span style="color:#ae81ff">06</span><span style="color:#f92672">-</span><span style="color:#ae81ff">12</span> patchlevel <span style="color:#ae81ff">174</span>) <span style="color:#f92672">[</span>i686<span style="color:#f92672">-</span>linux<span style="color:#f92672">]</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Nah kalau sudah benar lanjut ke step selanjutnya, kalau gagal coba debugging sendiri aja ya ( googling gitu ). Selanjutnya kita akan menginstall RubyGems atau bisa disebut sebagai Package Managernya Ruby ( mirip apt-get tapi punyanya Ruby ). Langkah-langkahnya :</p>
-
+</div><p>Nah kalau sudah benar lanjut ke step selanjutnya, kalau gagal coba debugging sendiri aja ya ( googling gitu ). Selanjutnya kita akan menginstall RubyGems atau bisa disebut sebagai Package Managernya Ruby ( mirip apt-get tapi punyanya Ruby ). Langkah-langkahnya :</p>
 <ol>
-<li><p>Masuk lagi ke website Ruby on Rails bagian download, <a href="http://rubyonrails.org/download">http://rubyonrails.org/download</a></p></li>
-
-<li><p>Cari bagian RubyGems dan pilih Download</p></li>
-
-<li><p>Untuk versi terserah pilih yang mana suka la, gwa mah ambil yang paling baru.</p></li>
-
-<li><p>Setelah download tinggal pindahin aja ke folder mana aja ( ex : /usr/local ).</p></li>
-
-<li><p>Extract lagi RubyGems nya ( tar xzvf rubygems-1.3.5.tgz )</p></li>
-
-<li><p>Masuk ke folder yang baru diextract tadi dan jalankan perintah <strong>ruby setup.rb</strong></p></li>
-
-<li><p>Tunggu proses dan jika tidak terjadi error maka jalankan perintah <strong>gem help</strong></p></li>
+<li>
+<p>Masuk lagi ke website Ruby on Rails bagian download, <a href="http://rubyonrails.org/download">http://rubyonrails.org/download</a></p>
+</li>
+<li>
+<p>Cari bagian RubyGems dan pilih Download</p>
+</li>
+<li>
+<p>Untuk versi terserah pilih yang mana suka la, gwa mah ambil yang paling baru.</p>
+</li>
+<li>
+<p>Setelah download tinggal pindahin aja ke folder mana aja ( ex : /usr/local ).</p>
+</li>
+<li>
+<p>Extract lagi RubyGems nya ( tar xzvf rubygems-1.3.5.tgz )</p>
+</li>
+<li>
+<p>Masuk ke folder yang baru diextract tadi dan jalankan perintah <strong>ruby setup.rb</strong></p>
+</li>
+<li>
+<p>Tunggu proses dan jika tidak terjadi error maka jalankan perintah <strong>gem help</strong></p>
+</li>
 </ol>
-
 <p>Jika gem terinstall dengan benar maka harusnya muncul help tentang penggunaan gem. Sekarang kita akan menginstall rails, tetapi sebelum kita harus menginstall Rake.</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gem install rake</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gem install rake
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Setelah selesai kita tinggal menginstall Rails dengan :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</div><p>Setelah selesai kita tinggal menginstall Rails dengan :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gem install rails</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gem install rails
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Selesai menginstall rails seharusnya semua langkah sudah selesai, kita tinggal mengetes apakah Ruby on Rails berjalan dengan baik. Masuk ke folder tempat dimana anda akan menyimpan file website anda nanti ( ex: /home/rudy/ruby ). Kemudian ketik perintah ini :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</div><p>Selesai menginstall rails seharusnya semua langkah sudah selesai, kita tinggal mengetes apakah Ruby on Rails berjalan dengan baik. Masuk ke folder tempat dimana anda akan menyimpan file website anda nanti ( ex: /home/rudy/ruby ). Kemudian ketik perintah ini :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rails blog -d mysql</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rails blog -d mysql
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Dari perintah diatas kita akan membuat folder dengan nama blog dan menggunakan koneksi mysql ( kalau ga pakai -d mysql, secara otomatis ruby akan membuat konfigurasi menggunakan sqllite ).</p>
-
+</div><p>Dari perintah diatas kita akan membuat folder dengan nama blog dan menggunakan koneksi mysql ( kalau ga pakai -d mysql, secara otomatis ruby akan membuat konfigurasi menggunakan sqllite ).</p>
 <p>Masuk ke dalam folder blog tersebut, dan masuk ke dalam folder config dan cari file <strong>database.yml</strong>, kira-kira isinya begini :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml"><span style="color:#75715e"># MySQL.  Versions 4.1 and 5.0 are recommended.</span>
-<span style="color:#75715e">#</span>
-<span style="color:#75715e"># Install the MySQL driver:</span>
-<span style="color:#75715e">#   gem install mysql</span>
-<span style="color:#75715e"># On Mac OS X:</span>
-<span style="color:#75715e">#   sudo gem install mysql -- --with-mysql-dir=/usr/local/mysql</span>
-<span style="color:#75715e"># On Mac OS X Leopard:</span>
-<span style="color:#75715e">#   sudo env ARCHFLAGS=&#34;-arch i386&#34; gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config</span>
-<span style="color:#75715e">#       This sets the ARCHFLAGS environment variable to your native architecture</span>
-<span style="color:#75715e"># On Windows:</span>
-<span style="color:#75715e">#   gem install mysql</span>
-<span style="color:#75715e">#       Choose the win32 build.</span>
-<span style="color:#75715e">#       Install MySQL and put its /bin directory on your path.</span>
-<span style="color:#75715e">#</span>
-<span style="color:#75715e"># And be sure to use new-style password hashing:</span>
-<span style="color:#75715e">#   http://dev.mysql.com/doc/refman/5.0/en/old-client.html</span>
-development:
-  adapter: mysql
-  encoding: utf8
-  reconnect: <span style="color:#66d9ef">false</span>
-  database: blog_development
-  pool: <span style="color:#ae81ff">5</span>
-  username: root
-  password:
-  host: localhost
-
-<span style="color:#75715e"># Warning: The database defined as &#34;test&#34; will be erased and</span>
-<span style="color:#75715e"># re-generated from your development database when you run &#34;rake&#34;.</span>
-<span style="color:#75715e"># Do not set this db to the same as development or production.</span>
-test:
-  adapter: mysql
-  encoding: utf8
-  reconnect: <span style="color:#66d9ef">false</span>
-  database: blog_test
-  pool: <span style="color:#ae81ff">5</span>
-  username: root
-  password:
-  host: localhost
-
-production:
-  adapter: mysql
-  encoding: utf8
-  reconnect: <span style="color:#66d9ef">false</span>
-  database: blog_production
-  pool: <span style="color:#ae81ff">5</span>
-  username: root
-  password: 
-  host: localhost</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yml" data-lang="yml"><span style="display:flex;"><span><span style="color:#75715e"># MySQL.  Versions 4.1 and 5.0 are recommended.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Install the MySQL driver:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   gem install mysql</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># On Mac OS X:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   sudo gem install mysql -- --with-mysql-dir=/usr/local/mysql</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># On Mac OS X Leopard:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   sudo env ARCHFLAGS=&#34;-arch i386&#34; gem install mysql -- --with-mysql-config=/usr/local/mysql/bin/mysql_config</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#       This sets the ARCHFLAGS environment variable to your native architecture</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># On Windows:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   gem install mysql</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#       Choose the win32 build.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#       Install MySQL and put its /bin directory on your path.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># And be sure to use new-style password hashing:</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#   http://dev.mysql.com/doc/refman/5.0/en/old-client.html</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">development</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">adapter</span>: <span style="color:#ae81ff">mysql</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">encoding</span>: <span style="color:#ae81ff">utf8</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">reconnect</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">database</span>: <span style="color:#ae81ff">blog_development</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">pool</span>: <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">username</span>: <span style="color:#ae81ff">root</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">password</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">host</span>: <span style="color:#ae81ff">localhost</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Warning: The database defined as &#34;test&#34; will be erased and</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># re-generated from your development database when you run &#34;rake&#34;.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Do not set this db to the same as development or production.</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">test</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">adapter</span>: <span style="color:#ae81ff">mysql</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">encoding</span>: <span style="color:#ae81ff">utf8</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">reconnect</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">database</span>: <span style="color:#ae81ff">blog_test</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">pool</span>: <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">username</span>: <span style="color:#ae81ff">root</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">password</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">host</span>: <span style="color:#ae81ff">localhost</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">production</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">adapter</span>: <span style="color:#ae81ff">mysql</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">encoding</span>: <span style="color:#ae81ff">utf8</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">reconnect</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">database</span>: <span style="color:#ae81ff">blog_production</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">pool</span>: <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">username</span>: <span style="color:#ae81ff">root</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">password</span>: 
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">host</span>: <span style="color:#ae81ff">localhost</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>ubah username dan password sesuai dengan settingan mysql anda. Kemudian keluar dari folder config dan jalankan perintah ini :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</div><p>ubah username dan password sesuai dengan settingan mysql anda. Kemudian keluar dari folder config dan jalankan perintah ini :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">rake db:create </code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rake db:create 
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Jika benar maka database akan otomatis terbuat ( jika ada error message berarti ada package mysql yang belum terinstall dengan benar ). Lalu jalankan perintah ini lagi :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</div><p>Jika benar maka database akan otomatis terbuat ( jika ada error message berarti ada package mysql yang belum terinstall dengan benar ). Lalu jalankan perintah ini lagi :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">script/generate controller home index </code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>script/generate controller home index 
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>tunggu sampai proses generate selesai ( jika ada yang error, yah anda tau sendiri lah, berarti ada package yang kurang ). Trus jalanin lagi perintah untuk jalanin webservernya :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</div><p>tunggu sampai proses generate selesai ( jika ada yang error, yah anda tau sendiri lah, berarti ada package yang kurang ). Trus jalanin lagi perintah untuk jalanin webservernya :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">script/server </code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>script/server 
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Jika benar maka akan ada proses menjalankan web servernya ( jgn diclose terminalnya karena akan membuat web server tersebut mati ). Untuk mengakses aplikasi Ruby on Rails yang baru dibuat, masuk ke web browser anda dan ketik</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</div><p>Jika benar maka akan ada proses menjalankan web servernya ( jgn diclose terminalnya karena akan membuat web server tersebut mati ). Untuk mengakses aplikasi Ruby on Rails yang baru dibuat, masuk ke web browser anda dan ketik</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">http://localhost:3000/</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>http://localhost:3000/
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Selamat, anda telah berhasil menginstall Ruby on Rails dan sekarang tinggal belajar configurasinya aja :D</p>
+</div><p>Selamat, anda telah berhasil menginstall Ruby on Rails dan sekarang tinggal belajar configurasinya aja :D</p>
 
   </div>
   
@@ -571,21 +589,6 @@ production:
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

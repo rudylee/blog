@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,20 +20,27 @@
 <title>Blank page pada CakePHP • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Blank page pada CakePHP"/>
-<meta name="twitter:description" content="Hari ini gwa mencoba memindahkan sebuah project yang dibuat dengan menggunakan CakePHP ke komputer lain. Persiapan standard seperti mencopy folder project dan nge-dump file database sudah dilakukan. Trus file-file tersebut dimasukkan ke dalam flash disk untuk dipindahkan.
-Tetapi ternyata semua tidak berjalan mulus seperti yang gwa kira. Setelah selesai mengcopy file tersebut ke dalam komputer yang lain, ketika ingin membuka halaman cakephp ternyata hanya halaman kosong saja yang terbuka.
-Pertama kali kecurigaan dimulai dari webserver dan settingan PHP."/>
 
-<meta property="og:title" content="Blank page pada CakePHP" />
-<meta property="og:description" content="Hari ini gwa mencoba memindahkan sebuah project yang dibuat dengan menggunakan CakePHP ke komputer lain. Persiapan standard seperti mencopy folder project dan nge-dump file database sudah dilakukan. Trus file-file tersebut dimasukkan ke dalam flash disk untuk dipindahkan.
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Blank page pada CakePHP">
+  <meta name="twitter:description" content="Hari ini gwa mencoba memindahkan sebuah project yang dibuat dengan menggunakan CakePHP ke komputer lain. Persiapan standard seperti mencopy folder project dan nge-dump file database sudah dilakukan. Trus file-file tersebut dimasukkan ke dalam flash disk untuk dipindahkan.
 Tetapi ternyata semua tidak berjalan mulus seperti yang gwa kira. Setelah selesai mengcopy file tersebut ke dalam komputer yang lain, ketika ingin membuka halaman cakephp ternyata hanya halaman kosong saja yang terbuka.
-Pertama kali kecurigaan dimulai dari webserver dan settingan PHP." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2009/05/18/blank-page-pada-cakephp/" />
-<meta property="article:published_time" content="2009-05-18T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2009-05-18T00:00:00&#43;00:00"/>
+Pertama kali kecurigaan dimulai dari webserver dan settingan PHP. Soalnya di komputer yang ini gwa menggunakan Lighttpd sementara di komputer di kosan pakai apache, jadi mulai deh googling mencari apakah ini salah dari webserver ( hasilnya didapat kalau ingin mencari error maka dapat melihat dari file log yang ada di folder log ).">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2009/05/18/blank-page-pada-cakephp/">
+  <meta property="og:title" content="Blank page pada CakePHP">
+  <meta property="og:description" content="Hari ini gwa mencoba memindahkan sebuah project yang dibuat dengan menggunakan CakePHP ke komputer lain. Persiapan standard seperti mencopy folder project dan nge-dump file database sudah dilakukan. Trus file-file tersebut dimasukkan ke dalam flash disk untuk dipindahkan.
+Tetapi ternyata semua tidak berjalan mulus seperti yang gwa kira. Setelah selesai mengcopy file tersebut ke dalam komputer yang lain, ketika ingin membuka halaman cakephp ternyata hanya halaman kosong saja yang terbuka.
+Pertama kali kecurigaan dimulai dari webserver dan settingan PHP. Soalnya di komputer yang ini gwa menggunakan Lighttpd sementara di komputer di kosan pakai apache, jadi mulai deh googling mencari apakah ini salah dari webserver ( hasilnya didapat kalau ingin mencari error maka dapat melihat dari file log yang ada di folder log ).">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2009-05-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2009-05-18T00:00:00+00:00">
+    <meta property="article:tag" content="Blank">
+    <meta property="article:tag" content="CakePHP">
+    <meta property="article:tag" content="PHP">
 
 
     
@@ -43,10 +50,10 @@ Pertama kali kecurigaan dimulai dari webserver dan settingan PHP." />
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -68,7 +75,7 @@ Pertama kali kecurigaan dimulai dari webserver dan settingan PHP." />
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -145,7 +152,7 @@ Pertama kali kecurigaan dimulai dari webserver dan settingan PHP." />
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -207,13 +214,9 @@ Pertama kali kecurigaan dimulai dari webserver dan settingan PHP." />
   
   <div class="post">
     <p>Hari ini gwa mencoba memindahkan sebuah project yang dibuat dengan menggunakan CakePHP ke komputer lain. Persiapan standard seperti mencopy folder project dan nge-dump file database sudah dilakukan. Trus file-file tersebut dimasukkan ke dalam flash disk untuk dipindahkan.</p>
-
 <p>Tetapi ternyata semua tidak berjalan mulus seperti yang gwa kira. Setelah selesai mengcopy file tersebut ke dalam komputer yang lain, ketika ingin membuka halaman cakephp ternyata hanya halaman kosong saja yang terbuka.</p>
-
 <p>Pertama kali kecurigaan dimulai dari webserver dan settingan PHP. Soalnya di komputer yang ini gwa menggunakan Lighttpd sementara di komputer di kosan pakai apache, jadi mulai deh googling mencari apakah ini salah dari webserver ( hasilnya didapat kalau ingin mencari error maka dapat melihat dari file log yang ada di folder log ).</p>
-
 <p>Setelah mengutak-atik file conf nya Lighttpd dan melihat file log, ternyata tidak ada yang aneh dengan settingan lighttpd dan settingan php.ini nya. Kemudian kecurigaan menuju ke CakePHP nya, jadi mulai deh search di google tentang CakePHP blank page. Dan ternyata ga lama mencari-cari akhirnya ketemu solusinya. Ternyata solusinya gampang cukup delete file cache yang ada folder tmp/cache dan ternyata hasilnya&hellip; langsung bisa kebuka webnya :D</p>
-
 <p>jadi kalau copy file cakephp ke server baru delete aja cachenya biar aman, supaya ga page kosong jadinya :D</p>
 
   </div>
@@ -276,21 +279,6 @@ Pertama kali kecurigaan dimulai dari webserver dan settingan PHP." />
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

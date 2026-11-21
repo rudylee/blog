@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,18 +20,26 @@
 <title>Add bridge and assign unique IP for each container in OpenVZ • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Add bridge and assign unique IP for each container in OpenVZ"/>
-<meta name="twitter:description" content="I am writing this tutorial to refresh my mind ( I am not configuring the machine right now ), so forgive me if the explanations are not clear and structured.
-After successfully installed the OpenVZ, you need to configure the IP for the containers. If you are using the built in &ldquo;Venet&rdquo; you will end up making the host as the gateway. In the other words if you traceroute to your container IP, it will going through your host then to your container."/>
 
-<meta property="og:title" content="Add bridge and assign unique IP for each container in OpenVZ" />
-<meta property="og:description" content="I am writing this tutorial to refresh my mind ( I am not configuring the machine right now ), so forgive me if the explanations are not clear and structured.
-After successfully installed the OpenVZ, you need to configure the IP for the containers. If you are using the built in &ldquo;Venet&rdquo; you will end up making the host as the gateway. In the other words if you traceroute to your container IP, it will going through your host then to your container." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2010/08/30/add-bridge-assign-unique-ip-for-each-container-in-openvz/" />
-<meta property="article:published_time" content="2010-08-30T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2010-08-30T00:00:00&#43;00:00"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Add bridge and assign unique IP for each container in OpenVZ">
+  <meta name="twitter:description" content="I am writing this tutorial to refresh my mind ( I am not configuring the machine right now ), so forgive me if the explanations are not clear and structured.
+After successfully installed the OpenVZ, you need to configure the IP for the containers. If you are using the built in “Venet” you will end up making the host as the gateway. In the other words if you traceroute to your container IP, it will going through your host then to your container. Here are the sample of the scenario :">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2010/08/30/add-bridge-assign-unique-ip-for-each-container-in-openvz/">
+  <meta property="og:title" content="Add bridge and assign unique IP for each container in OpenVZ">
+  <meta property="og:description" content="I am writing this tutorial to refresh my mind ( I am not configuring the machine right now ), so forgive me if the explanations are not clear and structured.
+After successfully installed the OpenVZ, you need to configure the IP for the containers. If you are using the built in “Venet” you will end up making the host as the gateway. In the other words if you traceroute to your container IP, it will going through your host then to your container. Here are the sample of the scenario :">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-08-30T00:00:00+00:00">
+    <meta property="article:modified_time" content="2010-08-30T00:00:00+00:00">
+    <meta property="article:tag" content="Bridge">
+    <meta property="article:tag" content="Openvz">
+    <meta property="article:tag" content="Venet">
+    <meta property="article:tag" content="Veth">
 
 
     
@@ -41,10 +49,10 @@ After successfully installed the OpenVZ, you need to configure the IP for the co
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -66,7 +74,7 @@ After successfully installed the OpenVZ, you need to configure the IP for the co
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -143,7 +151,7 @@ After successfully installed the OpenVZ, you need to configure the IP for the co
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -208,71 +216,74 @@ After successfully installed the OpenVZ, you need to configure the IP for the co
   
   <div class="post">
     <p>I am writing this tutorial to refresh my mind ( I am not configuring the machine right now ), so forgive me if the explanations are not clear and structured.</p>
-
 <p>After successfully installed the OpenVZ, you need to configure the IP for the containers. If you are using the built in &ldquo;Venet&rdquo; you will end up making the host as the gateway. In the other words if you traceroute to your container IP, it will going through your host then to your container. Here are the sample of the scenario :</p>
-
 <ol>
-<li><p>Host IP : 202.58.181.2</p></li>
-
-<li><p>Container 1 : 202.58.181.50</p></li>
-
-<li><p>Container 2 : 202.58.181.51</p></li>
+<li>
+<p>Host IP : 202.58.181.2</p>
+</li>
+<li>
+<p>Container 1 : 202.58.181.50</p>
+</li>
+<li>
+<p>Container 2 : 202.58.181.51</p>
+</li>
 </ol>
-
 <p>Basically if you use the venet, if you traceroute to the Container 1 the result should be : Your ISP -&gt; 202.58.181.2 -&gt; 202.58.181.50 so the IP of the Host is showed up. Same if you try to traceroute to the second container. Thus, my solution to overcome this problem are :</p>
-
 <ol>
-<li><p>Make a bridge using brctl command</p></li>
-
-<li><p>Use the Veth instead of Venet</p></li>
-
-<li><p>Put all the Veth into the bridge</p></li>
-
-<li><p>Assign the Host IP to the bridge</p></li>
+<li>
+<p>Make a bridge using brctl command</p>
+</li>
+<li>
+<p>Use the Veth instead of Venet</p>
+</li>
+<li>
+<p>Put all the Veth into the bridge</p>
+</li>
+<li>
+<p>Assign the Host IP to the bridge</p>
+</li>
 </ol>
-
 <p>If you are not ASSIGN the host IP to the bridge, you can&rsquo;t access the host machine. I followed the guidelines from this link <a href="http://wiki.openvz.org/Using_veth_and_brctl_for_protecting_HN_and_saving_IP_addresses">http://wiki.openvz.org/Using_veth_and_brctl_for_protecting_HN_and_saving_IP_addresses</a></p>
-
 <p>Here is my /etc/rc.local configuration looks like :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/sh
-</span><span style="color:#75715e"></span>#
-<span style="color:#75715e"># This script will be executed *after* all the other init scripts.</span>
-<span style="color:#75715e"># You can put your own initialization stuff in here if you don&#39;t</span>
-<span style="color:#75715e"># want to do the full Sys V style init stuff.</span>
-
-touch /var/lock/subsys/local
-brctl addbr vzbr0
-brctl addif vzbr0 eth0
-brctl addif vzbr0 veth1.0
-brctl addif vzbr0 veth2.0
-brctl addif vzbr0 veth3.0
-brctl addif vzbr0 veth4.0
-ifconfig vzbr0 <span style="color:#ae81ff">0</span>
-ip addr add <span style="color:#ae81ff">202</span>.58.181.2/25 dev vzbr0
-cd /usr/local/webvz/ <span style="color:#f92672">&amp;&amp;</span> /usr/bin/ruby script/server &amp;&gt;/dev/null &amp;</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/sh
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This script will be executed *after* all the other init scripts.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># You can put your own initialization stuff in here if you don&#39;t</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># want to do the full Sys V style init stuff.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>touch /var/lock/subsys/local
+</span></span><span style="display:flex;"><span>brctl addbr vzbr0
+</span></span><span style="display:flex;"><span>brctl addif vzbr0 eth0
+</span></span><span style="display:flex;"><span>brctl addif vzbr0 veth1.0
+</span></span><span style="display:flex;"><span>brctl addif vzbr0 veth2.0
+</span></span><span style="display:flex;"><span>brctl addif vzbr0 veth3.0
+</span></span><span style="display:flex;"><span>brctl addif vzbr0 veth4.0
+</span></span><span style="display:flex;"><span>ifconfig vzbr0 <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>ip addr add 202.58.181.2/25 dev vzbr0
+</span></span><span style="display:flex;"><span>cd /usr/local/webvz/ <span style="color:#f92672">&amp;&amp;</span> /usr/bin/ruby script/server &amp;&gt;/dev/null &amp;
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>I&rsquo;ll update this post if I need to configure another VPS Server.</p>
+</div><p>I&rsquo;ll update this post if I need to configure another VPS Server.</p>
 
   </div>
   
@@ -334,21 +345,6 @@ cd /usr/local/webvz/ <span style="color:#f92672">&amp;&amp;</span> /usr/bin/ruby
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

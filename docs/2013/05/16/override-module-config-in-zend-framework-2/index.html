@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,16 +20,26 @@
 <title>Override module config in Zend Framework 2 • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Override module config in Zend Framework 2"/>
-<meta name="twitter:description" content="There is a time when you want to override module config in your Zend Framework 2 application. In my case, I have different configuration for SMS gateway in staging and live server. You can do this by overwriting the module.config.php file inside the module config&rsquo;s folder. However, there are heaps of configuration inside module.config.php file. This approach will lead to maintenance nightmare when you need to change one or more configuration inside the file."/>
 
-<meta property="og:title" content="Override module config in Zend Framework 2" />
-<meta property="og:description" content="There is a time when you want to override module config in your Zend Framework 2 application. In my case, I have different configuration for SMS gateway in staging and live server. You can do this by overwriting the module.config.php file inside the module config&rsquo;s folder. However, there are heaps of configuration inside module.config.php file. This approach will lead to maintenance nightmare when you need to change one or more configuration inside the file." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2013/05/16/override-module-config-in-zend-framework-2/" />
-<meta property="article:published_time" content="2013-05-16T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2013-05-16T00:00:00&#43;00:00"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Override module config in Zend Framework 2">
+  <meta name="twitter:description" content="There is a time when you want to override module config in your Zend Framework 2 application. In my case, I have different configuration for SMS gateway in staging and live server. You can do this by overwriting the module.config.php file inside the module config’s folder. However, there are heaps of configuration inside module.config.php file. This approach will lead to maintenance nightmare when you need to change one or more configuration inside the file.">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2013/05/16/override-module-config-in-zend-framework-2/">
+  <meta property="og:title" content="Override module config in Zend Framework 2">
+  <meta property="og:description" content="There is a time when you want to override module config in your Zend Framework 2 application. In my case, I have different configuration for SMS gateway in staging and live server. You can do this by overwriting the module.config.php file inside the module config’s folder. However, there are heaps of configuration inside module.config.php file. This approach will lead to maintenance nightmare when you need to change one or more configuration inside the file.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2013-05-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2013-05-16T00:00:00+00:00">
+    <meta property="article:tag" content="Access-Password">
+    <meta property="article:tag" content="Alphanumeric">
+    <meta property="article:tag" content="Api-Access">
+    <meta property="article:tag" content="Array">
+    <meta property="article:tag" content="Config">
+    <meta property="article:tag" content="Deployment">
 
 
     
@@ -39,10 +49,10 @@
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -64,7 +74,7 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -141,7 +151,7 @@
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -182,13 +192,13 @@
           <br/>
            <i class="fas fa-tags"></i>
           
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/access-password">access password</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/access-password">access-password</a>
            
       
           <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/alphanumeric">alphanumeric</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/api-access">api access</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/api-access">api-access</a>
            
       
           <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/array">array</a>
@@ -203,10 +213,10 @@
           <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/heaps">heaps</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/maintenance-nightmare">maintenance nightmare</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/maintenance-nightmare">maintenance-nightmare</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/numerical-characters">numerical characters</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/numerical-characters">numerical-characters</a>
            
       
           <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/rudy">rudy</a>
@@ -215,7 +225,7 @@
           <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/staging">staging</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/zend-framework">zend framework</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/zend-framework">zend-framework</a>
           
       
     
@@ -230,46 +240,45 @@
   
   <div class="post">
     <p>There is a time when you want to override module config in your Zend Framework 2 application. In my case, I have different configuration for SMS gateway in staging and live server. You can do this by overwriting the module.config.php file inside the module config&rsquo;s folder. However, there are heaps of configuration inside module.config.php file. This approach will lead to maintenance nightmare when you need to change one or more configuration inside the file.</p>
-
 <p>The cleanest approach is to override specific configuration key by creating module-name.local.php file inside config/autoload folder. For example, you have &ldquo;Admin&rdquo; module and here is the sample module.config.php file :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">return array(
-    &#39;sms&#39; =&gt; array(
-        &#39;username&#39; =&gt; &#39;rudy&#39;, //API access username
-        &#39;password&#39; =&gt; &#39;rudy&#39;, //API access password
-        &#39;sender&#39; =&gt; &#39;Rudy&#39;, // max of 11 alphanumeric or max of 15 numerical characters
-    ),
-);</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;sms&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;username&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;rudy&#39;</span>, <span style="color:#75715e">//API access username
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#e6db74">&#39;password&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;rudy&#39;</span>, <span style="color:#75715e">//API access password
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#e6db74">&#39;sender&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;Rudy&#39;</span>, <span style="color:#75715e">// max of 11 alphanumeric or max of 15 numerical characters
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    ),
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>You can override only the username by creating admin.local.php file inside config/autoload folder and put this code inside it :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</div><p>You can override only the username by creating admin.local.php file inside config/autoload folder and put this code inside it :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">return array(
-    &#39;sms&#39; =&gt; array(
-        &#39;username&#39; =&gt; &#39;override&#39;, //API access username
-    ),
-);</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;sms&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;username&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;override&#39;</span>, <span style="color:#75715e">//API access username
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    ),
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Zend Framework 2 will read this file and overwrite the username key inside module.config.php. Now you can create script during your deployment process to create this file automatically.</p>
+</div><p>Zend Framework 2 will read this file and overwrite the username key inside module.config.php. Now you can create script during your deployment process to create this file automatically.</p>
 
   </div>
   
@@ -331,21 +340,6 @@
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

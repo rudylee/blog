@@ -8,23 +8,22 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
 
 <title></title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine."/>
 
-<meta property="og:title" content="" />
-<meta property="og:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.rudylee.com/blog/" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine.">
+      <meta name="twitter:site" content="@rudylee88">
 
-<meta property="og:updated_time" content="2019-06-23T17:23:22&#43;10:00"/>
+<meta property="og:url" content="https://www.rudylee.com/blog/">
+  <meta property="og:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
 
     
@@ -34,10 +33,10 @@
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -60,7 +59,7 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -137,7 +136,7 @@
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -163,9 +162,9 @@
         </span>
         <span >
         
-        We are using in one of our applications Cloudinary to host and resize images on the fly. We are also using Cloudflare for our CDN and DNS management.
-I was given a task to setup a CNAME subdomain in CloudFlare to forward the request to Cloudinary. This way we can still have the benefit of serving static images from CDN as well as reducing the Cloudinary bandwidth usage.
-My solution is to set HAProxy as a reverse proxy which responsible to fetch images from Cloudinary server.
+        <p>We are using in one of our applications <a href="http://cloudinary.com/">Cloudinary</a> to host and resize images on the fly. We are also using <a href="http://www.cloudflare.com">Cloudflare</a> for our CDN and DNS management.</p>
+<p>I was given a task to setup a CNAME subdomain in CloudFlare to forward the request to Cloudinary. This way we can still have the benefit of serving static images from CDN as well as reducing the Cloudinary bandwidth usage.</p>
+<p>My solution is to set HAProxy as a reverse proxy which responsible to fetch images from Cloudinary server. You can see the overview diagram below:</p>
         
         </span>
         
@@ -186,9 +185,10 @@ My solution is to set HAProxy as a reverse proxy which responsible to fetch imag
         </span>
         <span >
         
-        Few weeks ago, I was given a task to create an A/B test using HAProxy. I need to make HAProxy to split traffic between two different applications ( Rails and NodeJS )
-In this blog post, I&rsquo;ll explain how to achieve this.
-Create ACL for the page you want to A/B test The first step you have to do is to create an ACL for the URL you want to A/B test.
+        <p>Few weeks ago, I was given a task to create an A/B test using HAProxy. I need to make HAProxy to split traffic between two different applications ( Rails and NodeJS )</p>
+<p>In this blog post, I&rsquo;ll explain how to achieve this.</p>
+<h3 id="create-acl-for-the-page-you-want-to-ab-test">Create ACL for the page you want to A/B test</h3>
+<p>The first step you have to do is to create an ACL for the URL you want to A/B test. In this example, the URL path is <code>/ab-test-path</code></p>
         
         </span>
         
@@ -209,12 +209,20 @@ Create ACL for the page you want to A/B test The first step you have to do is to
         </span>
         <span >
         
-        Setup your new EC2 instance on AWS and choose Amazon AMI.
-SSH to your instance using your private key
-ssh -i &lt;path-to-your-pem-file&gt; ec2-user@&lt;ec2-endpoint-or-ip&gt;  Change to root
-sudo su  Create new group for your user ( in this case my group name is &lsquo;dev&rsquo; )
-groupadd dev  Create new user and assign it to your recently created group
-useradd -g dev dev  Give the username root access
+        <p>Setup your new EC2 instance on AWS and choose Amazon AMI.</p>
+<p>SSH to your instance using your private key</p>
+<pre tabindex="0"><code>ssh -i &lt;path-to-your-pem-file&gt; ec2-user@&lt;ec2-endpoint-or-ip&gt;
+</code></pre><p>Change to root</p>
+<pre tabindex="0"><code>sudo su
+</code></pre><p>Create new group for your user ( in this case my group name is &lsquo;dev&rsquo; )</p>
+<pre tabindex="0"><code>groupadd dev
+</code></pre><p>Create new user and assign it to your recently created group</p>
+<pre tabindex="0"><code>useradd -g dev dev
+</code></pre><p>Give the username root access</p>
+<pre tabindex="0"><code>visudo
+</code></pre><p>Add this to the bottom of the file</p>
+<pre tabindex="0"><code>dev     ALL=(ALL)       NOPASSWD:ALL
+</code></pre><p>Delete the password for &lsquo;dev&rsquo; user</p>
         
         </span>
         
@@ -235,11 +243,13 @@ useradd -g dev dev  Give the username root access
         </span>
         <span >
         
-        This is based on http://kevinmarsh.com/2014/10/23/using-jq-to-import-json-into-elasticsearch.html
-Install jq first on Mac
-brew install jq  Import the JSON file to Elasticsearch index
-cat file.json | jq -c '.[] | {&quot;index&quot;: {&quot;_index&quot;: &quot;bookmarks&quot;, &quot;_type&quot;: &quot;bookmark&quot;, &quot;_id&quot;: .id}}, .' | curl -XPOST localhost:9200/_bulk --data-binary @-  Check for the list of indexes http://localhost:9200/_cat/indices?v
-See the list of records http:/localhost:9200//bookmarks/_search
+        <p>This is based on <a href="http://kevinmarsh.com/2014/10/23/using-jq-to-import-json-into-elasticsearch.html">http://kevinmarsh.com/2014/10/23/using-jq-to-import-json-into-elasticsearch.html</a></p>
+<p>Install jq first on Mac</p>
+<pre tabindex="0"><code>brew install jq
+</code></pre><p>Import the JSON file to Elasticsearch index</p>
+<pre tabindex="0"><code>cat file.json | jq -c &#39;.[] | {&#34;index&#34;: {&#34;_index&#34;: &#34;bookmarks&#34;, &#34;_type&#34;: &#34;bookmark&#34;, &#34;_id&#34;: .id}}, .&#39; | curl -XPOST localhost:9200/_bulk --data-binary @-
+</code></pre><p>Check for the list of indexes http://localhost:9200/_cat/indices?v</p>
+<p>See the list of records http:/localhost:9200//bookmarks/_search</p>
         
         </span>
         
@@ -258,8 +268,16 @@ See the list of records http:/localhost:9200//bookmarks/_search
         </span>
         <span >
         
-        Run the command below if you want to reopen the last commit in your git
-1  git reset --soft HEAD~   This is useful if you miss something in your last commit. Instead of creating new commit and squashing it, you can open last commit and fix it there.
+        <p>Run the command below if you want to reopen the last commit in your git</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git reset --soft HEAD~
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>This is useful if you miss something in your last commit. Instead of creating new commit and squashing it, you can open last commit and fix it there.</p>
         
         </span>
         
@@ -278,8 +296,8 @@ See the list of records http:/localhost:9200//bookmarks/_search
         </span>
         <span >
         
-        Today, I have to copy files from one S3 bucket to another S3 bucket which sitting in separate AWS account.
-Initially, I was thinking to use S3 clients ( Tranmit or Cyberduck ) to download the files first and manually upload the files again to the other S3 Bucket. However, this approach will consume a lot of bandwidth and really slow if you have a lot of files in your S3 bucket.
+        <p>Today, I have to copy files from one S3 bucket to another S3 bucket which sitting in separate AWS account.</p>
+<p>Initially, I was thinking to use S3 clients ( Tranmit or Cyberduck ) to download the files first and manually upload the files again to the other S3 Bucket. However, this approach will consume a lot of bandwidth and really slow if you have a lot of files in your S3 bucket.</p>
         
         </span>
         
@@ -300,8 +318,9 @@ Initially, I was thinking to use S3 clients ( Tranmit or Cyberduck ) to download
         </span>
         <span >
         
-        Today, I was trying to create a backup of production database. The problem is we have two different version of PostgreSQL running on production and these databases can only be accessed from front end(FE) server. We have older version of PostgreSQL client installed in all FE server which means I can&rsquo;t use it to run pg_dump.
-SSH Tunnel to the rescue One solution to this problem is to create a SSH tunnel.
+        <p>Today, I was trying to create a backup of production database. The problem is we have two different version of PostgreSQL running on production and these databases can only be accessed from front end(FE) server. We have older version of PostgreSQL client installed in all FE server which means I can&rsquo;t use it to run pg_dump.</p>
+<h2 id="ssh-tunnel-to-the-rescue">SSH Tunnel to the rescue</h2>
+<p>One solution to this problem is to create a SSH tunnel. Since I have the latest version of PostgreSQL client installed in my machine, I can run pg_dump locally which will connect to the database through SSH tunnel.</p>
         
         </span>
         
@@ -322,8 +341,9 @@ SSH Tunnel to the rescue One solution to this problem is to create a SSH tunnel.
         </span>
         <span >
         
-        At the moment, I am working on a Ruby on Rails projects using Rails Engines ( you can read more about Rails Engines here: http://guides.rubyonrails.org/engines.html ). In this post, I&rsquo;ll share my tips and trick on how to configure your vim to work with Rails Engines.
-NERDTree Bookmark I am using NERDTree Bookmark to quickly jump between different engines. If you are using NERDTree, you can create a bookmark by putting your cursor on one of the Rails Engines directory and use the command below:
+        <p>At the moment, I am working on a Ruby on Rails projects using Rails Engines ( you can read more about Rails Engines here: <a href="http://guides.rubyonrails.org/engines.html">http://guides.rubyonrails.org/engines.html</a> ). In this post, I&rsquo;ll share my tips and trick on how to configure your vim to work with Rails Engines.</p>
+<h1 id="nerdtree-bookmark">NERDTree Bookmark</h1>
+<p>I am using NERDTree Bookmark to quickly jump between different engines. If you are using NERDTree, you can create a bookmark by putting your cursor on one of the Rails Engines directory and use the command below:</p>
         
         </span>
         
@@ -344,9 +364,9 @@ NERDTree Bookmark I am using NERDTree Bookmark to quickly jump between different
         </span>
         <span >
         
-        There are few known limitations when using Vagrant on Windows machine. One of these limitations is the lack of symbolic links support on synced folder.
-Symbolic links are used heavily by NPM to create shortcut for the libraries. I posted more details about this here: http://blog.rudylee.com/2013/10/24/fix-npm-symlink-problem-in-vagrant/
-Most of the time, you can get away with &lsquo;npm &ndash;no-bin-link&rsquo; solution. However, you need more robust solution if you are using complex tools such as Grunt or Yeoman.
+        <p>There are few known limitations when using Vagrant on Windows machine. One of these limitations is the lack of symbolic links support on synced folder.</p>
+<p>Symbolic links are used heavily by NPM to create shortcut for the libraries. I posted more details about this here: <a href="http://blog.rudylee.com/2013/10/24/fix-npm-symlink-problem-in-vagrant/">http://blog.rudylee.com/2013/10/24/fix-npm-symlink-problem-in-vagrant/</a></p>
+<p>Most of the time, you can get away with &rsquo;npm &ndash;no-bin-link&rsquo; solution. However, you need more robust solution if you are using complex tools such as Grunt or Yeoman.</p>
         
         </span>
         
@@ -367,9 +387,9 @@ Most of the time, you can get away with &lsquo;npm &ndash;no-bin-link&rsquo; sol
         </span>
         <span >
         
-        Basic HTTP authentication is one simple way to limit public access to your website prior to launch.
-The first thing you need is .htaccess file which contains all the configurations. The second one is .htpasswd containing username and password. You can use this website to generate .htpasswd file for you http://www.htaccesstools.com/htpasswd-generator/
-In the sample below, I am trying to enable HTTP authentication only on certain domain. On the first line, I set enviroment variable if the domain name is equal to &ldquo;www.
+        <p>Basic HTTP authentication is one simple way to limit public access to your website prior to launch.</p>
+<p>The first thing you need is .htaccess file which contains all the configurations. The second one is .htpasswd containing username and password. You can use this website to generate .htpasswd file for you <a href="http://www.htaccesstools.com/htpasswd-generator/">http://www.htaccesstools.com/htpasswd-generator/</a></p>
+<p>In the sample below, I am trying to enable HTTP authentication only on certain domain. On the first line, I set enviroment variable if the domain name is equal to &ldquo;<a href="https://www.bundabergfestival.com.au">www.bundabergfestival.com.au</a>&rdquo;. On line 7, I tell .htaccess file to deny any access by using the live_uri variable. I hope that explanation is pretty straight forward.</p>
         
         </span>
         
@@ -523,21 +543,6 @@ In the sample below, I am trying to enable HTTP authentication only on certain d
 
         </div>
         
-  
-    
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-  
   <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

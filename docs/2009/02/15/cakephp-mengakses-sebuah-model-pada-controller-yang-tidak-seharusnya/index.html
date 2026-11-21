@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,22 +20,28 @@
 <title>&#39;CakePHP : Mengakses sebuah model pada controller yang berbeda&#39; • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="&#39;CakePHP : Mengakses sebuah model pada controller yang berbeda&#39;"/>
-<meta name="twitter:description" content="Dalam CakePHP biasanya sebuah model - view - controller pasti saling berhubungan dan mempunyai nama yang mirip.
-Contohnya sebuah tabel users mempunyai model yang bernama user, controller bernama _userscontroller, dan folder view yang bernama_ user_.
-Tapi permasalahannya adalah terkadang kita harus mengakses model lain tetapi controller tersebut tidak mempunyai relasi sama sekali dengan model / tabel ini.
-Sebagai contoh lagi misalnya kita ingin pada_ userscontroller dapat melakukan query pada tabel items, padahal tabel users sama sekali tidak punya relasi dengan tabel items."/>
 
-<meta property="og:title" content="&#39;CakePHP : Mengakses sebuah model pada controller yang berbeda&#39;" />
-<meta property="og:description" content="Dalam CakePHP biasanya sebuah model - view - controller pasti saling berhubungan dan mempunyai nama yang mirip.
-Contohnya sebuah tabel users mempunyai model yang bernama user, controller bernama _userscontroller, dan folder view yang bernama_ user_.
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="&#39;CakePHP : Mengakses sebuah model pada controller yang berbeda&#39;">
+  <meta name="twitter:description" content="Dalam CakePHP biasanya sebuah model - view - controller pasti saling berhubungan dan mempunyai nama yang mirip.
+Contohnya sebuah tabel users mempunyai model yang bernama user, controller bernama users_controller, dan folder view yang bernama_ user_.
 Tapi permasalahannya adalah terkadang kita harus mengakses model lain tetapi controller tersebut tidak mempunyai relasi sama sekali dengan model / tabel ini.
-Sebagai contoh lagi misalnya kita ingin pada_ userscontroller dapat melakukan query pada tabel items, padahal tabel users sama sekali tidak punya relasi dengan tabel items." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-tidak-seharusnya/" />
-<meta property="article:published_time" content="2009-02-15T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2009-02-15T00:00:00&#43;00:00"/>
+Sebagai contoh lagi misalnya kita ingin pada_ users_controller_ dapat melakukan query pada tabel items, padahal tabel users sama sekali tidak punya relasi dengan tabel items.">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2009/02/15/cakephp-mengakses-sebuah-model-pada-controller-yang-tidak-seharusnya/">
+  <meta property="og:title" content="&#39;CakePHP : Mengakses sebuah model pada controller yang berbeda&#39;">
+  <meta property="og:description" content="Dalam CakePHP biasanya sebuah model - view - controller pasti saling berhubungan dan mempunyai nama yang mirip.
+Contohnya sebuah tabel users mempunyai model yang bernama user, controller bernama users_controller, dan folder view yang bernama_ user_.
+Tapi permasalahannya adalah terkadang kita harus mengakses model lain tetapi controller tersebut tidak mempunyai relasi sama sekali dengan model / tabel ini.
+Sebagai contoh lagi misalnya kita ingin pada_ users_controller_ dapat melakukan query pada tabel items, padahal tabel users sama sekali tidak punya relasi dengan tabel items.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2009-02-15T00:00:00+00:00">
+    <meta property="article:modified_time" content="2009-02-15T00:00:00+00:00">
+    <meta property="article:tag" content="CakePHP">
+    <meta property="article:tag" content="Programming">
 
 
     
@@ -45,10 +51,10 @@ Sebagai contoh lagi misalnya kita ingin pada_ userscontroller dapat melakukan qu
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -70,7 +76,7 @@ Sebagai contoh lagi misalnya kita ingin pada_ userscontroller dapat melakukan qu
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -147,7 +153,7 @@ Sebagai contoh lagi misalnya kita ingin pada_ userscontroller dapat melakukan qu
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -206,23 +212,19 @@ Sebagai contoh lagi misalnya kita ingin pada_ userscontroller dapat melakukan qu
   
   <div class="post">
     <p>Dalam CakePHP biasanya sebuah model - view - controller pasti saling berhubungan dan mempunyai nama yang mirip.</p>
-
-<p>Contohnya sebuah tabel users mempunyai model yang bernama <em>user</em>, controller bernama _users<em>controller</em>, dan folder view yang bernama_ user_.</p>
-
+<p>Contohnya sebuah tabel users mempunyai model yang bernama <em>user</em>, controller bernama <em>users_controller</em>, dan folder view yang bernama_ user_.</p>
 <p>Tapi permasalahannya adalah terkadang kita harus mengakses model lain tetapi controller tersebut tidak mempunyai relasi sama sekali dengan model / tabel ini.</p>
-
-<p>Sebagai contoh lagi misalnya kita ingin pada_ users<em>controller</em> dapat melakukan query pada tabel <em>items</em>, padahal tabel users sama sekali tidak punya relasi dengan tabel items.</p>
-
+<p>Sebagai contoh lagi misalnya kita ingin pada_ users_controller_ dapat melakukan query pada tabel <em>items</em>, padahal tabel users sama sekali tidak punya relasi dengan tabel items.</p>
 <p>Ada beberapa cara yang dapat dilakukan untuk mensolusikan hal tersebut :</p>
-
 <ol>
-<li><p>Pada _users<em>controller</em> kita dapat menambahkan variable baru yaitu _$uses = array(&lsquo;User&rsquo;,&lsquo;Item&rsquo;); _dengan melakukan hal itu maka kita dapat melakukan query seperti biasa ( <em>$this-&gt;Item-&gt;find(&lsquo;all&rsquo;); )</em></p></li>
-
-<li><p>Satu cara lagi lebih praktis dilakukan dan bisa lebih fleksibel dilakukan yaitu dengan menggunakan _ClassRegistry. _Jadi tanpa harus menambahkan variable kita cukup melakukan pencarian ( contoh : <em>$items = ClassRegistry::init(&lsquo;Item&rsquo;)-&gt;find(&lsquo;all&rsquo;); )</em>.</p></li>
+<li>
+<p>Pada <em>users_controller</em> kita dapat menambahkan variable baru yaitu _$uses = array(&lsquo;User&rsquo;,&lsquo;Item&rsquo;); _dengan melakukan hal itu maka kita dapat melakukan query seperti biasa ( <em>$this-&gt;Item-&gt;find(&lsquo;all&rsquo;); )</em></p>
+</li>
+<li>
+<p>Satu cara lagi lebih praktis dilakukan dan bisa lebih fleksibel dilakukan yaitu dengan menggunakan _ClassRegistry. _Jadi tanpa harus menambahkan variable kita cukup melakukan pencarian ( contoh : <em>$items = ClassRegistry::init(&lsquo;Item&rsquo;)-&gt;find(&lsquo;all&rsquo;); )</em>.</p>
+</li>
 </ol>
-
 <p>Itulah 2 cara yang dapat dilakukan jika anda ingin melakukan akses model yang sama sekali tidak ada relasi, tetapi jika anda terpaksa melakukan hal ini mungkin ada yang salah terjadi pada rancangan database anda karena rancangan database yang baik tidak seharusnya dapat melakukan query untuk database yang tidak saling berkaitan.</p>
-
 <p>Tapi lebih baik berjaga-jaga siapa tahu anda mendapatkan project dimana anda harus menggunakan rancangan database yang sudah ada ( dan ternyata rancangan database tersebut kacau ). Ibarat kata pepatah sedia payung sebelum hujan.</p>
 
   </div>
@@ -285,21 +287,6 @@ Sebagai contoh lagi misalnya kita ingin pada_ userscontroller dapat melakukan qu
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

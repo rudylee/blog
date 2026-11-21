@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,18 +20,28 @@
 <title>jQuery UI AutoComplete in CakePHP • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="jQuery UI AutoComplete in CakePHP"/>
-<meta name="twitter:description" content="Demo : http://cbunny.rudylee.com/autocomplete Demo source code :https://github.com/rudylee/cbunny The post to add auto redirect feature into the AutoComplete : http://blog.rudylee.com/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/ You can copy the modified Ajax and Javascript helpers from here https://github.com/rudylee/topping
-Last week I was trying to use jQuery UI Autocomplete in my CakePHP apps. However, CakePHP Ajax and Javascript helpers don&rsquo;t support jQuery by default. After googling a little bit, I found that this guy ( http://www.cakephp.bee.pl/ ) already made Ajax and Javascript helpers for jQuery."/>
 
-<meta property="og:title" content="jQuery UI AutoComplete in CakePHP" />
-<meta property="og:description" content="Demo : http://cbunny.rudylee.com/autocomplete Demo source code :https://github.com/rudylee/cbunny The post to add auto redirect feature into the AutoComplete : http://blog.rudylee.com/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/ You can copy the modified Ajax and Javascript helpers from here https://github.com/rudylee/topping
-Last week I was trying to use jQuery UI Autocomplete in my CakePHP apps. However, CakePHP Ajax and Javascript helpers don&rsquo;t support jQuery by default. After googling a little bit, I found that this guy ( http://www.cakephp.bee.pl/ ) already made Ajax and Javascript helpers for jQuery." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2011/07/25/jquery-ui-autocomplete-in-cakephp/" />
-<meta property="article:published_time" content="2011-07-25T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2011-07-25T00:00:00&#43;00:00"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="jQuery UI AutoComplete in CakePHP">
+  <meta name="twitter:description" content="Demo : http://cbunny.rudylee.com/autocomplete Demo source code : https://github.com/rudylee/cbunny The post to add auto redirect feature into the AutoComplete : http://blog.rudylee.com/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/ You can copy the modified Ajax and Javascript helpers from here https://github.com/rudylee/topping
+Last week I was trying to use jQuery UI Autocomplete in my CakePHP apps. However, CakePHP Ajax and Javascript helpers don’t support jQuery by default. After googling a little bit, I found that this guy ( http://www.cakephp.bee.pl/ ) already made Ajax and Javascript helpers for jQuery.">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2011/07/25/jquery-ui-autocomplete-in-cakephp/">
+  <meta property="og:title" content="jQuery UI AutoComplete in CakePHP">
+  <meta property="og:description" content="Demo : http://cbunny.rudylee.com/autocomplete Demo source code : https://github.com/rudylee/cbunny The post to add auto redirect feature into the AutoComplete : http://blog.rudylee.com/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/ You can copy the modified Ajax and Javascript helpers from here https://github.com/rudylee/topping
+Last week I was trying to use jQuery UI Autocomplete in my CakePHP apps. However, CakePHP Ajax and Javascript helpers don’t support jQuery by default. After googling a little bit, I found that this guy ( http://www.cakephp.bee.pl/ ) already made Ajax and Javascript helpers for jQuery.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2011-07-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2011-07-25T00:00:00+00:00">
+    <meta property="article:tag" content="Ajax">
+    <meta property="article:tag" content="Apps">
+    <meta property="article:tag" content="Array">
+    <meta property="article:tag" content="Autocomplete">
+    <meta property="article:tag" content="CakePHP">
+    <meta property="article:tag" content="Callback">
 
 
     
@@ -41,10 +51,10 @@ Last week I was trying to use jQuery UI Autocomplete in my CakePHP apps. However
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -66,7 +76,7 @@ Last week I was trying to use jQuery UI Autocomplete in my CakePHP apps. However
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -143,7 +153,7 @@ Last week I was trying to use jQuery UI Autocomplete in my CakePHP apps. However
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -202,34 +212,34 @@ Last week I was trying to use jQuery UI Autocomplete in my CakePHP apps. However
           <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/callback">callback</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/field-options">field options</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/field-options">field-options</a>
            
       
           <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/jquery">jquery</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/little-bit">little bit</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/little-bit">little-bit</a>
            
       
           <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/pl">pl</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/return-string">return string</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/return-string">return-string</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/script-check">script check</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/script-check">script-check</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/source-options">source options</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/source-options">source-options</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/string-field">string field</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/string-field">string-field</a>
            
       
           <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/unset">unset</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/url-options">url options</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/url-options">url-options</a>
           
       
     
@@ -243,290 +253,283 @@ Last week I was trying to use jQuery UI Autocomplete in my CakePHP apps. However
   
   
   <div class="post">
-    
-
-<h2 id="demo-http-cbunny-rudylee-com-autocomplete-http-cbunny-rudylee-com-autocomplete">Demo : <a href="http://cbunny.rudylee.com/autocomplete">http://cbunny.rudylee.com/autocomplete</a></h2>
-
-<h2 id="demo-source-code-https-github-com-rudylee-cbunny-https-github-com-rudylee-cbunny">Demo source code :<a href="https://github.com/rudylee/cbunny"> https://github.com/rudylee/cbunny</a></h2>
-
+    <h2 id="demo--httpcbunnyrudyleecomautocompletehttpcbunnyrudyleecomautocomplete">Demo : <a href="http://cbunny.rudylee.com/autocomplete">http://cbunny.rudylee.com/autocomplete</a></h2>
+<h2 id="demo-source-code--httpsgithubcomrudyleecbunny-httpsgithubcomrudyleecbunny">Demo source code :<a href="https://github.com/rudylee/cbunny"> https://github.com/rudylee/cbunny</a></h2>
 <p>The post to add auto redirect feature into the AutoComplete : <a href="http://blog.rudylee.com/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/">http://blog.rudylee.com/2011/12/12/auto-redirect-in-cakephp-jquery-autocomplete/</a>
 You can copy the modified Ajax and Javascript helpers from here <a href="https://github.com/rudylee/topping">https://github.com/rudylee/topping</a></p>
-
 <p>Last week I was trying to use <a href="http://jqueryui.com/demos/autocomplete/">jQuery UI Autocomplete</a> in my CakePHP apps. However, CakePHP Ajax and Javascript helpers don&rsquo;t support jQuery by default. After googling a little bit, I found that this guy ( <a href="http://www.cakephp.bee.pl/">http://www.cakephp.bee.pl/</a> ) already made Ajax and Javascript helpers for jQuery.</p>
-
 <p>So I just copied these helpers from his site and put it into my apps. It&rsquo;s done ? obviously not. It turned out that the autocomplete script that he using in his helper is the old one ( <a href="http://docs.jquery.com/Plugins/autocomplete">http://docs.jquery.com/Plugins/autocomplete</a> ).</p>
-
 <p>Thus, I had to add a method inside that helper to use jQuery UI autocomplete. Here are the sample codes ( you can copy from my github for the complete file, this one is just snippet ) :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">70
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">59
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">60
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">61
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">62
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">65
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">66
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">67
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">68
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">69
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">70
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">/**
- * Options for auto-complete editor.
- *
- * @var array
- */
-var $autoCompleteOptions = array(
-    &#39;select&#39;, &#39;source&#39;
-);
-
-/**
- * Create a text field with Jquery UI Autocomplete.
- *
- * Creates an autocomplete field with the given ID and options.
- * needs include jQuery UI Autocomplete file
- *
- * @param string $field DOM ID of field to observe
- * @param array $options Ajax options
- * @return string Ajax script
- * check out http://jqueryui.com/demos/autocomplete/
- */
-function autoComplete($field, $options = array()) {
-    $var = &#39;&#39;;
-    if (isset($options[&#39;var&#39;])) {
-        $var = &#39;var &#39; . $options[&#39;var&#39;] . &#39; = &#39;;
-        unset($options[&#39;var&#39;]);
-    }
-
-    if(isset($options[&#39;source&#39;])) {
-        $options[&#39;source&#39;] = &#34;&#39;&#34;.Router::url($options[&#39;source&#39;]).&#34;&#39;&#34;;
-    }
-
-    if (!isset($options[&#39;id&#39;])) {
-        $options[&#39;id&#39;] = Inflector::camelize(str_replace(&#34;.&#34;, &#34;_&#34;, $field));
-    }
-
-    $htmlOptions = $this-&gt;__getHtmlOptions($options);
-    $htmlOptions[&#39;autocomplete&#39;] = &#34;off&#34;;
-
-    foreach ($this-&gt;autoCompleteOptions as $opt) {
-        unset($htmlOptions[$opt]);
-    }
-
-    $options = $this-&gt;_optionsToString($options, array(&#39;multipleSeparator&#39;));
-    $callbacks = array(&#39;formatItem&#39;, &#39;formatMatch&#39;, &#39;formatResult&#39;, &#39;highlight&#39;);
-
-    foreach ($callbacks as $callback) {
-        if (isset($options[$callback])) {
-            $name = $callback;
-            $code = $options[$callback];
-            switch ($name) {
-                case &#39;formatResult&#39;:
-                    $options[$name] = &#34;function(data, i, max) {&#34; . $code . &#34;}&#34;;
-                    break;
-                case &#39;highlight&#39;:
-                    $options[$name] = &#34;function(data, search) {&#34; . $code . &#34;}&#34;;
-                    break;
-                default:
-                    $options[$name] = &#34;function(row, i, max, term) {&#34; . $code . &#34;}&#34;;
-                    break;
-            }
-        }
-    }
-    $options = $this-&gt;_buildOptions($options, $this-&gt;autoCompleteOptions);
-
-    $text = $this-&gt;Form-&gt;text($field, $htmlOptions);
-    $script = &#34;{$var} $(&#39;#{$htmlOptions[&#39;id&#39;]}&#39;).autocomplete(&#34;;
-    $script .= &#34;{$options});&#34;;
-
-    return &#34;{$text}\n&#34; . $this-&gt;Javascript-&gt;codeBlock($script);
-}</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * Options for auto-complete editor.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * @var array
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> $autoCompleteOptions <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;select&#39;</span>, <span style="color:#e6db74">&#39;source&#39;</span>
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * Create a text field with Jquery UI Autocomplete.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * Creates an autocomplete field with the given ID and options.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * needs include jQuery UI Autocomplete file
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * @param string $field DOM ID of field to observe
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * @param array $options Ajax options
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * @return string Ajax script
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * check out http://jqueryui.com/demos/autocomplete/
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">autoComplete</span>($field, $options <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>()) {
+</span></span><span style="display:flex;"><span>    $var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isset</span>($options[<span style="color:#e6db74">&#39;var&#39;</span>])) {
+</span></span><span style="display:flex;"><span>        $var <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;var &#39;</span> <span style="color:#f92672">.</span> $options[<span style="color:#e6db74">&#39;var&#39;</span>] <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39; = &#39;</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">unset</span>($options[<span style="color:#e6db74">&#39;var&#39;</span>]);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">isset</span>($options[<span style="color:#e6db74">&#39;source&#39;</span>])) {
+</span></span><span style="display:flex;"><span>        $options[<span style="color:#e6db74">&#39;source&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#39;&#34;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>($options[<span style="color:#e6db74">&#39;source&#39;</span>])<span style="color:#f92672">.</span><span style="color:#e6db74">&#34;&#39;&#34;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">isset</span>($options[<span style="color:#e6db74">&#39;id&#39;</span>])) {
+</span></span><span style="display:flex;"><span>        $options[<span style="color:#e6db74">&#39;id&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#a6e22e">Inflector</span><span style="color:#f92672">::</span><span style="color:#a6e22e">camelize</span>(<span style="color:#a6e22e">str_replace</span>(<span style="color:#e6db74">&#34;.&#34;</span>, <span style="color:#e6db74">&#34;_&#34;</span>, $field));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    $htmlOptions <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">__getHtmlOptions</span>($options);
+</span></span><span style="display:flex;"><span>    $htmlOptions[<span style="color:#e6db74">&#39;autocomplete&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;off&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">foreach</span> ($this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">autoCompleteOptions</span> <span style="color:#66d9ef">as</span> $opt) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">unset</span>($htmlOptions[$opt]);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    $options <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">_optionsToString</span>($options, <span style="color:#66d9ef">array</span>(<span style="color:#e6db74">&#39;multipleSeparator&#39;</span>));
+</span></span><span style="display:flex;"><span>    $callbacks <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>(<span style="color:#e6db74">&#39;formatItem&#39;</span>, <span style="color:#e6db74">&#39;formatMatch&#39;</span>, <span style="color:#e6db74">&#39;formatResult&#39;</span>, <span style="color:#e6db74">&#39;highlight&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">foreach</span> ($callbacks <span style="color:#66d9ef">as</span> $callback) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isset</span>($options[$callback])) {
+</span></span><span style="display:flex;"><span>            $name <span style="color:#f92672">=</span> $callback;
+</span></span><span style="display:flex;"><span>            $code <span style="color:#f92672">=</span> $options[$callback];
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">switch</span> ($name) {
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;formatResult&#39;</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>                    $options[$name] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;function(data, i, max) {&#34;</span> <span style="color:#f92672">.</span> $code <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;}&#34;</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;highlight&#39;</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>                    $options[$name] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;function(data, search) {&#34;</span> <span style="color:#f92672">.</span> $code <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;}&#34;</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+</span></span><span style="display:flex;"><span>                    $options[$name] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;function(row, i, max, term) {&#34;</span> <span style="color:#f92672">.</span> $code <span style="color:#f92672">.</span> <span style="color:#e6db74">&#34;}&#34;</span>;
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>            }
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    $options <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">_buildOptions</span>($options, $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">autoCompleteOptions</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    $text <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">Form</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">text</span>($field, $htmlOptions);
+</span></span><span style="display:flex;"><span>    $script <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>$var<span style="color:#e6db74">}</span><span style="color:#e6db74"> $(&#39;#</span><span style="color:#e6db74">{</span>$htmlOptions[<span style="color:#e6db74">&#39;id&#39;</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;).autocomplete(&#34;</span>;
+</span></span><span style="display:flex;"><span>    $script <span style="color:#f92672">.=</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>$options<span style="color:#e6db74">}</span><span style="color:#e6db74">);&#34;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>$text<span style="color:#e6db74">}</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span> <span style="color:#f92672">.</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">Javascript</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">codeBlock</span>($script);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>And here are the sample to use it in our application</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</div><p>And here are the sample to use it in our application</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">echo $this-&gt;Ajax-&gt;autoComplete(&#39;Guest.search&#39;, array(
-    &#39;source&#39; =&gt; array(
-        &#39;controller&#39; =&gt; &#39;users&#39;,
-        &#39;action&#39; =&gt; &#39;autoComplete&#39;,
-        &#39;prefix&#39; =&gt; &#39;host&#39;
-    ),
-));</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">Ajax</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">autoComplete</span>(<span style="color:#e6db74">&#39;Guest.search&#39;</span>, <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;source&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;controller&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;users&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;action&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;autoComplete&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;prefix&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;host&#39;</span>
+</span></span><span style="display:flex;"><span>    ),
+</span></span><span style="display:flex;"><span>));
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Action code :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</div><p>Action code :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">/**
- * Auto Complete Action for Host
- *
- * Auto Complete action for host list of guests
- * also process the search
- */
-function host_autoComplete() {
-    if (!empty($this-&gt;data)) {
-        $this-&gt;redirect(array(
-            &#39;controller&#39; =&gt; &#39;users&#39;,
-            &#39;action&#39; =&gt; &#39;view&#39;, $this-&gt;data[&#39;Guest&#39;][&#39;id&#39;]
-        ));
-    }
-    $this-&gt;autoRender = false;
-    $guests = $this-&gt;User-&gt;getGuests(array(
-        &#39;host_id&#39; =&gt; Configure::read(&#39;User.id&#39;),
-            &#39;conditions&#39; =&gt; array(
-                &#39;OR&#39; =&gt; array(
-                &#39;User.name LIKE&#39; =&gt; &#39;%&#39; . $_GET[&#39;term&#39;] . &#39;%&#39;,
-                &#39;User.surname LIKE&#39; =&gt; &#39;%&#39; . $_GET[&#39;term&#39;] . &#39;%&#39;
-            )
-        )
-    ));
-    echo json_encode($this-&gt;User-&gt;autoComplete_encode($guests));
-}</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * Auto Complete Action for Host
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * Auto Complete action for host list of guests
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * also process the search
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">host_autoComplete</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#66d9ef">empty</span>($this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">data</span>)) {
+</span></span><span style="display:flex;"><span>        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">redirect</span>(<span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;controller&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;users&#39;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;action&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;view&#39;</span>, $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">data</span>[<span style="color:#e6db74">&#39;Guest&#39;</span>][<span style="color:#e6db74">&#39;id&#39;</span>]
+</span></span><span style="display:flex;"><span>        ));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">autoRender</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>    $guests <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">User</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getGuests</span>(<span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;host_id&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Configure</span><span style="color:#f92672">::</span><span style="color:#a6e22e">read</span>(<span style="color:#e6db74">&#39;User.id&#39;</span>),
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;conditions&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;OR&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;User.name LIKE&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;%&#39;</span> <span style="color:#f92672">.</span> $_GET[<span style="color:#e6db74">&#39;term&#39;</span>] <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;%&#39;</span>,
+</span></span><span style="display:flex;"><span>                <span style="color:#e6db74">&#39;User.surname LIKE&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;%&#39;</span> <span style="color:#f92672">.</span> $_GET[<span style="color:#e6db74">&#39;term&#39;</span>] <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;%&#39;</span>
+</span></span><span style="display:flex;"><span>            )
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>    ));
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">json_encode</span>($this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">User</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">autoComplete_encode</span>($guests));
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Model method ( encode the data array to display fields that we want, in this example I am just showing firstname and surname )</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</div><p>Model method ( encode the data array to display fields that we want, in this example I am just showing firstname and surname )</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">/**
- * autoComplete encode
- *
- * Parsing passed array and change it to consume-able
- * by autocomplete jQuery UI
- * @param array $data
- * @return json $data
- */
-function autoComplete_encode($postData = array()) {
-    $temp = array();
-    foreach ($postData as $user) {
-        array_push($temp, array(
-            &#39;id&#39; =&gt; $user[&#39;User&#39;][&#39;id&#39;],
-            &#39;label&#39; =&gt; $user[&#39;User&#39;][&#39;name&#39;].&#39; &#39;.$user[&#39;User&#39;][&#39;surname&#39;],
-            &#39;value&#39; =&gt; $user[&#39;User&#39;][&#39;name&#39;],
-        ));
-    }
-    return $temp;
-}</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#e6db74">/**
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * autoComplete encode
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> *
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * Parsing passed array and change it to consume-able
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * by autocomplete jQuery UI
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * @param array $data
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> * @return json $data
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"> */</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">autoComplete_encode</span>($postData <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>()) {
+</span></span><span style="display:flex;"><span>    $temp <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">foreach</span> ($postData <span style="color:#66d9ef">as</span> $user) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">array_push</span>($temp, <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;id&#39;</span> <span style="color:#f92672">=&gt;</span> $user[<span style="color:#e6db74">&#39;User&#39;</span>][<span style="color:#e6db74">&#39;id&#39;</span>],
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;label&#39;</span> <span style="color:#f92672">=&gt;</span> $user[<span style="color:#e6db74">&#39;User&#39;</span>][<span style="color:#e6db74">&#39;name&#39;</span>]<span style="color:#f92672">.</span><span style="color:#e6db74">&#39; &#39;</span><span style="color:#f92672">.</span>$user[<span style="color:#e6db74">&#39;User&#39;</span>][<span style="color:#e6db74">&#39;surname&#39;</span>],
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;value&#39;</span> <span style="color:#f92672">=&gt;</span> $user[<span style="color:#e6db74">&#39;User&#39;</span>][<span style="color:#e6db74">&#39;name&#39;</span>],
+</span></span><span style="display:flex;"><span>        ));
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> $temp;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Don&rsquo;t forget to use $_GET[&lsquo;term&rsquo;] to get data from autocomplete field and also encode the data to JSON so it can be displayed by jQuery UI.</p>
+</div><p>Don&rsquo;t forget to use $_GET[&rsquo;term&rsquo;] to get data from autocomplete field and also encode the data to JSON so it can be displayed by jQuery UI.</p>
 
   </div>
   
@@ -588,21 +591,6 @@ function autoComplete_encode($postData = array()) {
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

@@ -1,25 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on </title>
     <link>https://www.rudylee.com/blog/categories/git/</link>
     <description>Recent content in Git on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 Jan 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.rudylee.com/blog/categories/git/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://www.rudylee.com/blog/categories/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Reopen Last Commit in Git</title>
       <link>https://www.rudylee.com/blog/2016/01/20/reopen-last-commit-in-git/</link>
       <pubDate>Wed, 20 Jan 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rudylee.com/blog/2016/01/20/reopen-last-commit-in-git/</guid>
-      <description>Run the command below if you want to reopen the last commit in your git
-1  git reset --soft HEAD~   This is useful if you miss something in your last commit. Instead of creating new commit and squashing it, you can open last commit and fix it there.</description>
+      <description>&lt;p&gt;Run the command below if you want to reopen the last commit in your git&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&#xA;&lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1&#xA;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&#xA;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;&#xA;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git reset --soft HEAD~&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&lt;p&gt;This is useful if you miss something in your last commit. Instead of creating new commit and squashing it, you can open last commit and fix it there.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

@@ -8,23 +8,22 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
 
 <title></title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine."/>
 
-<meta property="og:title" content="" />
-<meta property="og:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.rudylee.com/blog/" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine.">
+      <meta name="twitter:site" content="@rudylee88">
 
-<meta property="og:updated_time" content="2019-06-23T17:23:22&#43;10:00"/>
+<meta property="og:url" content="https://www.rudylee.com/blog/">
+  <meta property="og:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
 
     
@@ -34,10 +33,10 @@
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -60,7 +59,7 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -137,7 +136,7 @@
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -163,7 +162,7 @@
         </span>
         <span >
         
-        Two weeks ago I decided to migrate my blog from Octopress to Hugo. I have been using Octopress as my blog engine since 2013 and I don&rsquo;t have any problems with it. I can easily generate my blog as a static site with Octopress and host it on Github. It is a lot better setup than using Wordpress which requires database and PHP server. However, Octopress is not actively developed anymore and this is one of the reasons why I decided to migrate my blog to Hugo.
+        <p>Two weeks ago I decided to migrate my blog from Octopress to Hugo. I have been using Octopress as my blog engine since 2013 and I don&rsquo;t have any problems with it. I can easily generate my blog as a static site with Octopress and host it on Github. It is a lot better setup than using Wordpress which requires database and PHP server. However, Octopress is not actively developed anymore and this is one of the reasons why I decided to migrate my blog to Hugo.</p>
         
         </span>
         
@@ -184,8 +183,8 @@
         </span>
         <span >
         
-        Often in my day to day work, I need to run a snippet in rails console to fix or investigate issues. Since our application is hosted on Heroku, I can do this by running heroku rails console --app app-name and in a matter of seconds I am connected to the rails console on production.
-In some cases, I need to run a really long code snippet especially if the fix needs to touch a lot of data.
+        <p>Often in my day to day work, I need to run a snippet in rails console to fix or investigate issues. Since our application is hosted on Heroku, I can do this by running <code>heroku rails console --app app-name</code> and in a matter of seconds I am connected to the rails console on production.</p>
+<p>In some cases, I need to run a really long code snippet especially if the fix needs to touch a lot of data. Usually I will copy the snippet line by line into the rails console because sometimes one of the lines will return a data and it will mess up the snippet.</p>
         
         </span>
         
@@ -206,8 +205,8 @@ In some cases, I need to run a really long code snippet especially if the fix ne
         </span>
         <span >
         
-        In the project I am working on, I have to write a test for a function that download CSV from external website and store it locally. I am pretty new in Go so please let me know if I am doing it wrong.
-The function is pretty simple, it uses the Go net/http package to send a GET request and os package to write the HTTP response to a local file.
+        <p>In the project I am working on, I have to write a test for a function that download CSV from external website and store it locally. I am pretty new in Go so please let me know if I am doing it wrong.</p>
+<p>The function is pretty simple, it uses the Go <code>net/http</code> package to send a <code>GET</code> request and <code>os</code> package to write the HTTP response to a local file. See the full code below:</p>
         
         </span>
         
@@ -228,8 +227,8 @@ The function is pretty simple, it uses the Go net/http package to send a GET req
         </span>
         <span >
         
-        Data store is an important piece in most of the modern applications. The implementation can range from a simple text file to a complicated database systems. In this blog post, I will show you how to use Google Spreadsheet as a data store for your application.
-Google Spreadsheet provides a convenient way to store, edit, share and retrieve data. This makes Google Spreadsheet appealing if you want to quickly prototype an app and don&rsquo;t want to spend time building a CRUD interface to manage your data.
+        <p>Data store is an important piece in most of the modern applications. The implementation can range from a simple text file to a complicated database systems. In this blog post, I will show you how to use Google Spreadsheet as a data store for your application.</p>
+<p>Google Spreadsheet provides a convenient way to store, edit, share and retrieve data. This makes Google Spreadsheet appealing if you want to quickly prototype an app and don&rsquo;t want to spend time building a CRUD interface to manage your data. It is also allow you to output the spreadsheet data in JSON format. This means you use Google spreadsheet as your JSON API.</p>
         
         </span>
         
@@ -250,9 +249,9 @@ Google Spreadsheet provides a convenient way to store, edit, share and retrieve 
         </span>
         <span >
         
-        I&rsquo;ve been using Trello as my primary task managers for the past couple of years. Recently, I found a very useful feature in Trello that helps me automating the creation of repetitive tasks.
-This feature allows you to tell Trello to create a card on specified time such as daily, weekly, monthly or annually.
-At the moment, I am using this feature to create a few daily tasks that I want to do first in the morning such as meditation, coding exercise and learning chinese.
+        <p>I&rsquo;ve been using Trello as my primary task managers for the past couple of years.  Recently, I found a very useful feature in Trello that helps me automating the creation of repetitive tasks.</p>
+<p>This feature allows you to tell Trello to create a card on specified time such as daily, weekly, monthly or annually.</p>
+<p>At the moment, I am using this feature to create a few daily tasks that I want to do first in the morning such as meditation, coding exercise and learning chinese.</p>
         
         </span>
         
@@ -273,10 +272,26 @@ At the moment, I am using this feature to create a few daily tasks that I want t
         </span>
         <span >
         
-        You can add the code snippet below to config/initializers/sidekiq.rb if you don&rsquo;t want to start a separate sidekiq workers.
-The configuration below will make sure that the sidekiq jobs will be executed without worker process.
-This is handy if you don&rsquo;t want to open an extra terminal tab or tmux window for worker process.
-1 2 3 4 5  # config/initializers/sidekiq.rb if Rails.env.development? require &#39;sidekiq/testing&#39; Sidekiq::Testing.inline! end   See the official Sidekiq wiki for more information: https://github.
+        <p>You can add the code snippet below to <code>config/initializers/sidekiq.rb</code> if you don&rsquo;t want to start a separate sidekiq workers.</p>
+<p>The configuration below will make sure that the sidekiq jobs will be executed without worker process.</p>
+<p>This is handy if you don&rsquo;t want to open an extra terminal tab or tmux window for worker process.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e"># config/initializers/sidekiq.rb</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#66d9ef">Rails</span><span style="color:#f92672">.</span>env<span style="color:#f92672">.</span>development?
+</span></span><span style="display:flex;"><span>  require <span style="color:#e6db74">&#39;sidekiq/testing&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">Sidekiq</span><span style="color:#f92672">::</span><span style="color:#66d9ef">Testing</span><span style="color:#f92672">.</span>inline!
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>See the official Sidekiq wiki for more information: <a href="https://github.com/mperham/sidekiq/wiki/Testing">https://github.com/mperham/sidekiq/wiki/Testing</a></p>
         
         </span>
         
@@ -297,10 +312,10 @@ This is handy if you don&rsquo;t want to open an extra terminal tab or tmux wind
         </span>
         <span >
         
-        Last weekend, one our apps that is hosted on Heroku were reporting a lot of R14 errors.
-R14 is an error that thrown by Heroku if the machine is running out of memory.
-I quickly jumped into (logentries)[https://logentries.com/] to download the log file and opened it in Sublime Text.
-However, I was having problem finding the request that is causing the problem because we also have our background job workers reporting R14 errors.
+        <p>Last weekend, one our apps that is hosted on Heroku were reporting a lot of R14 errors.</p>
+<p>R14 is an error that thrown by Heroku if the machine is running out of memory.</p>
+<p>I quickly jumped into (logentries)[https://logentries.com/] to download the log file and opened it in Sublime Text.</p>
+<p>However, I was having problem finding the request that is causing the problem because we also have our background job workers reporting R14 errors.</p>
         
         </span>
         
@@ -321,9 +336,10 @@ However, I was having problem finding the request that is causing the problem be
         </span>
         <span >
         
-        Background In this blog post, I&rsquo;ll show you how to set up an alert to monitor your sidekiq jobs using New Relic Query Language and New Relic Alert.
-I was given a task to find a solution to monitor our sidekiq jobs. In the past, I used New Relic Sidekiq Plugin ( https://newrelic.com/plugins/secondimpression/131 ) to do this.
-The plugin is a Ruby app that connects to your Redis instance, retrieves all of the sidekiq metrics such as jobs, queues and send it to New Relic using the agent library.
+        <h1 id="background">Background</h1>
+<p>In this blog post, I&rsquo;ll show you how to set up an alert to monitor your sidekiq jobs using New Relic Query Language and New Relic Alert.</p>
+<p>I was given a task to find a solution to monitor our sidekiq jobs. In the past, I used New Relic Sidekiq Plugin ( <a href="https://newrelic.com/plugins/secondimpression/131">https://newrelic.com/plugins/secondimpression/131</a> ) to do this.</p>
+<p>The plugin is a Ruby app that connects to your Redis instance, retrieves all of the sidekiq metrics such as jobs, queues and send it to New Relic using the agent library.</p>
         
         </span>
         
@@ -344,8 +360,8 @@ The plugin is a Ruby app that connects to your Redis instance, retrieves all of 
         </span>
         <span >
         
-        Last week, I was busy migrating our staging and production Elasticsearch clusters from AWS Elasticsearch to Elastic Cloud. The reason behind this migration is because we need dynamic scripting feature in our application and Elastic Cloud is the only managed Elasticsearch hosting that currently supports dynamic scripting.
-In terms of pricing, Elastic Cloud is slightly more expensive than AWS Elasticsearch. I think this is because they are using AWS EC2 under the hood.
+        <p>Last week, I was busy migrating our staging and production Elasticsearch clusters from AWS Elasticsearch to Elastic Cloud. The reason behind this migration is because we need dynamic scripting feature in our application and Elastic Cloud is the only managed Elasticsearch hosting that currently supports dynamic scripting.</p>
+<p>In terms of pricing, Elastic Cloud is slightly more expensive than AWS Elasticsearch. I think this is because they are using AWS EC2 under the hood. You can compare the pricing of both services here <a href="https://aws.amazon.com/elasticsearch-service/pricing/">https://aws.amazon.com/elasticsearch-service/pricing/</a> and <a href="https://www.elastic.co/cloud/as-a-service/pricing">https://www.elastic.co/cloud/as-a-service/pricing</a>.</p>
         
         </span>
         
@@ -366,8 +382,8 @@ In terms of pricing, Elastic Cloud is slightly more expensive than AWS Elasticse
         </span>
         <span >
         
-        Last month, I traveled to China for the second time. Unlike my first trip, this time I am more prepared to bypass the great firewall of China.
-During my first trip in China, I was mainly relying on simple SSH tunnel to get access to Gmail and all other blocked services. This solution is unrealiable because I couldn&rsquo;t use it on my Android phone. Aside from that, I also kept having constant dropouts which explained in this blog post http://blog.
+        <p>Last month, I traveled to China for the second time. Unlike my first trip, this time I am more prepared to bypass the great firewall of China.</p>
+<p>During my first trip in China, I was mainly relying on simple SSH tunnel to get access to Gmail and all other blocked services. This solution is unrealiable because I couldn&rsquo;t use it on my Android phone. Aside from that, I also kept having constant dropouts which explained in this blog post <a href="http://blog.zorinaq.com/my-experience-with-the-great-firewall-of-china/">http://blog.zorinaq.com/my-experience-with-the-great-firewall-of-china/</a></p>
         
         </span>
         
@@ -521,21 +537,6 @@ During my first trip in China, I was mainly relying on simple SSH tunnel to get 
 
         </div>
         
-  
-    
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-  
   <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

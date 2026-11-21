@@ -8,23 +8,22 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
 
 <title></title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine."/>
 
-<meta property="og:title" content="" />
-<meta property="og:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.rudylee.com/blog/" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine.">
+      <meta name="twitter:site" content="@rudylee88">
 
-<meta property="og:updated_time" content="2019-06-23T17:23:22&#43;10:00"/>
+<meta property="og:url" content="https://www.rudylee.com/blog/">
+  <meta property="og:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
 
     
@@ -34,10 +33,10 @@
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -60,7 +59,7 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -137,7 +136,7 @@
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -163,7 +162,7 @@
         </span>
         <span >
         
-        Sending email is a basic functionality that most of the applications need to support. In my company latest project, we have to send invitation emails to users through an Amazon EC2 instance. It is relatively easy task because I can use built in email library from Code Igniter and point it to Amazon SES. It works perfectly until my colleague realize that there is a slightly delay when the application sends the email.
+        <p>Sending email is a basic functionality that most of the applications need to support. In my company latest project, we have to send invitation emails to users through an Amazon EC2 instance. It is relatively easy task because I can use built in email library from Code Igniter and point it to Amazon SES. It works perfectly until my colleague realize that there is a slightly delay when the application sends the email.</p>
         
         </span>
         
@@ -184,8 +183,8 @@
         </span>
         <span >
         
-        Today, I decided to upload my new blog using Octopress into live. I have spent the last two weeks migrating my blog posts into Octopress. The process was not as smooth as I thought. I had to check every single blog post and re-apply all the code snippet tags, fix typo and add missing post.
-After all, I am quite happy with the end result. I can easily add new blog post through terminal and edit the post using my current favourite text editor Vim.
+        <p>Today, I decided to upload my new blog using Octopress into live. I have spent the last two weeks migrating my blog posts into Octopress. The process was not as smooth as I thought. I had to check every single blog post and re-apply all the code snippet tags, fix typo and add missing post.</p>
+<p>After all, I am quite happy with the end result. I can easily add new blog post through terminal and edit the post using my current favourite text editor Vim. The other good thing is the beautiful code snippet which is one of the reasons I moved from Wordpress.</p>
         
         </span>
         
@@ -206,14 +205,82 @@ After all, I am quite happy with the end result. I can easily add new blog post 
         </span>
         <span >
         
-        The main purpose of this post is only to write about Google Map API for future reference. Here are the code snippets :
-Get the latitude and longitude based on address : http://maps.googleapis.com/maps/api/geocode/json?address=435A%20Kent%20St&amp;sensor=true
-The code below set up the Google Map, put the marker and also make it grayscale
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  function initialize() { var map; var location = new google.
+        <p>The main purpose of this post is only to write about Google Map API for future reference. Here are the code snippets :</p>
+<p>Get the latitude and longitude based on address : <a href="http://maps.googleapis.com/maps/api/geocode/json?address=435A%20Kent%20St&amp;sensor=true">http://maps.googleapis.com/maps/api/geocode/json?address=435A%20Kent%20St&amp;sensor=true</a></p>
+<p>The code below set up the Google Map, put the marker and also make it grayscale</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">initialize</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">map</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">location</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">maps</span>.<span style="color:#a6e22e">LatLng</span>(<span style="color:#f92672">-</span><span style="color:#ae81ff">33.87190930</span>, <span style="color:#ae81ff">151.20480740</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">styles</span> <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">featureType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;all&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">elementType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;all&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">stylers</span><span style="color:#f92672">:</span> [
+</span></span><span style="display:flex;"><span>                { <span style="color:#a6e22e">saturation</span><span style="color:#f92672">:</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">100</span> }
+</span></span><span style="display:flex;"><span>            ]
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">mapOptions</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">center</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">location</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">zoom</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">17</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">mapTypeControlOptions</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">mapTypeId</span><span style="color:#f92672">:</span> [<span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">maps</span>.<span style="color:#a6e22e">MapTypeId</span>.<span style="color:#a6e22e">ROADMAP</span>, <span style="color:#e6db74">&#39;theGray&#39;</span>]
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">map</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">maps</span>.<span style="color:#a6e22e">Map</span>(document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#34;map-canvas&#34;</span>), <span style="color:#a6e22e">mapOptions</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">mapType</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">maps</span>.<span style="color:#a6e22e">StyledMapType</span>(<span style="color:#a6e22e">styles</span>, { <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;GrayScale&#34;</span> });    
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">mapTypes</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;theGray&#39;</span>, <span style="color:#a6e22e">mapType</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">map</span>.<span style="color:#a6e22e">setMapTypeId</span>(<span style="color:#e6db74">&#39;theGray&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">marker</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">maps</span>.<span style="color:#a6e22e">Marker</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">position</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">location</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">map</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">map</span>
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">google</span>.<span style="color:#a6e22e">maps</span>.<span style="color:#a6e22e">event</span>.<span style="color:#a6e22e">addDomListener</span>(window, <span style="color:#e6db74">&#39;load&#39;</span>, <span style="color:#a6e22e">initialize</span>);
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
         
         </span>
-        
-          ... <a class="read-more-symbol" href="https://www.rudylee.com/blog/2013/05/27/playing-with-google-map-api/">➦</a>
         
         </div>
         
@@ -230,7 +297,7 @@ The code below set up the Google Map, put the marker and also make it grayscale
         </span>
         <span >
         
-        There is a time when you want to override module config in your Zend Framework 2 application. In my case, I have different configuration for SMS gateway in staging and live server. You can do this by overwriting the module.config.php file inside the module config&rsquo;s folder. However, there are heaps of configuration inside module.config.php file. This approach will lead to maintenance nightmare when you need to change one or more configuration inside the file.
+        <p>There is a time when you want to override module config in your Zend Framework 2 application. In my case, I have different configuration for SMS gateway in staging and live server. You can do this by overwriting the module.config.php file inside the module config&rsquo;s folder. However, there are heaps of configuration inside module.config.php file. This approach will lead to maintenance nightmare when you need to change one or more configuration inside the file.</p>
         
         </span>
         
@@ -251,8 +318,24 @@ The code below set up the Google Map, put the marker and also make it grayscale
         </span>
         <span >
         
-        Storing application path inside Javascript object is a way to avoid &ldquo;hard coded&rdquo; URL inside your Javascript file. It is pretty common to have like this in your Javascript file :
-1 2 3 4 5  $.ajax({ type: POST, url: &#39;http://localhost/my-website/register&#39;, data: dataJSON })    That approach is completely fine. However, when you need to deploy your application, you need to manually change all the URL to match with your server.
+        <p>Storing application path inside Javascript object is a way to avoid &ldquo;hard coded&rdquo; URL inside your Javascript file.  It is pretty common to have like this in your Javascript file :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">POST</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;http://localhost/my-website/register&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">dataJSON</span>
+</span></span><span style="display:flex;"><span>    })
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>That approach is completely fine. However, when you need to deploy your application, you need to manually change all the URL to match with your server. The solution that I have been using for quite a long time is setting up Javascript object that contains path to my application.</p>
         
         </span>
         
@@ -273,8 +356,8 @@ The code below set up the Google Map, put the marker and also make it grayscale
         </span>
         <span >
         
-        On January ( Two months ago ) , I decided to learn Vim after watching screencast from Destroy All Software. In one of the screencast, the guy shows how fast you can program when using Vim and use plugin to make it even better.
-I have known Vim for 4 years now but never actually keen to learn all the shortcuts. I remember I been to one of the PHP meetup in my city and one guy was presenting some of his code using Vim.
+        <p>On January ( Two months ago ) , I decided to learn Vim after watching screencast from <a href="http://www.destroyallsoftware.com">Destroy All Software</a>. In one of the screencast, the guy shows how fast you can program when using Vim and use plugin to make it even better.</p>
+<p>I have known Vim for 4 years now but never actually keen to learn all the shortcuts. I remember I been to one of the PHP meetup in my city and one guy was presenting some of his code using Vim. One of the audience commented &ldquo;Why you need to use Vim if you have IDE and all of the GUI ?&rdquo;. At that time, I couldn&rsquo;t agree more with that guy.</p>
         
         </span>
         
@@ -295,9 +378,17 @@ I have known Vim for 4 years now but never actually keen to learn all the shortc
         </span>
         <span >
         
-        Sometimes you need to be able to get current server URL inside controller in your Zend Framework 2 application. As you might know, you won&rsquo;t be able to use $this-&gt;serverUrl() method in the controller as it&rsquo;s a part of helper.
-So, here is the code that I am using to get server URL in controller :
-1  $server_url = $this-&gt;getRequest()-&gt;getUri()-&gt;getScheme() . &#39;://&#39; . $this-&gt;getRequest()-&gt;getUri()-&gt;getHost();   Probably it&rsquo;s not the best solution but it works for now.
+        <p>Sometimes you need to be able to get current server URL inside controller in your Zend Framework 2 application. As you might know, you won&rsquo;t be able to use $this-&gt;serverUrl() method in the controller as it&rsquo;s a part of helper.</p>
+<p>So, here is the code that I am using to get server URL in controller :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>    $server_url <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getRequest</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getUri</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getScheme</span>() <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;://&#39;</span> <span style="color:#f92672">.</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getRequest</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getUri</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getHost</span>();
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Probably it&rsquo;s not the best solution but it works for now. Please check the other solutions below:</p>
         
         </span>
         
@@ -318,9 +409,11 @@ So, here is the code that I am using to get server URL in controller :
         </span>
         <span >
         
-        Demo : http://cbunny2.rudylee.com/users/typeahead Source : https://github.com/rudylee/cbunny
-In this post, I&rsquo;ll explain how to integrate Twitter Bootstrap Typeahead with your CakePHP 2.0 application. We will avoid using helpers or plugins and stick with plain Javascript + jQuery. Make sure you have include jQuery, Bootstrap CSS and Bootstrap Javascript files in your CakePHP application. You can simply do it inside your default.ctp file ( the files are bootstrap.min.js and bootstrap.min.css ).
-After that we will create controller, action and view to put our input box.
+        <h2 id="heading"></h2>
+<p>Demo : <a href="http://cbunny2.rudylee.com/users/typeahead">http://cbunny2.rudylee.com/users/typeahead</a>
+Source : <a href="https://github.com/rudylee/cbunny">https://github.com/rudylee/cbunny</a></p>
+<p>In this post, I&rsquo;ll explain how to integrate Twitter Bootstrap Typeahead with your CakePHP 2.0 application. We will avoid using helpers or plugins and stick with plain Javascript + jQuery. Make sure you have include jQuery, Bootstrap CSS and Bootstrap Javascript files in your CakePHP application. You can simply do it inside your default.ctp file ( the files are bootstrap.min.js and bootstrap.min.css ).</p>
+<p>After that we will create controller, action and view to put our input box. In this tutorial I&rsquo;ll use my Cbunny application and Users controller. I&rsquo;ll start by creating typeahead action, here is the code :</p>
         
         </span>
         
@@ -341,8 +434,9 @@ After that we will create controller, action and view to put our input box.
         </span>
         <span >
         
-        Demo : http://cbunny2.rudylee.com/users/select2 Source : https://github.com/rudylee/cbunny
-In this post, I&rsquo;ll explain how to use Select2 inside CakePHP. We will avoid using any helpers and rely on jQuery + Javascript. Before we start, I presume you have downloaded Select2 and included the Javascript and CSS files inside your layout. Thus, I won&rsquo;t explain how to import Select2 library into your CakePHP app ( you can download my cbunny app from Github if you are lost ).
+        <h2 id="demo-httpcbunny2rudyleecomusersselect2httpcbunny2rudyleecomusersselect2">Demo : <a href="http://cbunny2.rudylee.com/users/select2">http://cbunny2.rudylee.com/users/select2</a></h2>
+<p>Source : <a href="https://github.com/rudylee/cbunny">https://github.com/rudylee/cbunny</a></p>
+<p>In this post, I&rsquo;ll explain how to use <a href="http://ivaynberg.github.com/select2/">Select2</a> inside CakePHP. We will avoid using any helpers and rely on jQuery + Javascript. Before we start, I presume you have downloaded Select2 and included the Javascript and CSS files inside your layout. Thus, I won&rsquo;t explain how to import Select2 library into your CakePHP app ( you can download my cbunny app from Github if you are lost ).</p>
         
         </span>
         
@@ -363,8 +457,8 @@ In this post, I&rsquo;ll explain how to use Select2 inside CakePHP. We will avoi
         </span>
         <span >
         
-        Continuing from my previous post about productivity, I just found a video that you guys might wanna check out. It covers some of the techniques from my previous post such as make your todo list doable and set up the morning dash.
-{% youtube lHfjvYzr-3g %}
+        <p>Continuing from my <a href="http://blog.rudylee.com/2013/01/14/my-journey-to-productivity/">previous post about productivity</a>, I just found a video that you guys might wanna check out. It covers some of the techniques from my previous post such as make your todo list doable and set up the morning dash.</p>
+<p>{% youtube lHfjvYzr-3g %}</p>
         
         </span>
         
@@ -520,21 +614,6 @@ In this post, I&rsquo;ll explain how to use Select2 inside CakePHP. We will avoi
 
         </div>
         
-  
-    
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-  
   <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

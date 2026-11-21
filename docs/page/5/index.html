@@ -8,23 +8,22 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
 
 <title></title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine."/>
 
-<meta property="og:title" content="" />
-<meta property="og:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.rudylee.com/blog/" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine.">
+      <meta name="twitter:site" content="@rudylee88">
 
-<meta property="og:updated_time" content="2019-06-23T17:23:22&#43;10:00"/>
+<meta property="og:url" content="https://www.rudylee.com/blog/">
+  <meta property="og:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
 
     
@@ -34,10 +33,10 @@
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -60,7 +59,7 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -137,7 +136,7 @@
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -163,7 +162,7 @@
         </span>
         <span >
         
-        Today marks two weeks of my journey trying new method to boost my productivity. For several years, I am an avid fan of procrastination which I am still now. This has bring me a lot of troubles such as projects are off-schedule, self development postponed, and working on assignments at the last minute. I have tried several productivity techniques and sadly say, none of them show significant effect. One of the popular technique that I used is Pomodoro technique.
+        <p>Today marks two weeks of my journey trying new method to boost my productivity. For several years, I am an avid fan of procrastination which I am still now. This has bring me a lot of troubles such as projects are off-schedule, self development postponed, and working on assignments at the last minute. I have tried several productivity techniques and sadly say, none of them show significant effect. One of the popular technique that I used is <a href="http://www.pomodorotechnique.com/">Pomodoro</a> technique. For you guys that never heard about Pomodoro, I suggest to click the link provided. For you guys that are too lazy to click the link, here is the deinition of Pomodoro that I grabbed from the website :</p>
         
         </span>
         
@@ -184,10 +183,16 @@
         </span>
         <span >
         
-        REST API is relatively easy to implement if you are using web framework to build your application. In Rails, you just need to add single &lsquo;resources&rsquo; entry in your routing file. In CakePHP, it has similar solution as you can read in the Cookbook. However, currently there is no prefix support in CakePHP 2.x and this is confirmed in these links :
- http://cakephp.lighthouseapp.com/projects/42648/tickets/968-rest-routes-with-prefix
- https://github.com/cakephp/cakephp/pull/763
-  This is a drawback because you are most likely will use prefix to build REST API.
+        <p>REST API is relatively easy to implement if you are using web framework to build your application. In Rails, you just need to add single &lsquo;resources&rsquo;  entry in your routing file. In CakePHP, it has similar solution as you can read in the <a href="http://book.cakephp.org/2.0/en/development/rest.html">Cookbook</a>. However, currently there is no prefix support in CakePHP 2.x and this is confirmed in these links :</p>
+<ul>
+<li>
+<p><a href="http://cakephp.lighthouseapp.com/projects/42648/tickets/968-rest-routes-with-prefix">http://cakephp.lighthouseapp.com/projects/42648/tickets/968-rest-routes-with-prefix</a></p>
+</li>
+<li>
+<p><a href="https://github.com/cakephp/cakephp/pull/763">https://github.com/cakephp/cakephp/pull/763</a></p>
+</li>
+</ul>
+<p>This is a drawback because you are most likely will use prefix to build REST API. In my case, I have products controller in my application which has default CRUD actions and another set of actions with prefix ( api_index, api_view, etc ). Those actions with prefix in front of it will act as our RESTful API.</p>
         
         </span>
         
@@ -208,7 +213,7 @@
         </span>
         <span >
         
-        After spending whole day moving all my data from Ubuntu partition, I am officially running Ubuntu 12.04 64 bit. Prior to this, I was using Ubuntu 12.04 32 bit which I continuously upgrade from Ubuntu 10.04 ( it&rsquo;s been 2 years since I decided to use Ubuntu as my main operating system, time flew so fast ). It was running really slow as I have a lot of applications installed ( Rails, Django, Android SDK, Eclipse, Netbeans, etc ).
+        <p>After spending whole day moving all my data from Ubuntu partition, I am officially running Ubuntu 12.04 64 bit. Prior to this, I was using Ubuntu 12.04 32 bit which I continuously upgrade from Ubuntu 10.04 ( it&rsquo;s been 2 years since I decided to use Ubuntu as my main operating system, time flew so fast ). It was running really slow as I have a lot of applications installed ( Rails, Django, Android SDK, Eclipse, Netbeans, etc ).</p>
         
         </span>
         
@@ -229,8 +234,8 @@
         </span>
         <span >
         
-        Last week I found video tutorial to cook curry noodle in YouTube and decided to give it a try. Before, I cooked different type of curry (red and green curry ) and always made my own curry paste. The taste wasn&rsquo;t bad but obviously something missing and I don&rsquo;t know what it is.
-This weekend I am gonna do something different by using pre-made curry paste. After researching a little bit, I found people recommend to use Mae Ploy Curry Paste which they say is used in some of Thai restaurants in Australia.
+        <p>Last week I found video tutorial to cook curry noodle in <a href="http://www.youtube.com/watch?v=lMrFr8Eh_yM">YouTube</a> and decided to give it a try. Before, I cooked different type of curry (red and green curry ) and always made my own curry paste. The taste wasn&rsquo;t bad but obviously something missing and I don&rsquo;t know what it is.</p>
+<p>This weekend I am gonna do something different by using pre-made curry paste. After researching a little bit, I found people recommend to use Mae Ploy Curry Paste which they say is used in some of Thai restaurants in Australia. Here is the picture :</p>
         
         </span>
         
@@ -251,7 +256,7 @@ This weekend I am gonna do something different by using pre-made curry paste. Af
         </span>
         <span >
         
-        Recently, I just canceled my Github micro plan and moved all my private projects to Assembla. Similar to Github, Assembla also offers Git hosting and you can host private projects for free. There are several paid plans that you can choose which basically add more features such as ticketing system, wiki, FTP build, supports, etc. So if you are like me ( only need Git/SVN private hosting for your projects ), I suggest you to try Assembla.
+        <p>Recently, I just canceled my <a href="http://www.github.com">Github</a> micro plan and moved all my private projects to <a href="http://www.assembla.com/">Assembla</a>. Similar to Github, Assembla also offers Git hosting and you can host private projects for free. There are several paid plans that you can choose which basically add more features such as ticketing system, wiki, FTP build, supports, etc. So if you are like me ( only need Git/SVN private hosting for your projects ), I suggest you to try Assembla.</p>
         
         </span>
         
@@ -272,8 +277,8 @@ This weekend I am gonna do something different by using pre-made curry paste. Af
         </span>
         <span >
         
-        Today, I spent couple hours to update my Cake Bunny 1.0 and Cake Bunny 2.0 websites. Cake Bunny is CakePHP website that I built to provide live demo for CakePHP tutorials in mt blog. At the moment, it has only two sample demos ( jQuery UI AutoComplete and jQuery UI AutoComplete Redirect).
-I decided to make over the design using Twitter Bootstrap instead of CakePHP default template. For you guys that haven&rsquo;t try twitter bootstrap yet, I suggest you give it a try.
+        <p>Today, I spent couple hours to update my <a href="http://www.rudylee.com/cbunny">Cake Bunny 1.0</a> and <a href="http://www.rudylee.com/cbunny2">Cake Bunny 2.0</a> websites. Cake Bunny is CakePHP website that I built to provide live demo for CakePHP tutorials in mt blog. At the moment, it has only two sample demos ( jQuery UI AutoComplete and jQuery UI AutoComplete Redirect).</p>
+<p>I decided to make over the design using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> instead of CakePHP default template. For you guys that haven&rsquo;t try twitter bootstrap yet, I suggest you give it a try. It has a lot of components inside it and provide you with basic layout ( pretty much similar with other CSS frameworks such as blueprint, 960, etc ).</p>
         
         </span>
         
@@ -294,8 +299,8 @@ I decided to make over the design using Twitter Bootstrap instead of CakePHP def
         </span>
         <span >
         
-        In order to differentiate between admin actions and users actions, you can set up what called &ldquo;namespace&rdquo; in your rails apps. The basic idea of this feature is you will have different controller and view files for each role in your application.
-This concept is similar with prefixes in CakePHP. However, CakePHP allows you to put different action in one controller file, while in rails you have to create different controller and view file for the new namespace.
+        <p>In order to differentiate between admin actions and users actions, you can set up what called &ldquo;namespace&rdquo; in your rails apps. The basic idea of this feature is you will have different controller and view files for each role in your application.</p>
+<p>This concept is similar with prefixes in CakePHP. However,  CakePHP allows you to put different action in one controller file, while in rails you have to create different controller and view file for the new namespace. Here is the sample namespace code that I put in my routes.rb file :</p>
         
         </span>
         
@@ -316,7 +321,7 @@ This concept is similar with prefixes in CakePHP. However, CakePHP allows you to
         </span>
         <span >
         
-        JWPlayer has become my favorite video player for clients website especially after they release their official Wordpress plugin. The plugin almost done all the basic things ( shortcode, custom player, etc ). It&rsquo;s also integrated seamlessly with the Wordpress Media library which makes your life so much easier because you can easily add the player to a post straightly from media library. However, aside from all that simple integration and setup, it lacks of documentation could cause a headache especially if you are trying to do something out of the lane.
+        <p>JWPlayer has become my favorite video player for clients website especially after they release their <a href="http://wordpress.org/extend/plugins/jw-player-plugin-for-wordpress/">official Wordpress plugin</a>. The plugin almost done all the basic things ( shortcode, custom player, etc ). It&rsquo;s also integrated seamlessly with the Wordpress Media library which makes your life so much easier because you can easily add the player to a post straightly from media library. However, aside from all that simple integration and setup, it lacks of documentation could cause a headache especially if you are trying to do something out of the lane.</p>
         
         </span>
         
@@ -337,9 +342,14 @@ This concept is similar with prefixes in CakePHP. However, CakePHP allows you to
         </span>
         <span >
         
-        Demo : http://cbunny.rudylee.com/autocomplete_redirect Demo source code :https://github.com/rudylee/cbunny
- In my previous post ( http://blog.rudylee.com/2011/07/25/jquery-ui-autocomplete-in-cakephp/ ) we have successfully integrated the jQuery AutoComplete with CakePHP with a little bit hacky way. Now we gonna add another feature that can redirect user to our desired place when they click the result value in the AutoComplete ( try the demo for more details ).
-So let&rsquo;s start the coding ( I assume you have integrated the jQuery UI AutoComplete in your apps, if you haven&rsquo;t, just read my previous post ), so basically what we need to do are divided into 4 steps:
+        <blockquote>
+</blockquote>
+<blockquote>
+<h2 id="demo--httpcbunnyrudyleecomautocomplete_redirecthttpcbunnyrudyleecomautocomplete_redirect">Demo : <a href="http://cbunny.rudylee.com/autocomplete_redirect">http://cbunny.rudylee.com/autocomplete_redirect</a></h2>
+</blockquote>
+<p>Demo source code :<a href="https://github.com/rudylee/cbunny"> https://github.com/rudylee/cbunny</a></p>
+<p>In my previous post ( <a href="http://blog.rudylee.com/2011/07/25/jquery-ui-autocomplete-in-cakephp/">http://blog.rudylee.com/2011/07/25/jquery-ui-autocomplete-in-cakephp/</a> ) we have successfully integrated the jQuery AutoComplete with CakePHP with a little bit hacky way. Now we gonna add another feature that can redirect user to our desired place when they click the result value in the AutoComplete ( try the demo for more details ).</p>
+<p>So let&rsquo;s start the coding ( I assume you have integrated the jQuery UI AutoComplete in your apps, if you haven&rsquo;t, just read my previous post ), so basically what we need to do are divided into 4 steps:</p>
         
         </span>
         
@@ -360,7 +370,9 @@ So let&rsquo;s start the coding ( I assume you have integrated the jQuery UI Aut
         </span>
         <span >
         
-        Today is the last day of my exams and I will have holiday for 3 months. It&rsquo;s quite long considering that you spent the same amount of time for study as well. That means in one semester you will have 3 months study and another 3 months for holiday. From my perspective, it&rsquo;s not efficient, wasting time and of course wasting money :D. But who am I to judge the system, the system is there for a reason which I don&rsquo;t care much.
+        <p><a href="attachments/holiday-has-arrived/3048143981_e990820985_z1.jpg"><img src="https://www.rudylee.com/blog/attachments/holiday-has-arrived/3048143981_e990820985_z1.jpg" alt="">
+</a></p>
+<p>Today is the last day of my exams and I will have holiday for 3 months. It&rsquo;s quite long considering that you spent the same amount of time for study as well. That means in one semester you will have 3 months study and another 3 months for holiday. From my perspective, it&rsquo;s not efficient, wasting time and of course wasting money :D. But who am I to judge the system, the system is there for a reason which I don&rsquo;t care much.</p>
         
         </span>
         
@@ -520,21 +532,6 @@ So let&rsquo;s start the coding ( I assume you have integrated the jQuery UI Aut
 
         </div>
         
-  
-    
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-  
   <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

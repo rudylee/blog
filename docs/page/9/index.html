@@ -8,23 +8,22 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
 
 <title></title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine."/>
 
-<meta property="og:title" content="" />
-<meta property="og:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.rudylee.com/blog/" />
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine.">
+      <meta name="twitter:site" content="@rudylee88">
 
-<meta property="og:updated_time" content="2019-06-23T17:23:22&#43;10:00"/>
+<meta property="og:url" content="https://www.rudylee.com/blog/">
+  <meta property="og:description" content="Hi! I&#39;m Rudy Lee. Here are some thoughts of mine.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
 
     
@@ -34,10 +33,10 @@
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -60,7 +59,7 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -137,7 +136,7 @@
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -163,9 +162,9 @@
         </span>
         <span >
         
-        Setelah mengalami beberapa problem dengan web server Binus Access yang menggunakan Nginx, akhirnya gwa memutuskan untuk mengganti php-cgi menjadi php-fpm.
-Untuk mengubah php-cgi menjadi php-fpm ternyata tidak lah sulit, apalagi dengan adanya fitur ports dari FreeBSD. Pertama-tama cukup download file ports php-fpm dari websitenya php-fpm .
-Untuk versi nya sendiri bisa disesuaikan dengan versi php anda, kalau gwa sih menggunakan versi php 5.2.10. Jadi hal pertama yang gwa lakukan adalah mendownload php-fpm versi 5.
+        <p>Setelah mengalami beberapa problem dengan web server <a href="http://www.binus-access.com">Binus Access</a> yang menggunakan Nginx, akhirnya gwa memutuskan untuk mengganti php-cgi menjadi php-fpm.</p>
+<p>Untuk mengubah php-cgi menjadi php-fpm ternyata tidak lah sulit, apalagi dengan adanya fitur ports dari FreeBSD. Pertama-tama cukup download file ports php-fpm dari websitenya <a href="http://php-fpm.org/download/">php-fpm </a>.</p>
+<p>Untuk versi nya sendiri bisa disesuaikan dengan versi php anda, kalau gwa sih menggunakan versi php 5.2.10. Jadi hal pertama yang gwa lakukan adalah mendownload php-fpm versi <a href="http://php-fpm.org/downloads/freebsd-port/">5.2.10</a>.</p>
         
         </span>
         
@@ -186,8 +185,8 @@ Untuk versi nya sendiri bisa disesuaikan dengan versi php anda, kalau gwa sih me
         </span>
         <span >
         
-        File logs sering kali menjadi sebuah masalah ketika ukurannya menjadi semakin besar dan memakan sebagian besar hard disk server kita, tetapi di sisi lain file logs juga berguna untuk mencari masalah yang terjadi di server kita.
-Gwa juga sempat mengalami beberapa masalah dengan file logs nginx di server FreeBSD. Permasalahan bermula dikarenakan gwa salah mengeset ukuran dari folder &lsquo;/var/logs&rsquo; yang hanya berukuran 2 Gb saja ( padahal file logs ukurannya bisa sampai 10 Gb keatas ).
+        <p>File logs sering kali menjadi sebuah masalah ketika ukurannya menjadi semakin besar dan memakan sebagian besar hard disk server kita, tetapi di sisi lain file logs juga berguna untuk mencari masalah yang terjadi di server kita.</p>
+<p>Gwa juga sempat mengalami beberapa masalah dengan file logs nginx di server FreeBSD. Permasalahan bermula dikarenakan gwa salah mengeset ukuran dari folder &lsquo;/var/logs&rsquo; yang hanya berukuran 2 Gb saja ( padahal file logs ukurannya bisa sampai 10 Gb keatas ). Hal tersebut tentu saja mengakibatkan banyak user-user binus-access yang &ldquo;bernyanyi&rdquo; karena ga bisa login.</p>
         
         </span>
         
@@ -208,8 +207,8 @@ Gwa juga sempat mengalami beberapa masalah dengan file logs nginx di server Free
         </span>
         <span >
         
-        Setelah 3 hari dicekcoki dengan lagu Boyce Avenue yang diputar berulang-ulang di foobar akhirnya gwa jadi ada semangat buat update blog. Sebenarnya pengen nulis tentang Ruby on Rails dan e-TextEditor tapi keknya lebih pengen tulis tentang Lithium dulu deh.
-Jadi apakah Lithium itu ? merk baterai ? merk baju ? merk mobil ? merk parfum ? atau merk deterjen ? jelas saja bukan. Lithium yang saya gwa maksud disini adalah salah satu framework PHP yang tersohor sekali seantero jagad raya, sampe presiden SBY aja kalo pidato dicoding dolo pake neh framework.
+        <p>Setelah 3 hari dicekcoki dengan lagu <a href="http://www.boyceavenue.com/">Boyce Avenue</a> yang diputar berulang-ulang di foobar akhirnya gwa jadi ada semangat buat update blog. Sebenarnya pengen nulis tentang Ruby on Rails dan e-TextEditor tapi keknya lebih pengen tulis tentang Lithium dulu deh.</p>
+<p>Jadi apakah Lithium itu ? merk baterai ? merk baju ? merk mobil ? merk parfum ? atau merk deterjen ? jelas saja bukan. Lithium yang <!-- raw HTML omitted -->saya<!-- raw HTML omitted --> gwa maksud disini adalah salah satu framework PHP yang tersohor sekali seantero jagad raya, sampe presiden SBY aja kalo pidato dicoding dolo pake neh framework. Itu versi lebainya, sebenarnya Lithium atau Li3 ini adalah sebuah framework besutan bekas pentolan ex project manager dan lead developernya CakePHP.</p>
         
         </span>
         
@@ -230,9 +229,9 @@ Jadi apakah Lithium itu ? merk baterai ? merk baju ? merk mobil ? merk parfum ? 
         </span>
         <span >
         
-        Beberapa hari ini gwa disibukkan mencoba menginstall Ruby on Rails ( RoR ). Sebenarnya sudah cukup lama pengen coba-coba Ruby on Rails, tapi sekarang baru ada semangat sama ada waktu buat nyoba-nyoba.
-Menginstall Ruby on Rails ini dapat dibilang cukup memakan banyak waktu dikarenakan gwa menghabiskan 1 harian HANYA untuk install Kubuntu doank ( gara2 cd rom yang ga jelas ).
-Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan dalam waktu 1 hari ) gwa mulai menginstall Ruby on Rails.
+        <p>Beberapa hari ini gwa disibukkan mencoba menginstall Ruby on Rails ( RoR ). Sebenarnya sudah cukup lama pengen coba-coba Ruby on Rails, tapi sekarang baru ada semangat sama ada waktu buat nyoba-nyoba.</p>
+<p>Menginstall Ruby on Rails ini dapat dibilang cukup memakan banyak waktu dikarenakan gwa menghabiskan 1 harian HANYA untuk install Kubuntu doank ( gara2 cd rom yang ga jelas ).</p>
+<p>Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan dalam waktu 1 hari ) gwa mulai menginstall Ruby on Rails. Mungkin masih pada bingung sebenarnya Ruby on Rails itu apaan. Ruby on Rails itu adalah sebuah framework untuk pembuatan website yang dibuat dengan menggunakan bahasa Ruby.</p>
         
         </span>
         
@@ -253,8 +252,10 @@ Jadi setelah gwa berhasil menginstall kubuntu ( yang tentu saja gwa selesaikan d
         </span>
         <span >
         
-        Grouping di dalam select box adalah hal yang gampang ketika kita menggunakan codingan php biasa, tetapi kalau sudah masuk ke dalam codingan CakePHP kita harus banyak membaca documentation untuk teknik2nya, tickets jika ada yang pernah menanyakan hal yang sama dan tentu saja API agar kita tahu fungsi dari method yang akan kita pakai.
-Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam gambar di bawah ini : [caption id=&ldquo;&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;217&rdquo; caption=&ldquo;CakePHP Group Select&rdquo;][/caption]
+        <p>Grouping di dalam select box adalah hal yang gampang ketika kita menggunakan codingan php biasa, tetapi kalau sudah masuk ke dalam codingan CakePHP kita harus banyak membaca documentation untuk teknik2nya, tickets jika ada yang pernah menanyakan hal yang sama dan tentu saja API agar kita tahu fungsi dari method yang akan kita pakai.</p>
+<p>Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam gambar di bawah ini :
+[caption id=&quot;&quot; align=&ldquo;alignnone&rdquo; width=&ldquo;217&rdquo; caption=&ldquo;CakePHP Group Select&rdquo;]<img src="http://blog.rudylee.com/content/group-select-box.jpg" alt="CakePHP Group Select">
+[/caption]</p>
         
         </span>
         
@@ -275,10 +276,17 @@ Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam g
         </span>
         <span >
         
-        Mungkin kita pernah membuat sebuah gambar menjadi sebuah link seperti untuk banner registrasi atau banner untuk iklan dan sebagainya.
-Jika cara biasanya atau konvesional maka kita tinggal membuat seperti ini :
-&lt;a href=&quot;http://xxx&quot;&gt;&lt;img src=&quot;path/images&quot;&gt;&lt;/a&gt;  Sementara dalam CakePHP ada cara yang lebih gampang atau mungkin bagi beberapa orang lebih susah, yaitu :
-link($html-&gt;image('/images/btn-register.png'), array('controller' =&gt; 'users','action' =&gt; 'add'),array('escape' =&gt; false)) ?&gt; atau kira-kira susunannya seperti ini link($html-&gt;image('path-ke-image), array('controller' =&gt; 'nama-controller','action' =&gt; 'nama-action'),array('escape' =&gt; false)) ?
+        <p>Mungkin kita pernah membuat sebuah gambar menjadi sebuah link seperti untuk banner registrasi atau banner untuk iklan dan sebagainya.</p>
+<p>Jika cara biasanya atau konvesional maka kita tinggal membuat seperti ini :</p>
+<pre><code>&lt;a href=&quot;http://xxx&quot;&gt;&lt;img src=&quot;path/images&quot;&gt;&lt;/a&gt;
+</code></pre>
+<p>Sementara dalam CakePHP ada cara yang lebih gampang atau mungkin bagi beberapa orang lebih susah, yaitu :</p>
+<pre><code>link($html-&gt;image('/images/btn-register.png'), array('controller' =&gt; 'users','action' =&gt; 'add'),array('escape' =&gt; false)) ?&gt;
+
+atau kira-kira susunannya seperti ini
+link($html-&gt;image('path-ke-image), array('controller' =&gt; 'nama-controller','action' =&gt; 'nama-action'),array('escape' =&gt; false)) ?&gt;
+</code></pre>
+<p>Jadi kita menggunakan 2 buah helper yaitu link dan image dimana helper dari image kita letakkan di dalam helper link. Jangan lupa untuk menambahkan attribute <strong>escape =&gt; false</strong> atau gambar yang ingin anda tampilkan tidak akan muncul. Semoga bermanfaat :D</p>
         
         </span>
         
@@ -299,9 +307,33 @@ link($html-&gt;image('/images/btn-register.png'), array('controller' =&gt; 'user
         </span>
         <span >
         
-        Sekian lama gwa ga sentuh2 CakePHP lagi ternyata sekarang ada kesempatan lagi buat megang CakePHP, ternyata setelah lama ga grepe2 CakePHP banyak codingan dan syntax2 yang gwa lupa dan salah satunya ada passing parameter ketika melakukan paging dan juga melimit jumlah row setiap halamannya.
-jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. Ceritanya gwa punya method dalam controller seperti ini.
-1 2 3 4 5 6 7 8 9  function index($id = null) { if(!
+        <p>Sekian lama gwa ga sentuh2 CakePHP lagi ternyata sekarang ada kesempatan lagi buat megang CakePHP, ternyata setelah lama ga grepe2 CakePHP banyak codingan dan syntax2 yang gwa lupa dan salah satunya ada passing parameter ketika melakukan paging dan juga melimit jumlah row setiap halamannya.</p>
+<p>jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. Ceritanya gwa punya method dalam controller seperti ini.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">index</span>($id <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>$id) {
+</span></span><span style="display:flex;"><span>    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">Session</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setFlash</span>(<span style="color:#a6e22e">__</span>(<span style="color:#e6db74">&#39;Invalid Question.&#39;</span>, <span style="color:#66d9ef">true</span>));
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;passedArgs&#39;</span>,$id);
+</span></span><span style="display:flex;"><span>    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;questions&#39;</span>, $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">paginate</span>(<span style="color:#66d9ef">array</span>(<span style="color:#e6db74">&#39;group_id&#39;</span> <span style="color:#f92672">=&gt;</span> $id)));
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>Jadi kalau dilihat dari method tersebut terlihat bahwa gwa mempassing parameter ke dalam method indexnya, dan gwa menggunakan parameter tersebut dalam paging gwa. Oleh karena itu gwa membuat satu variable lagi bernama <strong>passedArgs</strong> untuk menyimpan parameter yang ingin gwa passing ke dalam url paging nantinya ( dalam hal ini id yang ingin gwa passing ).</p>
         
         </span>
         
@@ -322,8 +354,8 @@ jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. 
         </span>
         <span >
         
-        Hari ini gwa disibukkan dengan berbagai banyak kerjaan, entah kenapa kalau masuk kantor itu kerjaan tiba-tiba aja datang bertubi-tubi. Tapi kerjaan utama yang gwa lakukan hari ada memproteksi server Bee Watch.
-Yah, seperti yang kita ketahui bersama bahwa Bee Watch sangat menjadi incaran untuk di-embed ke web-web marketing kelas teri. Dimana siaran Bee Watch ( TV Online) digunakan sebagai penarik traffic ke website mereka dan di website mereka diletakkan bermacam-macam iklan entah darimana datangnya.
+        <p>Hari ini gwa disibukkan dengan berbagai banyak kerjaan, entah kenapa kalau masuk kantor itu kerjaan tiba-tiba aja datang bertubi-tubi. Tapi kerjaan utama yang gwa lakukan hari ada memproteksi server Bee Watch.</p>
+<p>Yah, seperti yang kita ketahui bersama bahwa Bee Watch sangat menjadi incaran untuk di-embed ke web-web marketing kelas teri. Dimana siaran Bee Watch ( TV Online) digunakan sebagai penarik traffic ke website mereka dan di website mereka diletakkan bermacam-macam iklan entah darimana datangnya. Ada yang isinya iklan Joko Susilo lah, ada iklan google adsense la, dan iklan2 norak lainnya. Dan yang paling membuat gw prihatin adalah design website yang sangat kampungan dan acak-acakan ( sory kalo ini gwa ngomong jujur ).</p>
         
         </span>
         
@@ -344,8 +376,8 @@ Yah, seperti yang kita ketahui bersama bahwa Bee Watch sangat menjadi incaran un
         </span>
         <span >
         
-        Yap, setelah sekian lama ga update blog akhirnya hari ini, malam ini, jam ini, menit ini dan detik ini gwa memutuskan untuk update blog. Setelah melewati satu hari yang lumayan sibuk dan kerjaan yang rasanya ga abis2nya akhirnya gwa bisa meluangkan waktu untuk update blog ( sebelum memulai pekerjaan lagi tentunya ).
-Dengan ditemani oleh biskuit Good Time yang udah nangkring di sebelah keyboard gwa ( yang entah sudah dari kapan dibeli tapi ga pernah dimakan ) mulailah gwa bercerita tidak jelas ( biar kesannya ga kosong aja dan ga up to date ini blog ).
+        <p>Yap, setelah sekian lama ga update blog akhirnya hari ini, malam ini, jam ini, menit ini dan detik ini gwa memutuskan untuk update blog. Setelah melewati satu hari yang lumayan sibuk dan kerjaan yang rasanya ga abis2nya akhirnya gwa bisa meluangkan waktu untuk update blog ( sebelum memulai pekerjaan lagi tentunya ).</p>
+<p>Dengan ditemani oleh biskuit Good Time yang udah nangkring di sebelah keyboard gwa ( yang entah sudah dari kapan dibeli tapi ga pernah dimakan ) mulailah gwa bercerita tidak jelas ( biar kesannya ga kosong aja dan ga up to date ini blog ). Sebenarnya dari kemarin-kemarin gwa sudah pengen update blog, dari mulai cerita-cerita liburan pas lebaran kemarin yang mengesankan, dimana gwa ketemu temen lama yang diduga dan yang tak terduga ( ketemu aja tiba2 ). Selain itu juga dapat beberapa pelajaran tentang kehidupan juga ( bahasa lebaynya ). Yang penting intinya gwa ternyata banyak belajar dari liburan gwa yang kemarin ( tapi kebanyakan udah lupa sih, lupa di dokumentasikan dalam blog sih hix ).</p>
         
         </span>
         
@@ -366,7 +398,7 @@ Dengan ditemani oleh biskuit Good Time yang udah nangkring di sebelah keyboard g
         </span>
         <span >
         
-        Tanpa tersengaja tiba2 foobar di komputer gwa memainkan lagu maroon 5 dengan judul she will be loved, dan entah kenapa setiap gwa mendengar lagu itu gwa selalu teringat akan saat2 gwa berada di dalam mobil saudara gwa dan dalam perjalan pulang ke rumah mereka ketika gwa baru 1 minggu di Jakarta. Yah gwa baru 1 minggu di Jakarta, masih culunnya, masih cupunya, masih manjanya, masib bodohnya, dan masih2 yang lainnya.
+        <p>Tanpa tersengaja tiba2 foobar di komputer gwa memainkan lagu maroon 5 dengan judul she will be loved, dan entah kenapa setiap gwa mendengar lagu itu gwa selalu teringat akan saat2 gwa berada di dalam mobil saudara gwa dan dalam perjalan pulang ke rumah mereka ketika gwa baru 1 minggu di Jakarta. Yah gwa baru 1 minggu di Jakarta, masih culunnya, masih cupunya, masih manjanya, masib bodohnya, dan masih2 yang lainnya.</p>
         
         </span>
         
@@ -528,21 +560,6 @@ Dengan ditemani oleh biskuit Good Time yang udah nangkring di sebelah keyboard g
 
         </div>
         
-  
-    
-    
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-  
   <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

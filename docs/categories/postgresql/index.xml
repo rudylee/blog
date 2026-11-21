@@ -1,25 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PostgreSQL on </title>
     <link>https://www.rudylee.com/blog/categories/postgresql/</link>
     <description>Recent content in PostgreSQL on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 31 Aug 2015 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.rudylee.com/blog/categories/postgresql/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://www.rudylee.com/blog/categories/postgresql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create SSH Tunnel To Backup PostgreSQL Database</title>
       <link>https://www.rudylee.com/blog/2015/08/31/create-ssh-tunnel-to-backup-postgresql-database/</link>
       <pubDate>Mon, 31 Aug 2015 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rudylee.com/blog/2015/08/31/create-ssh-tunnel-to-backup-postgresql-database/</guid>
-      <description>Today, I was trying to create a backup of production database. The problem is we have two different version of PostgreSQL running on production and these databases can only be accessed from front end(FE) server. We have older version of PostgreSQL client installed in all FE server which means I can&amp;rsquo;t use it to run pg_dump.
-SSH Tunnel to the rescue One solution to this problem is to create a SSH tunnel.</description>
+      <description>&lt;p&gt;Today, I was trying to create a backup of production database. The problem is we have two different version of PostgreSQL running on production and these databases can only be accessed from front end(FE) server. We have older version of PostgreSQL client installed in all FE server which means I can&amp;rsquo;t use it to run pg_dump.&lt;/p&gt;&#xA;&lt;h2 id=&#34;ssh-tunnel-to-the-rescue&#34;&gt;SSH Tunnel to the rescue&lt;/h2&gt;&#xA;&lt;p&gt;One solution to this problem is to create a SSH tunnel. Since I have the latest version of PostgreSQL client installed in my machine, I can run pg_dump locally which will connect to the database through SSH tunnel.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

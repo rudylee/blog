@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,18 +20,22 @@
 <title>Zeus inside Vagrant • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Zeus inside Vagrant"/>
-<meta name="twitter:description" content="I have been using Vagrant as my development environment for the last couple weeks. It has been very helpful as I prefer to use Linux as my development environment and I can only use Windows at my workplace. With Vagrant, I can easily set up new Linux machine, install Vim plus all the plugins and completely separate development machine for each project.
-Today, I was trying to use Zeus to speed up my Rspec test inside one of the Rails projects."/>
 
-<meta property="og:title" content="Zeus inside Vagrant" />
-<meta property="og:description" content="I have been using Vagrant as my development environment for the last couple weeks. It has been very helpful as I prefer to use Linux as my development environment and I can only use Windows at my workplace. With Vagrant, I can easily set up new Linux machine, install Vim plus all the plugins and completely separate development machine for each project.
-Today, I was trying to use Zeus to speed up my Rspec test inside one of the Rails projects." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2013/09/13/zeus-inside-vagrant/" />
-<meta property="article:published_time" content="2013-09-13T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2013-09-13T00:00:00&#43;00:00"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Zeus inside Vagrant">
+  <meta name="twitter:description" content="I have been using Vagrant as my development environment for the last couple weeks. It has been very helpful as I prefer to use Linux as my development environment and I can only use Windows at my workplace. With Vagrant, I can easily set up new Linux machine, install Vim plus all the plugins and completely separate development machine for each project.
+Today, I was trying to use Zeus to speed up my Rspec test inside one of the Rails projects. I found this gem through a screencast by Ryan Bates about Fast Test.">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2013/09/13/zeus-inside-vagrant/">
+  <meta property="og:title" content="Zeus inside Vagrant">
+  <meta property="og:description" content="I have been using Vagrant as my development environment for the last couple weeks. It has been very helpful as I prefer to use Linux as my development environment and I can only use Windows at my workplace. With Vagrant, I can easily set up new Linux machine, install Vim plus all the plugins and completely separate development machine for each project.
+Today, I was trying to use Zeus to speed up my Rspec test inside one of the Rails projects. I found this gem through a screencast by Ryan Bates about Fast Test.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2013-09-13T00:00:00+00:00">
+    <meta property="article:modified_time" content="2013-09-13T00:00:00+00:00">
 
 
     
@@ -41,10 +45,10 @@ Today, I was trying to use Zeus to speed up my Rspec test inside one of the Rail
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -66,7 +70,7 @@ Today, I was trying to use Zeus to speed up my Rspec test inside one of the Rail
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -143,7 +147,7 @@ Today, I was trying to use Zeus to speed up my Rspec test inside one of the Rail
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -189,99 +193,97 @@ Today, I was trying to use Zeus to speed up my Rspec test inside one of the Rail
   
   <div class="post">
     <p>I have been using Vagrant as my development environment for the last couple weeks. It has been very helpful as I prefer to use Linux as my development environment and I can only use Windows at my workplace. With Vagrant, I can easily set up new Linux machine, install Vim plus all the plugins and completely separate development machine for each project.</p>
-
 <p>Today, I was trying to use Zeus to speed up my Rspec test inside one of the Rails projects. I found this gem through a screencast by Ryan Bates about Fast Test.</p>
-
 <p>Install Zeus is pretty easy, you just need to run this command on your terminal:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gem install zeus</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gem install zeus
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>After that you just need to go to the directory of your Rails app and start the Zeus server using this command:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</div><p>After that you just need to go to the directory of your Rails app and start the Zeus server using this command:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">zeus start</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>zeus start
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>However, when I got an error when I was trying to ran that command. Here is the error:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</div><p>However, when I got an error when I was trying to ran that command. Here is the error:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vagrant@precise32:/vagrant$ zeus start
-Starting Zeus server
-<span style="color:#f92672">[</span>ready<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>crashed<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>running<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>connecting<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>waiting<span style="color:#f92672">]</span>
-boot
-└── default_bundle
-    ├── development_environment
-    │   └── prerake
-    └── test_environment
-        ├── cucumber_environment
-        └── test_helper
-
-Available Commands: <span style="color:#f92672">[</span>waiting<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>crashed<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>ready<span style="color:#f92672">]</span>
-zeus rake
-zeus runner <span style="color:#f92672">(</span>alias: r<span style="color:#f92672">)</span>
-zeus console <span style="color:#f92672">(</span>alias: c<span style="color:#f92672">)</span>
-zeus server <span style="color:#f92672">(</span>alias: s<span style="color:#f92672">)</span>
-zeus generate <span style="color:#f92672">(</span>alias: g<span style="color:#f92672">)</span>
-zeus destroy <span style="color:#f92672">(</span>alias: d<span style="color:#f92672">)</span>
-zeus dbconsole
-zeus cucumber
-zeus test <span style="color:#f92672">(</span>alias: rspec, testrb<span style="color:#f92672">)</span>
-It looks like Zeus is already running. If not, remove .zeus.sock and try again.</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>vagrant@precise32:/vagrant$ zeus start
+</span></span><span style="display:flex;"><span>Starting Zeus server
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>ready<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>crashed<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>running<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>connecting<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>waiting<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>boot
+</span></span><span style="display:flex;"><span>└── default_bundle
+</span></span><span style="display:flex;"><span>    ├── development_environment
+</span></span><span style="display:flex;"><span>    │   └── prerake
+</span></span><span style="display:flex;"><span>    └── test_environment
+</span></span><span style="display:flex;"><span>        ├── cucumber_environment
+</span></span><span style="display:flex;"><span>        └── test_helper
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Available Commands: <span style="color:#f92672">[</span>waiting<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>crashed<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>ready<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>zeus rake
+</span></span><span style="display:flex;"><span>zeus runner <span style="color:#f92672">(</span>alias: r<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>zeus console <span style="color:#f92672">(</span>alias: c<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>zeus server <span style="color:#f92672">(</span>alias: s<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>zeus generate <span style="color:#f92672">(</span>alias: g<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>zeus destroy <span style="color:#f92672">(</span>alias: d<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>zeus dbconsole
+</span></span><span style="display:flex;"><span>zeus cucumber
+</span></span><span style="display:flex;"><span>zeus test <span style="color:#f92672">(</span>alias: rspec, testrb<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>It looks like Zeus is already running. If not, remove .zeus.sock and try again.
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>You can see on the last line that it&rsquo;s complaining something about .zeus.sock. The solution is pretty easy, you just need to add environment variable to your Vagrant machine. Use this command to add environment variable:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</div><p>You can see on the last line that it&rsquo;s complaining something about .zeus.sock. The solution is pretty easy, you just need to add environment variable to your Vagrant machine. Use this command to add environment variable:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">export ZEUSSOCK<span style="color:#f92672">=</span>/tmp/zeus.sock</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>export ZEUSSOCK<span style="color:#f92672">=</span>/tmp/zeus.sock
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Also make sure you use the latest version of Zeus. Add this line inside your Gemfile:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</div><p>Also make sure you use the latest version of Zeus. Add this line inside your Gemfile:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby"><span style="color:#75715e"># Use Zeus</span>
-gem <span style="color:#e6db74">&#39;zeus&#39;</span>, <span style="color:#e6db74">&#34;&gt;= 0.13.4.pre2&#34;</span></code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e"># Use Zeus</span>
+</span></span><span style="display:flex;"><span>gem <span style="color:#e6db74">&#39;zeus&#39;</span>, <span style="color:#e6db74">&#34;&gt;= 0.13.4.pre2&#34;</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Run &lsquo;bundle&rsquo; to install the gem and update the version. You should be able to run &lsquo;zeus start&rsquo; now and other Rails commands.</p>
+</div><p>Run &lsquo;bundle&rsquo; to install the gem and update the version. You should be able to run &lsquo;zeus start&rsquo; now and other Rails commands.</p>
 
   </div>
   
@@ -343,21 +345,6 @@ gem <span style="color:#e6db74">&#39;zeus&#39;</span>, <span style="color:#e6db7
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

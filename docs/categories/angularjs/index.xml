@@ -1,25 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AngularJS on </title>
     <link>https://www.rudylee.com/blog/categories/angularjs/</link>
     <description>Recent content in AngularJS on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 May 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.rudylee.com/blog/categories/angularjs/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://www.rudylee.com/blog/categories/angularjs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AngularJS Free Course by Code School</title>
       <link>https://www.rudylee.com/blog/2014/05/26/angularjs-free-course-by-code-school/</link>
       <pubDate>Mon, 26 May 2014 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rudylee.com/blog/2014/05/26/angularjs-free-course-by-code-school/</guid>
-      <description>I spent some time last weekend to run through the new AngularJS course by Code School. This course is sponsored by Google which means you don&amp;rsquo;t need to pay for the Code School membership to play this course. AngularJS is one of the popular Javascript frameworks to build single page app application. You might be familiar with other frameworks such as Ember.js, Backbone.js and Knockout.js.
-I really enjoyed the course and definitely learned something new from it.</description>
+      <description>&lt;p&gt;I spent some time last weekend to run through the new &lt;a href=&#34;https://www.codeschool.com/courses/shaping-up-with-angular-js&#34;&gt;AngularJS course by Code School&lt;/a&gt;. This course is sponsored by Google which means you don&amp;rsquo;t need to pay for the Code School membership to play this course. AngularJS is one of the popular Javascript frameworks to build single page app application. You might be familiar with other frameworks such as &lt;a href=&#34;http://emberjs.com/&#34;&gt;Ember.js&lt;/a&gt;, &lt;a href=&#34;http://backbonejs.org/&#34;&gt;Backbone.js&lt;/a&gt; and &lt;a href=&#34;http://knockoutjs.com/&#34;&gt;Knockout.js&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;I really enjoyed the course and definitely learned something new from it. It covers the basic concept about directives, services and dependecy injection. I didn&amp;rsquo;t understand those features when the first time I learned about AngularJS. In the beginning of learning AngularJS, I tended to copy and paste code without understanding the meaning behind it. This caused confusion when I tried to learn more about the framework.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

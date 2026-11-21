@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,18 +20,25 @@
 <title>Fixed static image path in Javascript using CakePHP • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Fixed static image path in Javascript using CakePHP"/>
-<meta name="twitter:description" content="Today I was encountered a problem within the static path for images in my Javascript file. So this was a design that given by my friend Budi, and he using a Jquery slider plugin in his design. Here are the original Javascript file that he gave me :
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143  // set up horizontal scroll var setupFeaturedBoxes = function () { var buttons = { previous: { enabled: &#39;/img/arrow1-left."/>
 
-<meta property="og:title" content="Fixed static image path in Javascript using CakePHP" />
-<meta property="og:description" content="Today I was encountered a problem within the static path for images in my Javascript file. So this was a design that given by my friend Budi, and he using a Jquery slider plugin in his design. Here are the original Javascript file that he gave me :
-1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143  // set up horizontal scroll var setupFeaturedBoxes = function () { var buttons = { previous: { enabled: &#39;/img/arrow1-left." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2010/11/10/fixed-static-image-path-in-javascript-using-cakephp/" />
-<meta property="article:published_time" content="2010-11-10T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2010-11-10T00:00:00&#43;00:00"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Fixed static image path in Javascript using CakePHP">
+  <meta name="twitter:description" content="Today I was encountered a problem within the static path for images in my Javascript file. So this was a design that given by my friend Budi, and he using a Jquery slider plugin in his design. Here are the original Javascript file that he gave me :
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 // set up horizontal scroll var setupFeaturedBoxes = function () { var buttons = { previous: { enabled: &#39;/img/arrow1-left.gif&#39;, hover: &#39;/img/arrow1-left.gif&#39; }, next: { enabled: &#39;/img/arrow1-right.gif&#39;, hover: &#39;/img/arrow1-right.gif&#39; } }; var featuredContentWidth = 121; var featuredContentScrollPrefs = { speed: 800, axis: &#39;x&#39; }; jQuery(&#39;.featuredBox&#39;).each( function (i) { var featuredBox = jQuery(this); featuredBox .find(&#39;.scrollArrow&#39;) .filter(&#39;.next&#39;) .hover( function () { jQuery(this) .attr( &#39;src&#39;, buttons.next.hover ) .css( &#39;cursor&#39;, &#39;pointer&#39; ); }, function () { jQuery(this) .attr( &#39;src&#39;, buttons.next.enabled ) .css( &#39;cursor&#39;, &#39;default&#39; ); } ) .click( function() { featuredBox.find(&#39;.featuredContent&#39;).scrollTo( &#39;&#43;=&#39; &#43; featuredContentWidth &#43; &#39;px&#39;, featuredContentScrollPrefs ); return false; }) .end() .filter(&#39;.prev&#39;) .hover( function () { jQuery(this) .attr( &#39;src&#39;, buttons.previous.hover ) .css( &#39;cursor&#39;, &#39;pointer&#39; ); }, function () { jQuery(this) .attr( &#39;src&#39;, buttons.previous.enabled ) .css( &#39;cursor&#39;, &#39;default&#39; ); } ) .click( function() { featuredBox.find(&#39;.featuredContent&#39;).scrollTo( &#39;-=&#39; &#43; featuredContentWidth &#43; &#39;px&#39;, featuredContentScrollPrefs ); return false; }); }); jQuery(&#39;.featuredBox .featuredContent .featuredDisplayDiv&#39;).each( function (i) { jQuery(this).css( &#39;width&#39;, ( featuredContentWidth * jQuery(this).find(&#39;ul li&#39;).size() ) &#43; &#39;px&#39; ); }); }; var setupFeaturedBoxes2 = function () { var buttons = { previous: { enabled: &#39;/img/arrow2-left.gif&#39;, hover: &#39;/img/arrow2-left.gif&#39; }, next: { enabled: &#39;/img/arrow2-right.gif&#39;, hover: &#39;/img/arrow2-right.gif&#39; } }; var featuredContentWidth2 = 172; var featuredContentScrollPrefs = { speed: 800, axis: &#39;x&#39; }; jQuery(&#39;.featuredBox2&#39;).each( function (i) { var featuredBox = jQuery(this); featuredBox .find(&#39;.scrollArrow&#39;) .filter(&#39;.next&#39;) .hover( function () { jQuery(this) .attr( &#39;src&#39;, buttons.next.hover ) .css( &#39;cursor&#39;, &#39;pointer&#39; ); }, function () { jQuery(this) .attr( &#39;src&#39;, buttons.next.enabled ) .css( &#39;cursor&#39;, &#39;default&#39; ); } ) .click( function() { featuredBox.find(&#39;.featuredContent2&#39;).scrollTo( &#39;&#43;=&#39; &#43; featuredContentWidth2 &#43; &#39;px&#39;, featuredContentScrollPrefs ); return false; }) .end() .filter(&#39;.prev&#39;) .hover( function () { jQuery(this) .attr( &#39;src&#39;, buttons.previous.hover ) .css( &#39;cursor&#39;, &#39;pointer&#39; ); }, function () { jQuery(this) .attr( &#39;src&#39;, buttons.previous.enabled ) .css( &#39;cursor&#39;, &#39;default&#39; ); } ) .click( function() { featuredBox.find(&#39;.featuredContent2&#39;).scrollTo( &#39;-=&#39; &#43; featuredContentWidth2 &#43; &#39;px&#39;, featuredContentScrollPrefs ); return false; }); }); jQuery(&#39;.featuredBox2 .featuredContent2 .featuredDisplayDiv2&#39;).each( function (i) { jQuery(this).css( &#39;width&#39;, ( featuredContentWidth2 * jQuery(this).find(&#39;ul li&#39;).size() ) &#43; &#39;px&#39; ); }); }; jQuery(document).ready(function(){ // set up horizontal scroll setupFeaturedBoxes(); setupFeaturedBoxes2(); }); As you can see at the line 5 there is an image path in which needed by the slider to load the image. Actually I can easily using the absolute path but if change the environment or the path then the image will be broken. So here come the Router class of CakePHP to the rescue.">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2010/11/10/fixed-static-image-path-in-javascript-using-cakephp/">
+  <meta property="og:title" content="Fixed static image path in Javascript using CakePHP">
+  <meta property="og:description" content="Today I was encountered a problem within the static path for images in my Javascript file. So this was a design that given by my friend Budi, and he using a Jquery slider plugin in his design. Here are the original Javascript file that he gave me :
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 // set up horizontal scroll var setupFeaturedBoxes = function () { var buttons = { previous: { enabled: &#39;/img/arrow1-left.gif&#39;, hover: &#39;/img/arrow1-left.gif&#39; }, next: { enabled: &#39;/img/arrow1-right.gif&#39;, hover: &#39;/img/arrow1-right.gif&#39; } }; var featuredContentWidth = 121; var featuredContentScrollPrefs = { speed: 800, axis: &#39;x&#39; }; jQuery(&#39;.featuredBox&#39;).each( function (i) { var featuredBox = jQuery(this); featuredBox .find(&#39;.scrollArrow&#39;) .filter(&#39;.next&#39;) .hover( function () { jQuery(this) .attr( &#39;src&#39;, buttons.next.hover ) .css( &#39;cursor&#39;, &#39;pointer&#39; ); }, function () { jQuery(this) .attr( &#39;src&#39;, buttons.next.enabled ) .css( &#39;cursor&#39;, &#39;default&#39; ); } ) .click( function() { featuredBox.find(&#39;.featuredContent&#39;).scrollTo( &#39;&#43;=&#39; &#43; featuredContentWidth &#43; &#39;px&#39;, featuredContentScrollPrefs ); return false; }) .end() .filter(&#39;.prev&#39;) .hover( function () { jQuery(this) .attr( &#39;src&#39;, buttons.previous.hover ) .css( &#39;cursor&#39;, &#39;pointer&#39; ); }, function () { jQuery(this) .attr( &#39;src&#39;, buttons.previous.enabled ) .css( &#39;cursor&#39;, &#39;default&#39; ); } ) .click( function() { featuredBox.find(&#39;.featuredContent&#39;).scrollTo( &#39;-=&#39; &#43; featuredContentWidth &#43; &#39;px&#39;, featuredContentScrollPrefs ); return false; }); }); jQuery(&#39;.featuredBox .featuredContent .featuredDisplayDiv&#39;).each( function (i) { jQuery(this).css( &#39;width&#39;, ( featuredContentWidth * jQuery(this).find(&#39;ul li&#39;).size() ) &#43; &#39;px&#39; ); }); }; var setupFeaturedBoxes2 = function () { var buttons = { previous: { enabled: &#39;/img/arrow2-left.gif&#39;, hover: &#39;/img/arrow2-left.gif&#39; }, next: { enabled: &#39;/img/arrow2-right.gif&#39;, hover: &#39;/img/arrow2-right.gif&#39; } }; var featuredContentWidth2 = 172; var featuredContentScrollPrefs = { speed: 800, axis: &#39;x&#39; }; jQuery(&#39;.featuredBox2&#39;).each( function (i) { var featuredBox = jQuery(this); featuredBox .find(&#39;.scrollArrow&#39;) .filter(&#39;.next&#39;) .hover( function () { jQuery(this) .attr( &#39;src&#39;, buttons.next.hover ) .css( &#39;cursor&#39;, &#39;pointer&#39; ); }, function () { jQuery(this) .attr( &#39;src&#39;, buttons.next.enabled ) .css( &#39;cursor&#39;, &#39;default&#39; ); } ) .click( function() { featuredBox.find(&#39;.featuredContent2&#39;).scrollTo( &#39;&#43;=&#39; &#43; featuredContentWidth2 &#43; &#39;px&#39;, featuredContentScrollPrefs ); return false; }) .end() .filter(&#39;.prev&#39;) .hover( function () { jQuery(this) .attr( &#39;src&#39;, buttons.previous.hover ) .css( &#39;cursor&#39;, &#39;pointer&#39; ); }, function () { jQuery(this) .attr( &#39;src&#39;, buttons.previous.enabled ) .css( &#39;cursor&#39;, &#39;default&#39; ); } ) .click( function() { featuredBox.find(&#39;.featuredContent2&#39;).scrollTo( &#39;-=&#39; &#43; featuredContentWidth2 &#43; &#39;px&#39;, featuredContentScrollPrefs ); return false; }); }); jQuery(&#39;.featuredBox2 .featuredContent2 .featuredDisplayDiv2&#39;).each( function (i) { jQuery(this).css( &#39;width&#39;, ( featuredContentWidth2 * jQuery(this).find(&#39;ul li&#39;).size() ) &#43; &#39;px&#39; ); }); }; jQuery(document).ready(function(){ // set up horizontal scroll setupFeaturedBoxes(); setupFeaturedBoxes2(); }); As you can see at the line 5 there is an image path in which needed by the slider to load the image. Actually I can easily using the absolute path but if change the environment or the path then the image will be broken. So here come the Router class of CakePHP to the rescue.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2010-11-10T00:00:00+00:00">
+    <meta property="article:modified_time" content="2010-11-10T00:00:00+00:00">
+    <meta property="article:tag" content="CakePHP">
+    <meta property="article:tag" content="Javascript">
+    <meta property="article:tag" content="Router">
 
 
     
@@ -41,10 +48,10 @@
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -66,7 +73,7 @@
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -143,7 +150,7 @@
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -205,620 +212,617 @@
   
   <div class="post">
     <p>Today I was encountered a problem within the static path for images in my Javascript file. So this was a design that given by my friend Budi, and he using a Jquery slider plugin in his design. Here are the original Javascript file that he gave me :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">// set up horizontal scroll
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">setupFeaturedBoxes</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
-  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">buttons</span> <span style="color:#f92672">=</span> {
-    <span style="color:#a6e22e">previous</span><span style="color:#f92672">:</span> {
-      <span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow1-left.gif&#39;</span>,
-      <span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow1-left.gif&#39;</span>
-    },
-    <span style="color:#a6e22e">next</span><span style="color:#f92672">:</span> {
-      <span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow1-right.gif&#39;</span>,
-      <span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow1-right.gif&#39;</span>
-    }
-  };
-
-  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">121</span>;
-  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentScrollPrefs</span> <span style="color:#f92672">=</span> {
-    <span style="color:#a6e22e">speed</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">800</span>,
-    <span style="color:#a6e22e">axis</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;x&#39;</span>
-  };
-
-<span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
-  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredBox</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>);
-  <span style="color:#a6e22e">featuredBox</span>
-  .<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.scrollArrow&#39;</span>)
-  .<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.next&#39;</span>)
-  .<span style="color:#a6e22e">hover</span>(
-  <span style="color:#66d9ef">function</span> () {
-  <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-    .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">hover</span> )
-    .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> );
-  },
-  <span style="color:#66d9ef">function</span> () {
-    <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-      .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">enabled</span> )
-      .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> );
-    }
-  )
-.<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
-  <span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
-  <span style="color:#e6db74">&#39;+=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
-  <span style="color:#a6e22e">featuredContentScrollPrefs</span>
-);
-  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-})
-.<span style="color:#a6e22e">end</span>()
-.<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.prev&#39;</span>)
-.<span style="color:#a6e22e">hover</span>(
-<span style="color:#66d9ef">function</span> () {
-  <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-    .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">hover</span> )
-    .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> );
-  },
-<span style="color:#66d9ef">function</span> () {
-<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-  .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">enabled</span> )
-  .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> );
-}
-)
-.<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
-<span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
-  <span style="color:#e6db74">&#39;-=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
-  <span style="color:#a6e22e">featuredContentScrollPrefs</span>
-);
-  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-});
-});
-  <span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox .featuredContent .featuredDisplayDiv&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
-  <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;width&#39;</span>, ( <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;ul li&#39;</span>).<span style="color:#a6e22e">size</span>() ) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span> );
-});
-};
-
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">setupFeaturedBoxes2</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">buttons</span> <span style="color:#f92672">=</span> {
-<span style="color:#a6e22e">previous</span><span style="color:#f92672">:</span> {
-  <span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow2-left.gif&#39;</span>,
-  <span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow2-left.gif&#39;</span>
-},
-<span style="color:#a6e22e">next</span><span style="color:#f92672">:</span> {
-  <span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow2-right.gif&#39;</span>,
-  <span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow2-right.gif&#39;</span>
-}
-};
-  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">172</span>;
-  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentScrollPrefs</span> <span style="color:#f92672">=</span> {
-    <span style="color:#a6e22e">speed</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">800</span>,
-    <span style="color:#a6e22e">axis</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;x&#39;</span>
-  };
-  <span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox2&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
-  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredBox</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>);
-  <span style="color:#a6e22e">featuredBox</span>
-  .<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.scrollArrow&#39;</span>)
-  .<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.next&#39;</span>)
-  .<span style="color:#a6e22e">hover</span>(
-  <span style="color:#66d9ef">function</span> () {
-    <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-      .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">hover</span> )
-      .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> );
-    },
-  <span style="color:#66d9ef">function</span> () {
-    <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-      .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">enabled</span> )
-      .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> );
-    }
-  )
-  .<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
-  <span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent2&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
-    <span style="color:#e6db74">&#39;+=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
-    <span style="color:#a6e22e">featuredContentScrollPrefs</span>
-  );
-    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-  })
-  .<span style="color:#a6e22e">end</span>()
-  .<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.prev&#39;</span>)
-  .<span style="color:#a6e22e">hover</span>(
-  <span style="color:#66d9ef">function</span> () {
-    <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-    .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">hover</span> )
-    .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> );
-  },
-  <span style="color:#66d9ef">function</span> () {
-    <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-      .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">enabled</span> )
-      .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> );
-    }
-  )
-  .<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
-    <span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent2&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
-      <span style="color:#e6db74">&#39;-=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
-      <span style="color:#a6e22e">featuredContentScrollPrefs</span>
-    );
-      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-    });
-  });
-  <span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox2 .featuredContent2 .featuredDisplayDiv2&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
-    <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;width&#39;</span>, ( <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;ul li&#39;</span>).<span style="color:#a6e22e">size</span>() ) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span> );
-  });
-};
-
-
-<span style="color:#a6e22e">jQuery</span>(document).<span style="color:#a6e22e">ready</span>(<span style="color:#66d9ef">function</span>(){
-  <span style="color:#75715e">// set up horizontal scroll
-</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">setupFeaturedBoxes</span>();
-  <span style="color:#a6e22e">setupFeaturedBoxes2</span>();
-});
-</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// set up horizontal scroll
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">setupFeaturedBoxes</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">buttons</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">previous</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow1-left.gif&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow1-left.gif&#39;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">next</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow1-right.gif&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow1-right.gif&#39;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">121</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentScrollPrefs</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">speed</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">800</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">axis</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;x&#39;</span>
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredBox</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">featuredBox</span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.scrollArrow&#39;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.next&#39;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">hover</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">hover</span> )
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> );
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>      .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">enabled</span> )
+</span></span><span style="display:flex;"><span>      .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> );
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;+=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">featuredContentScrollPrefs</span>
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>})
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">end</span>()
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.prev&#39;</span>)
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">hover</span>(
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">hover</span> )
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> );
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">enabled</span> )
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> );
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>)
+</span></span><span style="display:flex;"><span>.<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;-=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">featuredContentScrollPrefs</span>
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox .featuredContent .featuredDisplayDiv&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;width&#39;</span>, ( <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;ul li&#39;</span>).<span style="color:#a6e22e">size</span>() ) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span> );
+</span></span><span style="display:flex;"><span>});
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">setupFeaturedBoxes2</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">buttons</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">previous</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow2-left.gif&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow2-left.gif&#39;</span>
+</span></span><span style="display:flex;"><span>},
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">next</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow2-right.gif&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;/img/arrow2-right.gif&#39;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">172</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentScrollPrefs</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">speed</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">800</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">axis</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;x&#39;</span>
+</span></span><span style="display:flex;"><span>  };
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox2&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredBox</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">featuredBox</span>
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.scrollArrow&#39;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.next&#39;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">hover</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>      .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">hover</span> )
+</span></span><span style="display:flex;"><span>      .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> );
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>      .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">enabled</span> )
+</span></span><span style="display:flex;"><span>      .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> );
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent2&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;+=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">featuredContentScrollPrefs</span>
+</span></span><span style="display:flex;"><span>  );
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>  })
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">end</span>()
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.prev&#39;</span>)
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">hover</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">hover</span> )
+</span></span><span style="display:flex;"><span>    .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> );
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>      .<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">enabled</span> )
+</span></span><span style="display:flex;"><span>      .<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> );
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>  .<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent2&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;-=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">featuredContentScrollPrefs</span>
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox2 .featuredContent2 .featuredDisplayDiv2&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;width&#39;</span>, ( <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;ul li&#39;</span>).<span style="color:#a6e22e">size</span>() ) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span> );
+</span></span><span style="display:flex;"><span>  });
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">jQuery</span>(document).<span style="color:#a6e22e">ready</span>(<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// set up horizontal scroll
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  <span style="color:#a6e22e">setupFeaturedBoxes</span>();
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">setupFeaturedBoxes2</span>();
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>As you can see at the line 5 there is an image path in which needed by the slider to load the image. Actually I can easily using the absolute path but if change the environment or the path then the image will be broken. So here come the Router class of CakePHP to the rescue.</p>
-
+</div><p>As you can see at the line 5 there is an image path in which needed by the slider to load the image. Actually I can easily using the absolute path but if change the environment or the path then the image will be broken. So here come the Router class of CakePHP to the rescue.</p>
 <p>The idea is to change the Javascript file to PHP file and change the path to use the Router class. Here is the sample of my PHP file :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">144
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">145
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">146
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">147
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">148
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">149
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">150
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">151
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">152
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">153
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">154
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">155
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">  9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 36
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 37
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 38
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 39
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 40
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 41
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 42
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 43
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 44
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 45
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 46
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 47
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 48
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 49
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 50
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 51
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 52
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 53
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 54
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 55
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 56
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 57
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 58
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 59
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 60
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 61
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 62
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 63
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 64
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 65
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 66
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 67
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 68
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 69
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 70
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 71
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 72
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 73
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 74
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 75
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 76
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 77
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 78
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 79
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 80
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 81
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 82
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 83
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 84
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 85
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 86
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 87
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 88
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 89
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 90
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 91
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 92
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 93
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 94
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 95
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 96
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 97
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 98
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 99
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">100
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">101
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">102
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">103
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">104
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">105
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">106
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">107
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">108
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">109
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">110
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">111
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">112
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">113
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">114
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">115
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">116
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">117
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">118
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">119
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">120
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">121
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">122
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">123
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">124
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">125
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">126
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">127
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">128
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">129
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">130
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">131
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">132
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">133
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">134
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">135
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">136
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">137
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">138
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">139
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">140
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">141
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">142
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">143
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">144
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">145
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">146
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">147
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">148
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">149
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">150
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">151
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">152
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">153
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">154
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">155
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">language</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;JavaScript&#34;</span><span style="color:#f92672">&gt;</span>
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">setupFeaturedBoxes</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
-    	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">buttons</span> <span style="color:#f92672">=</span> {
-    		<span style="color:#a6e22e">previous</span><span style="color:#f92672">:</span> {
-    			<span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow1-left.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>,
-    			<span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow1-left.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>
-    		},
-    		<span style="color:#a6e22e">next</span><span style="color:#f92672">:</span> {
-    			<span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow1-right.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>,
-    			<span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow1-right.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>
-    		}
-    	};
-    	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">121</span>;
-    	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentScrollPrefs</span> <span style="color:#f92672">=</span> {
-    		<span style="color:#a6e22e">speed</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">800</span>,
-    		<span style="color:#a6e22e">axis</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;x&#39;</span>
-    	};
-    	<span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
-    		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredBox</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>);
-    		<span style="color:#a6e22e">featuredBox</span>
-    			.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.scrollArrow&#39;</span>)
-    				.<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.next&#39;</span>)
-    					.<span style="color:#a6e22e">hover</span>(
-    						<span style="color:#66d9ef">function</span> () {
-    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">hover</span> )
-    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> )
-    							;
-    						},
-    						<span style="color:#66d9ef">function</span> () {
-    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">enabled</span> )
-    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> )
-    							;
-    						}
-    					)
-    					.<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
-    						<span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
-    							<span style="color:#e6db74">&#39;+=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
-    							<span style="color:#a6e22e">featuredContentScrollPrefs</span>
-    						);
-    						<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-    					})
-    				.<span style="color:#a6e22e">end</span>()
-    				.<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.prev&#39;</span>)
-    					.<span style="color:#a6e22e">hover</span>(
-    						<span style="color:#66d9ef">function</span> () {
-    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">hover</span> )
-    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> )
-    							;
-    						},
-    						<span style="color:#66d9ef">function</span> () {
-    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">enabled</span> )
-    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> )
-    							;
-    						}
-    					)
-    					.<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
-    						<span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
-    							<span style="color:#e6db74">&#39;-=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
-    							<span style="color:#a6e22e">featuredContentScrollPrefs</span>
-    						);
-    						<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-    					})
-    		;
-    	});
-    	<span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox .featuredContent .featuredDisplayDiv&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
-    		<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;width&#39;</span>, ( <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;ul li&#39;</span>).<span style="color:#a6e22e">size</span>() ) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span> );
-    	});
-    };
-    
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">setupFeaturedBoxes2</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
-    	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">buttons</span> <span style="color:#f92672">=</span> {
-    		<span style="color:#a6e22e">previous</span><span style="color:#f92672">:</span> {
-    			<span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow2-left.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>,
-    			<span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow2-left.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>
-    		},
-    		<span style="color:#a6e22e">next</span><span style="color:#f92672">:</span> {
-    			<span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow2-right.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>,
-    			<span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow2-right.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>
-    		}
-    	};
-    	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">172</span>;
-    	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentScrollPrefs</span> <span style="color:#f92672">=</span> {
-    		<span style="color:#a6e22e">speed</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">800</span>,
-    		<span style="color:#a6e22e">axis</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;x&#39;</span>
-    	};
-    	<span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox2&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
-    		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredBox</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>);
-    		<span style="color:#a6e22e">featuredBox</span>
-    			.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.scrollArrow&#39;</span>)
-    				.<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.next&#39;</span>)
-    					.<span style="color:#a6e22e">hover</span>(
-    						<span style="color:#66d9ef">function</span> () {
-    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">hover</span> )
-    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> )
-    							;
-    						},
-    						<span style="color:#66d9ef">function</span> () {
-    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">enabled</span> )
-    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> )
-    							;
-    						}
-    					)
-    					.<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
-    						<span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent2&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
-    							<span style="color:#e6db74">&#39;+=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
-    							<span style="color:#a6e22e">featuredContentScrollPrefs</span>
-    						);
-    						<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-    					})
-    				.<span style="color:#a6e22e">end</span>()
-    				.<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.prev&#39;</span>)
-    					.<span style="color:#a6e22e">hover</span>(
-    						<span style="color:#66d9ef">function</span> () {
-    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">hover</span> )
-    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> )
-    							;
-    						},
-    						<span style="color:#66d9ef">function</span> () {
-    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
-    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">enabled</span> )
-    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> )
-    							;
-    						}
-    					)
-    					.<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
-    						<span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent2&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
-    							<span style="color:#e6db74">&#39;-=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
-    							<span style="color:#a6e22e">featuredContentScrollPrefs</span>
-    						);
-    						<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-    					})
-    		;
-    	});
-    	<span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox2 .featuredContent2 .featuredDisplayDiv2&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
-    		<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;width&#39;</span>, ( <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;ul li&#39;</span>).<span style="color:#a6e22e">size</span>() ) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span> );
-    	});
-    };
-    
-    
-    <span style="color:#a6e22e">jQuery</span>(document).<span style="color:#a6e22e">ready</span>(<span style="color:#66d9ef">function</span>(){
-    
-    
-    <span style="color:#75715e">// set up horizontal scroll
-</span><span style="color:#75715e"></span>    	<span style="color:#a6e22e">setupFeaturedBoxes</span>();
-    	<span style="color:#a6e22e">setupFeaturedBoxes2</span>();
-    
-    });
-<span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
-</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>    <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/javascript&#34;</span> <span style="color:#a6e22e">language</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;JavaScript&#34;</span><span style="color:#f92672">&gt;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">setupFeaturedBoxes</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">buttons</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    		<span style="color:#a6e22e">previous</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    			<span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow1-left.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>,
+</span></span><span style="display:flex;"><span>    			<span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow1-left.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>
+</span></span><span style="display:flex;"><span>    		},
+</span></span><span style="display:flex;"><span>    		<span style="color:#a6e22e">next</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    			<span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow1-right.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>,
+</span></span><span style="display:flex;"><span>    			<span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow1-right.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>
+</span></span><span style="display:flex;"><span>    		}
+</span></span><span style="display:flex;"><span>    	};
+</span></span><span style="display:flex;"><span>    	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">121</span>;
+</span></span><span style="display:flex;"><span>    	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentScrollPrefs</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    		<span style="color:#a6e22e">speed</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">800</span>,
+</span></span><span style="display:flex;"><span>    		<span style="color:#a6e22e">axis</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;x&#39;</span>
+</span></span><span style="display:flex;"><span>    	};
+</span></span><span style="display:flex;"><span>    	<span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
+</span></span><span style="display:flex;"><span>    		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredBox</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>);
+</span></span><span style="display:flex;"><span>    		<span style="color:#a6e22e">featuredBox</span>
+</span></span><span style="display:flex;"><span>    			.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.scrollArrow&#39;</span>)
+</span></span><span style="display:flex;"><span>    				.<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.next&#39;</span>)
+</span></span><span style="display:flex;"><span>    					.<span style="color:#a6e22e">hover</span>(
+</span></span><span style="display:flex;"><span>    						<span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">hover</span> )
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> )
+</span></span><span style="display:flex;"><span>    							;
+</span></span><span style="display:flex;"><span>    						},
+</span></span><span style="display:flex;"><span>    						<span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">enabled</span> )
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> )
+</span></span><span style="display:flex;"><span>    							;
+</span></span><span style="display:flex;"><span>    						}
+</span></span><span style="display:flex;"><span>    					)
+</span></span><span style="display:flex;"><span>    					.<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    						<span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
+</span></span><span style="display:flex;"><span>    							<span style="color:#e6db74">&#39;+=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
+</span></span><span style="display:flex;"><span>    							<span style="color:#a6e22e">featuredContentScrollPrefs</span>
+</span></span><span style="display:flex;"><span>    						);
+</span></span><span style="display:flex;"><span>    						<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>    					})
+</span></span><span style="display:flex;"><span>    				.<span style="color:#a6e22e">end</span>()
+</span></span><span style="display:flex;"><span>    				.<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.prev&#39;</span>)
+</span></span><span style="display:flex;"><span>    					.<span style="color:#a6e22e">hover</span>(
+</span></span><span style="display:flex;"><span>    						<span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">hover</span> )
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> )
+</span></span><span style="display:flex;"><span>    							;
+</span></span><span style="display:flex;"><span>    						},
+</span></span><span style="display:flex;"><span>    						<span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">enabled</span> )
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> )
+</span></span><span style="display:flex;"><span>    							;
+</span></span><span style="display:flex;"><span>    						}
+</span></span><span style="display:flex;"><span>    					)
+</span></span><span style="display:flex;"><span>    					.<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    						<span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
+</span></span><span style="display:flex;"><span>    							<span style="color:#e6db74">&#39;-=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
+</span></span><span style="display:flex;"><span>    							<span style="color:#a6e22e">featuredContentScrollPrefs</span>
+</span></span><span style="display:flex;"><span>    						);
+</span></span><span style="display:flex;"><span>    						<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>    					})
+</span></span><span style="display:flex;"><span>    		;
+</span></span><span style="display:flex;"><span>    	});
+</span></span><span style="display:flex;"><span>    	<span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox .featuredContent .featuredDisplayDiv&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
+</span></span><span style="display:flex;"><span>    		<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;width&#39;</span>, ( <span style="color:#a6e22e">featuredContentWidth</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;ul li&#39;</span>).<span style="color:#a6e22e">size</span>() ) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span> );
+</span></span><span style="display:flex;"><span>    	});
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">setupFeaturedBoxes2</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">buttons</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    		<span style="color:#a6e22e">previous</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    			<span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow2-left.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>,
+</span></span><span style="display:flex;"><span>    			<span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow2-left.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>
+</span></span><span style="display:flex;"><span>    		},
+</span></span><span style="display:flex;"><span>    		<span style="color:#a6e22e">next</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    			<span style="color:#a6e22e">enabled</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow2-right.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>,
+</span></span><span style="display:flex;"><span>    			<span style="color:#a6e22e">hover</span><span style="color:#f92672">:</span> <span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/img/arrow2-right.gif&#39;</span>)<span style="color:#f92672">?&gt;</span>
+</span></span><span style="display:flex;"><span>    		}
+</span></span><span style="display:flex;"><span>    	};
+</span></span><span style="display:flex;"><span>    	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">172</span>;
+</span></span><span style="display:flex;"><span>    	<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredContentScrollPrefs</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    		<span style="color:#a6e22e">speed</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">800</span>,
+</span></span><span style="display:flex;"><span>    		<span style="color:#a6e22e">axis</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;x&#39;</span>
+</span></span><span style="display:flex;"><span>    	};
+</span></span><span style="display:flex;"><span>    	<span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox2&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
+</span></span><span style="display:flex;"><span>    		<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">featuredBox</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>);
+</span></span><span style="display:flex;"><span>    		<span style="color:#a6e22e">featuredBox</span>
+</span></span><span style="display:flex;"><span>    			.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.scrollArrow&#39;</span>)
+</span></span><span style="display:flex;"><span>    				.<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.next&#39;</span>)
+</span></span><span style="display:flex;"><span>    					.<span style="color:#a6e22e">hover</span>(
+</span></span><span style="display:flex;"><span>    						<span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">hover</span> )
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> )
+</span></span><span style="display:flex;"><span>    							;
+</span></span><span style="display:flex;"><span>    						},
+</span></span><span style="display:flex;"><span>    						<span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">next</span>.<span style="color:#a6e22e">enabled</span> )
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> )
+</span></span><span style="display:flex;"><span>    							;
+</span></span><span style="display:flex;"><span>    						}
+</span></span><span style="display:flex;"><span>    					)
+</span></span><span style="display:flex;"><span>    					.<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    						<span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent2&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
+</span></span><span style="display:flex;"><span>    							<span style="color:#e6db74">&#39;+=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
+</span></span><span style="display:flex;"><span>    							<span style="color:#a6e22e">featuredContentScrollPrefs</span>
+</span></span><span style="display:flex;"><span>    						);
+</span></span><span style="display:flex;"><span>    						<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>    					})
+</span></span><span style="display:flex;"><span>    				.<span style="color:#a6e22e">end</span>()
+</span></span><span style="display:flex;"><span>    				.<span style="color:#a6e22e">filter</span>(<span style="color:#e6db74">&#39;.prev&#39;</span>)
+</span></span><span style="display:flex;"><span>    					.<span style="color:#a6e22e">hover</span>(
+</span></span><span style="display:flex;"><span>    						<span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">hover</span> )
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;pointer&#39;</span> )
+</span></span><span style="display:flex;"><span>    							;
+</span></span><span style="display:flex;"><span>    						},
+</span></span><span style="display:flex;"><span>    						<span style="color:#66d9ef">function</span> () {
+</span></span><span style="display:flex;"><span>    							<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>)
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">attr</span>( <span style="color:#e6db74">&#39;src&#39;</span>, <span style="color:#a6e22e">buttons</span>.<span style="color:#a6e22e">previous</span>.<span style="color:#a6e22e">enabled</span> )
+</span></span><span style="display:flex;"><span>    								.<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;cursor&#39;</span>, <span style="color:#e6db74">&#39;default&#39;</span> )
+</span></span><span style="display:flex;"><span>    							;
+</span></span><span style="display:flex;"><span>    						}
+</span></span><span style="display:flex;"><span>    					)
+</span></span><span style="display:flex;"><span>    					.<span style="color:#a6e22e">click</span>( <span style="color:#66d9ef">function</span>() {
+</span></span><span style="display:flex;"><span>    						<span style="color:#a6e22e">featuredBox</span>.<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;.featuredContent2&#39;</span>).<span style="color:#a6e22e">scrollTo</span>(
+</span></span><span style="display:flex;"><span>    							<span style="color:#e6db74">&#39;-=&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span>,
+</span></span><span style="display:flex;"><span>    							<span style="color:#a6e22e">featuredContentScrollPrefs</span>
+</span></span><span style="display:flex;"><span>    						);
+</span></span><span style="display:flex;"><span>    						<span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>    					})
+</span></span><span style="display:flex;"><span>    		;
+</span></span><span style="display:flex;"><span>    	});
+</span></span><span style="display:flex;"><span>    	<span style="color:#a6e22e">jQuery</span>(<span style="color:#e6db74">&#39;.featuredBox2 .featuredContent2 .featuredDisplayDiv2&#39;</span>).<span style="color:#a6e22e">each</span>( <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">i</span>) {
+</span></span><span style="display:flex;"><span>    		<span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">css</span>( <span style="color:#e6db74">&#39;width&#39;</span>, ( <span style="color:#a6e22e">featuredContentWidth2</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">jQuery</span>(<span style="color:#66d9ef">this</span>).<span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;ul li&#39;</span>).<span style="color:#a6e22e">size</span>() ) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;px&#39;</span> );
+</span></span><span style="display:flex;"><span>    	});
+</span></span><span style="display:flex;"><span>    };
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">jQuery</span>(document).<span style="color:#a6e22e">ready</span>(<span style="color:#66d9ef">function</span>(){
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// set up horizontal scroll
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    	<span style="color:#a6e22e">setupFeaturedBoxes</span>();
+</span></span><span style="display:flex;"><span>    	<span style="color:#a6e22e">setupFeaturedBoxes2</span>();
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>As you can see I just change the image path to . I don&rsquo;t know if this is the best solution or not, but for now it&rsquo;s the simplest :D</p>
+</div><p>As you can see I just change the image path to . I don&rsquo;t know if this is the best solution or not, but for now it&rsquo;s the simplest :D</p>
 
   </div>
   
@@ -880,21 +884,6 @@
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

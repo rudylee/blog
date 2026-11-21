@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,18 +20,28 @@
 <title>Group select box di CakePHP • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Group select box di CakePHP"/>
-<meta name="twitter:description" content="Grouping di dalam select box adalah hal yang gampang ketika kita menggunakan codingan php biasa, tetapi kalau sudah masuk ke dalam codingan CakePHP kita harus banyak membaca documentation untuk teknik2nya, tickets jika ada yang pernah menanyakan hal yang sama dan tentu saja API agar kita tahu fungsi dari method yang akan kita pakai.
-Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam gambar di bawah ini : [caption id=&ldquo;&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;217&rdquo; caption=&ldquo;CakePHP Group Select&rdquo;][/caption]"/>
 
-<meta property="og:title" content="Group select box di CakePHP" />
-<meta property="og:description" content="Grouping di dalam select box adalah hal yang gampang ketika kita menggunakan codingan php biasa, tetapi kalau sudah masuk ke dalam codingan CakePHP kita harus banyak membaca documentation untuk teknik2nya, tickets jika ada yang pernah menanyakan hal yang sama dan tentu saja API agar kita tahu fungsi dari method yang akan kita pakai.
-Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam gambar di bawah ini : [caption id=&ldquo;&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;217&rdquo; caption=&ldquo;CakePHP Group Select&rdquo;][/caption]" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2009/11/02/group-select-box-di-cakephp/" />
-<meta property="article:published_time" content="2009-11-02T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2009-11-02T00:00:00&#43;00:00"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Group select box di CakePHP">
+  <meta name="twitter:description" content="Grouping di dalam select box adalah hal yang gampang ketika kita menggunakan codingan php biasa, tetapi kalau sudah masuk ke dalam codingan CakePHP kita harus banyak membaca documentation untuk teknik2nya, tickets jika ada yang pernah menanyakan hal yang sama dan tentu saja API agar kita tahu fungsi dari method yang akan kita pakai.
+Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam gambar di bawah ini : [caption id=&#34;&#34; align=“alignnone” width=“217” caption=“CakePHP Group Select”] [/caption]">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2009/11/02/group-select-box-di-cakephp/">
+  <meta property="og:title" content="Group select box di CakePHP">
+  <meta property="og:description" content="Grouping di dalam select box adalah hal yang gampang ketika kita menggunakan codingan php biasa, tetapi kalau sudah masuk ke dalam codingan CakePHP kita harus banyak membaca documentation untuk teknik2nya, tickets jika ada yang pernah menanyakan hal yang sama dan tentu saja API agar kita tahu fungsi dari method yang akan kita pakai.
+Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam gambar di bawah ini : [caption id=&#34;&#34; align=“alignnone” width=“217” caption=“CakePHP Group Select”] [/caption]">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2009-11-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2009-11-02T00:00:00+00:00">
+    <meta property="article:tag" content="Cake">
+    <meta property="article:tag" content="Cake-Select-Box">
+    <meta property="article:tag" content="CakePHP">
+    <meta property="article:tag" content="Coding">
+    <meta property="article:tag" content="Helper">
+    <meta property="article:tag" content="PHP">
 
 
     
@@ -41,10 +51,10 @@ Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam g
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -66,7 +76,7 @@ Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam g
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -143,7 +153,7 @@ Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam g
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -187,7 +197,7 @@ Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam g
           <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/cake">cake</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/cake-select-box">cake select box</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/cake-select-box">cake-select-box</a>
            
       
           <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/cakephp">cakephp</a>
@@ -202,7 +212,7 @@ Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam g
           <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/php">php</a>
            
       
-          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/setcombine">set::combine</a>
+          <a class="badge badge-tag" href="https://www.rudylee.com/blog/tags/set-combine">set-combine</a>
           
       
     
@@ -217,78 +227,84 @@ Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam g
   
   <div class="post">
     <p>Grouping di dalam select box adalah hal yang gampang ketika kita menggunakan codingan php biasa, tetapi kalau sudah masuk ke dalam codingan CakePHP kita harus banyak membaca documentation untuk teknik2nya, tickets jika ada yang pernah menanyakan hal yang sama dan tentu saja API agar kita tahu fungsi dari method yang akan kita pakai.</p>
-
 <p>Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam gambar di bawah ini :
-[caption id=&ldquo;&rdquo; align=&ldquo;alignnone&rdquo; width=&ldquo;217&rdquo; caption=&ldquo;CakePHP Group Select&rdquo;]<img src="http://blog.rudylee.com/content/group-select-box.jpg" alt="CakePHP Group Select" />[/caption]</p>
-
+[caption id=&quot;&quot; align=&ldquo;alignnone&rdquo; width=&ldquo;217&rdquo; caption=&ldquo;CakePHP Group Select&rdquo;]<img src="http://blog.rudylee.com/content/group-select-box.jpg" alt="CakePHP Group Select">
+[/caption]</p>
 <p>Di dalam contoh diatas gwa menggunakan 3 buah table di antaranya table majors ( jurusan ), table faculties ( fakultas ) dan table levels ( untuk pembagian apakah dia D3/S1 ). Hal pertama yang harus kita lakukan adalah men-query isi table dari majors ( dalam hal ini gwa menggunakan ClassRegistry karena table majors tidak ada relation dengan controller gwa ) :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$majors = ClassRegistry::init(&#34;Major&#34;)-&gt;find(&#34;all&#34;);</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$majors <span style="color:#f92672">=</span> <span style="color:#a6e22e">ClassRegistry</span><span style="color:#f92672">::</span><span style="color:#a6e22e">init</span>(<span style="color:#e6db74">&#34;Major&#34;</span>)<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#34;all&#34;</span>);
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>atau kalau punya relation / berada dalam controller sendiri</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</div><p>atau kalau punya relation / berada dalam controller sendiri</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$majors = $this-&gt;Major-&gt;find(&#34;all&#34;);</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$majors <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">Major</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#34;all&#34;</span>);
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Kemudian kita akan menggabungkan hasil query tersebut dan menyusunnya menjadi array yang jika kita masukkan ke dalam form helper maka akan secara otomatis menjadi select box yang tergroup. Kita akan menggunakan bantuan Set::combine untuk melakukan hal tersebut. Berikut contoh codingannya :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</div><p>Kemudian kita akan menggabungkan hasil query tersebut dan menyusunnya menjadi array yang jika kita masukkan ke dalam form helper maka akan secara otomatis menjadi select box yang tergroup. Kita akan menggunakan bantuan Set::combine untuk melakukan hal tersebut. Berikut contoh codingannya :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$majorsCombine = Set::combine($majors, &#34;{n}.Major.id&#34;, array(&#34;%s - %s&#34;,
-&#34;{n}.Level.name&#34;, &#34;{n}.Major.name&#34;), &#34;{n}.Faculty.name&#34;); </code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$majorsCombine <span style="color:#f92672">=</span> <span style="color:#a6e22e">Set</span><span style="color:#f92672">::</span><span style="color:#a6e22e">combine</span>($majors, <span style="color:#e6db74">&#34;{n}.Major.id&#34;</span>, <span style="color:#66d9ef">array</span>(<span style="color:#e6db74">&#34;%s - %s&#34;</span>,
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;{n}.Level.name&#34;</span>, <span style="color:#e6db74">&#34;{n}.Major.name&#34;</span>), <span style="color:#e6db74">&#34;{n}.Faculty.name&#34;</span>); 
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>untuk penjelasan parameternya dapat dilihat di API CakePHP : <a href="http://api.cakephp.org/class/set#method-Setcombine">API CakePHP</a></p>
-
+</div><p>untuk penjelasan parameternya dapat dilihat di API CakePHP : <!-- raw HTML omitted -->API CakePHP<!-- raw HTML omitted --></p>
 <p>sedikit penjelasan tentang parameter yang gwa gunakan yaitu :</p>
-
 <ul>
-<li><p>$majorsCombine <em>Nama variable penampung.</em></p></li>
-
-<li><p>Set::combine <em>Nama method yang kita gunakan.</em></p></li>
-
-<li><p>$majors <em>Sumber data kita</em></p></li>
-
-<li><p>{n}.Major.id <em>Path pertama atau biasanya nilai dari select box kita</em></p></li>
-
-<li><p>array(&lsquo;%s - %s&rsquo;,&lsquo;{n}.Level.name&rsquo;, &lsquo;{n}.Major.name&rsquo;) <em>Kalau ini path kedua yang berfungsi sebagai label dari isi select box kita, jika dilihat itu isinya ada level dan major jadi nanti keluarnya ( S1 - Teknik Informatika )</em></p></li>
-
-<li><p>{n}.Faculty.name&rsquo; <em>ini nama groupnya</em></p></li>
+<li>
+<p>$majorsCombine <em>Nama variable penampung.</em></p>
+</li>
+<li>
+<p>Set::combine <em>Nama method yang kita gunakan.</em></p>
+</li>
+<li>
+<p>$majors <em>Sumber data kita</em></p>
+</li>
+<li>
+<p>{n}.Major.id <em>Path pertama atau biasanya nilai dari select box kita</em></p>
+</li>
+<li>
+<p>array(&rsquo;%s - %s&rsquo;,&rsquo;{n}.Level.name&rsquo;, &lsquo;{n}.Major.name&rsquo;) <em>Kalau ini path kedua yang berfungsi sebagai label dari isi select box kita, jika dilihat itu isinya ada level dan major jadi nanti keluarnya ( S1 - Teknik Informatika )</em></p>
+</li>
+<li>
+<p>{n}.Faculty.name&rsquo; <em>ini nama groupnya</em></p>
+</li>
 </ul>
-
 <p>Selanjutnya tinggal digunakan saja di viewnya seperti ini :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$form-&gt;select(&#34;nama-form&#34;,$majorsCombine,null,null,&#34;-- Pilih Jurusan Pertama --&#34;); ?&gt;</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$form<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">select</span>(<span style="color:#e6db74">&#34;nama-form&#34;</span>,$majorsCombine,<span style="color:#66d9ef">null</span>,<span style="color:#66d9ef">null</span>,<span style="color:#e6db74">&#34;-- Pilih Jurusan Pertama --&#34;</span>); <span style="color:#75715e">?&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span></span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Penjelasannya kira-kira begini :</p>
-
+</div><p>Penjelasannya kira-kira begini :</p>
 <ul>
-<li><p>$form-&gt;select <em>ini form helper yang kita gunakan</em></p></li>
-
-<li><p>nama-form <em>nama form helper yang kita gunakan</em></p></li>
-
-<li><p>$majorsCombine <em>sumber data</em></p></li>
-
-<li><p>null,null,&lsquo;&ndash; Pilih Jurusan Pertama &ndash; <em>parameter tambahan lagi</em></p></li>
+<li>
+<p>$form-&gt;select <em>ini form helper yang kita gunakan</em></p>
+</li>
+<li>
+<p>nama-form <em>nama form helper yang kita gunakan</em></p>
+</li>
+<li>
+<p>$majorsCombine <em>sumber data</em></p>
+</li>
+<li>
+<p>null,null,&rsquo;&ndash; Pilih Jurusan Pertama &ndash; <em>parameter tambahan lagi</em></p>
+</li>
 </ul>
-
 <p>Semoga membantu, silakan dicoba.. kalau ga jalan, dicoba lagi, kalau ga jalan juga ya sudah terima nasih aja :D</p>
 
   </div>
@@ -351,21 +367,6 @@ Jadi sekarang kita akan membuat sebuah grouping dalam select box seperti dalam g
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

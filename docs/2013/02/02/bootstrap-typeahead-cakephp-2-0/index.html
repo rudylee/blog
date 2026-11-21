@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,20 +20,24 @@
 <title>Bootstrap Typeahead CakePHP 2.0 • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Bootstrap Typeahead CakePHP 2.0"/>
-<meta name="twitter:description" content="Demo : http://cbunny2.rudylee.com/users/typeahead Source : https://github.com/rudylee/cbunny
-In this post, I&rsquo;ll explain how to integrate Twitter Bootstrap Typeahead with your CakePHP 2.0 application. We will avoid using helpers or plugins and stick with plain Javascript &#43; jQuery. Make sure you have include jQuery, Bootstrap CSS and Bootstrap Javascript files in your CakePHP application. You can simply do it inside your default.ctp file ( the files are bootstrap.min.js and bootstrap.min.css ).
-After that we will create controller, action and view to put our input box."/>
 
-<meta property="og:title" content="Bootstrap Typeahead CakePHP 2.0" />
-<meta property="og:description" content="Demo : http://cbunny2.rudylee.com/users/typeahead Source : https://github.com/rudylee/cbunny
-In this post, I&rsquo;ll explain how to integrate Twitter Bootstrap Typeahead with your CakePHP 2.0 application. We will avoid using helpers or plugins and stick with plain Javascript &#43; jQuery. Make sure you have include jQuery, Bootstrap CSS and Bootstrap Javascript files in your CakePHP application. You can simply do it inside your default.ctp file ( the files are bootstrap.min.js and bootstrap.min.css ).
-After that we will create controller, action and view to put our input box." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2-0/" />
-<meta property="article:published_time" content="2013-02-02T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2013-02-02T00:00:00&#43;00:00"/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bootstrap Typeahead CakePHP 2.0">
+  <meta name="twitter:description" content="Demo : http://cbunny2.rudylee.com/users/typeahead Source : https://github.com/rudylee/cbunny
+In this post, I’ll explain how to integrate Twitter Bootstrap Typeahead with your CakePHP 2.0 application. We will avoid using helpers or plugins and stick with plain Javascript &#43; jQuery. Make sure you have include jQuery, Bootstrap CSS and Bootstrap Javascript files in your CakePHP application. You can simply do it inside your default.ctp file ( the files are bootstrap.min.js and bootstrap.min.css ).
+After that we will create controller, action and view to put our input box. In this tutorial I’ll use my Cbunny application and Users controller. I’ll start by creating typeahead action, here is the code :">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2013/02/02/bootstrap-typeahead-cakephp-2-0/">
+  <meta property="og:title" content="Bootstrap Typeahead CakePHP 2.0">
+  <meta property="og:description" content="Demo : http://cbunny2.rudylee.com/users/typeahead Source : https://github.com/rudylee/cbunny
+In this post, I’ll explain how to integrate Twitter Bootstrap Typeahead with your CakePHP 2.0 application. We will avoid using helpers or plugins and stick with plain Javascript &#43; jQuery. Make sure you have include jQuery, Bootstrap CSS and Bootstrap Javascript files in your CakePHP application. You can simply do it inside your default.ctp file ( the files are bootstrap.min.js and bootstrap.min.css ).
+After that we will create controller, action and view to put our input box. In this tutorial I’ll use my Cbunny application and Users controller. I’ll start by creating typeahead action, here is the code :">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2013-02-02T00:00:00+00:00">
+    <meta property="article:modified_time" content="2013-02-02T00:00:00+00:00">
 
 
     
@@ -43,10 +47,10 @@ After that we will create controller, action and view to put our input box." />
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -68,7 +72,7 @@ After that we will create controller, action and view to put our input box." />
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -145,7 +149,7 @@ After that we will create controller, action and view to put our input box." />
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -190,206 +194,203 @@ After that we will create controller, action and view to put our input box." />
   
   
   <div class="post">
-    <p>Demo : <a href="http://cbunny2.rudylee.com/users/typeahead">http://cbunny2.rudylee.com/users/typeahead</a>
+    <h2 id="heading"></h2>
+<p>Demo : <a href="http://cbunny2.rudylee.com/users/typeahead">http://cbunny2.rudylee.com/users/typeahead</a>
 Source : <a href="https://github.com/rudylee/cbunny">https://github.com/rudylee/cbunny</a></p>
-
 <p>In this post, I&rsquo;ll explain how to integrate Twitter Bootstrap Typeahead with your CakePHP 2.0 application. We will avoid using helpers or plugins and stick with plain Javascript + jQuery. Make sure you have include jQuery, Bootstrap CSS and Bootstrap Javascript files in your CakePHP application. You can simply do it inside your default.ctp file ( the files are bootstrap.min.js and bootstrap.min.css ).</p>
-
 <p>After that we will create controller, action and view to put our input box. In this tutorial I&rsquo;ll use my Cbunny application and Users controller. I&rsquo;ll start by creating typeahead action, here is the code :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">public function typeahead() {
-    $this-&gt;User-&gt;recursive = 0;
-    $this-&gt;set(&#39;users&#39;, $this-&gt;paginate());       
-}</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">typeahead</span>() {
+</span></span><span style="display:flex;"><span>    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">User</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">recursive</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;users&#39;</span>, $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">paginate</span>());       
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Nothing special happening rather than get current users from the table and paginate them. And here is the view :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</div><p>Nothing special happening rather than get current users from the table and paginate them. And here is the view :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;span12&#34;</span>&gt;
-
-    <span style="color:#75715e">&lt;!-- Typeahead Auto Complete --&gt;</span>
-    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pull-right&#34;</span>&gt;
-        &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">data-provide</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;typeahead&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;user-typeahead&#34;</span>&gt;
-    &lt;/<span style="color:#f92672">div</span>&gt;
-
-    &lt;<span style="color:#f92672">h2</span>&gt;<span style="color:#75715e">&lt;?php echo __(&#39;Users&#39;);?&gt;</span>&lt;/<span style="color:#f92672">h2</span>&gt;
-    &lt;<span style="color:#f92672">table</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;table&#34;</span><span style="color:#a6e22e">cellpadding</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">cellspacing</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>&gt;
-        &lt;<span style="color:#f92672">thead</span>&gt;
-            &lt;<span style="color:#f92672">tr</span>&gt;
-                &lt;<span style="color:#f92672">th</span>&gt;<span style="color:#75715e">&lt;?php echo $this-&gt;Paginator-&gt;sort(&#39;id&#39;);?&gt;</span>&lt;/<span style="color:#f92672">th</span>&gt;
-                &lt;<span style="color:#f92672">th</span>&gt;<span style="color:#75715e">&lt;?php echo $this-&gt;Paginator-&gt;sort(&#39;username&#39;);?&gt;</span>&lt;/<span style="color:#f92672">th</span>&gt;
-                &lt;<span style="color:#f92672">th</span>&gt;<span style="color:#75715e">&lt;?php echo $this-&gt;Paginator-&gt;sort(&#39;password&#39;);?&gt;</span>&lt;/<span style="color:#f92672">th</span>&gt;
-                &lt;<span style="color:#f92672">th</span>&gt;<span style="color:#75715e">&lt;?php echo $this-&gt;Paginator-&gt;sort(&#39;created&#39;);?&gt;</span>&lt;/<span style="color:#f92672">th</span>&gt;
-                &lt;<span style="color:#f92672">th</span>&gt;<span style="color:#75715e">&lt;?php echo $this-&gt;Paginator-&gt;sort(&#39;modified&#39;);?&gt;</span>&lt;/<span style="color:#f92672">th</span>&gt;
-                &lt;<span style="color:#f92672">th</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;actions&#34;</span>&gt;<span style="color:#75715e">&lt;?php echo __(&#39;Actions&#39;);?&gt;</span>&lt;/<span style="color:#f92672">th</span>&gt;
-            &lt;/<span style="color:#f92672">tr</span>&gt;
-        &lt;/<span style="color:#f92672">thead</span>&gt;
-        &lt;<span style="color:#f92672">tbody</span>&gt;
-            <span style="color:#75715e">&lt;?php foreach ($users as $user): ?&gt;</span>
-            &lt;<span style="color:#f92672">tr</span>&gt;
-                &lt;<span style="color:#f92672">td</span>&gt;<span style="color:#75715e">&lt;?php echo h($user[&#39;User&#39;][&#39;id&#39;]); ?&gt;</span> &lt;/<span style="color:#f92672">td</span>&gt;
-                &lt;<span style="color:#f92672">td</span>&gt;<span style="color:#75715e">&lt;?php echo h($user[&#39;User&#39;][&#39;username&#39;]); ?&gt;</span> &lt;/<span style="color:#f92672">td</span>&gt;
-                &lt;<span style="color:#f92672">td</span>&gt;<span style="color:#75715e">&lt;?php echo h($user[&#39;User&#39;][&#39;password&#39;]); ?&gt;</span> &lt;/<span style="color:#f92672">td</span>&gt;
-                &lt;<span style="color:#f92672">td</span>&gt;<span style="color:#75715e">&lt;?php echo h($user[&#39;User&#39;][&#39;created&#39;]); ?&gt;</span> &lt;/<span style="color:#f92672">td</span>&gt;
-                &lt;<span style="color:#f92672">td</span>&gt;<span style="color:#75715e">&lt;?php echo h($user[&#39;User&#39;][&#39;modified&#39;]); ?&gt;</span> &lt;/<span style="color:#f92672">td</span>&gt;
-                &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;actions&#34;</span>&gt;
-                    <span style="color:#75715e">&lt;?php echo $this-&gt;Html-&gt;link(__(&#39;View&#39;), array(&#39;action&#39; =&gt; &#39;view&#39;, $user[&#39;User&#39;][&#39;id&#39;])); ?&gt;</span>
-                &lt;/<span style="color:#f92672">td</span>&gt;
-            &lt;/<span style="color:#f92672">tr</span>&gt;
-            <span style="color:#75715e">&lt;?php endforeach; ?&gt;</span>
-        &lt;/<span style="color:#f92672">tbody</span>&gt;
-    &lt;/<span style="color:#f92672">table</span>&gt;
-&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;row&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;span12&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">&lt;!-- Typeahead Auto Complete --&gt;</span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;pull-right&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">input</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text&#34;</span> <span style="color:#a6e22e">data-provide</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;typeahead&#34;</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;user-typeahead&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">div</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h2</span>&gt;<span style="color:#75715e">&lt;?php echo __(&#39;Users&#39;);?&gt;</span>&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">table</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;table&#34;</span><span style="color:#a6e22e">cellpadding</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span> <span style="color:#a6e22e">cellspacing</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;0&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">thead</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">th</span>&gt;<span style="color:#75715e">&lt;?php echo $this-&gt;Paginator-&gt;sort(&#39;id&#39;);?&gt;</span>&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">th</span>&gt;<span style="color:#75715e">&lt;?php echo $this-&gt;Paginator-&gt;sort(&#39;username&#39;);?&gt;</span>&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">th</span>&gt;<span style="color:#75715e">&lt;?php echo $this-&gt;Paginator-&gt;sort(&#39;password&#39;);?&gt;</span>&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">th</span>&gt;<span style="color:#75715e">&lt;?php echo $this-&gt;Paginator-&gt;sort(&#39;created&#39;);?&gt;</span>&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">th</span>&gt;<span style="color:#75715e">&lt;?php echo $this-&gt;Paginator-&gt;sort(&#39;modified&#39;);?&gt;</span>&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">th</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;actions&#34;</span>&gt;<span style="color:#75715e">&lt;?php echo __(&#39;Actions&#39;);?&gt;</span>&lt;/<span style="color:#f92672">th</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">thead</span>&gt;
+</span></span><span style="display:flex;"><span>        &lt;<span style="color:#f92672">tbody</span>&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">&lt;?php foreach ($users as $user): ?&gt;</span>
+</span></span><span style="display:flex;"><span>            &lt;<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">td</span>&gt;<span style="color:#75715e">&lt;?php echo h($user[&#39;User&#39;][&#39;id&#39;]); ?&gt;</span> &lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">td</span>&gt;<span style="color:#75715e">&lt;?php echo h($user[&#39;User&#39;][&#39;username&#39;]); ?&gt;</span> &lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">td</span>&gt;<span style="color:#75715e">&lt;?php echo h($user[&#39;User&#39;][&#39;password&#39;]); ?&gt;</span> &lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">td</span>&gt;<span style="color:#75715e">&lt;?php echo h($user[&#39;User&#39;][&#39;created&#39;]); ?&gt;</span> &lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">td</span>&gt;<span style="color:#75715e">&lt;?php echo h($user[&#39;User&#39;][&#39;modified&#39;]); ?&gt;</span> &lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>                &lt;<span style="color:#f92672">td</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;actions&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>                    <span style="color:#75715e">&lt;?php echo $this-&gt;Html-&gt;link(__(&#39;View&#39;), array(&#39;action&#39; =&gt; &#39;view&#39;, $user[&#39;User&#39;][&#39;id&#39;])); ?&gt;</span>
+</span></span><span style="display:flex;"><span>                &lt;/<span style="color:#f92672">td</span>&gt;
+</span></span><span style="display:flex;"><span>            &lt;/<span style="color:#f92672">tr</span>&gt;
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">&lt;?php endforeach; ?&gt;</span>
+</span></span><span style="display:flex;"><span>        &lt;/<span style="color:#f92672">tbody</span>&gt;
+</span></span><span style="display:flex;"><span>    &lt;/<span style="color:#f92672">table</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">div</span>&gt;
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>On line 5-7, I am defining input text with typeahead attribute and ID that we will use in Javascript code. The next step is to create Javascript object in your layout file. So add this code snippet in your default.ctp file :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</div><p>On line 5-7, I am defining input text with typeahead attribute and ID that we will use in Javascript code. The next step is to create Javascript object in your layout file. So add this code snippet in your default.ctp file :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$cbunny = array(
-    &#39;APP_PATH&#39; =&gt; Router::url(&#39;/&#39;,true)
-);
-echo $this-&gt;Html-&gt;scriptBlock(&#39;var CbunnyObj = &#39; . $this-&gt;Javascript-&gt;object($cbunny) . &#39;;&#39;);</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span>$cbunny <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;APP_PATH&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">Router</span><span style="color:#f92672">::</span><span style="color:#a6e22e">url</span>(<span style="color:#e6db74">&#39;/&#39;</span>,<span style="color:#66d9ef">true</span>)
+</span></span><span style="display:flex;"><span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">echo</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">Html</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">scriptBlock</span>(<span style="color:#e6db74">&#39;var CbunnyObj = &#39;</span> <span style="color:#f92672">.</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">Javascript</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">object</span>($cbunny) <span style="color:#f92672">.</span> <span style="color:#e6db74">&#39;;&#39;</span>);
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>You can change the $cbunny and CBunnyObj variable name to resemble your app name. However, the rest of the code has to be same as above. This snippet of code will create Javascript object which contains the root URL path of CakePHP.</p>
-
+</div><p>You can change the $cbunny and CBunnyObj variable name to resemble your app name. However, the rest of the code has to be same as above. This snippet of code will create Javascript object which contains the root URL path of CakePHP.</p>
 <p>After we have the Javascript object variable, let&rsquo;s continue by creating the Javascript code. Inside your application Javascript file add these code :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#user-typeahead&#39;</span>).<span style="color:#a6e22e">typeahead</span>({
-  <span style="color:#a6e22e">source</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">query</span>, <span style="color:#a6e22e">process</span>) {
-    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
-      <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">CbunnyObj</span>.<span style="color:#a6e22e">APP_PATH</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;users/typeahead_search&#39;</span>,
-      <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;get&#39;</span>,
-      <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">q</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">query</span>},
-      <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;json&#39;</span>,
-      <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">json</span>) {
-        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">process</span>(<span style="color:#a6e22e">json</span>);
-      }
-    });
-  }
-});
-</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">$</span>(<span style="color:#e6db74">&#39;#user-typeahead&#39;</span>).<span style="color:#a6e22e">typeahead</span>({
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">source</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">query</span>, <span style="color:#a6e22e">process</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">$</span>.<span style="color:#a6e22e">ajax</span>({
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">CbunnyObj</span>.<span style="color:#a6e22e">APP_PATH</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;users/typeahead_search&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">type</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;get&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">data</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">q</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">query</span>},
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">dataType</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;json&#39;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">success</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">json</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">process</span>(<span style="color:#a6e22e">json</span>);
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    });
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>});
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>In this code, we initialize the typeahead library and create AJAX request to the typeahead_search action. In the next step, we will create typeahead_search action that will handle AJAX request and return JSON result. Back to our users controller, create the typeahead action which will contain this code :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</div><p>In this code, we initialize the typeahead library and create AJAX request to the typeahead_search action. In the next step, we will create typeahead_search action that will handle AJAX request and return JSON result. Back to our users controller, create the typeahead action which will contain this code :</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">public function typeahead_search() {
-    $this-&gt;autoRender = false;
-    $this-&gt;RequestHandler-&gt;respondAs(&#39;json&#39;);
-
-    // get the search term from URL
-    $term = $this-&gt;request-&gt;query[&#39;q&#39;];
-    $users = $this-&gt;User-&gt;find(&#39;all&#39;,array(
-        &#39;conditions&#39; =&gt; array(
-            &#39;User.username LIKE&#39; =&gt; &#39;%&#39;.$term.&#39;%&#39;
-        )
-    ));
-
-    // Format the result for select2
-    $result = array();
-    foreach($users as $key =&gt; $user) {
-        array_push($result, $user[&#39;User&#39;][&#39;username&#39;]);
-    }
-    $users = $result;
-
-    echo json_encode($users);
-}</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">typeahead_search</span>() {
+</span></span><span style="display:flex;"><span>    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">autoRender</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>;
+</span></span><span style="display:flex;"><span>    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">RequestHandler</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">respondAs</span>(<span style="color:#e6db74">&#39;json&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// get the search term from URL
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $term <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">request</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">query</span>[<span style="color:#e6db74">&#39;q&#39;</span>];
+</span></span><span style="display:flex;"><span>    $users <span style="color:#f92672">=</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">User</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">find</span>(<span style="color:#e6db74">&#39;all&#39;</span>,<span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#39;conditions&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#39;User.username LIKE&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#e6db74">&#39;%&#39;</span><span style="color:#f92672">.</span>$term<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;%&#39;</span>
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>    ));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Format the result for select2
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    $result <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">foreach</span>($users <span style="color:#66d9ef">as</span> $key <span style="color:#f92672">=&gt;</span> $user) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">array_push</span>($result, $user[<span style="color:#e6db74">&#39;User&#39;</span>][<span style="color:#e6db74">&#39;username&#39;</span>]);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    $users <span style="color:#f92672">=</span> $result;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">json_encode</span>($users);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>This action will receive the request, search the database for relevant result and return it on JSON format.</p>
+</div><p>This action will receive the request, search the database for relevant result and return it on JSON format.</p>
 
   </div>
   
@@ -451,21 +452,6 @@ echo $this-&gt;Html-&gt;scriptBlock(&#39;var CbunnyObj = &#39; . $this-&gt;Javas
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

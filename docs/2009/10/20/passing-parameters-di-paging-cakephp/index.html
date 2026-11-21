@@ -11,7 +11,7 @@
 <meta http-equiv="Cache-Control" content="public" />
 <!-- Enable responsiveness on mobile devices -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<meta name="generator" content="Hugo 0.55.6" />
+<meta name="generator" content="Hugo 0.142.0">
 
     
     
@@ -20,20 +20,29 @@
 <title>Passing parameters di paging CakePHP • </title>
 
 
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Passing parameters di paging CakePHP"/>
-<meta name="twitter:description" content="Sekian lama gwa ga sentuh2 CakePHP lagi ternyata sekarang ada kesempatan lagi buat megang CakePHP, ternyata setelah lama ga grepe2 CakePHP banyak codingan dan syntax2 yang gwa lupa dan salah satunya ada passing parameter ketika melakukan paging dan juga melimit jumlah row setiap halamannya.
-jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. Ceritanya gwa punya method dalam controller seperti ini.
-1 2 3 4 5 6 7 8 9  function index($id = null) { if(!"/>
 
-<meta property="og:title" content="Passing parameters di paging CakePHP" />
-<meta property="og:description" content="Sekian lama gwa ga sentuh2 CakePHP lagi ternyata sekarang ada kesempatan lagi buat megang CakePHP, ternyata setelah lama ga grepe2 CakePHP banyak codingan dan syntax2 yang gwa lupa dan salah satunya ada passing parameter ketika melakukan paging dan juga melimit jumlah row setiap halamannya.
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Passing parameters di paging CakePHP">
+  <meta name="twitter:description" content="Sekian lama gwa ga sentuh2 CakePHP lagi ternyata sekarang ada kesempatan lagi buat megang CakePHP, ternyata setelah lama ga grepe2 CakePHP banyak codingan dan syntax2 yang gwa lupa dan salah satunya ada passing parameter ketika melakukan paging dan juga melimit jumlah row setiap halamannya.
 jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. Ceritanya gwa punya method dalam controller seperti ini.
-1 2 3 4 5 6 7 8 9  function index($id = null) { if(!" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.rudylee.com/blog/2009/10/20/passing-parameters-di-paging-cakephp/" />
-<meta property="article:published_time" content="2009-10-20T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2009-10-20T00:00:00&#43;00:00"/>
+1 2 3 4 5 6 7 8 9 function index($id = null) { if(!$id) { $this-&gt;Session-&gt;setFlash(__(&#39;Invalid Question.&#39;, true)); } else { $this-&gt;set(&#39;passedArgs&#39;,$id); $this-&gt;set(&#39;questions&#39;, $this-&gt;paginate(array(&#39;group_id&#39; =&gt; $id))); } } Jadi kalau dilihat dari method tersebut terlihat bahwa gwa mempassing parameter ke dalam method indexnya, dan gwa menggunakan parameter tersebut dalam paging gwa. Oleh karena itu gwa membuat satu variable lagi bernama passedArgs untuk menyimpan parameter yang ingin gwa passing ke dalam url paging nantinya ( dalam hal ini id yang ingin gwa passing ).">
+      <meta name="twitter:site" content="@rudylee88">
+
+<meta property="og:url" content="https://www.rudylee.com/blog/2009/10/20/passing-parameters-di-paging-cakephp/">
+  <meta property="og:title" content="Passing parameters di paging CakePHP">
+  <meta property="og:description" content="Sekian lama gwa ga sentuh2 CakePHP lagi ternyata sekarang ada kesempatan lagi buat megang CakePHP, ternyata setelah lama ga grepe2 CakePHP banyak codingan dan syntax2 yang gwa lupa dan salah satunya ada passing parameter ketika melakukan paging dan juga melimit jumlah row setiap halamannya.
+jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. Ceritanya gwa punya method dalam controller seperti ini.
+1 2 3 4 5 6 7 8 9 function index($id = null) { if(!$id) { $this-&gt;Session-&gt;setFlash(__(&#39;Invalid Question.&#39;, true)); } else { $this-&gt;set(&#39;passedArgs&#39;,$id); $this-&gt;set(&#39;questions&#39;, $this-&gt;paginate(array(&#39;group_id&#39; =&gt; $id))); } } Jadi kalau dilihat dari method tersebut terlihat bahwa gwa mempassing parameter ke dalam method indexnya, dan gwa menggunakan parameter tersebut dalam paging gwa. Oleh karena itu gwa membuat satu variable lagi bernama passedArgs untuk menyimpan parameter yang ingin gwa passing ke dalam url paging nantinya ( dalam hal ini id yang ingin gwa passing ).">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2009-10-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2009-10-20T00:00:00+00:00">
+    <meta property="article:tag" content="CakePHP">
+    <meta property="article:tag" content="Coding">
+    <meta property="article:tag" content="Limit">
+    <meta property="article:tag" content="Pagination">
+    <meta property="article:tag" content="Paging">
 
 
     
@@ -43,10 +52,10 @@ jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. 
 
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/hyde-hyde.49548111056799dd9e714b87754f756c9515ad4055ac9c7b86dc76cba7d6a312.css" integrity="sha256-SVSBEQVnmd2ecUuHdU91bJUVrUBVrJx7htx2y6fWoxI=">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/hyde-hyde.a3bdc37d9526f67538a8c6f647c86cfb8b5c0c50c4a1b0adf763b347e53bb98a.css" integrity="sha256-o73DfZUm9nU4qMb2R8hs&#43;4tcDFDEobCt92OzR&#43;U7uYo=">
 
 
-<link rel="stylesheet" href="https://www.rudylee.com/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+<link rel="stylesheet" href="https://www.rudylee.com/blog/blog/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
 
 
 
@@ -68,7 +77,7 @@ jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. 
   <div class="container ">
     <div class="sidebar-about">
       <span class="site__title">
-        <a href="https://www.rudylee.com/blog"></a>
+        <a href="https://www.rudylee.com/blog/"></a>
       </span>
       
       
@@ -145,7 +154,7 @@ jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. 
     </div>
     
 <div class="copyright">
-  &copy; 2019 Rudy Lee
+  &copy; 2026 Rudy Lee
   
 </div>
 
@@ -213,65 +222,62 @@ jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. 
   
   <div class="post">
     <p>Sekian lama gwa ga sentuh2 CakePHP lagi ternyata sekarang ada kesempatan lagi buat megang CakePHP, ternyata setelah lama ga grepe2 CakePHP banyak codingan dan syntax2 yang gwa lupa dan salah satunya ada passing parameter ketika melakukan paging dan juga melimit jumlah row setiap halamannya.</p>
-
 <p>jadi tanpa banyak cing cong seperti biasanya langsung saja ke codingan aja deh. Ceritanya gwa punya method dalam controller seperti ini.</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">function index($id = null) {
-  if(!$id) {
-    $this-&gt;Session-&gt;setFlash(__(&#39;Invalid Question.&#39;, true));
-  }
-  else {
-    $this-&gt;set(&#39;passedArgs&#39;,$id);
-    $this-&gt;set(&#39;questions&#39;, $this-&gt;paginate(array(&#39;group_id&#39; =&gt; $id)));
-  }
-}</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">index</span>($id <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(<span style="color:#f92672">!</span>$id) {
+</span></span><span style="display:flex;"><span>    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">Session</span><span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setFlash</span>(<span style="color:#a6e22e">__</span>(<span style="color:#e6db74">&#39;Invalid Question.&#39;</span>, <span style="color:#66d9ef">true</span>));
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;passedArgs&#39;</span>,$id);
+</span></span><span style="display:flex;"><span>    $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;questions&#39;</span>, $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">paginate</span>(<span style="color:#66d9ef">array</span>(<span style="color:#e6db74">&#39;group_id&#39;</span> <span style="color:#f92672">=&gt;</span> $id)));
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Jadi kalau dilihat dari method tersebut terlihat bahwa gwa mempassing parameter ke dalam method indexnya, dan gwa menggunakan parameter tersebut dalam paging gwa. Oleh karena itu gwa membuat satu variable lagi bernama <strong>passedArgs</strong> untuk menyimpan parameter yang ingin gwa passing ke dalam url paging nantinya ( dalam hal ini id yang ingin gwa passing ).</p>
-
+</div><p>Jadi kalau dilihat dari method tersebut terlihat bahwa gwa mempassing parameter ke dalam method indexnya, dan gwa menggunakan parameter tersebut dalam paging gwa. Oleh karena itu gwa membuat satu variable lagi bernama <strong>passedArgs</strong> untuk menyimpan parameter yang ingin gwa passing ke dalam url paging nantinya ( dalam hal ini id yang ingin gwa passing ).</p>
 <p>Setelah itu akan menambah codingan ke dalam viewnya yaitu</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">counter(array(
-&#39;format&#39; =&gt; __(&#39;Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%&#39;, true)
-));
-$paginator-&gt;options(array(&#39;url&#39;=&gt;$this-&gt;passedArgs));</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#a6e22e">counter</span>(<span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#39;format&#39;</span> <span style="color:#f92672">=&gt;</span> <span style="color:#a6e22e">__</span>(<span style="color:#e6db74">&#39;Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%&#39;</span>, <span style="color:#66d9ef">true</span>)
+</span></span><span style="display:flex;"><span>));
+</span></span><span style="display:flex;"><span>$paginator<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">options</span>(<span style="color:#66d9ef">array</span>(<span style="color:#e6db74">&#39;url&#39;</span><span style="color:#f92672">=&gt;</span>$this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">passedArgs</span>));
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Jadi kita hanya perlu menambah codingan $paginator-&gt;options yang di dalamnya kita letakkan variable yang ingin kita passing. Mungkin pada bingung kenapa gwa harus passing variable itu ke dalam halaman paging, jika anda bingung berarti anda harus belajar banyak lagi :)</p>
-
+</div><p>Jadi kita hanya perlu menambah codingan $paginator-&gt;options yang di dalamnya kita letakkan variable yang ingin kita passing. Mungkin pada bingung kenapa gwa harus passing variable itu ke dalam halaman paging, jika anda bingung berarti anda harus belajar banyak lagi :)</p>
 <p>Sekalian bonus biar ntar kalo lupa bisa ingat :</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
+<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">var $paginate = array(
-  &#39;limit&#39;	=&gt; 10
-);</code></pre></td></tr></table>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> $paginate <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>(
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#39;limit&#39;</span>	<span style="color:#f92672">=&gt;</span> <span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span>);
+</span></span></code></pre></td></tr></table>
 </div>
-</div>
-<p>Code di atas buat limit jumlah item dalam 1 page, diletakkannya di dalam controller. Semoga membantu :D</p>
+</div><p>Code di atas buat limit jumlah item dalam 1 page, diletakkannya di dalam controller. Semoga membantu :D</p>
 
   </div>
   
@@ -333,21 +339,6 @@ $paginator-&gt;options(array(&#39;url&#39;=&gt;$this-&gt;passedArgs));</code></p
         </div>
         
     
-
-  
-  
-<script type="application/javascript">
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-10301272-1', 'auto');
-	
-	ga('send', 'pageview');
-}
-</script>
-<script async src='https://www.google-analytics.com/analytics.js'></script>
-
-
 <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 
 

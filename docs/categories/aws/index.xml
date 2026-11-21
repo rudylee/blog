@@ -1,39 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>AWS on </title>
     <link>https://www.rudylee.com/blog/categories/aws/</link>
     <description>Recent content in AWS on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Mar 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.rudylee.com/blog/categories/aws/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://www.rudylee.com/blog/categories/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Create new user on Amazon AMI and give it root access</title>
       <link>https://www.rudylee.com/blog/2016/03/09/create-new-user-on-amazon-ami-and-give-it-root-access/</link>
       <pubDate>Wed, 09 Mar 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rudylee.com/blog/2016/03/09/create-new-user-on-amazon-ami-and-give-it-root-access/</guid>
-      <description>Setup your new EC2 instance on AWS and choose Amazon AMI.
-SSH to your instance using your private key
-ssh -i &amp;lt;path-to-your-pem-file&amp;gt; ec2-user@&amp;lt;ec2-endpoint-or-ip&amp;gt;  Change to root
-sudo su  Create new group for your user ( in this case my group name is &amp;lsquo;dev&amp;rsquo; )
-groupadd dev  Create new user and assign it to your recently created group
-useradd -g dev dev  Give the username root access</description>
+      <description>&lt;p&gt;Setup your new EC2 instance on AWS and choose Amazon AMI.&lt;/p&gt;&#xA;&lt;p&gt;SSH to your instance using your private key&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;ssh -i &amp;lt;path-to-your-pem-file&amp;gt; ec2-user@&amp;lt;ec2-endpoint-or-ip&amp;gt;&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Change to root&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo su&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create new group for your user ( in this case my group name is &amp;lsquo;dev&amp;rsquo; )&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;groupadd dev&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Create new user and assign it to your recently created group&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;useradd -g dev dev&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Give the username root access&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;visudo&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Add this to the bottom of the file&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dev     ALL=(ALL)       NOPASSWD:ALL&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Delete the password for &amp;lsquo;dev&amp;rsquo; user&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Copying Files Between Two S3 Buckets</title>
       <link>https://www.rudylee.com/blog/2015/10/16/copying-files-between-two-s3-buckets/</link>
       <pubDate>Fri, 16 Oct 2015 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rudylee.com/blog/2015/10/16/copying-files-between-two-s3-buckets/</guid>
-      <description>Today, I have to copy files from one S3 bucket to another S3 bucket which sitting in separate AWS account.
-Initially, I was thinking to use S3 clients ( Tranmit or Cyberduck ) to download the files first and manually upload the files again to the other S3 Bucket. However, this approach will consume a lot of bandwidth and really slow if you have a lot of files in your S3 bucket.</description>
+      <description>&lt;p&gt;Today, I have to copy files from one S3 bucket to another S3 bucket which sitting in separate AWS account.&lt;/p&gt;&#xA;&lt;p&gt;Initially, I was thinking to use S3 clients ( Tranmit or Cyberduck ) to download the files first and manually upload the files again to the other S3 Bucket. However, this approach will consume a lot of bandwidth and really slow if you have a lot of files in your S3 bucket.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

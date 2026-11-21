@@ -1,38 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Elasticsearch on </title>
     <link>https://www.rudylee.com/blog/categories/elasticsearch/</link>
     <description>Recent content in Elasticsearch on </description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 30 Jan 2017 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://www.rudylee.com/blog/categories/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="https://www.rudylee.com/blog/categories/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting Up Elasticsearch Watcher to Check For Cluster Status on Elastic Cloud</title>
       <link>https://www.rudylee.com/blog/2017/01/30/setting-up-elasticsearch-watcher-to-check-for-cluster-status-on-elastic-cloud/</link>
       <pubDate>Mon, 30 Jan 2017 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rudylee.com/blog/2017/01/30/setting-up-elasticsearch-watcher-to-check-for-cluster-status-on-elastic-cloud/</guid>
-      <description>Last week, I was busy migrating our staging and production Elasticsearch clusters from AWS Elasticsearch to Elastic Cloud. The reason behind this migration is because we need dynamic scripting feature in our application and Elastic Cloud is the only managed Elasticsearch hosting that currently supports dynamic scripting.
-In terms of pricing, Elastic Cloud is slightly more expensive than AWS Elasticsearch. I think this is because they are using AWS EC2 under the hood.</description>
+      <description>&lt;p&gt;Last week, I was busy migrating our staging and production Elasticsearch clusters from AWS Elasticsearch to Elastic Cloud. The reason behind this migration is because we need dynamic scripting feature in our application and Elastic Cloud is the only managed Elasticsearch hosting that currently supports dynamic scripting.&lt;/p&gt;&#xA;&lt;p&gt;In terms of pricing, Elastic Cloud is slightly more expensive than AWS Elasticsearch. I think this is because they are using AWS EC2 under the hood. You can compare the pricing of both services here &lt;a href=&#34;https://aws.amazon.com/elasticsearch-service/pricing/&#34;&gt;https://aws.amazon.com/elasticsearch-service/pricing/&lt;/a&gt; and &lt;a href=&#34;https://www.elastic.co/cloud/as-a-service/pricing&#34;&gt;https://www.elastic.co/cloud/as-a-service/pricing&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Import JSON to Elasticsearch using jq</title>
       <link>https://www.rudylee.com/blog/2016/02/16/import-json-to-elasticsearch-using-jq/</link>
       <pubDate>Tue, 16 Feb 2016 00:00:00 +0000</pubDate>
-      
       <guid>https://www.rudylee.com/blog/2016/02/16/import-json-to-elasticsearch-using-jq/</guid>
-      <description>This is based on http://kevinmarsh.com/2014/10/23/using-jq-to-import-json-into-elasticsearch.html
-Install jq first on Mac
-brew install jq  Import the JSON file to Elasticsearch index
-cat file.json | jq -c &#39;.[] | {&amp;quot;index&amp;quot;: {&amp;quot;_index&amp;quot;: &amp;quot;bookmarks&amp;quot;, &amp;quot;_type&amp;quot;: &amp;quot;bookmark&amp;quot;, &amp;quot;_id&amp;quot;: .id}}, .&#39; | curl -XPOST localhost:9200/_bulk --data-binary @-  Check for the list of indexes http://localhost:9200/_cat/indices?v
-See the list of records http:/localhost:9200//bookmarks/_search</description>
+      <description>&lt;p&gt;This is based on &lt;a href=&#34;http://kevinmarsh.com/2014/10/23/using-jq-to-import-json-into-elasticsearch.html&#34;&gt;http://kevinmarsh.com/2014/10/23/using-jq-to-import-json-into-elasticsearch.html&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Install jq first on Mac&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;brew install jq&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Import the JSON file to Elasticsearch index&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cat file.json | jq -c &amp;#39;.[] | {&amp;#34;index&amp;#34;: {&amp;#34;_index&amp;#34;: &amp;#34;bookmarks&amp;#34;, &amp;#34;_type&amp;#34;: &amp;#34;bookmark&amp;#34;, &amp;#34;_id&amp;#34;: .id}}, .&amp;#39; | curl -XPOST localhost:9200/_bulk --data-binary @-&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Check for the list of indexes http://localhost:9200/_cat/indices?v&lt;/p&gt;&#xA;&lt;p&gt;See the list of records http:/localhost:9200//bookmarks/_search&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
