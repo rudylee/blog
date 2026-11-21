@@ -1,8 +1,6 @@
 baseURL = "https://www.rudylee.com/blog"
 languageCode = "en-us"
 theme = "hyde"
-pygmentsOptions = "linenos=table"
-pygmentsCodefences = true
 publishDir = "docs"
 canonifyURLs = true
 
@@ -23,6 +21,14 @@ canonifyURLs = true
 # Posts are written in the Obsidian vault, not in content/posts.
 # The vault's blog/ folder becomes the "posts" section, and its attachments/
 # folder is served at /attachments/ (see layouts/_default/_markup/render-image.html).
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true   # old posts contain raw HTML; Hugo < 0.60 rendered it
+  [markup.highlight]
+    codeFences = true
+    lineNos = true
+    lineNumbersInTable = true
+
 [module]
   [[module.mounts]]
     source = "/Users/rudy/Documents/Rudy/blog"
